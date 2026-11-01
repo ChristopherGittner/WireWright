@@ -12,6 +12,11 @@ generated from the project data.
 > Status: stage 1 is complete; stage 2 has PLC I/O, the device library, cables and wire numbering.
 > See [ROADMAP.md](ROADMAP.md) for what comes next.
 
+> **Vibe coded with Claude.** Wirewright is written by [Claude](https://www.anthropic.com/claude),
+> Anthropic's AI model, in [Claude Code](https://claude.com/claude-code): the code, the tests and
+> the documentation. A human maintainer decides what gets built, tries it out and reviews the result.
+> See [How Wirewright is made](#how-wirewright-is-made).
+
 ## Features
 
 - **Schematics to IEC 60617** with 40 symbols, A3 frames with a self-filling
@@ -116,6 +121,30 @@ request; failed end-to-end runs upload traces and screenshots.
 - [docs/data-model.md](docs/data-model.md): project files, tags, devices, potentials, boxes, reports
 - [docs/editor.md](docs/editor.md): editor operation
 - [docs/mcp.md](docs/mcp.md): AI access through MCP
+
+## How Wirewright is made
+
+Wirewright is developed by AI-assisted programming ("vibe coding"). Nearly all of the
+code, tests and documentation were written by Claude, Anthropic's AI model, working in
+Claude Code. The maintainer sets the direction, describes the features from the point
+of view of the people who draw electrical plans, tries the app and asks for changes.
+Commits written this way carry a `Co-Authored-By: Claude` line.
+
+What that means for you:
+
+- **The code was not written by hand line by line.** It is checked through use and an
+  automated test suite (unit, integration and end-to-end tests that run on every
+  push), not by a full manual review of every line.
+- **Check what Wirewright produces.** The engineering checks (voltages, cross-sections,
+  PE, PLC channel types) and the device library (terminal assignments taken from
+  manufacturer documentation or derived from a device family's pattern) can contain
+  mistakes. The description of each PLC I/O card says where its terminal assignment came
+  from; check it against the manufacturer's data sheet before you wire to it.
+- **You stay responsible for your plans.** Wirewright does not replace a qualified
+  person or the standards your machine has to meet (for example EN 60204-1). As the
+  license says, it comes without any warranty.
+
+Contributions are welcome, written by hand or with an AI assistant.
 
 ## License
 
