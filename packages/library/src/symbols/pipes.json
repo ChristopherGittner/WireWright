@@ -1,0 +1,594 @@
+[
+  {
+    "id": "wirewright.pipe.corner.up-right",
+    "name": {
+      "de": "Rohr-Ecke oben → rechts",
+      "en": "Pipe corner up → right"
+    },
+    "category": "pipes",
+    "function": "connection.corner",
+    "defaultRole": "none",
+    "graphics": [],
+    "connections": [
+      {
+        "id": "up",
+        "x": 0,
+        "y": 0,
+        "direction": "up",
+        "medium": "fluid"
+      },
+      {
+        "id": "right",
+        "x": 0,
+        "y": 0,
+        "direction": "right",
+        "medium": "fluid"
+      }
+    ],
+    "links": [
+      [
+        "up",
+        "right"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.pipe.corner.right-down",
+    "name": {
+      "de": "Rohr-Ecke rechts → unten",
+      "en": "Pipe corner right → down"
+    },
+    "category": "pipes",
+    "function": "connection.corner",
+    "defaultRole": "none",
+    "graphics": [],
+    "connections": [
+      {
+        "id": "right",
+        "x": 0,
+        "y": 0,
+        "direction": "right",
+        "medium": "fluid"
+      },
+      {
+        "id": "down",
+        "x": 0,
+        "y": 0,
+        "direction": "down",
+        "medium": "fluid"
+      }
+    ],
+    "links": [
+      [
+        "right",
+        "down"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.pipe.corner.down-left",
+    "name": {
+      "de": "Rohr-Ecke unten → links",
+      "en": "Pipe corner down → left"
+    },
+    "category": "pipes",
+    "function": "connection.corner",
+    "defaultRole": "none",
+    "graphics": [],
+    "connections": [
+      {
+        "id": "down",
+        "x": 0,
+        "y": 0,
+        "direction": "down",
+        "medium": "fluid"
+      },
+      {
+        "id": "left",
+        "x": 0,
+        "y": 0,
+        "direction": "left",
+        "medium": "fluid"
+      }
+    ],
+    "links": [
+      [
+        "down",
+        "left"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.pipe.corner.left-up",
+    "name": {
+      "de": "Rohr-Ecke links → oben",
+      "en": "Pipe corner left → up"
+    },
+    "category": "pipes",
+    "function": "connection.corner",
+    "defaultRole": "none",
+    "graphics": [],
+    "connections": [
+      {
+        "id": "left",
+        "x": 0,
+        "y": 0,
+        "direction": "left",
+        "medium": "fluid"
+      },
+      {
+        "id": "up",
+        "x": 0,
+        "y": 0,
+        "direction": "up",
+        "medium": "fluid"
+      }
+    ],
+    "links": [
+      [
+        "left",
+        "up"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.pipe.tee.up-right-down",
+    "name": {
+      "de": "Rohr-T oben-rechts-unten",
+      "en": "Pipe T-junction up-right-down"
+    },
+    "category": "pipes",
+    "function": "connection.tee",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 0.7,
+        "fill": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "up",
+        "x": 0,
+        "y": 0,
+        "direction": "up",
+        "medium": "fluid"
+      },
+      {
+        "id": "right",
+        "x": 0,
+        "y": 0,
+        "direction": "right",
+        "medium": "fluid"
+      },
+      {
+        "id": "down",
+        "x": 0,
+        "y": 0,
+        "direction": "down",
+        "medium": "fluid"
+      }
+    ],
+    "links": [
+      [
+        "up",
+        "right",
+        "down"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.pipe.tee.right-down-left",
+    "name": {
+      "de": "Rohr-T rechts-unten-links",
+      "en": "Pipe T-junction right-down-left"
+    },
+    "category": "pipes",
+    "function": "connection.tee",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 0.7,
+        "fill": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "right",
+        "x": 0,
+        "y": 0,
+        "direction": "right",
+        "medium": "fluid"
+      },
+      {
+        "id": "down",
+        "x": 0,
+        "y": 0,
+        "direction": "down",
+        "medium": "fluid"
+      },
+      {
+        "id": "left",
+        "x": 0,
+        "y": 0,
+        "direction": "left",
+        "medium": "fluid"
+      }
+    ],
+    "links": [
+      [
+        "right",
+        "down",
+        "left"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.pipe.tee.down-left-up",
+    "name": {
+      "de": "Rohr-T unten-links-oben",
+      "en": "Pipe T-junction down-left-up"
+    },
+    "category": "pipes",
+    "function": "connection.tee",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 0.7,
+        "fill": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "down",
+        "x": 0,
+        "y": 0,
+        "direction": "down",
+        "medium": "fluid"
+      },
+      {
+        "id": "left",
+        "x": 0,
+        "y": 0,
+        "direction": "left",
+        "medium": "fluid"
+      },
+      {
+        "id": "up",
+        "x": 0,
+        "y": 0,
+        "direction": "up",
+        "medium": "fluid"
+      }
+    ],
+    "links": [
+      [
+        "down",
+        "left",
+        "up"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.pipe.tee.left-up-right",
+    "name": {
+      "de": "Rohr-T links-oben-rechts",
+      "en": "Pipe T-junction left-up-right"
+    },
+    "category": "pipes",
+    "function": "connection.tee",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 0.7,
+        "fill": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "left",
+        "x": 0,
+        "y": 0,
+        "direction": "left",
+        "medium": "fluid"
+      },
+      {
+        "id": "up",
+        "x": 0,
+        "y": 0,
+        "direction": "up",
+        "medium": "fluid"
+      },
+      {
+        "id": "right",
+        "x": 0,
+        "y": 0,
+        "direction": "right",
+        "medium": "fluid"
+      }
+    ],
+    "links": [
+      [
+        "left",
+        "up",
+        "right"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.pipe.cross",
+    "name": {
+      "de": "Rohrkreuzung",
+      "en": "Pipe crossing (not connected)"
+    },
+    "category": "pipes",
+    "function": "connection.cross",
+    "defaultRole": "none",
+    "graphics": [],
+    "connections": [
+      {
+        "id": "a",
+        "x": 0,
+        "y": 0,
+        "direction": "left",
+        "medium": "fluid"
+      },
+      {
+        "id": "b",
+        "x": 0,
+        "y": 0,
+        "direction": "right",
+        "medium": "fluid"
+      },
+      {
+        "id": "c",
+        "x": 0,
+        "y": 0,
+        "direction": "up",
+        "medium": "fluid"
+      },
+      {
+        "id": "d",
+        "x": 0,
+        "y": 0,
+        "direction": "down",
+        "medium": "fluid"
+      }
+    ],
+    "links": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "c",
+        "d"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.pipe.crossConnected",
+    "name": {
+      "de": "Rohrkreuzung verbunden",
+      "en": "Pipe crossing (connected)"
+    },
+    "category": "pipes",
+    "function": "connection.crossConnected",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 0.7,
+        "fill": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "a",
+        "x": 0,
+        "y": 0,
+        "direction": "left",
+        "medium": "fluid"
+      },
+      {
+        "id": "b",
+        "x": 0,
+        "y": 0,
+        "direction": "right",
+        "medium": "fluid"
+      },
+      {
+        "id": "c",
+        "x": 0,
+        "y": 0,
+        "direction": "up",
+        "medium": "fluid"
+      },
+      {
+        "id": "d",
+        "x": 0,
+        "y": 0,
+        "direction": "down",
+        "medium": "fluid"
+      }
+    ],
+    "links": [
+      [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.pipe.source",
+    "name": {
+      "de": "Druckquelle (Medium)",
+      "en": "Pressure source (medium)"
+    },
+    "category": "pipes",
+    "function": "connection.medium",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": -4,
+        "r": 3
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.6,
+            -2.8
+          ],
+          [
+            0,
+            -5.8
+          ],
+          [
+            1.6,
+            -2.8
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -1,
+        "x2": 0,
+        "y2": 0
+      }
+    ],
+    "connections": [
+      {
+        "id": "a",
+        "x": 0,
+        "y": 0,
+        "direction": "down",
+        "medium": "fluid"
+      }
+    ],
+    "texts": [
+      {
+        "field": "name",
+        "x": 4,
+        "y": -3
+      }
+    ]
+  },
+  {
+    "id": "wirewright.pipe.interruption",
+    "name": {
+      "de": "Rohr-Unterbrechungsstelle",
+      "en": "Pipe interruption point"
+    },
+    "category": "pipes",
+    "function": "connection.interruption",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.5,
+            0
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1.5,
+            0
+          ]
+        ],
+        "closed": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "a",
+        "x": 0,
+        "y": 0,
+        "direction": "up",
+        "medium": "fluid"
+      }
+    ],
+    "texts": [
+      {
+        "field": "name",
+        "x": 2,
+        "y": 3
+      },
+      {
+        "field": "xref",
+        "x": 2,
+        "y": 6
+      }
+    ]
+  },
+  {
+    "id": "wirewright.pipe.plug",
+    "name": {
+      "de": "Verschlussstopfen",
+      "en": "Plug (closed port)"
+    },
+    "category": "pipes",
+    "function": "connection.break",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": -1.5,
+        "y1": 0,
+        "x2": 1.5,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -1.5,
+        "y1": 0.8,
+        "x2": 1.5,
+        "y2": 0.8
+      }
+    ],
+    "connections": [
+      {
+        "id": "a",
+        "x": 0,
+        "y": 0,
+        "direction": "up",
+        "medium": "fluid"
+      }
+    ],
+    "texts": []
+  }
+]

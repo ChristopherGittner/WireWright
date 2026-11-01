@@ -1,0 +1,869 @@
+[
+  {
+    "id": "iec.form.pageIndex",
+    "name": {
+      "de": "Inhaltsverzeichnis",
+      "en": "Table of contents"
+    },
+    "kind": "pageIndex",
+    "frame": "iec.frame.a3.report",
+    "title": {
+      "de": "Inhaltsverzeichnis",
+      "en": "Table of contents"
+    },
+    "table": {
+      "x": 24,
+      "y": 28,
+      "headerHeight": 8,
+      "rowHeight": 6,
+      "rows": 36,
+      "textSize": 2.5
+    },
+    "columns": [
+      {
+        "key": "page",
+        "title": {
+          "de": "Seite",
+          "en": "Page"
+        },
+        "width": 60
+      },
+      {
+        "key": "description",
+        "title": {
+          "de": "Beschreibung",
+          "en": "Description"
+        },
+        "width": 220
+      },
+      {
+        "key": "revision",
+        "title": {
+          "de": "Rev.",
+          "en": "Rev."
+        },
+        "width": 40
+      },
+      {
+        "key": "date",
+        "title": {
+          "de": "Datum",
+          "en": "Date"
+        },
+        "width": 60
+      }
+    ]
+  },
+  {
+    "id": "iec.form.deviceIndex",
+    "name": {
+      "de": "Betriebsmittelverzeichnis",
+      "en": "Device directory"
+    },
+    "kind": "deviceIndex",
+    "frame": "iec.frame.a3.report",
+    "title": {
+      "de": "Betriebsmittelverzeichnis",
+      "en": "Device directory"
+    },
+    "table": {
+      "x": 24,
+      "y": 28,
+      "headerHeight": 8,
+      "rowHeight": 6,
+      "rows": 36,
+      "textSize": 2.5
+    },
+    "columns": [
+      {
+        "key": "tag",
+        "title": {
+          "de": "BMK",
+          "en": "Device tag"
+        },
+        "width": 70
+      },
+      {
+        "key": "functionText",
+        "title": {
+          "de": "Funktionstext",
+          "en": "Function text"
+        },
+        "width": 110
+      },
+      {
+        "key": "part",
+        "title": {
+          "de": "Artikel",
+          "en": "Part"
+        },
+        "width": 100
+      },
+      {
+        "key": "functions",
+        "title": {
+          "de": "Platzierung",
+          "en": "Placement"
+        },
+        "width": 100
+      }
+    ]
+  },
+  {
+    "id": "iec.form.bom",
+    "name": {
+      "de": "Stückliste",
+      "en": "Bill of materials"
+    },
+    "kind": "bom",
+    "frame": "iec.frame.a3.report",
+    "title": {
+      "de": "Stückliste",
+      "en": "Bill of materials"
+    },
+    "table": {
+      "x": 24,
+      "y": 28,
+      "headerHeight": 8,
+      "rowHeight": 6,
+      "rows": 36,
+      "textSize": 2.5
+    },
+    "columns": [
+      {
+        "key": "quantity",
+        "title": {
+          "de": "Menge",
+          "en": "Qty"
+        },
+        "width": 18
+      },
+      {
+        "key": "manufacturer",
+        "title": {
+          "de": "Hersteller",
+          "en": "Manufacturer"
+        },
+        "width": 50
+      },
+      {
+        "key": "partNumber",
+        "title": {
+          "de": "Bestellnummer",
+          "en": "Part number"
+        },
+        "width": 70
+      },
+      {
+        "key": "description",
+        "title": {
+          "de": "Beschreibung",
+          "en": "Description"
+        },
+        "width": 100
+      },
+      {
+        "key": "devices",
+        "title": {
+          "de": "Betriebsmittel",
+          "en": "Devices"
+        },
+        "width": 82
+      },
+      {
+        "key": "unitPrice",
+        "title": {
+          "de": "Einzelpreis",
+          "en": "Unit price"
+        },
+        "width": 30
+      },
+      {
+        "key": "total",
+        "title": {
+          "de": "Gesamt",
+          "en": "Total"
+        },
+        "width": 30
+      }
+    ]
+  },
+  {
+    "id": "iec.form.wireList",
+    "name": {
+      "de": "Verbindungsliste",
+      "en": "Wire list"
+    },
+    "kind": "wireList",
+    "frame": "iec.frame.a3.report",
+    "title": {
+      "de": "Verbindungsliste",
+      "en": "Wire list"
+    },
+    "table": {
+      "x": 24,
+      "y": 28,
+      "headerHeight": 8,
+      "rowHeight": 6,
+      "rows": 36,
+      "textSize": 2.5
+    },
+    "columns": [
+      {
+        "key": "number",
+        "title": {
+          "de": "Draht",
+          "en": "Wire"
+        },
+        "width": 30
+      },
+      {
+        "key": "from",
+        "title": {
+          "de": "Von",
+          "en": "From"
+        },
+        "width": 90
+      },
+      {
+        "key": "to",
+        "title": {
+          "de": "Nach",
+          "en": "To"
+        },
+        "width": 120
+      },
+      {
+        "key": "color",
+        "title": {
+          "de": "Farbe",
+          "en": "Color"
+        },
+        "width": 22
+      },
+      {
+        "key": "crossSection",
+        "title": {
+          "de": "Querschnitt",
+          "en": "Cross-section"
+        },
+        "width": 28
+      },
+      {
+        "key": "potential",
+        "title": {
+          "de": "Potenzial",
+          "en": "Potential"
+        },
+        "width": 30
+      },
+      {
+        "key": "cable",
+        "title": {
+          "de": "Kabel/Ader",
+          "en": "Cable/core"
+        },
+        "width": 60
+      }
+    ]
+  },
+  {
+    "id": "iec.form.cableOverview",
+    "name": {
+      "de": "Kabelübersicht",
+      "en": "Cable overview"
+    },
+    "kind": "cableOverview",
+    "frame": "iec.frame.a3.report",
+    "title": {
+      "de": "Kabelübersicht",
+      "en": "Cable overview"
+    },
+    "table": {
+      "x": 24,
+      "y": 28,
+      "headerHeight": 8,
+      "rowHeight": 6,
+      "rows": 36,
+      "textSize": 2.5
+    },
+    "columns": [
+      {
+        "key": "cable",
+        "title": {
+          "de": "Kabel",
+          "en": "Cable"
+        },
+        "width": 70
+      },
+      {
+        "key": "type",
+        "title": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "width": 110
+      },
+      {
+        "key": "cores",
+        "title": {
+          "de": "Adern",
+          "en": "Cores"
+        },
+        "width": 30
+      },
+      {
+        "key": "crossSection",
+        "title": {
+          "de": "Querschnitt",
+          "en": "Cross-section"
+        },
+        "width": 40
+      },
+      {
+        "key": "route",
+        "title": {
+          "de": "Von – Nach",
+          "en": "Route"
+        },
+        "width": 90
+      },
+      {
+        "key": "length",
+        "title": {
+          "de": "Länge",
+          "en": "Length"
+        },
+        "width": 40
+      }
+    ]
+  },
+  {
+    "id": "iec.form.cableDiagram",
+    "name": {
+      "de": "Kabelplan",
+      "en": "Cable diagram"
+    },
+    "kind": "cableDiagram",
+    "frame": "iec.frame.a3.report",
+    "title": {
+      "de": "Kabelplan",
+      "en": "Cable diagram"
+    },
+    "table": {
+      "x": 24,
+      "y": 28,
+      "headerHeight": 8,
+      "rowHeight": 6,
+      "rows": 36,
+      "textSize": 2.5
+    },
+    "columns": [
+      {
+        "key": "cable",
+        "title": {
+          "de": "Kabel",
+          "en": "Cable"
+        },
+        "width": 60
+      },
+      {
+        "key": "core",
+        "title": {
+          "de": "Ader",
+          "en": "Core"
+        },
+        "width": 22
+      },
+      {
+        "key": "color",
+        "title": {
+          "de": "Farbe",
+          "en": "Color"
+        },
+        "width": 22
+      },
+      {
+        "key": "crossSection",
+        "title": {
+          "de": "Querschnitt",
+          "en": "Cross-section"
+        },
+        "width": 30
+      },
+      {
+        "key": "from",
+        "title": {
+          "de": "Von",
+          "en": "From"
+        },
+        "width": 100
+      },
+      {
+        "key": "to",
+        "title": {
+          "de": "Nach",
+          "en": "To"
+        },
+        "width": 106
+      },
+      {
+        "key": "wire",
+        "title": {
+          "de": "Draht",
+          "en": "Wire"
+        },
+        "width": 40
+      }
+    ]
+  },
+  {
+    "id": "iec.form.plcIoList",
+    "name": {
+      "de": "E/A-Liste",
+      "en": "I/O list"
+    },
+    "kind": "plcIoList",
+    "frame": "iec.frame.a3.report",
+    "title": {
+      "de": "E/A-Liste",
+      "en": "I/O list"
+    },
+    "table": {
+      "x": 24,
+      "y": 28,
+      "headerHeight": 8,
+      "rowHeight": 6,
+      "rows": 36,
+      "textSize": 2.5
+    },
+    "columns": [
+      {
+        "key": "plc",
+        "title": {
+          "de": "SPS",
+          "en": "PLC"
+        },
+        "width": 26
+      },
+      {
+        "key": "card",
+        "title": {
+          "de": "Karte",
+          "en": "Card"
+        },
+        "width": 56
+      },
+      {
+        "key": "channel",
+        "title": {
+          "de": "Kanal",
+          "en": "Channel"
+        },
+        "width": 22
+      },
+      {
+        "key": "pin",
+        "title": {
+          "de": "Klemme",
+          "en": "Pin"
+        },
+        "width": 14
+      },
+      {
+        "key": "address",
+        "title": {
+          "de": "Adresse",
+          "en": "Address"
+        },
+        "width": 24
+      },
+      {
+        "key": "name",
+        "title": {
+          "de": "Symbol",
+          "en": "Tag name"
+        },
+        "width": 52
+      },
+      {
+        "key": "dataType",
+        "title": {
+          "de": "Typ",
+          "en": "Type"
+        },
+        "width": 16
+      },
+      {
+        "key": "function",
+        "title": {
+          "de": "Funktion",
+          "en": "Function"
+        },
+        "width": 110
+      },
+      {
+        "key": "used",
+        "title": {
+          "de": "Verwendet",
+          "en": "Used"
+        },
+        "width": 60
+      }
+    ]
+  },
+  {
+    "id": "iec.form.mountingPlate",
+    "name": {
+      "de": "Montageplatte",
+      "en": "Mounting plate"
+    },
+    "kind": "mountingPlate",
+    "frame": "iec.frame.a3.report",
+    "title": {
+      "de": "Montageplatte",
+      "en": "Mounting plate"
+    },
+    "table": {
+      "x": 24,
+      "y": 28,
+      "headerHeight": 8,
+      "rowHeight": 6,
+      "rows": 36,
+      "textSize": 2.5
+    },
+    "columns": [
+      {
+        "key": "page",
+        "title": {
+          "de": "Seite",
+          "en": "Page"
+        },
+        "width": 50
+      },
+      {
+        "key": "kind",
+        "title": {
+          "de": "Art / BMK",
+          "en": "Kind / tag"
+        },
+        "width": 80
+      },
+      {
+        "key": "designation",
+        "title": {
+          "de": "Bezeichnung",
+          "en": "Designation"
+        },
+        "width": 120
+      },
+      {
+        "key": "size",
+        "title": {
+          "de": "Maße",
+          "en": "Size"
+        },
+        "width": 90
+      },
+      {
+        "key": "quantity",
+        "title": {
+          "de": "Anzahl",
+          "en": "Qty"
+        },
+        "width": 40
+      }
+    ]
+  },
+  {
+    "id": "iec.form.revisions",
+    "name": {
+      "de": "Revisionsübersicht",
+      "en": "Revisions"
+    },
+    "kind": "revisions",
+    "frame": "iec.frame.a3.report",
+    "title": {
+      "de": "Revisionsübersicht",
+      "en": "Revisions"
+    },
+    "table": {
+      "x": 24,
+      "y": 28,
+      "headerHeight": 8,
+      "rowHeight": 6,
+      "rows": 36,
+      "textSize": 2.5
+    },
+    "columns": [
+      {
+        "key": "revision",
+        "title": {
+          "de": "Rev.",
+          "en": "Rev."
+        },
+        "width": 20
+      },
+      {
+        "key": "date",
+        "title": {
+          "de": "Datum",
+          "en": "Date"
+        },
+        "width": 30
+      },
+      {
+        "key": "author",
+        "title": {
+          "de": "Bearbeiter",
+          "en": "Author"
+        },
+        "width": 50
+      },
+      {
+        "key": "description",
+        "title": {
+          "de": "Beschreibung",
+          "en": "Description"
+        },
+        "width": 180
+      },
+      {
+        "key": "pages",
+        "title": {
+          "de": "Geänderte Seiten",
+          "en": "Changed pages"
+        },
+        "width": 100
+      }
+    ]
+  },
+  {
+    "id": "iec.form.structureOverview",
+    "name": {
+      "de": "Strukturübersicht",
+      "en": "Structure overview"
+    },
+    "kind": "structureOverview",
+    "frame": "iec.frame.a3.report",
+    "title": {
+      "de": "Strukturübersicht",
+      "en": "Structure overview"
+    },
+    "table": {
+      "x": 24,
+      "y": 28,
+      "headerHeight": 8,
+      "rowHeight": 6,
+      "rows": 36,
+      "textSize": 2.5
+    },
+    "columns": [
+      {
+        "key": "structure",
+        "title": {
+          "de": "Kennzeichen",
+          "en": "Identifier"
+        },
+        "width": 50
+      },
+      {
+        "key": "kind",
+        "title": {
+          "de": "Art",
+          "en": "Kind"
+        },
+        "width": 40
+      },
+      {
+        "key": "description",
+        "title": {
+          "de": "Beschreibung",
+          "en": "Description"
+        },
+        "width": 250
+      },
+      {
+        "key": "pages",
+        "title": {
+          "de": "Seiten",
+          "en": "Pages"
+        },
+        "width": 40
+      }
+    ]
+  },
+  {
+    "id": "iec.form.titlePage",
+    "name": {
+      "de": "Titelblatt",
+      "en": "Title page"
+    },
+    "kind": "titlePage",
+    "frame": "iec.frame.a3.report",
+    "title": {
+      "de": "Titelblatt",
+      "en": "Title page"
+    },
+    "table": {
+      "x": 95,
+      "y": 150,
+      "headerHeight": 8,
+      "rowHeight": 10,
+      "rows": 12,
+      "textSize": 4
+    },
+    "columns": [
+      {
+        "key": "label",
+        "title": {
+          "de": "Bezeichnung",
+          "en": "Label"
+        },
+        "width": 70
+      },
+      {
+        "key": "value",
+        "title": {
+          "de": "Wert",
+          "en": "Value"
+        },
+        "width": 160
+      }
+    ]
+  },
+  {
+    "id": "iec.form.terminalDiagram",
+    "name": {
+      "de": "Klemmenplan (grafisch)",
+      "en": "Terminal diagram"
+    },
+    "kind": "terminalDiagram",
+    "frame": "iec.frame.a3.report",
+    "title": {
+      "de": "Klemmenplan (grafisch)",
+      "en": "Terminal diagram"
+    },
+    "table": {
+      "x": 24,
+      "y": 28,
+      "headerHeight": 8,
+      "rowHeight": 6,
+      "rows": 36,
+      "textSize": 2.5
+    },
+    "columns": [
+      {
+        "key": "external",
+        "title": {
+          "de": "Ziel extern",
+          "en": "External target"
+        },
+        "width": 120
+      },
+      {
+        "key": "terminal",
+        "title": {
+          "de": "Klemme",
+          "en": "Terminal"
+        },
+        "width": 22
+      },
+      {
+        "key": "bridge",
+        "title": {
+          "de": "Brücke",
+          "en": "Bridge"
+        },
+        "width": 12
+      },
+      {
+        "key": "internal",
+        "title": {
+          "de": "Ziel intern",
+          "en": "Internal target"
+        },
+        "width": 120
+      },
+      {
+        "key": "page",
+        "title": {
+          "de": "Seite",
+          "en": "Page"
+        },
+        "width": 30
+      }
+    ]
+  },
+  {
+    "id": "iec.form.terminalList",
+    "name": {
+      "de": "Klemmenplan",
+      "en": "Terminal list"
+    },
+    "kind": "terminalList",
+    "frame": "iec.frame.a3.report",
+    "title": {
+      "de": "Klemmenplan",
+      "en": "Terminal list"
+    },
+    "table": {
+      "x": 24,
+      "y": 28,
+      "headerHeight": 8,
+      "rowHeight": 6,
+      "rows": 36,
+      "textSize": 2.5
+    },
+    "columns": [
+      {
+        "key": "strip",
+        "title": {
+          "de": "Klemmleiste",
+          "en": "Terminal strip"
+        },
+        "width": 60
+      },
+      {
+        "key": "terminal",
+        "title": {
+          "de": "Klemme",
+          "en": "Terminal"
+        },
+        "width": 40
+      },
+      {
+        "key": "external",
+        "title": {
+          "de": "Ziel extern",
+          "en": "External target"
+        },
+        "width": 100
+      },
+      {
+        "key": "internal",
+        "title": {
+          "de": "Ziel intern",
+          "en": "Internal target"
+        },
+        "width": 100
+      },
+      {
+        "key": "bridge",
+        "title": {
+          "de": "Brücke",
+          "en": "Bridge"
+        },
+        "width": 20
+      },
+      {
+        "key": "page",
+        "title": {
+          "de": "Seite",
+          "en": "Page"
+        },
+        "width": 40
+      }
+    ]
+  }
+]

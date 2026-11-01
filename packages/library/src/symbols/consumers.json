@@ -1,0 +1,949 @@
+[
+  {
+    "id": "iec60617.motor.3ph",
+    "name": {
+      "de": "Drehstrommotor",
+      "en": "Three-phase motor"
+    },
+    "category": "consumers",
+    "function": "motor",
+    "defaultRole": "main",
+    "letterCode": "M",
+    "graphics": [
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 6,
+        "r": 9
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": -8,
+        "x2": -8,
+        "y2": 1.88
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -3
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -8,
+        "x2": 8,
+        "y2": 1.88
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": -8,
+        "x2": 16,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": 6,
+        "x2": 9,
+        "y2": 6
+      },
+      {
+        "type": "text",
+        "x": 0,
+        "y": 6,
+        "text": "M",
+        "size": 4.5,
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "x": 0,
+        "y": 11,
+        "text": "3~",
+        "size": 3,
+        "align": "center"
+      }
+    ],
+    "connections": [
+      {
+        "id": "U",
+        "x": -8,
+        "y": -8,
+        "direction": "up",
+        "designation": "U"
+      },
+      {
+        "id": "V",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "V"
+      },
+      {
+        "id": "W",
+        "x": 8,
+        "y": -8,
+        "direction": "up",
+        "designation": "W"
+      },
+      {
+        "id": "PE",
+        "x": 16,
+        "y": -8,
+        "direction": "up",
+        "designation": "PE"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -11,
+        "y": 4,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -11,
+        "y": 8,
+        "align": "right"
+      },
+      {
+        "field": "pin:U",
+        "x": -7.5,
+        "y": -5
+      },
+      {
+        "field": "pin:V",
+        "x": 0.5,
+        "y": -5
+      },
+      {
+        "field": "pin:W",
+        "x": 8.5,
+        "y": -5
+      },
+      {
+        "field": "pin:PE",
+        "x": 16.5,
+        "y": -5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.lamp",
+    "name": {
+      "de": "Meldeleuchte",
+      "en": "Indicator lamp"
+    },
+    "category": "consumers",
+    "function": "lamp",
+    "defaultRole": "main",
+    "letterCode": "P",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -3
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 3
+      },
+      {
+        "type": "line",
+        "x1": -2.1,
+        "y1": -2.1,
+        "x2": 2.1,
+        "y2": 2.1
+      },
+      {
+        "type": "line",
+        "x1": -2.1,
+        "y1": 2.1,
+        "x2": 2.1,
+        "y2": -2.1
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 3,
+        "x2": 0,
+        "y2": 8
+      }
+    ],
+    "connections": [
+      {
+        "id": "X1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "X1"
+      },
+      {
+        "id": "X2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "X2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:X1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:X2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.psu.acdc",
+    "name": {
+      "de": "Netzteil AC/DC",
+      "en": "Power supply AC/DC"
+    },
+    "category": "power",
+    "function": "psu",
+    "defaultRole": "main",
+    "letterCode": "T",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -8,
+        "y": -8,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": 8,
+        "x2": 8,
+        "y2": -8
+      },
+      {
+        "type": "text",
+        "x": -4,
+        "y": -2,
+        "text": "AC",
+        "size": 2.5,
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "x": 4,
+        "y": 5,
+        "text": "DC",
+        "size": 2.5,
+        "align": "center"
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": -12,
+        "x2": -4,
+        "y2": -8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -12,
+        "x2": 0,
+        "y2": -8
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -12,
+        "x2": 4,
+        "y2": -8
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": 8,
+        "x2": -4,
+        "y2": 12
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 8,
+        "x2": 4,
+        "y2": 12
+      }
+    ],
+    "connections": [
+      {
+        "id": "L",
+        "x": -4,
+        "y": -12,
+        "direction": "up",
+        "designation": "L"
+      },
+      {
+        "id": "N",
+        "x": 0,
+        "y": -12,
+        "direction": "up",
+        "designation": "N"
+      },
+      {
+        "id": "PE",
+        "x": 4,
+        "y": -12,
+        "direction": "up",
+        "designation": "PE"
+      },
+      {
+        "id": "+",
+        "x": -4,
+        "y": 12,
+        "direction": "down",
+        "designation": "+"
+      },
+      {
+        "id": "-",
+        "x": 4,
+        "y": 12,
+        "direction": "down",
+        "designation": "-"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -10,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -10,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "pin:L",
+        "x": -4.5,
+        "y": -13,
+        "align": "right"
+      },
+      {
+        "field": "pin:N",
+        "x": 0.5,
+        "y": -13
+      },
+      {
+        "field": "pin:PE",
+        "x": 4.5,
+        "y": -13
+      },
+      {
+        "field": "pin:+",
+        "x": -4.5,
+        "y": 14,
+        "align": "right"
+      },
+      {
+        "field": "pin:-",
+        "x": 4.5,
+        "y": 14
+      }
+    ]
+  },
+  {
+    "id": "iec60617.terminal",
+    "name": {
+      "de": "Klemme",
+      "en": "Terminal"
+    },
+    "category": "terminals",
+    "function": "terminal",
+    "defaultRole": "auxiliary",
+    "letterCode": "X",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1.5
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.5,
+        "x2": 0,
+        "y2": 4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 4,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -3,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "terminal",
+        "x": 3,
+        "y": 1
+      }
+    ]
+  },
+  {
+    "id": "iec60617.terminal.3",
+    "name": {
+      "de": "Klemme mit 3 Anschlüssen",
+      "en": "Terminal with 3 connections"
+    },
+    "category": "terminals",
+    "function": "terminal",
+    "defaultRole": "auxiliary",
+    "letterCode": "X",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1.5
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.5,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 1.5,
+        "y1": 0,
+        "x2": 4,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 0,
+        "x2": 4,
+        "y2": 4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 4,
+        "direction": "down"
+      },
+      {
+        "id": "3",
+        "x": 4,
+        "y": 4,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2",
+        "3"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -3,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "terminal",
+        "x": 2,
+        "y": -1.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.transformer.1ph",
+    "name": {
+      "de": "Transformator 1-phasig",
+      "en": "Transformer, single-phase"
+    },
+    "category": "power",
+    "function": "transformer",
+    "defaultRole": "main",
+    "letterCode": "T",
+    "graphics": [
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": -3,
+        "r": 4
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 3,
+        "r": 4
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": -12,
+        "x2": -4,
+        "y2": -6
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -12,
+        "x2": 4,
+        "y2": -6
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": 12,
+        "x2": -4,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 12,
+        "x2": 4,
+        "y2": 6
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": -4,
+        "y": -12,
+        "direction": "up",
+        "designation": "1U1"
+      },
+      {
+        "id": "2",
+        "x": 4,
+        "y": -12,
+        "direction": "up",
+        "designation": "1U2"
+      },
+      {
+        "id": "3",
+        "x": -4,
+        "y": 12,
+        "direction": "down",
+        "designation": "2U1"
+      },
+      {
+        "id": "4",
+        "x": 4,
+        "y": 12,
+        "direction": "down",
+        "designation": "2U2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -8,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -8,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": -4.5,
+        "y": -13,
+        "align": "right"
+      },
+      {
+        "field": "pin:2",
+        "x": 4.5,
+        "y": -13
+      },
+      {
+        "field": "pin:3",
+        "x": -4.5,
+        "y": 14,
+        "align": "right"
+      },
+      {
+        "field": "pin:4",
+        "x": 4.5,
+        "y": 14
+      }
+    ]
+  },
+  {
+    "id": "iec60617.valve.coil",
+    "name": {
+      "de": "Magnetventil",
+      "en": "Solenoid valve coil"
+    },
+    "category": "consumers",
+    "function": "valve.coil",
+    "defaultRole": "main",
+    "letterCode": "M",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -3
+      },
+      {
+        "type": "rect",
+        "x": -4,
+        "y": -3,
+        "width": 8,
+        "height": 6
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": 3,
+        "x2": 4,
+        "y2": -3
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 3,
+        "x2": 0,
+        "y2": 8
+      }
+    ],
+    "connections": [
+      {
+        "id": "A1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "A1"
+      },
+      {
+        "id": "A2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "A2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:A1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:A2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.sensor.pnp",
+    "name": {
+      "de": "Näherungsschalter PNP",
+      "en": "Proximity sensor, PNP"
+    },
+    "category": "sensors",
+    "function": "sensor",
+    "defaultRole": "main",
+    "letterCode": "B",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -6,
+        "y": -4,
+        "width": 12,
+        "height": 8
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -3,
+            2
+          ],
+          [
+            0,
+            -2
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": -8,
+        "x2": -4,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -8,
+        "x2": 4,
+        "y2": -4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": -4,
+        "y": -8,
+        "direction": "up",
+        "designation": "BN"
+      },
+      {
+        "id": "4",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "BK"
+      },
+      {
+        "id": "3",
+        "x": 4,
+        "y": -8,
+        "direction": "up",
+        "designation": "BU"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -8,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -8,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": -4.5,
+        "y": -9,
+        "align": "right"
+      },
+      {
+        "field": "pin:4",
+        "x": 0.5,
+        "y": -9
+      },
+      {
+        "field": "pin:3",
+        "x": 4.5,
+        "y": -9
+      }
+    ]
+  },
+  {
+    "id": "iec60617.terminal.pe",
+    "name": {
+      "de": "Schutzleiterklemme",
+      "en": "Protective earth terminal"
+    },
+    "category": "terminals",
+    "function": "terminal",
+    "defaultRole": "auxiliary",
+    "letterCode": "X",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1.5
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.5,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 2,
+        "y1": -1.5,
+        "x2": 2,
+        "y2": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 3,
+        "y1": -1,
+        "x2": 3,
+        "y2": 1
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -0.5,
+        "x2": 4,
+        "y2": 0.5
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 4,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -3,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "terminal",
+        "x": 5,
+        "y": 1
+      }
+    ]
+  }
+]

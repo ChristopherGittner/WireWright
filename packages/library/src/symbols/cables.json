@@ -1,0 +1,18 @@
+[
+  {
+    "id": "wirewright.cable",
+    "name": {
+      "de": "Kabel",
+      "en": "Cable"
+    },
+    "category": "cables",
+    "function": "cable",
+    "defaultRole": "main",
+    "letterCode": "W",
+    "graphics": [],
+    "connections": [],
+    "links": [],
+    "texts": [],
+    "generator": "cable"
+  }
+]

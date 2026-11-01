@@ -1,0 +1,906 @@
+[
+  {
+    "id": "iec60617.fuse",
+    "name": {
+      "de": "Sicherung",
+      "en": "Fuse"
+    },
+    "category": "protection",
+    "function": "fuse",
+    "defaultRole": "main",
+    "letterCode": "F",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "rect",
+        "x": -2,
+        "y": -5,
+        "width": 4,
+        "height": 10
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.mcb.1p",
+    "name": {
+      "de": "Leitungsschutzschalter 1-polig",
+      "en": "Circuit breaker, 1-pole"
+    },
+    "category": "protection",
+    "function": "breaker",
+    "defaultRole": "main",
+    "letterCode": "F",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -1,
+        "y1": -5,
+        "x2": 1,
+        "y2": -3
+      },
+      {
+        "type": "line",
+        "x1": -1,
+        "y1": -3,
+        "x2": 1,
+        "y2": -5
+      },
+      {
+        "type": "rect",
+        "x": -6,
+        "y": -1,
+        "width": 3,
+        "height": 2
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.mcb.3p",
+    "name": {
+      "de": "Leitungsschutzschalter 3-polig",
+      "en": "Circuit breaker, 3-pole"
+    },
+    "category": "protection",
+    "function": "breaker",
+    "defaultRole": "main",
+    "letterCode": "F",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -1,
+        "y1": -5,
+        "x2": 1,
+        "y2": -3
+      },
+      {
+        "type": "line",
+        "x1": -1,
+        "y1": -3,
+        "x2": 1,
+        "y2": -5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -8,
+        "x2": 8,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 8,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 5,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 7,
+        "y1": -5,
+        "x2": 9,
+        "y2": -3
+      },
+      {
+        "type": "line",
+        "x1": 7,
+        "y1": -3,
+        "x2": 9,
+        "y2": -5
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": -8,
+        "x2": 16,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": 4,
+        "x2": 16,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": 4,
+        "x2": 13,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 15,
+        "y1": -5,
+        "x2": 17,
+        "y2": -3
+      },
+      {
+        "type": "line",
+        "x1": 15,
+        "y1": -3,
+        "x2": 17,
+        "y2": -5
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.5,
+            0
+          ],
+          [
+            14.5,
+            0
+          ]
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": -8,
+        "direction": "up",
+        "designation": "3"
+      },
+      {
+        "id": "4",
+        "x": 8,
+        "y": 8,
+        "direction": "down",
+        "designation": "4"
+      },
+      {
+        "id": "5",
+        "x": 16,
+        "y": -8,
+        "direction": "up",
+        "designation": "5"
+      },
+      {
+        "id": "6",
+        "x": 16,
+        "y": 8,
+        "direction": "down",
+        "designation": "6"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ],
+      [
+        "3",
+        "4"
+      ],
+      [
+        "5",
+        "6"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:3",
+        "x": 9.5,
+        "y": -5
+      },
+      {
+        "field": "pin:4",
+        "x": 9.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:5",
+        "x": 17.5,
+        "y": -5
+      },
+      {
+        "field": "pin:6",
+        "x": 17.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.motorprotection.3p",
+    "name": {
+      "de": "Motorschutzschalter 3-polig",
+      "en": "Motor protection switch, 3-pole"
+    },
+    "category": "protection",
+    "function": "breaker.motor",
+    "defaultRole": "main",
+    "letterCode": "Q",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -1,
+        "y1": -5,
+        "x2": 1,
+        "y2": -3
+      },
+      {
+        "type": "line",
+        "x1": -1,
+        "y1": -3,
+        "x2": 1,
+        "y2": -5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -8,
+        "x2": 8,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 8,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 5,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 7,
+        "y1": -5,
+        "x2": 9,
+        "y2": -3
+      },
+      {
+        "type": "line",
+        "x1": 7,
+        "y1": -3,
+        "x2": 9,
+        "y2": -5
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": -8,
+        "x2": 16,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": 4,
+        "x2": 16,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": 4,
+        "x2": 13,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 15,
+        "y1": -5,
+        "x2": 17,
+        "y2": -3
+      },
+      {
+        "type": "line",
+        "x1": 15,
+        "y1": -3,
+        "x2": 17,
+        "y2": -5
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.5,
+            0
+          ],
+          [
+            14.5,
+            0
+          ]
+        ]
+      },
+      {
+        "type": "rect",
+        "x": 19,
+        "y": -2,
+        "width": 4,
+        "height": 4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": -8,
+        "direction": "up",
+        "designation": "3"
+      },
+      {
+        "id": "4",
+        "x": 8,
+        "y": 8,
+        "direction": "down",
+        "designation": "4"
+      },
+      {
+        "id": "5",
+        "x": 16,
+        "y": -8,
+        "direction": "up",
+        "designation": "5"
+      },
+      {
+        "id": "6",
+        "x": 16,
+        "y": 8,
+        "direction": "down",
+        "designation": "6"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ],
+      [
+        "3",
+        "4"
+      ],
+      [
+        "5",
+        "6"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "contactImage",
+        "x": 19,
+        "y": 12
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:3",
+        "x": 9.5,
+        "y": -5
+      },
+      {
+        "field": "pin:4",
+        "x": 9.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:5",
+        "x": 17.5,
+        "y": -5
+      },
+      {
+        "field": "pin:6",
+        "x": 17.5,
+        "y": 6.5
+      }
+    ],
+    "hasContactImage": true
+  },
+  {
+    "id": "iec60617.overload.3p",
+    "name": {
+      "de": "Überlastrelais 3-polig",
+      "en": "Thermal overload relay, 3-pole"
+    },
+    "category": "protection",
+    "function": "overload",
+    "defaultRole": "main",
+    "letterCode": "F",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -3
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            0,
+            -3
+          ],
+          [
+            2,
+            -3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 3,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -8,
+        "x2": 8,
+        "y2": -3
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            8,
+            -3
+          ],
+          [
+            10,
+            -3
+          ],
+          [
+            10,
+            3
+          ],
+          [
+            8,
+            3
+          ]
+        ]
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 3,
+        "x2": 8,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": -8,
+        "x2": 16,
+        "y2": -3
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            16,
+            -3
+          ],
+          [
+            18,
+            -3
+          ],
+          [
+            18,
+            3
+          ],
+          [
+            16,
+            3
+          ]
+        ]
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": 3,
+        "x2": 16,
+        "y2": 8
+      },
+      {
+        "type": "rect",
+        "x": -2,
+        "y": -5,
+        "width": 22,
+        "height": 10
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": -8,
+        "direction": "up",
+        "designation": "3"
+      },
+      {
+        "id": "4",
+        "x": 8,
+        "y": 8,
+        "direction": "down",
+        "designation": "4"
+      },
+      {
+        "id": "5",
+        "x": 16,
+        "y": -8,
+        "direction": "up",
+        "designation": "5"
+      },
+      {
+        "id": "6",
+        "x": 16,
+        "y": 8,
+        "direction": "down",
+        "designation": "6"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ],
+      [
+        "3",
+        "4"
+      ],
+      [
+        "5",
+        "6"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "contactImage",
+        "x": 19,
+        "y": 12
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5.5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 7
+      },
+      {
+        "field": "pin:3",
+        "x": 9.5,
+        "y": -5.5
+      },
+      {
+        "field": "pin:4",
+        "x": 9.5,
+        "y": 7
+      },
+      {
+        "field": "pin:5",
+        "x": 17.5,
+        "y": -5.5
+      },
+      {
+        "field": "pin:6",
+        "x": 17.5,
+        "y": 7
+      }
+    ],
+    "hasContactImage": true
+  }
+]

@@ -1,0 +1,1211 @@
+[
+  {
+    "id": "iec60617.contact.no",
+    "name": {
+      "de": "Schließer",
+      "en": "Normally open contact"
+    },
+    "category": "contacts",
+    "function": "contact.no",
+    "defaultRole": "auxiliary",
+    "letterCode": "K",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "13"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "14"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ],
+    "contactImage": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 0,
+        "x2": 1.2,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 3.6,
+        "y1": 0,
+        "x2": 4.8,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 1.2,
+        "y1": 0,
+        "x2": 3.8,
+        "y2": -1
+      }
+    ]
+  },
+  {
+    "id": "iec60617.contact.nc",
+    "name": {
+      "de": "Öffner",
+      "en": "Normally closed contact"
+    },
+    "category": "contacts",
+    "function": "contact.nc",
+    "defaultRole": "auxiliary",
+    "letterCode": "K",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 3.5,
+        "y2": -5
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "21"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "22"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ],
+    "contactImage": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 0,
+        "x2": 1.2,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 3.6,
+        "y1": 0,
+        "x2": 4.8,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 1.2,
+        "y1": 0,
+        "x2": 3.8,
+        "y2": 1
+      },
+      {
+        "type": "line",
+        "x1": 3.6,
+        "y1": 0,
+        "x2": 3.6,
+        "y2": 1
+      }
+    ]
+  },
+  {
+    "id": "iec60617.contact.co",
+    "name": {
+      "de": "Wechsler",
+      "en": "Changeover contact"
+    },
+    "category": "contacts",
+    "function": "contact.co",
+    "defaultRole": "auxiliary",
+    "letterCode": "K",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 8,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": -8,
+        "x2": -4,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": -4,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -8,
+        "x2": 4,
+        "y2": -4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "11"
+      },
+      {
+        "id": "2",
+        "x": -4,
+        "y": -8,
+        "direction": "up",
+        "designation": "12"
+      },
+      {
+        "id": "3",
+        "x": 4,
+        "y": -8,
+        "direction": "up",
+        "designation": "14"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2",
+        "3"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:2",
+        "x": -3.5,
+        "y": -9,
+        "align": "right"
+      },
+      {
+        "field": "pin:3",
+        "x": 5.5,
+        "y": -9
+      }
+    ],
+    "contactImage": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 0,
+        "x2": 1.2,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 3.6,
+        "y1": 0,
+        "x2": 4.8,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 1.2,
+        "y1": 0,
+        "x2": 3.8,
+        "y2": -1
+      },
+      {
+        "type": "line",
+        "x1": 3.6,
+        "y1": 0.9,
+        "x2": 4.8,
+        "y2": 0.9
+      }
+    ]
+  },
+  {
+    "id": "iec60617.contactor.main3",
+    "name": {
+      "de": "Hauptkontakte 3-polig",
+      "en": "Main contacts, 3-pole"
+    },
+    "category": "contacts",
+    "function": "contactor.main",
+    "defaultRole": "auxiliary",
+    "letterCode": "Q",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -8,
+        "x2": 8,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 8,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 5,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": -8,
+        "x2": 16,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": 4,
+        "x2": 16,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": 4,
+        "x2": 13,
+        "y2": -4
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.5,
+            0
+          ],
+          [
+            14.5,
+            0
+          ]
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": -8,
+        "direction": "up",
+        "designation": "3"
+      },
+      {
+        "id": "4",
+        "x": 8,
+        "y": 8,
+        "direction": "down",
+        "designation": "4"
+      },
+      {
+        "id": "5",
+        "x": 16,
+        "y": -8,
+        "direction": "up",
+        "designation": "5"
+      },
+      {
+        "id": "6",
+        "x": 16,
+        "y": 8,
+        "direction": "down",
+        "designation": "6"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ],
+      [
+        "3",
+        "4"
+      ],
+      [
+        "5",
+        "6"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:3",
+        "x": 9.5,
+        "y": -5
+      },
+      {
+        "field": "pin:4",
+        "x": 9.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:5",
+        "x": 17.5,
+        "y": -5
+      },
+      {
+        "field": "pin:6",
+        "x": 17.5,
+        "y": 6.5
+      }
+    ],
+    "contactImage": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 0,
+        "x2": 1.2,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 3.6,
+        "y1": 0,
+        "x2": 4.8,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 1.2,
+        "y1": 0,
+        "x2": 3.8,
+        "y2": -1
+      }
+    ]
+  },
+  {
+    "id": "iec60617.pushbutton.no",
+    "name": {
+      "de": "Drucktaster Schließer",
+      "en": "Push button, normally open"
+    },
+    "category": "switches",
+    "function": "switch.pushbutton.no",
+    "defaultRole": "main",
+    "letterCode": "S",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -1.5,
+        "y1": 0,
+        "x2": -8,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": -2,
+        "x2": -8,
+        "y2": 2
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "13"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "14"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -12,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -12,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -12,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ],
+    "contactImage": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 0,
+        "x2": 1.2,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 3.6,
+        "y1": 0,
+        "x2": 4.8,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 1.2,
+        "y1": 0,
+        "x2": 3.8,
+        "y2": -1
+      }
+    ]
+  },
+  {
+    "id": "iec60617.pushbutton.nc",
+    "name": {
+      "de": "Drucktaster Öffner",
+      "en": "Push button, normally closed"
+    },
+    "category": "switches",
+    "function": "switch.pushbutton.nc",
+    "defaultRole": "main",
+    "letterCode": "S",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 3.5,
+        "y2": -5
+      },
+      {
+        "type": "line",
+        "x1": 1.75,
+        "y1": 0.5,
+        "x2": -8,
+        "y2": 0.5
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": -1.5,
+        "x2": -8,
+        "y2": 2.5
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "11"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "12"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -12,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -12,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -12,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ],
+    "contactImage": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 0,
+        "x2": 1.2,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 3.6,
+        "y1": 0,
+        "x2": 4.8,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 1.2,
+        "y1": 0,
+        "x2": 3.8,
+        "y2": 1
+      },
+      {
+        "type": "line",
+        "x1": 3.6,
+        "y1": 0,
+        "x2": 3.6,
+        "y2": 1
+      }
+    ]
+  },
+  {
+    "id": "iec60617.switch.selector",
+    "name": {
+      "de": "Wahlschalter",
+      "en": "Selector switch"
+    },
+    "category": "switches",
+    "function": "switch.selector",
+    "defaultRole": "main",
+    "letterCode": "S",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -1.5,
+        "y1": 0,
+        "x2": -6,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -6,
+        "y1": 0,
+        "x2": -8,
+        "y2": -2
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": -2,
+        "x2": -10,
+        "y2": 0
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "13"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "14"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -12,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -12,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -12,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.estop",
+    "name": {
+      "de": "Not-Halt",
+      "en": "Emergency stop"
+    },
+    "category": "switches",
+    "function": "switch.estop",
+    "defaultRole": "main",
+    "letterCode": "S",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 3.5,
+        "y2": -5
+      },
+      {
+        "type": "line",
+        "x1": 1.75,
+        "y1": 0.5,
+        "x2": -6,
+        "y2": 0.5
+      },
+      {
+        "type": "arc",
+        "cx": -8,
+        "cy": 0.5,
+        "r": 2.5,
+        "start": 90,
+        "end": 270
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": -2,
+        "x2": -8,
+        "y2": 3
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "11"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "12"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -12,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -12,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -12,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.overload.nc",
+    "name": {
+      "de": "Überlast-Hilfskontakt",
+      "en": "Overload auxiliary contact"
+    },
+    "category": "contacts",
+    "function": "contact.nc",
+    "defaultRole": "auxiliary",
+    "letterCode": "F",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 3.5,
+        "y2": -5
+      },
+      {
+        "type": "rect",
+        "x": -9,
+        "y": -1,
+        "width": 4,
+        "height": 2
+      },
+      {
+        "type": "line",
+        "x1": -5,
+        "y1": 0.5,
+        "x2": 1.75,
+        "y2": 0.5
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "95"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "96"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ],
+    "contactImage": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 0,
+        "x2": 1.2,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 3.6,
+        "y1": 0,
+        "x2": 4.8,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 1.2,
+        "y1": 0,
+        "x2": 3.8,
+        "y2": 1
+      },
+      {
+        "type": "line",
+        "x1": 3.6,
+        "y1": 0,
+        "x2": 3.6,
+        "y2": 1
+      }
+    ]
+  }
+]

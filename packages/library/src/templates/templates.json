@@ -1,0 +1,209 @@
+[
+  {
+    "id": "relay.1co",
+    "name": {
+      "de": "Relais 1 Wechsler",
+      "en": "Relay, 1 changeover"
+    },
+    "symbol": "iec60617.relay.coil",
+    "contacts": [
+      {
+        "function": "contact.co",
+        "pins": [
+          "11",
+          "12",
+          "14"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "relay.2co",
+    "name": {
+      "de": "Relais 2 Wechsler",
+      "en": "Relay, 2 changeover"
+    },
+    "symbol": "iec60617.relay.coil",
+    "contacts": [
+      {
+        "function": "contact.co",
+        "pins": [
+          "11",
+          "12",
+          "14"
+        ]
+      },
+      {
+        "function": "contact.co",
+        "pins": [
+          "21",
+          "22",
+          "24"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "relay.3co",
+    "name": {
+      "de": "Relais 3 Wechsler",
+      "en": "Relay, 3 changeover"
+    },
+    "symbol": "iec60617.relay.coil",
+    "contacts": [
+      {
+        "function": "contact.co",
+        "pins": [
+          "11",
+          "12",
+          "14"
+        ]
+      },
+      {
+        "function": "contact.co",
+        "pins": [
+          "21",
+          "22",
+          "24"
+        ]
+      },
+      {
+        "function": "contact.co",
+        "pins": [
+          "31",
+          "32",
+          "34"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "relay.4co",
+    "name": {
+      "de": "Relais 4 Wechsler",
+      "en": "Relay, 4 changeover"
+    },
+    "symbol": "iec60617.relay.coil",
+    "contacts": [
+      {
+        "function": "contact.co",
+        "pins": [
+          "11",
+          "12",
+          "14"
+        ]
+      },
+      {
+        "function": "contact.co",
+        "pins": [
+          "21",
+          "22",
+          "24"
+        ]
+      },
+      {
+        "function": "contact.co",
+        "pins": [
+          "31",
+          "32",
+          "34"
+        ]
+      },
+      {
+        "function": "contact.co",
+        "pins": [
+          "41",
+          "42",
+          "44"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "contactor.3p.1no",
+    "name": {
+      "de": "Schütz 3-polig + 1 Schließer",
+      "en": "Contactor 3-pole + 1 NO"
+    },
+    "symbol": "iec60617.contactor.coil",
+    "contacts": [
+      {
+        "function": "contactor.main",
+        "pins": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      {
+        "function": "contact.no",
+        "pins": [
+          "13",
+          "14"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "contactor.3p.1no1nc",
+    "name": {
+      "de": "Schütz 3-polig + 1 Schließer + 1 Öffner",
+      "en": "Contactor 3-pole + 1 NO + 1 NC"
+    },
+    "symbol": "iec60617.contactor.coil",
+    "contacts": [
+      {
+        "function": "contactor.main",
+        "pins": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      {
+        "function": "contact.no",
+        "pins": [
+          "13",
+          "14"
+        ]
+      },
+      {
+        "function": "contact.nc",
+        "pins": [
+          "21",
+          "22"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "motorprotection.1no1nc",
+    "name": {
+      "de": "Motorschutzschalter mit 1 Schließer + 1 Öffner",
+      "en": "Motor protection switch with 1 NO + 1 NC"
+    },
+    "symbol": "iec60617.motorprotection.3p",
+    "contacts": [
+      {
+        "function": "contact.no",
+        "pins": [
+          "13",
+          "14"
+        ]
+      },
+      {
+        "function": "contact.nc",
+        "pins": [
+          "21",
+          "22"
+        ]
+      }
+    ]
+  }
+]

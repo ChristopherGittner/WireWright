@@ -1,0 +1,6860 @@
+[
+  {
+    "id": "wirewright.macro.terminals.1",
+    "name": {
+      "de": "1 Klemme",
+      "en": "1 terminal"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.2",
+    "name": {
+      "de": "2 Klemmen, gebrückt",
+      "en": "2 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.3",
+    "name": {
+      "de": "3 Klemmen, gebrückt",
+      "en": "3 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.4",
+    "name": {
+      "de": "4 Klemmen, gebrückt",
+      "en": "4 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.5",
+    "name": {
+      "de": "5 Klemmen, gebrückt",
+      "en": "5 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.6",
+    "name": {
+      "de": "6 Klemmen, gebrückt",
+      "en": "6 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.7",
+    "name": {
+      "de": "7 Klemmen, gebrückt",
+      "en": "7 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.8",
+    "name": {
+      "de": "8 Klemmen, gebrückt",
+      "en": "8 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.9",
+    "name": {
+      "de": "9 Klemmen, gebrückt",
+      "en": "9 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.10",
+    "name": {
+      "de": "10 Klemmen, gebrückt",
+      "en": "10 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.11",
+    "name": {
+      "de": "11 Klemmen, gebrückt",
+      "en": "11 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.12",
+    "name": {
+      "de": "12 Klemmen, gebrückt",
+      "en": "12 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.13",
+    "name": {
+      "de": "13 Klemmen, gebrückt",
+      "en": "13 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t13",
+        "symbol": "iec60617.terminal",
+        "x": 96,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "13",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.14",
+    "name": {
+      "de": "14 Klemmen, gebrückt",
+      "en": "14 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t13",
+        "symbol": "iec60617.terminal",
+        "x": 96,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "13",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t14",
+        "symbol": "iec60617.terminal",
+        "x": 104,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "14",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.15",
+    "name": {
+      "de": "15 Klemmen, gebrückt",
+      "en": "15 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t13",
+        "symbol": "iec60617.terminal",
+        "x": 96,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "13",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t14",
+        "symbol": "iec60617.terminal",
+        "x": 104,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "14",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t15",
+        "symbol": "iec60617.terminal",
+        "x": 112,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "15",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.16",
+    "name": {
+      "de": "16 Klemmen, gebrückt",
+      "en": "16 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t13",
+        "symbol": "iec60617.terminal",
+        "x": 96,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "13",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t14",
+        "symbol": "iec60617.terminal",
+        "x": 104,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "14",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t15",
+        "symbol": "iec60617.terminal",
+        "x": 112,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "15",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t16",
+        "symbol": "iec60617.terminal",
+        "x": 120,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "16",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.17",
+    "name": {
+      "de": "17 Klemmen, gebrückt",
+      "en": "17 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t13",
+        "symbol": "iec60617.terminal",
+        "x": 96,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "13",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t14",
+        "symbol": "iec60617.terminal",
+        "x": 104,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "14",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t15",
+        "symbol": "iec60617.terminal",
+        "x": 112,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "15",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t16",
+        "symbol": "iec60617.terminal",
+        "x": 120,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "16",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t17",
+        "symbol": "iec60617.terminal",
+        "x": 128,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "17",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.18",
+    "name": {
+      "de": "18 Klemmen, gebrückt",
+      "en": "18 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t13",
+        "symbol": "iec60617.terminal",
+        "x": 96,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "13",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t14",
+        "symbol": "iec60617.terminal",
+        "x": 104,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "14",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t15",
+        "symbol": "iec60617.terminal",
+        "x": 112,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "15",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t16",
+        "symbol": "iec60617.terminal",
+        "x": 120,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "16",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t17",
+        "symbol": "iec60617.terminal",
+        "x": 128,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "17",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t18",
+        "symbol": "iec60617.terminal",
+        "x": 136,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "18",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.19",
+    "name": {
+      "de": "19 Klemmen, gebrückt",
+      "en": "19 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t13",
+        "symbol": "iec60617.terminal",
+        "x": 96,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "13",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t14",
+        "symbol": "iec60617.terminal",
+        "x": 104,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "14",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t15",
+        "symbol": "iec60617.terminal",
+        "x": 112,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "15",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t16",
+        "symbol": "iec60617.terminal",
+        "x": 120,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "16",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t17",
+        "symbol": "iec60617.terminal",
+        "x": 128,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "17",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t18",
+        "symbol": "iec60617.terminal",
+        "x": 136,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "18",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t19",
+        "symbol": "iec60617.terminal",
+        "x": 144,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "19",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals.20",
+    "name": {
+      "de": "20 Klemmen, gebrückt",
+      "en": "20 terminals, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t13",
+        "symbol": "iec60617.terminal",
+        "x": 96,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "13",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t14",
+        "symbol": "iec60617.terminal",
+        "x": 104,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "14",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t15",
+        "symbol": "iec60617.terminal",
+        "x": 112,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "15",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t16",
+        "symbol": "iec60617.terminal",
+        "x": 120,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "16",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t17",
+        "symbol": "iec60617.terminal",
+        "x": 128,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "17",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t18",
+        "symbol": "iec60617.terminal",
+        "x": 136,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "18",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t19",
+        "symbol": "iec60617.terminal",
+        "x": 144,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "19",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t20",
+        "symbol": "iec60617.terminal",
+        "x": 152,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "20",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.1",
+    "name": {
+      "de": "1 Klemme mit 3 Anschlüssen",
+      "en": "1 terminal with 3 connections"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.2",
+    "name": {
+      "de": "2 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "2 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.3",
+    "name": {
+      "de": "3 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "3 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.4",
+    "name": {
+      "de": "4 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "4 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal.3",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.5",
+    "name": {
+      "de": "5 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "5 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal.3",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal.3",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.6",
+    "name": {
+      "de": "6 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "6 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal.3",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal.3",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal.3",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.7",
+    "name": {
+      "de": "7 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "7 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal.3",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal.3",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal.3",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal.3",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.8",
+    "name": {
+      "de": "8 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "8 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal.3",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal.3",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal.3",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal.3",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal.3",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.9",
+    "name": {
+      "de": "9 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "9 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal.3",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal.3",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal.3",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal.3",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal.3",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal.3",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.10",
+    "name": {
+      "de": "10 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "10 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal.3",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal.3",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal.3",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal.3",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal.3",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal.3",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal.3",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.11",
+    "name": {
+      "de": "11 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "11 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal.3",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal.3",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal.3",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal.3",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal.3",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal.3",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal.3",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal.3",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.12",
+    "name": {
+      "de": "12 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "12 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal.3",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal.3",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal.3",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal.3",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal.3",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal.3",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal.3",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal.3",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal.3",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.13",
+    "name": {
+      "de": "13 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "13 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal.3",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal.3",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal.3",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal.3",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal.3",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal.3",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal.3",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal.3",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal.3",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t13",
+        "symbol": "iec60617.terminal.3",
+        "x": 96,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "13",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.14",
+    "name": {
+      "de": "14 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "14 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal.3",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal.3",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal.3",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal.3",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal.3",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal.3",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal.3",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal.3",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal.3",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t13",
+        "symbol": "iec60617.terminal.3",
+        "x": 96,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "13",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t14",
+        "symbol": "iec60617.terminal.3",
+        "x": 104,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "14",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.15",
+    "name": {
+      "de": "15 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "15 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal.3",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal.3",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal.3",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal.3",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal.3",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal.3",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal.3",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal.3",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal.3",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t13",
+        "symbol": "iec60617.terminal.3",
+        "x": 96,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "13",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t14",
+        "symbol": "iec60617.terminal.3",
+        "x": 104,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "14",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t15",
+        "symbol": "iec60617.terminal.3",
+        "x": 112,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "15",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.16",
+    "name": {
+      "de": "16 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "16 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal.3",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal.3",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal.3",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal.3",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal.3",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal.3",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal.3",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal.3",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal.3",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t13",
+        "symbol": "iec60617.terminal.3",
+        "x": 96,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "13",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t14",
+        "symbol": "iec60617.terminal.3",
+        "x": 104,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "14",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t15",
+        "symbol": "iec60617.terminal.3",
+        "x": 112,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "15",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t16",
+        "symbol": "iec60617.terminal.3",
+        "x": 120,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "16",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.17",
+    "name": {
+      "de": "17 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "17 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal.3",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal.3",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal.3",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal.3",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal.3",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal.3",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal.3",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal.3",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal.3",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t13",
+        "symbol": "iec60617.terminal.3",
+        "x": 96,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "13",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t14",
+        "symbol": "iec60617.terminal.3",
+        "x": 104,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "14",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t15",
+        "symbol": "iec60617.terminal.3",
+        "x": 112,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "15",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t16",
+        "symbol": "iec60617.terminal.3",
+        "x": 120,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "16",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t17",
+        "symbol": "iec60617.terminal.3",
+        "x": 128,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "17",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.18",
+    "name": {
+      "de": "18 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "18 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal.3",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal.3",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal.3",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal.3",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal.3",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal.3",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal.3",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal.3",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal.3",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t13",
+        "symbol": "iec60617.terminal.3",
+        "x": 96,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "13",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t14",
+        "symbol": "iec60617.terminal.3",
+        "x": 104,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "14",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t15",
+        "symbol": "iec60617.terminal.3",
+        "x": 112,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "15",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t16",
+        "symbol": "iec60617.terminal.3",
+        "x": 120,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "16",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t17",
+        "symbol": "iec60617.terminal.3",
+        "x": 128,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "17",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t18",
+        "symbol": "iec60617.terminal.3",
+        "x": 136,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "18",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.19",
+    "name": {
+      "de": "19 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "19 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal.3",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal.3",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal.3",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal.3",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal.3",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal.3",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal.3",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal.3",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal.3",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t13",
+        "symbol": "iec60617.terminal.3",
+        "x": 96,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "13",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t14",
+        "symbol": "iec60617.terminal.3",
+        "x": 104,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "14",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t15",
+        "symbol": "iec60617.terminal.3",
+        "x": 112,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "15",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t16",
+        "symbol": "iec60617.terminal.3",
+        "x": 120,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "16",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t17",
+        "symbol": "iec60617.terminal.3",
+        "x": 128,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "17",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t18",
+        "symbol": "iec60617.terminal.3",
+        "x": 136,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "18",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t19",
+        "symbol": "iec60617.terminal.3",
+        "x": 144,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "19",
+          "bridge": "A"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.terminals3.20",
+    "name": {
+      "de": "20 Klemmen mit 3 Anschlüssen, gebrückt",
+      "en": "20 terminals with 3 connections, bridged"
+    },
+    "description": {
+      "de": "Klemmen nebeneinander, durchnummeriert und gebrückt (gleiches Potenzial, z. B. 24V-Verteilung). Auf einer bestehenden Klemmleiste wird weiternummeriert.",
+      "en": "Terminals side by side, numbered and bridged (one potential, e.g. a 24V distribution). On an existing strip the numbering continues."
+    },
+    "category": "terminals3",
+    "items": [
+      {
+        "id": "i_t1",
+        "symbol": "iec60617.terminal.3",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "1",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t2",
+        "symbol": "iec60617.terminal.3",
+        "x": 8,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "2",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t3",
+        "symbol": "iec60617.terminal.3",
+        "x": 16,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "3",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t4",
+        "symbol": "iec60617.terminal.3",
+        "x": 24,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "4",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t5",
+        "symbol": "iec60617.terminal.3",
+        "x": 32,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "5",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t6",
+        "symbol": "iec60617.terminal.3",
+        "x": 40,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "6",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t7",
+        "symbol": "iec60617.terminal.3",
+        "x": 48,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "7",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t8",
+        "symbol": "iec60617.terminal.3",
+        "x": 56,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "8",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t9",
+        "symbol": "iec60617.terminal.3",
+        "x": 64,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "9",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t10",
+        "symbol": "iec60617.terminal.3",
+        "x": 72,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "10",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t11",
+        "symbol": "iec60617.terminal.3",
+        "x": 80,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "11",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t12",
+        "symbol": "iec60617.terminal.3",
+        "x": 88,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "12",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t13",
+        "symbol": "iec60617.terminal.3",
+        "x": 96,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "13",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t14",
+        "symbol": "iec60617.terminal.3",
+        "x": 104,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "14",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t15",
+        "symbol": "iec60617.terminal.3",
+        "x": 112,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "15",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t16",
+        "symbol": "iec60617.terminal.3",
+        "x": 120,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "16",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t17",
+        "symbol": "iec60617.terminal.3",
+        "x": 128,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "17",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t18",
+        "symbol": "iec60617.terminal.3",
+        "x": 136,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "18",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t19",
+        "symbol": "iec60617.terminal.3",
+        "x": 144,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "19",
+          "bridge": "A"
+        }
+      },
+      {
+        "id": "i_t20",
+        "symbol": "iec60617.terminal.3",
+        "x": 152,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "X1"
+        },
+        "props": {
+          "terminal": "20",
+          "bridge": "A"
+        }
+      }
+    ]
+  }
+]

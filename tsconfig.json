@@ -1,0 +1,23 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "packages/core"
+    },
+    {
+      "path": "packages/library"
+    },
+    {
+      "path": "packages/render"
+    },
+    {
+      "path": "packages/pdf"
+    },
+    {
+      "path": "packages/mcp-server"
+    },
+    {
+      "path": "apps/desktop"
+    }
+  ]
+}

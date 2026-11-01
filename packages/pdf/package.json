@@ -1,0 +1,24 @@
+{
+  "name": "@wirewright/pdf",
+  "version": "0.1.0",
+  "description": "PDF export of Wirewright projects with clickable cross-references",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "dependencies": {
+    "@wirewright/core": "workspace:*",
+    "@wirewright/render": "workspace:*",
+    "pdfkit": "^0.20.2"
+  },
+  "devDependencies": {
+    "@wirewright/library": "workspace:*",
+    "@types/pdfkit": "^0.17.7"
+  }
+}

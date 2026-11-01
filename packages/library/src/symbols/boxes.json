@@ -1,0 +1,62 @@
+[
+  {
+    "id": "wirewright.box.structure",
+    "name": {
+      "de": "Strukturkasten",
+      "en": "Structure box"
+    },
+    "category": "boxes",
+    "function": "box.structure",
+    "defaultRole": "none",
+    "resizable": true,
+    "graphics": [],
+    "connections": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": 1,
+        "y": 3
+      }
+    ]
+  },
+  {
+    "id": "wirewright.box.device",
+    "name": {
+      "de": "Gerätebox",
+      "en": "Device box"
+    },
+    "category": "boxes",
+    "function": "box.device",
+    "defaultRole": "main",
+    "letterCode": "A",
+    "resizable": true,
+    "graphics": [],
+    "connections": [],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": 1,
+        "y": 3
+      },
+      {
+        "field": "functionText",
+        "x": 1,
+        "y": 7
+      }
+    ]
+  },
+  {
+    "id": "wirewright.text",
+    "name": {
+      "de": "Text",
+      "en": "Text"
+    },
+    "category": "texts",
+    "function": "text",
+    "defaultRole": "none",
+    "graphics": [],
+    "connections": [],
+    "texts": []
+  }
+]

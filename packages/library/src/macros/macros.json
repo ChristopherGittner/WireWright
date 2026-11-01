@@ -1,0 +1,221 @@
+[
+  {
+    "id": "wirewright.macro.selfholding",
+    "category": "control",
+    "name": {
+      "de": "Ein/Aus mit Selbsthaltung",
+      "en": "Start/stop with self-holding contact"
+    },
+    "description": {
+      "de": "Aus-Taster, Ein-Taster, Selbsthaltekontakt und Schützspule zwischen 24V und 0V",
+      "en": "Stop button, start button, self-holding contact and contactor coil between 24V and 0V"
+    },
+    "items": [
+      {
+        "id": "i_m1",
+        "symbol": "iec60617.contactor.coil",
+        "x": 0,
+        "y": 112,
+        "rotation": 0,
+        "mirror": false,
+        "props": {
+          "contacts": [
+            {
+              "function": "contactor.main",
+              "pins": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+              ]
+            },
+            {
+              "function": "contact.no",
+              "pins": [
+                "13",
+                "14"
+              ]
+            },
+            {
+              "function": "contact.nc",
+              "pins": [
+                "21",
+                "22"
+              ]
+            }
+          ]
+        },
+        "tag": {
+          "product": "3Q2"
+        }
+      },
+      {
+        "id": "i_m2",
+        "symbol": "wirewright.connection.potential",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "props": {
+          "name": "24V"
+        }
+      },
+      {
+        "id": "i_m3",
+        "symbol": "iec60617.pushbutton.nc",
+        "x": 0,
+        "y": 48,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "3S2.1"
+        }
+      },
+      {
+        "id": "i_m4",
+        "symbol": "wirewright.connection.tee.up-right-down",
+        "x": 0,
+        "y": 60,
+        "rotation": 0,
+        "mirror": false
+      },
+      {
+        "id": "i_m5",
+        "symbol": "wirewright.connection.corner.down-left",
+        "x": 20,
+        "y": 60,
+        "rotation": 0,
+        "mirror": false
+      },
+      {
+        "id": "i_m6",
+        "symbol": "iec60617.pushbutton.no",
+        "x": 0,
+        "y": 72,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "3S2.2"
+        }
+      },
+      {
+        "id": "i_m7",
+        "symbol": "iec60617.contact.no",
+        "x": 20,
+        "y": 72,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "3Q2"
+        }
+      },
+      {
+        "id": "i_m8",
+        "symbol": "wirewright.connection.tee.up-right-down",
+        "x": 0,
+        "y": 92,
+        "rotation": 0,
+        "mirror": false
+      },
+      {
+        "id": "i_m9",
+        "symbol": "wirewright.connection.corner.left-up",
+        "x": 20,
+        "y": 92,
+        "rotation": 0,
+        "mirror": false
+      },
+      {
+        "id": "i_m10",
+        "symbol": "wirewright.connection.potential",
+        "x": 0,
+        "y": 136,
+        "rotation": 180,
+        "mirror": false,
+        "props": {
+          "name": "0V"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wirewright.macro.selectorrelay",
+    "category": "control",
+    "name": {
+      "de": "Relais über Wahlschalter",
+      "en": "Relay switched by a selector switch"
+    },
+    "description": {
+      "de": "Wahlschalter und Relais mit 2 Wechslern zwischen 24V und 0V",
+      "en": "Selector switch and relay with 2 changeover contacts between 24V and 0V"
+    },
+    "items": [
+      {
+        "id": "i_m1",
+        "symbol": "wirewright.connection.potential",
+        "x": 0,
+        "y": 0,
+        "rotation": 0,
+        "mirror": false,
+        "props": {
+          "name": "24V"
+        }
+      },
+      {
+        "id": "i_m2",
+        "symbol": "iec60617.switch.selector",
+        "x": 0,
+        "y": 24,
+        "rotation": 0,
+        "mirror": false,
+        "tag": {
+          "product": "3S7"
+        }
+      },
+      {
+        "id": "i_m3",
+        "symbol": "iec60617.relay.coil",
+        "x": 0,
+        "y": 48,
+        "rotation": 0,
+        "mirror": false,
+        "props": {
+          "contacts": [
+            {
+              "function": "contact.co",
+              "pins": [
+                "11",
+                "12",
+                "14"
+              ]
+            },
+            {
+              "function": "contact.co",
+              "pins": [
+                "21",
+                "22",
+                "24"
+              ]
+            }
+          ]
+        },
+        "tag": {
+          "product": "3K7"
+        }
+      },
+      {
+        "id": "i_m4",
+        "symbol": "wirewright.connection.potential",
+        "x": 0,
+        "y": 72,
+        "rotation": 180,
+        "mirror": false,
+        "props": {
+          "name": "0V"
+        }
+      }
+    ]
+  }
+]

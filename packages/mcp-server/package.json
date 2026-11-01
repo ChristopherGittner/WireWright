@@ -1,0 +1,28 @@
+{
+  "name": "@wirewright/mcp-server",
+  "version": "0.1.0",
+  "description": "MCP server that lets AI assistants read and edit Wirewright projects",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "bin": {
+    "wirewright-mcp": "./dist/main.js"
+  },
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@wirewright/core": "workspace:*",
+    "@wirewright/library": "workspace:*",
+    "@wirewright/render": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@resvg/resvg-js": "^2.6.2",
+    "zod": "^4.6.7"
+  }
+}

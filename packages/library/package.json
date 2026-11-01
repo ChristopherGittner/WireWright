@@ -1,0 +1,23 @@
+{
+  "name": "@wirewright/library",
+  "version": "0.1.0",
+  "description": "Wirewright standard library: IEC 60617 symbols, frames and device templates",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@wirewright/core": "workspace:*"
+  },
+  "devDependencies": {
+    "fflate": "^0.8.2"
+  }
+}

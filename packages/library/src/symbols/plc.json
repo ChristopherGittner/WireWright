@@ -1,0 +1,2034 @@
+[
+  {
+    "id": "wirewright.plc.card",
+    "name": {
+      "de": "SPS-Karte",
+      "en": "PLC I/O card"
+    },
+    "category": "plc",
+    "function": "plc.card",
+    "defaultRole": "main",
+    "letterCode": "A",
+    "graphics": [],
+    "connections": [],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": 2,
+        "y": 5.5
+      },
+      {
+        "field": "functionText",
+        "x": 22,
+        "y": 5.5
+      },
+      {
+        "field": "xref",
+        "x": 74,
+        "y": 5.5
+      }
+    ],
+    "generator": "plcCard"
+  },
+  {
+    "id": "wirewright.plc.di",
+    "name": {
+      "de": "SPS-Eingang",
+      "en": "PLC digital input"
+    },
+    "category": "plc",
+    "function": "plc.di",
+    "defaultRole": "auxiliary",
+    "letterCode": "A",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -20,
+        "y": -4,
+        "width": 40,
+        "height": 24
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 0,
+        "x2": 20,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 4,
+        "x2": 20,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 8,
+        "x2": 20,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -21,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": 0,
+        "y": -1.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcChannel",
+        "x": 0,
+        "y": 2.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcAddress",
+        "x": 0,
+        "y": 6.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "functionText",
+        "x": 0,
+        "y": 11.2,
+        "align": "center",
+        "size": 2.5
+      },
+      {
+        "field": "pin:1",
+        "x": 0.8,
+        "y": -5.3
+      }
+    ]
+  },
+  {
+    "id": "wirewright.plc.do",
+    "name": {
+      "de": "SPS-Ausgang",
+      "en": "PLC digital output"
+    },
+    "category": "plc",
+    "function": "plc.do",
+    "defaultRole": "auxiliary",
+    "letterCode": "A",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -20,
+        "y": -20,
+        "width": 40,
+        "height": 24
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": -8,
+        "x2": 20,
+        "y2": -8
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": -4,
+        "x2": 20,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 0,
+        "x2": 20,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 8,
+        "x2": 0,
+        "y2": 4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": 8,
+        "direction": "down"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -21,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": 0,
+        "y": -16.8,
+        "align": "center",
+        "size": 2.5
+      },
+      {
+        "field": "plcAddress",
+        "x": 0,
+        "y": -5.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcChannel",
+        "x": 0,
+        "y": -1.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "xref",
+        "x": 0,
+        "y": 2.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "pin:1",
+        "x": 0.8,
+        "y": 6.7
+      }
+    ]
+  },
+  {
+    "id": "wirewright.plc.ai",
+    "name": {
+      "de": "SPS-Analogeingang",
+      "en": "PLC analog input"
+    },
+    "category": "plc",
+    "function": "plc.ai",
+    "defaultRole": "auxiliary",
+    "letterCode": "A",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -20,
+        "y": -4,
+        "width": 40,
+        "height": 24
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 0,
+        "x2": 20,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 4,
+        "x2": 20,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 8,
+        "x2": 20,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -21,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": 0,
+        "y": -1.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcChannel",
+        "x": 0,
+        "y": 2.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcAddress",
+        "x": 0,
+        "y": 6.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "functionText",
+        "x": 0,
+        "y": 11.2,
+        "align": "center",
+        "size": 2.5
+      },
+      {
+        "field": "pin:1",
+        "x": 0.8,
+        "y": -5.3
+      }
+    ]
+  },
+  {
+    "id": "wirewright.plc.ao",
+    "name": {
+      "de": "SPS-Analogausgang",
+      "en": "PLC analog output"
+    },
+    "category": "plc",
+    "function": "plc.ao",
+    "defaultRole": "auxiliary",
+    "letterCode": "A",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -20,
+        "y": -20,
+        "width": 40,
+        "height": 24
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": -8,
+        "x2": 20,
+        "y2": -8
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": -4,
+        "x2": 20,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 0,
+        "x2": 20,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 8,
+        "x2": 0,
+        "y2": 4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": 8,
+        "direction": "down"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -21,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": 0,
+        "y": -16.8,
+        "align": "center",
+        "size": 2.5
+      },
+      {
+        "field": "plcAddress",
+        "x": 0,
+        "y": -5.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcChannel",
+        "x": 0,
+        "y": -1.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "xref",
+        "x": 0,
+        "y": 2.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "pin:1",
+        "x": 0.8,
+        "y": 6.7
+      }
+    ]
+  },
+  {
+    "id": "wirewright.plc.di.2",
+    "name": {
+      "de": "SPS-Eingang (2 Anschlüsse)",
+      "en": "PLC digital input (2 connections)"
+    },
+    "category": "plc",
+    "function": "plc.di",
+    "defaultRole": "auxiliary",
+    "letterCode": "A",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -20,
+        "y": -4,
+        "width": 40,
+        "height": 24
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 0,
+        "x2": 20,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 4,
+        "x2": 20,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 8,
+        "x2": 20,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": -8,
+        "x2": -8,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -8,
+        "x2": 8,
+        "y2": -4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": -8,
+        "y": -8,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 8,
+        "y": -8,
+        "direction": "up"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -21,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": 0,
+        "y": -1.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcChannel",
+        "x": 0,
+        "y": 2.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcAddress",
+        "x": 0,
+        "y": 6.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "functionText",
+        "x": 0,
+        "y": 11.2,
+        "align": "center",
+        "size": 2.5
+      },
+      {
+        "field": "pin:1",
+        "x": -7.2,
+        "y": -5.3
+      },
+      {
+        "field": "pin:2",
+        "x": 8.8,
+        "y": -5.3
+      }
+    ]
+  },
+  {
+    "id": "wirewright.plc.do.2",
+    "name": {
+      "de": "SPS-Ausgang (2 Anschlüsse)",
+      "en": "PLC digital output (2 connections)"
+    },
+    "category": "plc",
+    "function": "plc.do",
+    "defaultRole": "auxiliary",
+    "letterCode": "A",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -20,
+        "y": -20,
+        "width": 40,
+        "height": 24
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": -8,
+        "x2": 20,
+        "y2": -8
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": -4,
+        "x2": 20,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 0,
+        "x2": 20,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": 8,
+        "x2": -8,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 8,
+        "x2": 8,
+        "y2": 4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": -8,
+        "y": 8,
+        "direction": "down"
+      },
+      {
+        "id": "2",
+        "x": 8,
+        "y": 8,
+        "direction": "down"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -21,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": 0,
+        "y": -16.8,
+        "align": "center",
+        "size": 2.5
+      },
+      {
+        "field": "plcAddress",
+        "x": 0,
+        "y": -5.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcChannel",
+        "x": 0,
+        "y": -1.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "xref",
+        "x": 0,
+        "y": 2.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "pin:1",
+        "x": -7.2,
+        "y": 6.7
+      },
+      {
+        "field": "pin:2",
+        "x": 8.8,
+        "y": 6.7
+      }
+    ]
+  },
+  {
+    "id": "wirewright.plc.ai.2",
+    "name": {
+      "de": "SPS-Analogeingang (2 Anschlüsse)",
+      "en": "PLC analog input (2 connections)"
+    },
+    "category": "plc",
+    "function": "plc.ai",
+    "defaultRole": "auxiliary",
+    "letterCode": "A",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -20,
+        "y": -4,
+        "width": 40,
+        "height": 24
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 0,
+        "x2": 20,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 4,
+        "x2": 20,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 8,
+        "x2": 20,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": -8,
+        "x2": -8,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -8,
+        "x2": 8,
+        "y2": -4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": -8,
+        "y": -8,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 8,
+        "y": -8,
+        "direction": "up"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -21,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": 0,
+        "y": -1.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcChannel",
+        "x": 0,
+        "y": 2.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcAddress",
+        "x": 0,
+        "y": 6.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "functionText",
+        "x": 0,
+        "y": 11.2,
+        "align": "center",
+        "size": 2.5
+      },
+      {
+        "field": "pin:1",
+        "x": -7.2,
+        "y": -5.3
+      },
+      {
+        "field": "pin:2",
+        "x": 8.8,
+        "y": -5.3
+      }
+    ]
+  },
+  {
+    "id": "wirewright.plc.ao.2",
+    "name": {
+      "de": "SPS-Analogausgang (2 Anschlüsse)",
+      "en": "PLC analog output (2 connections)"
+    },
+    "category": "plc",
+    "function": "plc.ao",
+    "defaultRole": "auxiliary",
+    "letterCode": "A",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -20,
+        "y": -20,
+        "width": 40,
+        "height": 24
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": -8,
+        "x2": 20,
+        "y2": -8
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": -4,
+        "x2": 20,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 0,
+        "x2": 20,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": 8,
+        "x2": -8,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 8,
+        "x2": 8,
+        "y2": 4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": -8,
+        "y": 8,
+        "direction": "down"
+      },
+      {
+        "id": "2",
+        "x": 8,
+        "y": 8,
+        "direction": "down"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -21,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": 0,
+        "y": -16.8,
+        "align": "center",
+        "size": 2.5
+      },
+      {
+        "field": "plcAddress",
+        "x": 0,
+        "y": -5.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcChannel",
+        "x": 0,
+        "y": -1.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "xref",
+        "x": 0,
+        "y": 2.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "pin:1",
+        "x": -7.2,
+        "y": 6.7
+      },
+      {
+        "field": "pin:2",
+        "x": 8.8,
+        "y": 6.7
+      }
+    ]
+  },
+  {
+    "id": "wirewright.plc.di.3",
+    "name": {
+      "de": "SPS-Eingang (3 Anschlüsse)",
+      "en": "PLC digital input (3 connections)"
+    },
+    "category": "plc",
+    "function": "plc.di",
+    "defaultRole": "auxiliary",
+    "letterCode": "A",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -20,
+        "y": -4,
+        "width": 40,
+        "height": 24
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 0,
+        "x2": 20,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 4,
+        "x2": 20,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 8,
+        "x2": 20,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": -12,
+        "y1": -8,
+        "x2": -12,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": -8,
+        "x2": 12,
+        "y2": -4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": -12,
+        "y": -8,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": -8,
+        "direction": "up"
+      },
+      {
+        "id": "3",
+        "x": 12,
+        "y": -8,
+        "direction": "up"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -21,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": 0,
+        "y": -1.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcChannel",
+        "x": 0,
+        "y": 2.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcAddress",
+        "x": 0,
+        "y": 6.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "functionText",
+        "x": 0,
+        "y": 11.2,
+        "align": "center",
+        "size": 2.5
+      },
+      {
+        "field": "pin:1",
+        "x": -11.2,
+        "y": -5.3
+      },
+      {
+        "field": "pin:2",
+        "x": 0.8,
+        "y": -5.3
+      },
+      {
+        "field": "pin:3",
+        "x": 12.8,
+        "y": -5.3
+      }
+    ]
+  },
+  {
+    "id": "wirewright.plc.do.3",
+    "name": {
+      "de": "SPS-Ausgang (3 Anschlüsse)",
+      "en": "PLC digital output (3 connections)"
+    },
+    "category": "plc",
+    "function": "plc.do",
+    "defaultRole": "auxiliary",
+    "letterCode": "A",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -20,
+        "y": -20,
+        "width": 40,
+        "height": 24
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": -8,
+        "x2": 20,
+        "y2": -8
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": -4,
+        "x2": 20,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 0,
+        "x2": 20,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -12,
+        "y1": 8,
+        "x2": -12,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 8,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": 8,
+        "x2": 12,
+        "y2": 4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": -12,
+        "y": 8,
+        "direction": "down"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down"
+      },
+      {
+        "id": "3",
+        "x": 12,
+        "y": 8,
+        "direction": "down"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -21,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": 0,
+        "y": -16.8,
+        "align": "center",
+        "size": 2.5
+      },
+      {
+        "field": "plcAddress",
+        "x": 0,
+        "y": -5.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcChannel",
+        "x": 0,
+        "y": -1.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "xref",
+        "x": 0,
+        "y": 2.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "pin:1",
+        "x": -11.2,
+        "y": 6.7
+      },
+      {
+        "field": "pin:2",
+        "x": 0.8,
+        "y": 6.7
+      },
+      {
+        "field": "pin:3",
+        "x": 12.8,
+        "y": 6.7
+      }
+    ]
+  },
+  {
+    "id": "wirewright.plc.ai.3",
+    "name": {
+      "de": "SPS-Analogeingang (3 Anschlüsse)",
+      "en": "PLC analog input (3 connections)"
+    },
+    "category": "plc",
+    "function": "plc.ai",
+    "defaultRole": "auxiliary",
+    "letterCode": "A",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -20,
+        "y": -4,
+        "width": 40,
+        "height": 24
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 0,
+        "x2": 20,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 4,
+        "x2": 20,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 8,
+        "x2": 20,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": -12,
+        "y1": -8,
+        "x2": -12,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": -8,
+        "x2": 12,
+        "y2": -4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": -12,
+        "y": -8,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": -8,
+        "direction": "up"
+      },
+      {
+        "id": "3",
+        "x": 12,
+        "y": -8,
+        "direction": "up"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -21,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": 0,
+        "y": -1.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcChannel",
+        "x": 0,
+        "y": 2.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcAddress",
+        "x": 0,
+        "y": 6.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "functionText",
+        "x": 0,
+        "y": 11.2,
+        "align": "center",
+        "size": 2.5
+      },
+      {
+        "field": "pin:1",
+        "x": -11.2,
+        "y": -5.3
+      },
+      {
+        "field": "pin:2",
+        "x": 0.8,
+        "y": -5.3
+      },
+      {
+        "field": "pin:3",
+        "x": 12.8,
+        "y": -5.3
+      }
+    ]
+  },
+  {
+    "id": "wirewright.plc.ao.3",
+    "name": {
+      "de": "SPS-Analogausgang (3 Anschlüsse)",
+      "en": "PLC analog output (3 connections)"
+    },
+    "category": "plc",
+    "function": "plc.ao",
+    "defaultRole": "auxiliary",
+    "letterCode": "A",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -20,
+        "y": -20,
+        "width": 40,
+        "height": 24
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": -8,
+        "x2": 20,
+        "y2": -8
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": -4,
+        "x2": 20,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 0,
+        "x2": 20,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -12,
+        "y1": 8,
+        "x2": -12,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 8,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": 8,
+        "x2": 12,
+        "y2": 4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": -12,
+        "y": 8,
+        "direction": "down"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down"
+      },
+      {
+        "id": "3",
+        "x": 12,
+        "y": 8,
+        "direction": "down"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -21,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": 0,
+        "y": -16.8,
+        "align": "center",
+        "size": 2.5
+      },
+      {
+        "field": "plcAddress",
+        "x": 0,
+        "y": -5.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcChannel",
+        "x": 0,
+        "y": -1.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "xref",
+        "x": 0,
+        "y": 2.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "pin:1",
+        "x": -11.2,
+        "y": 6.7
+      },
+      {
+        "field": "pin:2",
+        "x": 0.8,
+        "y": 6.7
+      },
+      {
+        "field": "pin:3",
+        "x": 12.8,
+        "y": 6.7
+      }
+    ]
+  },
+  {
+    "id": "wirewright.plc.di.4",
+    "name": {
+      "de": "SPS-Eingang (4 Anschlüsse)",
+      "en": "PLC digital input (4 connections)"
+    },
+    "category": "plc",
+    "function": "plc.di",
+    "defaultRole": "auxiliary",
+    "letterCode": "A",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -20,
+        "y": -4,
+        "width": 40,
+        "height": 24
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 0,
+        "x2": 20,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 4,
+        "x2": 20,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 8,
+        "x2": 20,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": -12,
+        "y1": -8,
+        "x2": -12,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": -8,
+        "x2": -4,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -8,
+        "x2": 4,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": -8,
+        "x2": 12,
+        "y2": -4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": -12,
+        "y": -8,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": -4,
+        "y": -8,
+        "direction": "up"
+      },
+      {
+        "id": "3",
+        "x": 4,
+        "y": -8,
+        "direction": "up"
+      },
+      {
+        "id": "4",
+        "x": 12,
+        "y": -8,
+        "direction": "up"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -21,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": 0,
+        "y": -1.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcChannel",
+        "x": 0,
+        "y": 2.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcAddress",
+        "x": 0,
+        "y": 6.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "functionText",
+        "x": 0,
+        "y": 11.2,
+        "align": "center",
+        "size": 2.5
+      },
+      {
+        "field": "pin:1",
+        "x": -11.2,
+        "y": -5.3
+      },
+      {
+        "field": "pin:2",
+        "x": -3.2,
+        "y": -5.3
+      },
+      {
+        "field": "pin:3",
+        "x": 4.8,
+        "y": -5.3
+      },
+      {
+        "field": "pin:4",
+        "x": 12.8,
+        "y": -5.3
+      }
+    ]
+  },
+  {
+    "id": "wirewright.plc.do.4",
+    "name": {
+      "de": "SPS-Ausgang (4 Anschlüsse)",
+      "en": "PLC digital output (4 connections)"
+    },
+    "category": "plc",
+    "function": "plc.do",
+    "defaultRole": "auxiliary",
+    "letterCode": "A",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -20,
+        "y": -20,
+        "width": 40,
+        "height": 24
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": -8,
+        "x2": 20,
+        "y2": -8
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": -4,
+        "x2": 20,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 0,
+        "x2": 20,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -12,
+        "y1": 8,
+        "x2": -12,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": 8,
+        "x2": -4,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 8,
+        "x2": 4,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": 8,
+        "x2": 12,
+        "y2": 4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": -12,
+        "y": 8,
+        "direction": "down"
+      },
+      {
+        "id": "2",
+        "x": -4,
+        "y": 8,
+        "direction": "down"
+      },
+      {
+        "id": "3",
+        "x": 4,
+        "y": 8,
+        "direction": "down"
+      },
+      {
+        "id": "4",
+        "x": 12,
+        "y": 8,
+        "direction": "down"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -21,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": 0,
+        "y": -16.8,
+        "align": "center",
+        "size": 2.5
+      },
+      {
+        "field": "plcAddress",
+        "x": 0,
+        "y": -5.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcChannel",
+        "x": 0,
+        "y": -1.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "xref",
+        "x": 0,
+        "y": 2.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "pin:1",
+        "x": -11.2,
+        "y": 6.7
+      },
+      {
+        "field": "pin:2",
+        "x": -3.2,
+        "y": 6.7
+      },
+      {
+        "field": "pin:3",
+        "x": 4.8,
+        "y": 6.7
+      },
+      {
+        "field": "pin:4",
+        "x": 12.8,
+        "y": 6.7
+      }
+    ]
+  },
+  {
+    "id": "wirewright.plc.ai.4",
+    "name": {
+      "de": "SPS-Analogeingang (4 Anschlüsse)",
+      "en": "PLC analog input (4 connections)"
+    },
+    "category": "plc",
+    "function": "plc.ai",
+    "defaultRole": "auxiliary",
+    "letterCode": "A",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -20,
+        "y": -4,
+        "width": 40,
+        "height": 24
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 0,
+        "x2": 20,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 4,
+        "x2": 20,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 8,
+        "x2": 20,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": -12,
+        "y1": -8,
+        "x2": -12,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": -8,
+        "x2": -4,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -8,
+        "x2": 4,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": -8,
+        "x2": 12,
+        "y2": -4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": -12,
+        "y": -8,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": -4,
+        "y": -8,
+        "direction": "up"
+      },
+      {
+        "id": "3",
+        "x": 4,
+        "y": -8,
+        "direction": "up"
+      },
+      {
+        "id": "4",
+        "x": 12,
+        "y": -8,
+        "direction": "up"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -21,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": 0,
+        "y": -1.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcChannel",
+        "x": 0,
+        "y": 2.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcAddress",
+        "x": 0,
+        "y": 6.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "functionText",
+        "x": 0,
+        "y": 11.2,
+        "align": "center",
+        "size": 2.5
+      },
+      {
+        "field": "pin:1",
+        "x": -11.2,
+        "y": -5.3
+      },
+      {
+        "field": "pin:2",
+        "x": -3.2,
+        "y": -5.3
+      },
+      {
+        "field": "pin:3",
+        "x": 4.8,
+        "y": -5.3
+      },
+      {
+        "field": "pin:4",
+        "x": 12.8,
+        "y": -5.3
+      }
+    ]
+  },
+  {
+    "id": "wirewright.plc.ao.4",
+    "name": {
+      "de": "SPS-Analogausgang (4 Anschlüsse)",
+      "en": "PLC analog output (4 connections)"
+    },
+    "category": "plc",
+    "function": "plc.ao",
+    "defaultRole": "auxiliary",
+    "letterCode": "A",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -20,
+        "y": -20,
+        "width": 40,
+        "height": 24
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": -8,
+        "x2": 20,
+        "y2": -8
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": -4,
+        "x2": 20,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 0,
+        "x2": 20,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -12,
+        "y1": 8,
+        "x2": -12,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": 8,
+        "x2": -4,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 8,
+        "x2": 4,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": 8,
+        "x2": 12,
+        "y2": 4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": -12,
+        "y": 8,
+        "direction": "down"
+      },
+      {
+        "id": "2",
+        "x": -4,
+        "y": 8,
+        "direction": "down"
+      },
+      {
+        "id": "3",
+        "x": 4,
+        "y": 8,
+        "direction": "down"
+      },
+      {
+        "id": "4",
+        "x": 12,
+        "y": 8,
+        "direction": "down"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -21,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": 0,
+        "y": -16.8,
+        "align": "center",
+        "size": 2.5
+      },
+      {
+        "field": "plcAddress",
+        "x": 0,
+        "y": -5.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "plcChannel",
+        "x": 0,
+        "y": -1.1,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "xref",
+        "x": 0,
+        "y": 2.9,
+        "align": "center",
+        "size": 2
+      },
+      {
+        "field": "pin:1",
+        "x": -11.2,
+        "y": 6.7
+      },
+      {
+        "field": "pin:2",
+        "x": -3.2,
+        "y": 6.7
+      },
+      {
+        "field": "pin:3",
+        "x": 4.8,
+        "y": 6.7
+      },
+      {
+        "field": "pin:4",
+        "x": 12.8,
+        "y": 6.7
+      }
+    ]
+  }
+]

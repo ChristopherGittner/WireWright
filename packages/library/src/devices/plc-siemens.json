@@ -1,0 +1,7458 @@
+[
+  {
+    "id": "siemens.et200sp.di8",
+    "name": {
+      "de": "ET 200SP DI 8x24VDC ST",
+      "en": "ET 200SP DI 8x24VDC ST"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7131-6BF01-0BA0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 4 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DI 5 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DI 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 7 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "6"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.di8.hf",
+    "name": {
+      "de": "ET 200SP DI 8x24VDC HF",
+      "en": "ET 200SP DI 8x24VDC HF"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7131-6BF00-0CA0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 4 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DI 5 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DI 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 7 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "6"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.di8.ba",
+    "name": {
+      "de": "ET 200SP DI 8x24VDC BA",
+      "en": "ET 200SP DI 8x24VDC BA"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7131-6BF00-0AA0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 4 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DI 5 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DI 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 7 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "6"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.di16.st",
+    "name": {
+      "de": "ET 200SP DI 16x24VDC ST",
+      "en": "ET 200SP DI 16x24VDC ST"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7131-6BH01-0BA0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 4 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DI 5 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DI 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 7 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 8,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DI 8 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 9,
+        "pins": {
+          "1": "10"
+        },
+        "label": "DI 9 (pin 10)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 10,
+        "pins": {
+          "1": "11"
+        },
+        "label": "DI 10 (pin 11)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 11,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DI 11 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 12,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DI 12 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 13,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DI 13 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 14,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DI 14 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 15,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DI 15 (pin 16)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "6"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "8"
+        },
+        {
+          "channel": 8,
+          "kind": "DI",
+          "pin": "9"
+        },
+        {
+          "channel": 9,
+          "kind": "DI",
+          "pin": "10"
+        },
+        {
+          "channel": 10,
+          "kind": "DI",
+          "pin": "11"
+        },
+        {
+          "channel": 11,
+          "kind": "DI",
+          "pin": "12"
+        },
+        {
+          "channel": 12,
+          "kind": "DI",
+          "pin": "13"
+        },
+        {
+          "channel": 13,
+          "kind": "DI",
+          "pin": "14"
+        },
+        {
+          "channel": 14,
+          "kind": "DI",
+          "pin": "15"
+        },
+        {
+          "channel": 15,
+          "kind": "DI",
+          "pin": "16"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.di4.ac",
+    "name": {
+      "de": "ET 200SP DI 4x120..230VAC ST",
+      "en": "ET 200SP DI 4x120..230VAC ST"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7131-6FD01-0BB1",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 3 (pin 4)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.di8.namur",
+    "name": {
+      "de": "ET 200SP DI 8xNAMUR HF",
+      "en": "ET 200SP DI 8xNAMUR HF"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7131-6TF00-0CA0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 4 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DI 5 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DI 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 7 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "6"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.fdi8",
+    "name": {
+      "de": "ET 200SP F-DI 8x24VDC HF (with sensor supplies)",
+      "en": "ET 200SP F-DI 8x24VDC HF (with sensor supplies)"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7136-6BA01-0CA0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 0,
+        "pins": {
+          "1": "9",
+          "2": "1"
+        },
+        "label": "DI 0 (pin 9, 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 1,
+        "pins": {
+          "1": "10",
+          "2": "2"
+        },
+        "label": "DI 1 (pin 10, 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 2,
+        "pins": {
+          "1": "11",
+          "2": "3"
+        },
+        "label": "DI 2 (pin 11, 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 3,
+        "pins": {
+          "1": "12",
+          "2": "4"
+        },
+        "label": "DI 3 (pin 12, 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 4,
+        "pins": {
+          "1": "13",
+          "2": "5"
+        },
+        "label": "DI 4 (pin 13, 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 5,
+        "pins": {
+          "1": "14",
+          "2": "6"
+        },
+        "label": "DI 5 (pin 14, 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 6,
+        "pins": {
+          "1": "15",
+          "2": "7"
+        },
+        "label": "DI 6 (pin 15, 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 7,
+        "pins": {
+          "1": "16",
+          "2": "8"
+        },
+        "label": "DI 7 (pin 16, 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "1",
+          "extraPins": [
+            {
+              "pin": "9",
+              "label": "VS0"
+            }
+          ]
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "2",
+          "extraPins": [
+            {
+              "pin": "10",
+              "label": "VS1"
+            }
+          ]
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "3",
+          "extraPins": [
+            {
+              "pin": "11",
+              "label": "VS2"
+            }
+          ]
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "4",
+          "extraPins": [
+            {
+              "pin": "12",
+              "label": "VS3"
+            }
+          ]
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "5",
+          "extraPins": [
+            {
+              "pin": "13",
+              "label": "VS4"
+            }
+          ]
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "6",
+          "extraPins": [
+            {
+              "pin": "14",
+              "label": "VS5"
+            }
+          ]
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "7",
+          "extraPins": [
+            {
+              "pin": "15",
+              "label": "VS6"
+            }
+          ]
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "8",
+          "extraPins": [
+            {
+              "pin": "16",
+              "label": "VS7"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.dq8",
+    "name": {
+      "de": "ET 200SP DQ 8x24VDC/0.5A ST",
+      "en": "ET 200SP DQ 8x24VDC/0.5A ST"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7132-6BF01-0BA0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 4 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DO 5 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DO 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 7 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "6"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.dq8.hf",
+    "name": {
+      "de": "ET 200SP DQ 8x24VDC/0.5A HF",
+      "en": "ET 200SP DQ 8x24VDC/0.5A HF"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7132-6BF00-0CA0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 4 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DO 5 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DO 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 7 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "6"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.dq16.st",
+    "name": {
+      "de": "ET 200SP DQ 16x24VDC/0.5A ST",
+      "en": "ET 200SP DQ 16x24VDC/0.5A ST"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7132-6BH01-0BA0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 4 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DO 5 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DO 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 7 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 8,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DO 8 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 9,
+        "pins": {
+          "1": "10"
+        },
+        "label": "DO 9 (pin 10)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 10,
+        "pins": {
+          "1": "11"
+        },
+        "label": "DO 10 (pin 11)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 11,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DO 11 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 12,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DO 12 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 13,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DO 13 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 14,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DO 14 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 15,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DO 15 (pin 16)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "6"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "8"
+        },
+        {
+          "channel": 8,
+          "kind": "DO",
+          "pin": "9"
+        },
+        {
+          "channel": 9,
+          "kind": "DO",
+          "pin": "10"
+        },
+        {
+          "channel": 10,
+          "kind": "DO",
+          "pin": "11"
+        },
+        {
+          "channel": 11,
+          "kind": "DO",
+          "pin": "12"
+        },
+        {
+          "channel": 12,
+          "kind": "DO",
+          "pin": "13"
+        },
+        {
+          "channel": 13,
+          "kind": "DO",
+          "pin": "14"
+        },
+        {
+          "channel": 14,
+          "kind": "DO",
+          "pin": "15"
+        },
+        {
+          "channel": 15,
+          "kind": "DO",
+          "pin": "16"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.dq4.2a",
+    "name": {
+      "de": "ET 200SP DQ 4x24VDC/2A ST",
+      "en": "ET 200SP DQ 4x24VDC/2A ST"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7132-6BD20-0BA0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 3 (pin 4)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.dq4.ac",
+    "name": {
+      "de": "ET 200SP DQ 4x24..230VAC/2A ST",
+      "en": "ET 200SP DQ 4x24..230VAC/2A ST"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7132-6FD00-0BB1",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 3 (pin 4)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.rq4",
+    "name": {
+      "de": "ET 200SP RQ 4x24VUC/2A CO ST",
+      "en": "ET 200SP RQ 4x24VUC/2A CO ST"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7132-6GD51-0BA0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 3 (pin 4)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.fdq4",
+    "name": {
+      "de": "ET 200SP F-DQ 4x24VDC/2A PM HF",
+      "en": "ET 200SP F-DQ 4x24VDC/2A PM HF"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7136-6DB00-0CA0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 3 (pin 4)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.ai4.ui",
+    "name": {
+      "de": "ET 200SP AI 4xU/I 2-wire ST",
+      "en": "ET 200SP AI 4xU/I 2-wire ST"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7134-6HD01-0BA1",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AI 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "AI 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 3 (pin 4)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.ai4.i",
+    "name": {
+      "de": "ET 200SP AI 4xI 2-/4-wire ST",
+      "en": "ET 200SP AI 4xI 2-/4-wire ST"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7134-6GD01-0BA1",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AI 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "AI 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 3 (pin 4)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.ai8.i.ba",
+    "name": {
+      "de": "ET 200SP AI 8xI 2-/4-wire BA",
+      "en": "ET 200SP AI 8xI 2-/4-wire BA"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7134-6GF00-0AA1",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AI 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "AI 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 4 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 5,
+        "pins": {
+          "1": "6"
+        },
+        "label": "AI 5 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "AI 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 7,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 7 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 5,
+          "kind": "AI",
+          "pin": "6"
+        },
+        {
+          "channel": 6,
+          "kind": "AI",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.ai8.u.ba",
+    "name": {
+      "de": "ET 200SP AI 8xU BA",
+      "en": "ET 200SP AI 8xU BA"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7134-6FF00-0AA1",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AI 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "AI 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 4 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 5,
+        "pins": {
+          "1": "6"
+        },
+        "label": "AI 5 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "AI 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 7,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 7 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 5,
+          "kind": "AI",
+          "pin": "6"
+        },
+        {
+          "channel": 6,
+          "kind": "AI",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.ai2.ui.hs",
+    "name": {
+      "de": "ET 200SP AI 2xU/I 2-/4-wire HS",
+      "en": "ET 200SP AI 2xU/I 2-/4-wire HS"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7134-6HB00-0DA1",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AI 1 (pin 2)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.ai4.rtd",
+    "name": {
+      "de": "ET 200SP AI 4xRTD/TC 2-/3-/4-wire HF",
+      "en": "ET 200SP AI 4xRTD/TC 2-/3-/4-wire HF"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7134-6JD00-0CA1",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AI 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "AI 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 3 (pin 4)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.ai8.rtd",
+    "name": {
+      "de": "ET 200SP AI 8xRTD/TC 2-wire HF",
+      "en": "ET 200SP AI 8xRTD/TC 2-wire HF"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7134-6JF00-0CA1",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AI 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "AI 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 4 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 5,
+        "pins": {
+          "1": "6"
+        },
+        "label": "AI 5 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "AI 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 7,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 7 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 5,
+          "kind": "AI",
+          "pin": "6"
+        },
+        {
+          "channel": 6,
+          "kind": "AI",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.aq4.ui",
+    "name": {
+      "de": "ET 200SP AQ 4xU/I ST",
+      "en": "ET 200SP AQ 4xU/I ST"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7135-6HD00-0BA1",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AO 1 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "3"
+        },
+        "label": "AO 2 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AO 3 (pin 4)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "2"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "3"
+        },
+        {
+          "channel": 3,
+          "kind": "AO",
+          "pin": "4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.aq2.ui.hf",
+    "name": {
+      "de": "ET 200SP AQ 2xU/I HF",
+      "en": "ET 200SP AQ 2xU/I HF"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7135-6HB00-0CA1",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AO 1 (pin 2)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.aq2.ui.st",
+    "name": {
+      "de": "ET 200SP AQ 2xU/I ST",
+      "en": "ET 200SP AQ 2xU/I ST"
+    },
+    "category": "plc.siemens.et200sp",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7135-6HB00-0DA1",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 0,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 0 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AO 1 (pin 2)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200sp.im155-6pn.st",
+    "name": {
+      "de": "ET 200SP IM 155-6 PN ST",
+      "en": "ET 200SP IM 155-6 PN ST"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7155-6AU01-0BN0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.et200sp.im155-6pn.hf",
+    "name": {
+      "de": "ET 200SP IM 155-6 PN HF",
+      "en": "ET 200SP IM 155-6 PN HF"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7155-6AU30-0CN0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.et200sp.im155-6pn.ba",
+    "name": {
+      "de": "ET 200SP IM 155-6 PN BA",
+      "en": "ET 200SP IM 155-6 PN BA"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7155-6AR00-0AN0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.di16.hf",
+    "name": {
+      "de": "S7-1500 / ET 200MP DI 16x24VDC HF",
+      "en": "S7-1500 / ET 200MP DI 16x24VDC HF"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7521-1BH00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 0,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 0 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 1 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 2 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 3 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DI 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DI 5 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 6 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DI 7 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 8,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DI 8 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 9,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DI 9 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 10,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DI 10 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 11,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DI 11 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 12,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DI 12 (pin 16)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 13,
+        "pins": {
+          "1": "17"
+        },
+        "label": "DI 13 (pin 17)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 14,
+        "pins": {
+          "1": "18"
+        },
+        "label": "DI 14 (pin 18)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 15,
+        "pins": {
+          "1": "19"
+        },
+        "label": "DI 15 (pin 19)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "7"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "8"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "9"
+        },
+        {
+          "channel": 8,
+          "kind": "DI",
+          "pin": "12"
+        },
+        {
+          "channel": 9,
+          "kind": "DI",
+          "pin": "13"
+        },
+        {
+          "channel": 10,
+          "kind": "DI",
+          "pin": "14"
+        },
+        {
+          "channel": 11,
+          "kind": "DI",
+          "pin": "15"
+        },
+        {
+          "channel": 12,
+          "kind": "DI",
+          "pin": "16"
+        },
+        {
+          "channel": 13,
+          "kind": "DI",
+          "pin": "17"
+        },
+        {
+          "channel": 14,
+          "kind": "DI",
+          "pin": "18"
+        },
+        {
+          "channel": 15,
+          "kind": "DI",
+          "pin": "19"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.di16.ba",
+    "name": {
+      "de": "S7-1500 / ET 200MP DI 16x24VDC BA",
+      "en": "S7-1500 / ET 200MP DI 16x24VDC BA"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7521-1BH10-0AA0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 0,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 0 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 1 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 2 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 3 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DI 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DI 5 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 6 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DI 7 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 8,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DI 8 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 9,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DI 9 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 10,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DI 10 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 11,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DI 11 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 12,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DI 12 (pin 16)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 13,
+        "pins": {
+          "1": "17"
+        },
+        "label": "DI 13 (pin 17)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 14,
+        "pins": {
+          "1": "18"
+        },
+        "label": "DI 14 (pin 18)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 15,
+        "pins": {
+          "1": "19"
+        },
+        "label": "DI 15 (pin 19)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "7"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "8"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "9"
+        },
+        {
+          "channel": 8,
+          "kind": "DI",
+          "pin": "12"
+        },
+        {
+          "channel": 9,
+          "kind": "DI",
+          "pin": "13"
+        },
+        {
+          "channel": 10,
+          "kind": "DI",
+          "pin": "14"
+        },
+        {
+          "channel": 11,
+          "kind": "DI",
+          "pin": "15"
+        },
+        {
+          "channel": 12,
+          "kind": "DI",
+          "pin": "16"
+        },
+        {
+          "channel": 13,
+          "kind": "DI",
+          "pin": "17"
+        },
+        {
+          "channel": 14,
+          "kind": "DI",
+          "pin": "18"
+        },
+        {
+          "channel": 15,
+          "kind": "DI",
+          "pin": "19"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.di32.hf",
+    "name": {
+      "de": "S7-1500 / ET 200MP DI 32x24VDC HF",
+      "en": "S7-1500 / ET 200MP DI 32x24VDC HF"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7521-1BL00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 0,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 0 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 1 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 2 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 3 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DI 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DI 5 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 6 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DI 7 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 8,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DI 8 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 9,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DI 9 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 10,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DI 10 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 11,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DI 11 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 12,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DI 12 (pin 16)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 13,
+        "pins": {
+          "1": "17"
+        },
+        "label": "DI 13 (pin 17)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 14,
+        "pins": {
+          "1": "18"
+        },
+        "label": "DI 14 (pin 18)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 15,
+        "pins": {
+          "1": "19"
+        },
+        "label": "DI 15 (pin 19)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 16,
+        "pins": {
+          "1": "22"
+        },
+        "label": "DI 16 (pin 22)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 17,
+        "pins": {
+          "1": "23"
+        },
+        "label": "DI 17 (pin 23)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 18,
+        "pins": {
+          "1": "24"
+        },
+        "label": "DI 18 (pin 24)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 19,
+        "pins": {
+          "1": "25"
+        },
+        "label": "DI 19 (pin 25)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 20,
+        "pins": {
+          "1": "26"
+        },
+        "label": "DI 20 (pin 26)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 21,
+        "pins": {
+          "1": "27"
+        },
+        "label": "DI 21 (pin 27)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 22,
+        "pins": {
+          "1": "28"
+        },
+        "label": "DI 22 (pin 28)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 23,
+        "pins": {
+          "1": "29"
+        },
+        "label": "DI 23 (pin 29)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 24,
+        "pins": {
+          "1": "32"
+        },
+        "label": "DI 24 (pin 32)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 25,
+        "pins": {
+          "1": "33"
+        },
+        "label": "DI 25 (pin 33)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 26,
+        "pins": {
+          "1": "34"
+        },
+        "label": "DI 26 (pin 34)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 27,
+        "pins": {
+          "1": "35"
+        },
+        "label": "DI 27 (pin 35)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 28,
+        "pins": {
+          "1": "36"
+        },
+        "label": "DI 28 (pin 36)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 29,
+        "pins": {
+          "1": "37"
+        },
+        "label": "DI 29 (pin 37)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 30,
+        "pins": {
+          "1": "38"
+        },
+        "label": "DI 30 (pin 38)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 31,
+        "pins": {
+          "1": "39"
+        },
+        "label": "DI 31 (pin 39)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "7"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "8"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "9"
+        },
+        {
+          "channel": 8,
+          "kind": "DI",
+          "pin": "12"
+        },
+        {
+          "channel": 9,
+          "kind": "DI",
+          "pin": "13"
+        },
+        {
+          "channel": 10,
+          "kind": "DI",
+          "pin": "14"
+        },
+        {
+          "channel": 11,
+          "kind": "DI",
+          "pin": "15"
+        },
+        {
+          "channel": 12,
+          "kind": "DI",
+          "pin": "16"
+        },
+        {
+          "channel": 13,
+          "kind": "DI",
+          "pin": "17"
+        },
+        {
+          "channel": 14,
+          "kind": "DI",
+          "pin": "18"
+        },
+        {
+          "channel": 15,
+          "kind": "DI",
+          "pin": "19"
+        },
+        {
+          "channel": 16,
+          "kind": "DI",
+          "pin": "22"
+        },
+        {
+          "channel": 17,
+          "kind": "DI",
+          "pin": "23"
+        },
+        {
+          "channel": 18,
+          "kind": "DI",
+          "pin": "24"
+        },
+        {
+          "channel": 19,
+          "kind": "DI",
+          "pin": "25"
+        },
+        {
+          "channel": 20,
+          "kind": "DI",
+          "pin": "26"
+        },
+        {
+          "channel": 21,
+          "kind": "DI",
+          "pin": "27"
+        },
+        {
+          "channel": 22,
+          "kind": "DI",
+          "pin": "28"
+        },
+        {
+          "channel": 23,
+          "kind": "DI",
+          "pin": "29"
+        },
+        {
+          "channel": 24,
+          "kind": "DI",
+          "pin": "32"
+        },
+        {
+          "channel": 25,
+          "kind": "DI",
+          "pin": "33"
+        },
+        {
+          "channel": 26,
+          "kind": "DI",
+          "pin": "34"
+        },
+        {
+          "channel": 27,
+          "kind": "DI",
+          "pin": "35"
+        },
+        {
+          "channel": 28,
+          "kind": "DI",
+          "pin": "36"
+        },
+        {
+          "channel": 29,
+          "kind": "DI",
+          "pin": "37"
+        },
+        {
+          "channel": 30,
+          "kind": "DI",
+          "pin": "38"
+        },
+        {
+          "channel": 31,
+          "kind": "DI",
+          "pin": "39"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.di32.ba",
+    "name": {
+      "de": "S7-1500 / ET 200MP DI 32x24VDC BA",
+      "en": "S7-1500 / ET 200MP DI 32x24VDC BA"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7521-1BL10-0AA0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 0,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 0 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 1 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 2 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 3 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DI 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DI 5 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 6 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DI 7 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 8,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DI 8 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 9,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DI 9 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 10,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DI 10 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 11,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DI 11 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 12,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DI 12 (pin 16)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 13,
+        "pins": {
+          "1": "17"
+        },
+        "label": "DI 13 (pin 17)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 14,
+        "pins": {
+          "1": "18"
+        },
+        "label": "DI 14 (pin 18)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 15,
+        "pins": {
+          "1": "19"
+        },
+        "label": "DI 15 (pin 19)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 16,
+        "pins": {
+          "1": "22"
+        },
+        "label": "DI 16 (pin 22)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 17,
+        "pins": {
+          "1": "23"
+        },
+        "label": "DI 17 (pin 23)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 18,
+        "pins": {
+          "1": "24"
+        },
+        "label": "DI 18 (pin 24)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 19,
+        "pins": {
+          "1": "25"
+        },
+        "label": "DI 19 (pin 25)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 20,
+        "pins": {
+          "1": "26"
+        },
+        "label": "DI 20 (pin 26)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 21,
+        "pins": {
+          "1": "27"
+        },
+        "label": "DI 21 (pin 27)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 22,
+        "pins": {
+          "1": "28"
+        },
+        "label": "DI 22 (pin 28)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 23,
+        "pins": {
+          "1": "29"
+        },
+        "label": "DI 23 (pin 29)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 24,
+        "pins": {
+          "1": "32"
+        },
+        "label": "DI 24 (pin 32)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 25,
+        "pins": {
+          "1": "33"
+        },
+        "label": "DI 25 (pin 33)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 26,
+        "pins": {
+          "1": "34"
+        },
+        "label": "DI 26 (pin 34)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 27,
+        "pins": {
+          "1": "35"
+        },
+        "label": "DI 27 (pin 35)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 28,
+        "pins": {
+          "1": "36"
+        },
+        "label": "DI 28 (pin 36)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 29,
+        "pins": {
+          "1": "37"
+        },
+        "label": "DI 29 (pin 37)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 30,
+        "pins": {
+          "1": "38"
+        },
+        "label": "DI 30 (pin 38)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 31,
+        "pins": {
+          "1": "39"
+        },
+        "label": "DI 31 (pin 39)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "7"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "8"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "9"
+        },
+        {
+          "channel": 8,
+          "kind": "DI",
+          "pin": "12"
+        },
+        {
+          "channel": 9,
+          "kind": "DI",
+          "pin": "13"
+        },
+        {
+          "channel": 10,
+          "kind": "DI",
+          "pin": "14"
+        },
+        {
+          "channel": 11,
+          "kind": "DI",
+          "pin": "15"
+        },
+        {
+          "channel": 12,
+          "kind": "DI",
+          "pin": "16"
+        },
+        {
+          "channel": 13,
+          "kind": "DI",
+          "pin": "17"
+        },
+        {
+          "channel": 14,
+          "kind": "DI",
+          "pin": "18"
+        },
+        {
+          "channel": 15,
+          "kind": "DI",
+          "pin": "19"
+        },
+        {
+          "channel": 16,
+          "kind": "DI",
+          "pin": "22"
+        },
+        {
+          "channel": 17,
+          "kind": "DI",
+          "pin": "23"
+        },
+        {
+          "channel": 18,
+          "kind": "DI",
+          "pin": "24"
+        },
+        {
+          "channel": 19,
+          "kind": "DI",
+          "pin": "25"
+        },
+        {
+          "channel": 20,
+          "kind": "DI",
+          "pin": "26"
+        },
+        {
+          "channel": 21,
+          "kind": "DI",
+          "pin": "27"
+        },
+        {
+          "channel": 22,
+          "kind": "DI",
+          "pin": "28"
+        },
+        {
+          "channel": 23,
+          "kind": "DI",
+          "pin": "29"
+        },
+        {
+          "channel": 24,
+          "kind": "DI",
+          "pin": "32"
+        },
+        {
+          "channel": 25,
+          "kind": "DI",
+          "pin": "33"
+        },
+        {
+          "channel": 26,
+          "kind": "DI",
+          "pin": "34"
+        },
+        {
+          "channel": 27,
+          "kind": "DI",
+          "pin": "35"
+        },
+        {
+          "channel": 28,
+          "kind": "DI",
+          "pin": "36"
+        },
+        {
+          "channel": 29,
+          "kind": "DI",
+          "pin": "37"
+        },
+        {
+          "channel": 30,
+          "kind": "DI",
+          "pin": "38"
+        },
+        {
+          "channel": 31,
+          "kind": "DI",
+          "pin": "39"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.di16.ac",
+    "name": {
+      "de": "S7-1500 / ET 200MP DI 16x230VAC BA",
+      "en": "S7-1500 / ET 200MP DI 16x230VAC BA"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7521-1FH00-0AA0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 0,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 0 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 1 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 2 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 3 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DI 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DI 5 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 6 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DI 7 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 8,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DI 8 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 9,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DI 9 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 10,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DI 10 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 11,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DI 11 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 12,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DI 12 (pin 16)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 13,
+        "pins": {
+          "1": "17"
+        },
+        "label": "DI 13 (pin 17)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 14,
+        "pins": {
+          "1": "18"
+        },
+        "label": "DI 14 (pin 18)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 15,
+        "pins": {
+          "1": "19"
+        },
+        "label": "DI 15 (pin 19)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "7"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "8"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "9"
+        },
+        {
+          "channel": 8,
+          "kind": "DI",
+          "pin": "12"
+        },
+        {
+          "channel": 9,
+          "kind": "DI",
+          "pin": "13"
+        },
+        {
+          "channel": 10,
+          "kind": "DI",
+          "pin": "14"
+        },
+        {
+          "channel": 11,
+          "kind": "DI",
+          "pin": "15"
+        },
+        {
+          "channel": 12,
+          "kind": "DI",
+          "pin": "16"
+        },
+        {
+          "channel": 13,
+          "kind": "DI",
+          "pin": "17"
+        },
+        {
+          "channel": 14,
+          "kind": "DI",
+          "pin": "18"
+        },
+        {
+          "channel": 15,
+          "kind": "DI",
+          "pin": "19"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.fdi16",
+    "name": {
+      "de": "S7-1500 / ET 200MP F-DI 16x24VDC",
+      "en": "S7-1500 / ET 200MP F-DI 16x24VDC"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7526-1BH00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 0,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 0 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 1 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 2 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 3 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DI 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DI 5 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 6 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DI 7 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 8,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DI 8 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 9,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DI 9 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 10,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DI 10 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 11,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DI 11 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 12,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DI 12 (pin 16)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 13,
+        "pins": {
+          "1": "17"
+        },
+        "label": "DI 13 (pin 17)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 14,
+        "pins": {
+          "1": "18"
+        },
+        "label": "DI 14 (pin 18)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 15,
+        "pins": {
+          "1": "19"
+        },
+        "label": "DI 15 (pin 19)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "7"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "8"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "9"
+        },
+        {
+          "channel": 8,
+          "kind": "DI",
+          "pin": "12"
+        },
+        {
+          "channel": 9,
+          "kind": "DI",
+          "pin": "13"
+        },
+        {
+          "channel": 10,
+          "kind": "DI",
+          "pin": "14"
+        },
+        {
+          "channel": 11,
+          "kind": "DI",
+          "pin": "15"
+        },
+        {
+          "channel": 12,
+          "kind": "DI",
+          "pin": "16"
+        },
+        {
+          "channel": 13,
+          "kind": "DI",
+          "pin": "17"
+        },
+        {
+          "channel": 14,
+          "kind": "DI",
+          "pin": "18"
+        },
+        {
+          "channel": 15,
+          "kind": "DI",
+          "pin": "19"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.dq16.st",
+    "name": {
+      "de": "S7-1500 / ET 200MP DQ 16x24VDC/0.5A ST",
+      "en": "S7-1500 / ET 200MP DQ 16x24VDC/0.5A ST"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7522-1BH01-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 0,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 0 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 1 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 2 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 3 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DO 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DO 5 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 6 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DO 7 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 8,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DO 8 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 9,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DO 9 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 10,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DO 10 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 11,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DO 11 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 12,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DO 12 (pin 16)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 13,
+        "pins": {
+          "1": "17"
+        },
+        "label": "DO 13 (pin 17)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 14,
+        "pins": {
+          "1": "18"
+        },
+        "label": "DO 14 (pin 18)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 15,
+        "pins": {
+          "1": "19"
+        },
+        "label": "DO 15 (pin 19)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "7"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "8"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "9"
+        },
+        {
+          "channel": 8,
+          "kind": "DO",
+          "pin": "12"
+        },
+        {
+          "channel": 9,
+          "kind": "DO",
+          "pin": "13"
+        },
+        {
+          "channel": 10,
+          "kind": "DO",
+          "pin": "14"
+        },
+        {
+          "channel": 11,
+          "kind": "DO",
+          "pin": "15"
+        },
+        {
+          "channel": 12,
+          "kind": "DO",
+          "pin": "16"
+        },
+        {
+          "channel": 13,
+          "kind": "DO",
+          "pin": "17"
+        },
+        {
+          "channel": 14,
+          "kind": "DO",
+          "pin": "18"
+        },
+        {
+          "channel": 15,
+          "kind": "DO",
+          "pin": "19"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.dq16.ba",
+    "name": {
+      "de": "S7-1500 / ET 200MP DQ 16x24VDC/0.5A BA",
+      "en": "S7-1500 / ET 200MP DQ 16x24VDC/0.5A BA"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7522-1BH10-0AA0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 0,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 0 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 1 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 2 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 3 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DO 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DO 5 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 6 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DO 7 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 8,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DO 8 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 9,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DO 9 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 10,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DO 10 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 11,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DO 11 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 12,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DO 12 (pin 16)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 13,
+        "pins": {
+          "1": "17"
+        },
+        "label": "DO 13 (pin 17)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 14,
+        "pins": {
+          "1": "18"
+        },
+        "label": "DO 14 (pin 18)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 15,
+        "pins": {
+          "1": "19"
+        },
+        "label": "DO 15 (pin 19)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "7"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "8"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "9"
+        },
+        {
+          "channel": 8,
+          "kind": "DO",
+          "pin": "12"
+        },
+        {
+          "channel": 9,
+          "kind": "DO",
+          "pin": "13"
+        },
+        {
+          "channel": 10,
+          "kind": "DO",
+          "pin": "14"
+        },
+        {
+          "channel": 11,
+          "kind": "DO",
+          "pin": "15"
+        },
+        {
+          "channel": 12,
+          "kind": "DO",
+          "pin": "16"
+        },
+        {
+          "channel": 13,
+          "kind": "DO",
+          "pin": "17"
+        },
+        {
+          "channel": 14,
+          "kind": "DO",
+          "pin": "18"
+        },
+        {
+          "channel": 15,
+          "kind": "DO",
+          "pin": "19"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.dq32.st",
+    "name": {
+      "de": "S7-1500 / ET 200MP DQ 32x24VDC/0.5A ST",
+      "en": "S7-1500 / ET 200MP DQ 32x24VDC/0.5A ST"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7522-1BL01-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 0,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 0 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 1 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 2 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 3 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DO 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DO 5 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 6 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DO 7 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 8,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DO 8 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 9,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DO 9 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 10,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DO 10 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 11,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DO 11 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 12,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DO 12 (pin 16)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 13,
+        "pins": {
+          "1": "17"
+        },
+        "label": "DO 13 (pin 17)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 14,
+        "pins": {
+          "1": "18"
+        },
+        "label": "DO 14 (pin 18)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 15,
+        "pins": {
+          "1": "19"
+        },
+        "label": "DO 15 (pin 19)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 16,
+        "pins": {
+          "1": "22"
+        },
+        "label": "DO 16 (pin 22)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 17,
+        "pins": {
+          "1": "23"
+        },
+        "label": "DO 17 (pin 23)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 18,
+        "pins": {
+          "1": "24"
+        },
+        "label": "DO 18 (pin 24)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 19,
+        "pins": {
+          "1": "25"
+        },
+        "label": "DO 19 (pin 25)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 20,
+        "pins": {
+          "1": "26"
+        },
+        "label": "DO 20 (pin 26)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 21,
+        "pins": {
+          "1": "27"
+        },
+        "label": "DO 21 (pin 27)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 22,
+        "pins": {
+          "1": "28"
+        },
+        "label": "DO 22 (pin 28)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 23,
+        "pins": {
+          "1": "29"
+        },
+        "label": "DO 23 (pin 29)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 24,
+        "pins": {
+          "1": "32"
+        },
+        "label": "DO 24 (pin 32)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 25,
+        "pins": {
+          "1": "33"
+        },
+        "label": "DO 25 (pin 33)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 26,
+        "pins": {
+          "1": "34"
+        },
+        "label": "DO 26 (pin 34)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 27,
+        "pins": {
+          "1": "35"
+        },
+        "label": "DO 27 (pin 35)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 28,
+        "pins": {
+          "1": "36"
+        },
+        "label": "DO 28 (pin 36)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 29,
+        "pins": {
+          "1": "37"
+        },
+        "label": "DO 29 (pin 37)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 30,
+        "pins": {
+          "1": "38"
+        },
+        "label": "DO 30 (pin 38)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 31,
+        "pins": {
+          "1": "39"
+        },
+        "label": "DO 31 (pin 39)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "7"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "8"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "9"
+        },
+        {
+          "channel": 8,
+          "kind": "DO",
+          "pin": "12"
+        },
+        {
+          "channel": 9,
+          "kind": "DO",
+          "pin": "13"
+        },
+        {
+          "channel": 10,
+          "kind": "DO",
+          "pin": "14"
+        },
+        {
+          "channel": 11,
+          "kind": "DO",
+          "pin": "15"
+        },
+        {
+          "channel": 12,
+          "kind": "DO",
+          "pin": "16"
+        },
+        {
+          "channel": 13,
+          "kind": "DO",
+          "pin": "17"
+        },
+        {
+          "channel": 14,
+          "kind": "DO",
+          "pin": "18"
+        },
+        {
+          "channel": 15,
+          "kind": "DO",
+          "pin": "19"
+        },
+        {
+          "channel": 16,
+          "kind": "DO",
+          "pin": "22"
+        },
+        {
+          "channel": 17,
+          "kind": "DO",
+          "pin": "23"
+        },
+        {
+          "channel": 18,
+          "kind": "DO",
+          "pin": "24"
+        },
+        {
+          "channel": 19,
+          "kind": "DO",
+          "pin": "25"
+        },
+        {
+          "channel": 20,
+          "kind": "DO",
+          "pin": "26"
+        },
+        {
+          "channel": 21,
+          "kind": "DO",
+          "pin": "27"
+        },
+        {
+          "channel": 22,
+          "kind": "DO",
+          "pin": "28"
+        },
+        {
+          "channel": 23,
+          "kind": "DO",
+          "pin": "29"
+        },
+        {
+          "channel": 24,
+          "kind": "DO",
+          "pin": "32"
+        },
+        {
+          "channel": 25,
+          "kind": "DO",
+          "pin": "33"
+        },
+        {
+          "channel": 26,
+          "kind": "DO",
+          "pin": "34"
+        },
+        {
+          "channel": 27,
+          "kind": "DO",
+          "pin": "35"
+        },
+        {
+          "channel": 28,
+          "kind": "DO",
+          "pin": "36"
+        },
+        {
+          "channel": 29,
+          "kind": "DO",
+          "pin": "37"
+        },
+        {
+          "channel": 30,
+          "kind": "DO",
+          "pin": "38"
+        },
+        {
+          "channel": 31,
+          "kind": "DO",
+          "pin": "39"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.dq32.ba",
+    "name": {
+      "de": "S7-1500 / ET 200MP DQ 32x24VDC/0.5A BA",
+      "en": "S7-1500 / ET 200MP DQ 32x24VDC/0.5A BA"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7522-1BL10-0AA0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 0,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 0 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 1 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 2 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 3 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DO 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DO 5 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 6 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DO 7 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 8,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DO 8 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 9,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DO 9 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 10,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DO 10 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 11,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DO 11 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 12,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DO 12 (pin 16)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 13,
+        "pins": {
+          "1": "17"
+        },
+        "label": "DO 13 (pin 17)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 14,
+        "pins": {
+          "1": "18"
+        },
+        "label": "DO 14 (pin 18)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 15,
+        "pins": {
+          "1": "19"
+        },
+        "label": "DO 15 (pin 19)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 16,
+        "pins": {
+          "1": "22"
+        },
+        "label": "DO 16 (pin 22)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 17,
+        "pins": {
+          "1": "23"
+        },
+        "label": "DO 17 (pin 23)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 18,
+        "pins": {
+          "1": "24"
+        },
+        "label": "DO 18 (pin 24)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 19,
+        "pins": {
+          "1": "25"
+        },
+        "label": "DO 19 (pin 25)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 20,
+        "pins": {
+          "1": "26"
+        },
+        "label": "DO 20 (pin 26)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 21,
+        "pins": {
+          "1": "27"
+        },
+        "label": "DO 21 (pin 27)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 22,
+        "pins": {
+          "1": "28"
+        },
+        "label": "DO 22 (pin 28)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 23,
+        "pins": {
+          "1": "29"
+        },
+        "label": "DO 23 (pin 29)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 24,
+        "pins": {
+          "1": "32"
+        },
+        "label": "DO 24 (pin 32)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 25,
+        "pins": {
+          "1": "33"
+        },
+        "label": "DO 25 (pin 33)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 26,
+        "pins": {
+          "1": "34"
+        },
+        "label": "DO 26 (pin 34)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 27,
+        "pins": {
+          "1": "35"
+        },
+        "label": "DO 27 (pin 35)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 28,
+        "pins": {
+          "1": "36"
+        },
+        "label": "DO 28 (pin 36)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 29,
+        "pins": {
+          "1": "37"
+        },
+        "label": "DO 29 (pin 37)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 30,
+        "pins": {
+          "1": "38"
+        },
+        "label": "DO 30 (pin 38)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 31,
+        "pins": {
+          "1": "39"
+        },
+        "label": "DO 31 (pin 39)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "7"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "8"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "9"
+        },
+        {
+          "channel": 8,
+          "kind": "DO",
+          "pin": "12"
+        },
+        {
+          "channel": 9,
+          "kind": "DO",
+          "pin": "13"
+        },
+        {
+          "channel": 10,
+          "kind": "DO",
+          "pin": "14"
+        },
+        {
+          "channel": 11,
+          "kind": "DO",
+          "pin": "15"
+        },
+        {
+          "channel": 12,
+          "kind": "DO",
+          "pin": "16"
+        },
+        {
+          "channel": 13,
+          "kind": "DO",
+          "pin": "17"
+        },
+        {
+          "channel": 14,
+          "kind": "DO",
+          "pin": "18"
+        },
+        {
+          "channel": 15,
+          "kind": "DO",
+          "pin": "19"
+        },
+        {
+          "channel": 16,
+          "kind": "DO",
+          "pin": "22"
+        },
+        {
+          "channel": 17,
+          "kind": "DO",
+          "pin": "23"
+        },
+        {
+          "channel": 18,
+          "kind": "DO",
+          "pin": "24"
+        },
+        {
+          "channel": 19,
+          "kind": "DO",
+          "pin": "25"
+        },
+        {
+          "channel": 20,
+          "kind": "DO",
+          "pin": "26"
+        },
+        {
+          "channel": 21,
+          "kind": "DO",
+          "pin": "27"
+        },
+        {
+          "channel": 22,
+          "kind": "DO",
+          "pin": "28"
+        },
+        {
+          "channel": 23,
+          "kind": "DO",
+          "pin": "29"
+        },
+        {
+          "channel": 24,
+          "kind": "DO",
+          "pin": "32"
+        },
+        {
+          "channel": 25,
+          "kind": "DO",
+          "pin": "33"
+        },
+        {
+          "channel": 26,
+          "kind": "DO",
+          "pin": "34"
+        },
+        {
+          "channel": 27,
+          "kind": "DO",
+          "pin": "35"
+        },
+        {
+          "channel": 28,
+          "kind": "DO",
+          "pin": "36"
+        },
+        {
+          "channel": 29,
+          "kind": "DO",
+          "pin": "37"
+        },
+        {
+          "channel": 30,
+          "kind": "DO",
+          "pin": "38"
+        },
+        {
+          "channel": 31,
+          "kind": "DO",
+          "pin": "39"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.dq8.ac",
+    "name": {
+      "de": "S7-1500 / ET 200MP DQ 8x230VAC/2A ST",
+      "en": "S7-1500 / ET 200MP DQ 8x230VAC/2A ST"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7522-5FF00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 0,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 0 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 1 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 2 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 3 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DO 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DO 5 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 6 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DO 7 (pin 9)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "7"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "8"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "9"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.rq8",
+    "name": {
+      "de": "S7-1500 / ET 200MP RQ 8x230VAC/5A ST (relay)",
+      "en": "S7-1500 / ET 200MP RQ 8x230VAC/5A ST (relay)"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7522-5HF00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 0,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 0 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 1 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 2 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 3 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DO 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DO 5 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 6 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DO 7 (pin 9)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "7"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "8"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "9"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.fdq8",
+    "name": {
+      "de": "S7-1500 / ET 200MP F-DQ 8x24VDC/2A PPM",
+      "en": "S7-1500 / ET 200MP F-DQ 8x24VDC/2A PPM"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7526-2BF00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 0,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 0 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 1 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 2 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 3 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DO 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DO 5 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 6 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DO 7 (pin 9)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "7"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "8"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "9"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.ai8.st",
+    "name": {
+      "de": "S7-1500 / ET 200MP AI 8xU/I/RTD/TC ST",
+      "en": "S7-1500 / ET 200MP AI 8xU/I/RTD/TC ST"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7531-7KF00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 0,
+        "pins": {
+          "1": "CH0"
+        },
+        "label": "AI 0 (pin CH0)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "CH1"
+        },
+        "label": "AI 1 (pin CH1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "CH2"
+        },
+        "label": "AI 2 (pin CH2)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "CH3"
+        },
+        "label": "AI 3 (pin CH3)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "CH4"
+        },
+        "label": "AI 4 (pin CH4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 5,
+        "pins": {
+          "1": "CH5"
+        },
+        "label": "AI 5 (pin CH5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 6,
+        "pins": {
+          "1": "CH6"
+        },
+        "label": "AI 6 (pin CH6)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 7,
+        "pins": {
+          "1": "CH7"
+        },
+        "label": "AI 7 (pin CH7)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "AI",
+          "pin": "CH0"
+        },
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "CH1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "CH2"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "CH3"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "CH4"
+        },
+        {
+          "channel": 5,
+          "kind": "AI",
+          "pin": "CH5"
+        },
+        {
+          "channel": 6,
+          "kind": "AI",
+          "pin": "CH6"
+        },
+        {
+          "channel": 7,
+          "kind": "AI",
+          "pin": "CH7"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.ai4.st",
+    "name": {
+      "de": "S7-1500 / ET 200MP AI 4xU/I/RTD/TC ST",
+      "en": "S7-1500 / ET 200MP AI 4xU/I/RTD/TC ST"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7531-7QD00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 0,
+        "pins": {
+          "1": "CH0"
+        },
+        "label": "AI 0 (pin CH0)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "CH1"
+        },
+        "label": "AI 1 (pin CH1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "CH2"
+        },
+        "label": "AI 2 (pin CH2)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "CH3"
+        },
+        "label": "AI 3 (pin CH3)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "AI",
+          "pin": "CH0"
+        },
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "CH1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "CH2"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "CH3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.ai8.hs",
+    "name": {
+      "de": "S7-1500 / ET 200MP AI 8xU/I HS",
+      "en": "S7-1500 / ET 200MP AI 8xU/I HS"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7531-7NF10-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 0,
+        "pins": {
+          "1": "CH0"
+        },
+        "label": "AI 0 (pin CH0)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "CH1"
+        },
+        "label": "AI 1 (pin CH1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "CH2"
+        },
+        "label": "AI 2 (pin CH2)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "CH3"
+        },
+        "label": "AI 3 (pin CH3)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "CH4"
+        },
+        "label": "AI 4 (pin CH4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 5,
+        "pins": {
+          "1": "CH5"
+        },
+        "label": "AI 5 (pin CH5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 6,
+        "pins": {
+          "1": "CH6"
+        },
+        "label": "AI 6 (pin CH6)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 7,
+        "pins": {
+          "1": "CH7"
+        },
+        "label": "AI 7 (pin CH7)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "AI",
+          "pin": "CH0"
+        },
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "CH1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "CH2"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "CH3"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "CH4"
+        },
+        {
+          "channel": 5,
+          "kind": "AI",
+          "pin": "CH5"
+        },
+        {
+          "channel": 6,
+          "kind": "AI",
+          "pin": "CH6"
+        },
+        {
+          "channel": 7,
+          "kind": "AI",
+          "pin": "CH7"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.aq4.st",
+    "name": {
+      "de": "S7-1500 / ET 200MP AQ 4xU/I ST",
+      "en": "S7-1500 / ET 200MP AQ 4xU/I ST"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7532-5HD00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 0,
+        "pins": {
+          "1": "CH0"
+        },
+        "label": "AO 0 (pin CH0)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "CH1"
+        },
+        "label": "AO 1 (pin CH1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "CH2"
+        },
+        "label": "AO 2 (pin CH2)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 3,
+        "pins": {
+          "1": "CH3"
+        },
+        "label": "AO 3 (pin CH3)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "AO",
+          "pin": "CH0"
+        },
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "CH1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "CH2"
+        },
+        {
+          "channel": 3,
+          "kind": "AO",
+          "pin": "CH3"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.aq2.st",
+    "name": {
+      "de": "S7-1500 / ET 200MP AQ 2xU/I ST",
+      "en": "S7-1500 / ET 200MP AQ 2xU/I ST"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7532-5NB00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 0,
+        "pins": {
+          "1": "CH0"
+        },
+        "label": "AO 0 (pin CH0)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "CH1"
+        },
+        "label": "AO 1 (pin CH1)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "AO",
+          "pin": "CH0"
+        },
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "CH1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.s71500.aq8.hs",
+    "name": {
+      "de": "S7-1500 / ET 200MP AQ 8xU/I HS",
+      "en": "S7-1500 / ET 200MP AQ 8xU/I HS"
+    },
+    "category": "plc.siemens.s71500",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7532-5HF00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 0,
+        "pins": {
+          "1": "CH0"
+        },
+        "label": "AO 0 (pin CH0)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "CH1"
+        },
+        "label": "AO 1 (pin CH1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "CH2"
+        },
+        "label": "AO 2 (pin CH2)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 3,
+        "pins": {
+          "1": "CH3"
+        },
+        "label": "AO 3 (pin CH3)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 4,
+        "pins": {
+          "1": "CH4"
+        },
+        "label": "AO 4 (pin CH4)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 5,
+        "pins": {
+          "1": "CH5"
+        },
+        "label": "AO 5 (pin CH5)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 6,
+        "pins": {
+          "1": "CH6"
+        },
+        "label": "AO 6 (pin CH6)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 7,
+        "pins": {
+          "1": "CH7"
+        },
+        "label": "AO 7 (pin CH7)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "AO",
+          "pin": "CH0"
+        },
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "CH1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "CH2"
+        },
+        {
+          "channel": 3,
+          "kind": "AO",
+          "pin": "CH3"
+        },
+        {
+          "channel": 4,
+          "kind": "AO",
+          "pin": "CH4"
+        },
+        {
+          "channel": 5,
+          "kind": "AO",
+          "pin": "CH5"
+        },
+        {
+          "channel": 6,
+          "kind": "AO",
+          "pin": "CH6"
+        },
+        {
+          "channel": 7,
+          "kind": "AO",
+          "pin": "CH7"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200mp.im155-5pn.st",
+    "name": {
+      "de": "ET 200MP IM 155-5 PN ST",
+      "en": "ET 200MP IM 155-5 PN ST"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7155-5AA01-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1511-1pn",
+    "name": {
+      "de": "S7-1500 CPU 1511-1 PN",
+      "en": "S7-1500 CPU 1511-1 PN"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7511-1AL03-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1511f-1pn",
+    "name": {
+      "de": "S7-1500 CPU 1511F-1 PN",
+      "en": "S7-1500 CPU 1511F-1 PN"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7511-1FL03-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1511c-1pn",
+    "name": {
+      "de": "S7-1500 CPU 1511C-1 PN (compact, onboard I/O)",
+      "en": "S7-1500 CPU 1511C-1 PN (compact, onboard I/O)"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7511-1CL03-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1512c-1pn",
+    "name": {
+      "de": "S7-1500 CPU 1512C-1 PN (compact, onboard I/O)",
+      "en": "S7-1500 CPU 1512C-1 PN (compact, onboard I/O)"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7512-1CM03-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1513-1pn",
+    "name": {
+      "de": "S7-1500 CPU 1513-1 PN",
+      "en": "S7-1500 CPU 1513-1 PN"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7513-1AM03-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1513f-1pn",
+    "name": {
+      "de": "S7-1500 CPU 1513F-1 PN",
+      "en": "S7-1500 CPU 1513F-1 PN"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7513-1FM03-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1515-2pn",
+    "name": {
+      "de": "S7-1500 CPU 1515-2 PN",
+      "en": "S7-1500 CPU 1515-2 PN"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7515-2AN03-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1515f-2pn",
+    "name": {
+      "de": "S7-1500 CPU 1515F-2 PN",
+      "en": "S7-1500 CPU 1515F-2 PN"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7515-2FN03-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1516-3pndp",
+    "name": {
+      "de": "S7-1500 CPU 1516-3 PN/DP",
+      "en": "S7-1500 CPU 1516-3 PN/DP"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7516-3AP03-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1516f-3pndp",
+    "name": {
+      "de": "S7-1500 CPU 1516F-3 PN/DP",
+      "en": "S7-1500 CPU 1516F-3 PN/DP"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7516-3FP03-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1517-3pndp",
+    "name": {
+      "de": "S7-1500 CPU 1517-3 PN/DP",
+      "en": "S7-1500 CPU 1517-3 PN/DP"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7517-3AP00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1517f-3pndp",
+    "name": {
+      "de": "S7-1500 CPU 1517F-3 PN/DP",
+      "en": "S7-1500 CPU 1517F-3 PN/DP"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7517-3FP00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1518-4pndp",
+    "name": {
+      "de": "S7-1500 CPU 1518-4 PN/DP",
+      "en": "S7-1500 CPU 1518-4 PN/DP"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7518-4AX00-1AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1518f-4pndp",
+    "name": {
+      "de": "S7-1500 CPU 1518F-4 PN/DP",
+      "en": "S7-1500 CPU 1518F-4 PN/DP"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7518-4FX00-1AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1510sp-1pn",
+    "name": {
+      "de": "S7-1500 CPU 1510SP-1 PN (ET 200SP)",
+      "en": "S7-1500 CPU 1510SP-1 PN (ET 200SP)"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7510-1DK03-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1510spf-1pn",
+    "name": {
+      "de": "S7-1500 CPU 1510SP F-1 PN (ET 200SP)",
+      "en": "S7-1500 CPU 1510SP F-1 PN (ET 200SP)"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7510-1SK03-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1512sp-1pn",
+    "name": {
+      "de": "S7-1500 CPU 1512SP-1 PN (ET 200SP)",
+      "en": "S7-1500 CPU 1512SP-1 PN (ET 200SP)"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7512-1DM03-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "siemens.s71500.cpu1512spf-1pn",
+    "name": {
+      "de": "S7-1500 CPU 1512SP F-1 PN (ET 200SP)",
+      "en": "S7-1500 CPU 1512SP F-1 PN (ET 200SP)"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7512-1SM03-0AB0",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  }
+]

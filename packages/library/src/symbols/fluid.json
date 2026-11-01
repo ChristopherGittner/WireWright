@@ -1,0 +1,2517 @@
+[
+  {
+    "id": "iso1219.valve.32.solenoid",
+    "name": {
+      "de": "3/2-Wegeventil, Magnet, Federrückstellung",
+      "en": "3/2-way valve, solenoid, spring return"
+    },
+    "category": "fluid",
+    "function": "valve.pneumatic",
+    "defaultRole": "auxiliary",
+    "letterCode": "QM",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "width": 12,
+        "height": 8
+      },
+      {
+        "type": "rect",
+        "x": -12,
+        "y": 0,
+        "width": 12,
+        "height": 8
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 8,
+        "x2": 4,
+        "y2": 12
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -4,
+        "x2": 4,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 8,
+        "x2": 8,
+        "y2": 12
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 0,
+        "x2": 7.0,
+        "y2": 6.0
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            8,
+            8
+          ],
+          [
+            6.25,
+            6.37
+          ],
+          [
+            7.75,
+            5.62
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 8,
+        "x2": 4,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": 2.8,
+        "y1": 6,
+        "x2": 5.2,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": 8,
+        "x2": -8.0,
+        "y2": 2.24
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -8,
+            0
+          ],
+          [
+            -7.16,
+            2.24
+          ],
+          [
+            -8.84,
+            2.24
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": 8,
+        "x2": -4,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": -5.2,
+        "y1": 6,
+        "x2": -2.8,
+        "y2": 6
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            12,
+            4
+          ],
+          [
+            13.0,
+            2.4
+          ],
+          [
+            14.0,
+            5.6
+          ],
+          [
+            15.0,
+            2.4
+          ],
+          [
+            16.0,
+            4
+          ]
+        ]
+      },
+      {
+        "type": "rect",
+        "x": -16,
+        "y": 1,
+        "width": 4,
+        "height": 6
+      },
+      {
+        "type": "line",
+        "x1": -16,
+        "y1": 7,
+        "x2": -12,
+        "y2": 1
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 4,
+        "y": 12,
+        "direction": "down",
+        "designation": "1",
+        "medium": "fluid"
+      },
+      {
+        "id": "2",
+        "x": 4,
+        "y": -4,
+        "direction": "up",
+        "designation": "2",
+        "medium": "fluid"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": 12,
+        "direction": "down",
+        "designation": "3",
+        "medium": "fluid"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -18,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -18,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -18,
+        "y": 11,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 5,
+        "y": 11.5,
+        "size": 1.8
+      },
+      {
+        "field": "pin:2",
+        "x": 5,
+        "y": -1.5,
+        "size": 1.8
+      },
+      {
+        "field": "pin:3",
+        "x": 9,
+        "y": 11.5,
+        "size": 1.8
+      }
+    ]
+  },
+  {
+    "id": "iso1219.valve.32.manual",
+    "name": {
+      "de": "3/2-Wegeventil, Taster, Federrückstellung",
+      "en": "3/2-way valve, push button, spring return"
+    },
+    "category": "fluid",
+    "function": "valve.pneumatic",
+    "defaultRole": "main",
+    "letterCode": "QM",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "width": 12,
+        "height": 8
+      },
+      {
+        "type": "rect",
+        "x": -12,
+        "y": 0,
+        "width": 12,
+        "height": 8
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 8,
+        "x2": 4,
+        "y2": 12
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -4,
+        "x2": 4,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 8,
+        "x2": 8,
+        "y2": 12
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 0,
+        "x2": 7.0,
+        "y2": 6.0
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            8,
+            8
+          ],
+          [
+            6.25,
+            6.37
+          ],
+          [
+            7.75,
+            5.62
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 8,
+        "x2": 4,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": 2.8,
+        "y1": 6,
+        "x2": 5.2,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": 8,
+        "x2": -8.0,
+        "y2": 2.24
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -8,
+            0
+          ],
+          [
+            -7.16,
+            2.24
+          ],
+          [
+            -8.84,
+            2.24
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": 8,
+        "x2": -4,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": -5.2,
+        "y1": 6,
+        "x2": -2.8,
+        "y2": 6
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            12,
+            4
+          ],
+          [
+            13.0,
+            2.4
+          ],
+          [
+            14.0,
+            5.6
+          ],
+          [
+            15.0,
+            2.4
+          ],
+          [
+            16.0,
+            4
+          ]
+        ]
+      },
+      {
+        "type": "line",
+        "x1": -16,
+        "y1": 4,
+        "x2": -12,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": -16,
+        "y1": 2,
+        "x2": -16,
+        "y2": 6
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 4,
+        "y": 12,
+        "direction": "down",
+        "designation": "1",
+        "medium": "fluid"
+      },
+      {
+        "id": "2",
+        "x": 4,
+        "y": -4,
+        "direction": "up",
+        "designation": "2",
+        "medium": "fluid"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": 12,
+        "direction": "down",
+        "designation": "3",
+        "medium": "fluid"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -18,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -18,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -18,
+        "y": 11,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 5,
+        "y": 11.5,
+        "size": 1.8
+      },
+      {
+        "field": "pin:2",
+        "x": 5,
+        "y": -1.5,
+        "size": 1.8
+      },
+      {
+        "field": "pin:3",
+        "x": 9,
+        "y": 11.5,
+        "size": 1.8
+      }
+    ]
+  },
+  {
+    "id": "iso1219.valve.52.solenoid",
+    "name": {
+      "de": "5/2-Wegeventil, Magnet, Federrückstellung",
+      "en": "5/2-way valve, solenoid, spring return"
+    },
+    "category": "fluid",
+    "function": "valve.pneumatic",
+    "defaultRole": "auxiliary",
+    "letterCode": "QM",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "width": 16,
+        "height": 8
+      },
+      {
+        "type": "rect",
+        "x": -16,
+        "y": 0,
+        "width": 16,
+        "height": 8
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 8,
+        "x2": 8,
+        "y2": 12
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": -4,
+        "x2": 12,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": 8,
+        "x2": 12,
+        "y2": 12
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -4,
+        "x2": 4,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 8,
+        "x2": 4,
+        "y2": 12
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 8,
+        "x2": 11.0,
+        "y2": 2.0
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            12,
+            0
+          ],
+          [
+            11.75,
+            2.38
+          ],
+          [
+            10.25,
+            1.63
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 0,
+        "x2": 4.0,
+        "y2": 5.76
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            4,
+            8
+          ],
+          [
+            3.16,
+            5.76
+          ],
+          [
+            4.84,
+            5.76
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": 8,
+        "x2": 12,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": 10.8,
+        "y1": 6,
+        "x2": 13.2,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": 8,
+        "x2": -11.0,
+        "y2": 2.0
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -12,
+            0
+          ],
+          [
+            -10.25,
+            1.63
+          ],
+          [
+            -11.75,
+            2.38
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": 0,
+        "x2": -4.0,
+        "y2": 5.76
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -4,
+            8
+          ],
+          [
+            -4.84,
+            5.76
+          ],
+          [
+            -3.16,
+            5.76
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": -12,
+        "y1": 8,
+        "x2": -12,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": -13.2,
+        "y1": 6,
+        "x2": -10.8,
+        "y2": 6
+      },
+      {
+        "type": "rect",
+        "x": -20,
+        "y": 1,
+        "width": 4,
+        "height": 6
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 7,
+        "x2": -16,
+        "y2": 1
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            16,
+            4
+          ],
+          [
+            17.0,
+            2.4
+          ],
+          [
+            18.0,
+            5.6
+          ],
+          [
+            19.0,
+            2.4
+          ],
+          [
+            20.0,
+            4
+          ]
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 8,
+        "y": 12,
+        "direction": "down",
+        "designation": "1",
+        "medium": "fluid"
+      },
+      {
+        "id": "2",
+        "x": 12,
+        "y": -4,
+        "direction": "up",
+        "designation": "2",
+        "medium": "fluid"
+      },
+      {
+        "id": "3",
+        "x": 12,
+        "y": 12,
+        "direction": "down",
+        "designation": "3",
+        "medium": "fluid"
+      },
+      {
+        "id": "4",
+        "x": 4,
+        "y": -4,
+        "direction": "up",
+        "designation": "4",
+        "medium": "fluid"
+      },
+      {
+        "id": "5",
+        "x": 4,
+        "y": 12,
+        "direction": "down",
+        "designation": "5",
+        "medium": "fluid"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -22,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -22,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -22,
+        "y": 11,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 9,
+        "y": 11.5,
+        "size": 1.8
+      },
+      {
+        "field": "pin:2",
+        "x": 13,
+        "y": -1.5,
+        "size": 1.8
+      },
+      {
+        "field": "pin:3",
+        "x": 13,
+        "y": 11.5,
+        "size": 1.8
+      },
+      {
+        "field": "pin:4",
+        "x": 5,
+        "y": -1.5,
+        "size": 1.8
+      },
+      {
+        "field": "pin:5",
+        "x": 5,
+        "y": 11.5,
+        "size": 1.8
+      }
+    ]
+  },
+  {
+    "id": "iso1219.valve.52.double",
+    "name": {
+      "de": "5/2-Wegeventil, Impulsventil (2 Magnete)",
+      "en": "5/2-way valve, double solenoid (impulse)"
+    },
+    "category": "fluid",
+    "function": "valve.pneumatic",
+    "defaultRole": "main",
+    "letterCode": "QM",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "width": 16,
+        "height": 8
+      },
+      {
+        "type": "rect",
+        "x": -16,
+        "y": 0,
+        "width": 16,
+        "height": 8
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 8,
+        "x2": 8,
+        "y2": 12
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": -4,
+        "x2": 12,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": 8,
+        "x2": 12,
+        "y2": 12
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -4,
+        "x2": 4,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 8,
+        "x2": 4,
+        "y2": 12
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 8,
+        "x2": 11.0,
+        "y2": 2.0
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            12,
+            0
+          ],
+          [
+            11.75,
+            2.38
+          ],
+          [
+            10.25,
+            1.63
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 0,
+        "x2": 4.0,
+        "y2": 5.76
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            4,
+            8
+          ],
+          [
+            3.16,
+            5.76
+          ],
+          [
+            4.84,
+            5.76
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": 8,
+        "x2": 12,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": 10.8,
+        "y1": 6,
+        "x2": 13.2,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": 8,
+        "x2": -11.0,
+        "y2": 2.0
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -12,
+            0
+          ],
+          [
+            -10.25,
+            1.63
+          ],
+          [
+            -11.75,
+            2.38
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": 0,
+        "x2": -4.0,
+        "y2": 5.76
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -4,
+            8
+          ],
+          [
+            -4.84,
+            5.76
+          ],
+          [
+            -3.16,
+            5.76
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": -12,
+        "y1": 8,
+        "x2": -12,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": -13.2,
+        "y1": 6,
+        "x2": -10.8,
+        "y2": 6
+      },
+      {
+        "type": "rect",
+        "x": -20,
+        "y": 1,
+        "width": 4,
+        "height": 6
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 7,
+        "x2": -16,
+        "y2": 1
+      },
+      {
+        "type": "rect",
+        "x": 16,
+        "y": 1,
+        "width": 4,
+        "height": 6
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": 7,
+        "x2": 20,
+        "y2": 1
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 8,
+        "y": 12,
+        "direction": "down",
+        "designation": "1",
+        "medium": "fluid"
+      },
+      {
+        "id": "2",
+        "x": 12,
+        "y": -4,
+        "direction": "up",
+        "designation": "2",
+        "medium": "fluid"
+      },
+      {
+        "id": "3",
+        "x": 12,
+        "y": 12,
+        "direction": "down",
+        "designation": "3",
+        "medium": "fluid"
+      },
+      {
+        "id": "4",
+        "x": 4,
+        "y": -4,
+        "direction": "up",
+        "designation": "4",
+        "medium": "fluid"
+      },
+      {
+        "id": "5",
+        "x": 4,
+        "y": 12,
+        "direction": "down",
+        "designation": "5",
+        "medium": "fluid"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -22,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -22,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -22,
+        "y": 11,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 9,
+        "y": 11.5,
+        "size": 1.8
+      },
+      {
+        "field": "pin:2",
+        "x": 13,
+        "y": -1.5,
+        "size": 1.8
+      },
+      {
+        "field": "pin:3",
+        "x": 13,
+        "y": 11.5,
+        "size": 1.8
+      },
+      {
+        "field": "pin:4",
+        "x": 5,
+        "y": -1.5,
+        "size": 1.8
+      },
+      {
+        "field": "pin:5",
+        "x": 5,
+        "y": 11.5,
+        "size": 1.8
+      }
+    ]
+  },
+  {
+    "id": "iso1219.valve.53.closed",
+    "name": {
+      "de": "5/3-Wegeventil, Mittelstellung gesperrt",
+      "en": "5/3-way valve, closed centre"
+    },
+    "category": "fluid",
+    "function": "valve.pneumatic",
+    "defaultRole": "main",
+    "letterCode": "QM",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -16,
+        "y": 0,
+        "width": 16,
+        "height": 8
+      },
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "width": 16,
+        "height": 8
+      },
+      {
+        "type": "rect",
+        "x": 16,
+        "y": 0,
+        "width": 16,
+        "height": 8
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 8,
+        "x2": 8,
+        "y2": 12
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": -4,
+        "x2": 12,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": 8,
+        "x2": 12,
+        "y2": 12
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -4,
+        "x2": 4,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 8,
+        "x2": 4,
+        "y2": 12
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 0,
+        "x2": 4,
+        "y2": 2
+      },
+      {
+        "type": "line",
+        "x1": 2.8,
+        "y1": 2,
+        "x2": 5.2,
+        "y2": 2
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": 0,
+        "x2": 12,
+        "y2": 2
+      },
+      {
+        "type": "line",
+        "x1": 10.8,
+        "y1": 2,
+        "x2": 13.2,
+        "y2": 2
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 8,
+        "x2": 4,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": 2.8,
+        "y1": 6,
+        "x2": 5.2,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 8,
+        "x2": 8,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": 6.8,
+        "y1": 6,
+        "x2": 9.2,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": 8,
+        "x2": 12,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": 10.8,
+        "y1": 6,
+        "x2": 13.2,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": 8,
+        "x2": -11.0,
+        "y2": 2.0
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -12,
+            0
+          ],
+          [
+            -10.25,
+            1.63
+          ],
+          [
+            -11.75,
+            2.38
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": 0,
+        "x2": -4.0,
+        "y2": 5.76
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -4,
+            8
+          ],
+          [
+            -4.84,
+            5.76
+          ],
+          [
+            -3.16,
+            5.76
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": 24,
+        "y1": 8,
+        "x2": 27.0,
+        "y2": 2.0
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            28,
+            0
+          ],
+          [
+            27.75,
+            2.38
+          ],
+          [
+            26.25,
+            1.63
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": 20,
+        "y1": 0,
+        "x2": 20.0,
+        "y2": 5.76
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            20,
+            8
+          ],
+          [
+            19.16,
+            5.76
+          ],
+          [
+            20.84,
+            5.76
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "rect",
+        "x": -20,
+        "y": 1,
+        "width": 4,
+        "height": 6
+      },
+      {
+        "type": "line",
+        "x1": -20,
+        "y1": 7,
+        "x2": -16,
+        "y2": 1
+      },
+      {
+        "type": "rect",
+        "x": 32,
+        "y": 1,
+        "width": 4,
+        "height": 6
+      },
+      {
+        "type": "line",
+        "x1": 32,
+        "y1": 7,
+        "x2": 36,
+        "y2": 1
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 8,
+        "y": 12,
+        "direction": "down",
+        "designation": "1",
+        "medium": "fluid"
+      },
+      {
+        "id": "2",
+        "x": 12,
+        "y": -4,
+        "direction": "up",
+        "designation": "2",
+        "medium": "fluid"
+      },
+      {
+        "id": "3",
+        "x": 12,
+        "y": 12,
+        "direction": "down",
+        "designation": "3",
+        "medium": "fluid"
+      },
+      {
+        "id": "4",
+        "x": 4,
+        "y": -4,
+        "direction": "up",
+        "designation": "4",
+        "medium": "fluid"
+      },
+      {
+        "id": "5",
+        "x": 4,
+        "y": 12,
+        "direction": "down",
+        "designation": "5",
+        "medium": "fluid"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -22,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -22,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -22,
+        "y": 11,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 9,
+        "y": 11.5,
+        "size": 1.8
+      },
+      {
+        "field": "pin:2",
+        "x": 13,
+        "y": -1.5,
+        "size": 1.8
+      },
+      {
+        "field": "pin:3",
+        "x": 13,
+        "y": 11.5,
+        "size": 1.8
+      },
+      {
+        "field": "pin:4",
+        "x": 5,
+        "y": -1.5,
+        "size": 1.8
+      },
+      {
+        "field": "pin:5",
+        "x": 5,
+        "y": 11.5,
+        "size": 1.8
+      }
+    ]
+  },
+  {
+    "id": "iso1219.cylinder.double",
+    "name": {
+      "de": "Zylinder, doppeltwirkend",
+      "en": "Cylinder, double-acting"
+    },
+    "category": "fluid",
+    "function": "cylinder",
+    "defaultRole": "main",
+    "letterCode": "MM",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "width": 32,
+        "height": 10
+      },
+      {
+        "type": "rect",
+        "x": 10,
+        "y": 0,
+        "width": 2,
+        "height": 10
+      },
+      {
+        "type": "rect",
+        "x": 12,
+        "y": 4,
+        "width": 32,
+        "height": 2
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 10,
+        "x2": 4,
+        "y2": 16
+      },
+      {
+        "type": "line",
+        "x1": 28,
+        "y1": 10,
+        "x2": 28,
+        "y2": 16
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 4,
+        "y": 16,
+        "direction": "down",
+        "designation": "1",
+        "medium": "fluid"
+      },
+      {
+        "id": "2",
+        "x": 28,
+        "y": 16,
+        "direction": "down",
+        "designation": "2",
+        "medium": "fluid"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -2,
+        "y": 4,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -2,
+        "y": 8,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 5,
+        "y": 15,
+        "size": 1.8
+      },
+      {
+        "field": "pin:2",
+        "x": 29,
+        "y": 15,
+        "size": 1.8
+      }
+    ]
+  },
+  {
+    "id": "iso1219.cylinder.single",
+    "name": {
+      "de": "Zylinder, einfachwirkend, Federrückstellung",
+      "en": "Cylinder, single-acting, spring return"
+    },
+    "category": "fluid",
+    "function": "cylinder",
+    "defaultRole": "main",
+    "letterCode": "MM",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": 0,
+        "y": 0,
+        "width": 32,
+        "height": 10
+      },
+      {
+        "type": "rect",
+        "x": 10,
+        "y": 0,
+        "width": 2,
+        "height": 10
+      },
+      {
+        "type": "rect",
+        "x": 12,
+        "y": 4,
+        "width": 32,
+        "height": 2
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 10,
+        "x2": 4,
+        "y2": 16
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            12,
+            5
+          ],
+          [
+            14.5,
+            1.5
+          ],
+          [
+            17,
+            8.5
+          ],
+          [
+            19.5,
+            1.5
+          ],
+          [
+            22,
+            8.5
+          ],
+          [
+            24.5,
+            1.5
+          ],
+          [
+            27,
+            8.5
+          ],
+          [
+            29.5,
+            1.5
+          ],
+          [
+            32,
+            5
+          ]
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 4,
+        "y": 16,
+        "direction": "down",
+        "designation": "1",
+        "medium": "fluid"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -2,
+        "y": 4,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -2,
+        "y": 8,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 5,
+        "y": 15,
+        "size": 1.8
+      }
+    ]
+  },
+  {
+    "id": "iso1219.flowControl",
+    "name": {
+      "de": "Drosselrückschlagventil",
+      "en": "One-way flow control valve"
+    },
+    "category": "fluid",
+    "function": "flowControl",
+    "defaultRole": "main",
+    "letterCode": "RN",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "arc",
+        "cx": -3.5,
+        "cy": 0,
+        "r": 3.5,
+        "start": -45,
+        "end": 45
+      },
+      {
+        "type": "arc",
+        "cx": 3.5,
+        "cy": 0,
+        "r": 3.5,
+        "start": 135,
+        "end": 225
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -3.2
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 3.2,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": -3,
+        "y1": 3,
+        "x2": 1.42,
+        "y2": -1.42
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            3,
+            -3
+          ],
+          [
+            2.01,
+            -0.82
+          ],
+          [
+            0.82,
+            -2.01
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -6,
+        "x2": 6,
+        "y2": -6
+      },
+      {
+        "type": "line",
+        "x1": 6,
+        "y1": -6,
+        "x2": 6,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": 6,
+        "y1": 6,
+        "x2": 0,
+        "y2": 6
+      },
+      {
+        "type": "circle",
+        "cx": 6,
+        "cy": 0.8,
+        "r": 1.1
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            4.4,
+            -1.2
+          ],
+          [
+            6,
+            -0.30000000000000004
+          ],
+          [
+            7.6,
+            -1.2
+          ]
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "1",
+        "medium": "fluid"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "2",
+        "medium": "fluid"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      }
+    ]
+  },
+  {
+    "id": "iso1219.checkValve",
+    "name": {
+      "de": "Rückschlagventil",
+      "en": "Check valve"
+    },
+    "category": "fluid",
+    "function": "checkValve",
+    "defaultRole": "main",
+    "letterCode": "RM",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 1.5,
+        "r": 1.5
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -2.5,
+            -1
+          ],
+          [
+            0,
+            0.0
+          ],
+          [
+            2.5,
+            -1
+          ]
+        ]
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 3,
+        "x2": 0,
+        "y2": 4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "1",
+        "medium": "fluid"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "2",
+        "medium": "fluid"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      }
+    ]
+  },
+  {
+    "id": "iso1219.reliefValve",
+    "name": {
+      "de": "Druckbegrenzungsventil",
+      "en": "Pressure relief valve"
+    },
+    "category": "fluid",
+    "function": "reliefValve",
+    "defaultRole": "main",
+    "letterCode": "FL",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "rect",
+        "x": -4,
+        "y": -4,
+        "width": 8,
+        "height": 8
+      },
+      {
+        "type": "line",
+        "x1": -1.5,
+        "y1": 3,
+        "x2": -1.5,
+        "y2": -0.76
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.5,
+            -3
+          ],
+          [
+            -0.66,
+            -0.76
+          ],
+          [
+            -2.34,
+            -0.76
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            4,
+            0
+          ],
+          [
+            5.0,
+            -1.6
+          ],
+          [
+            6.0,
+            1.6
+          ],
+          [
+            7.0,
+            -1.6
+          ],
+          [
+            8.0,
+            0
+          ]
+        ]
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "1",
+        "medium": "fluid"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "2",
+        "medium": "fluid"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      }
+    ]
+  },
+  {
+    "id": "iso1219.serviceUnit",
+    "name": {
+      "de": "Wartungseinheit (Filterregler)",
+      "en": "Service unit (filter regulator)"
+    },
+    "category": "fluid",
+    "function": "serviceUnit",
+    "defaultRole": "main",
+    "letterCode": "QM",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": -12,
+        "y1": 0,
+        "x2": -8,
+        "y2": 0
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -8,
+            0
+          ],
+          [
+            -4,
+            -4
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            -4,
+            4
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": -4,
+        "x2": -4,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 0,
+        "x2": 2,
+        "y2": 0
+      },
+      {
+        "type": "rect",
+        "x": 2,
+        "y": -4,
+        "width": 8,
+        "height": 8
+      },
+      {
+        "type": "line",
+        "x1": 6,
+        "y1": 3,
+        "x2": 6.0,
+        "y2": -0.76
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            6,
+            -3
+          ],
+          [
+            6.84,
+            -0.76
+          ],
+          [
+            5.16,
+            -0.76
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": 10,
+        "y1": 0,
+        "x2": 12,
+        "y2": 0
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": -12,
+        "y": 0,
+        "direction": "left",
+        "designation": "1",
+        "medium": "fluid"
+      },
+      {
+        "id": "2",
+        "x": 12,
+        "y": 0,
+        "direction": "right",
+        "designation": "2",
+        "medium": "fluid"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -12,
+        "y": -6
+      },
+      {
+        "field": "functionText",
+        "x": -12,
+        "y": -9
+      }
+    ]
+  },
+  {
+    "id": "iso1219.pump",
+    "name": {
+      "de": "Hydraulikpumpe",
+      "en": "Hydraulic pump"
+    },
+    "category": "fluid",
+    "function": "pump",
+    "defaultRole": "main",
+    "letterCode": "GP",
+    "graphics": [
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 5
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.8,
+            -3
+          ],
+          [
+            1.8,
+            -3
+          ],
+          [
+            0,
+            -5
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 5,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -5,
+        "x2": 0,
+        "y2": -8
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "S",
+        "medium": "fluid"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "P",
+        "medium": "fluid"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -7,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -7,
+        "y": 3,
+        "align": "right"
+      }
+    ]
+  },
+  {
+    "id": "iso1219.gauge",
+    "name": {
+      "de": "Manometer",
+      "en": "Pressure gauge"
+    },
+    "category": "fluid",
+    "function": "gauge",
+    "defaultRole": "main",
+    "letterCode": "BP",
+    "graphics": [
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 3
+      },
+      {
+        "type": "line",
+        "x1": -2,
+        "y1": 2,
+        "x2": 0.42,
+        "y2": -0.42
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            2,
+            -2
+          ],
+          [
+            1.01,
+            0.18
+          ],
+          [
+            -0.18,
+            -1.01
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 3,
+        "x2": 0,
+        "y2": 4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": 4,
+        "direction": "down",
+        "designation": "1",
+        "medium": "fluid"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -5,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -5,
+        "y": 3,
+        "align": "right"
+      }
+    ]
+  },
+  {
+    "id": "iso1219.exhaust",
+    "name": {
+      "de": "Entlüftung",
+      "en": "Exhaust"
+    },
+    "category": "fluid",
+    "function": "fluid.exhaust",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 1
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -2,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "closed": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "a",
+        "x": 0,
+        "y": 0,
+        "direction": "up",
+        "medium": "fluid"
+      }
+    ],
+    "texts": []
+  },
+  {
+    "id": "iso1219.silencer",
+    "name": {
+      "de": "Schalldämpfer",
+      "en": "Silencer"
+    },
+    "category": "fluid",
+    "function": "fluid.silencer",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 0,
+        "x2": 0,
+        "y2": 1
+      },
+      {
+        "type": "rect",
+        "x": -2,
+        "y": 1,
+        "width": 4,
+        "height": 5
+      },
+      {
+        "type": "line",
+        "x1": -2,
+        "y1": 3,
+        "x2": 2,
+        "y2": 1
+      },
+      {
+        "type": "line",
+        "x1": -2,
+        "y1": 5,
+        "x2": 2,
+        "y2": 3
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 6,
+        "x2": 2,
+        "y2": 5
+      }
+    ],
+    "connections": [
+      {
+        "id": "a",
+        "x": 0,
+        "y": 0,
+        "direction": "up",
+        "medium": "fluid"
+      }
+    ],
+    "texts": []
+  },
+  {
+    "id": "iso1219.tank",
+    "name": {
+      "de": "Tank",
+      "en": "Tank"
+    },
+    "category": "fluid",
+    "function": "fluid.tank",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": 3
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -5,
+            0
+          ],
+          [
+            -5,
+            4
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            0
+          ]
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "a",
+        "x": 0,
+        "y": -4,
+        "direction": "up",
+        "medium": "fluid"
+      }
+    ],
+    "texts": []
+  }
+]

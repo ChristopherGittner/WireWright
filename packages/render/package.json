@@ -1,0 +1,21 @@
+{
+  "name": "@wirewright/render",
+  "version": "0.1.0",
+  "description": "Renders Wirewright pages to a scene of drawing primitives and to SVG",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "dependencies": {
+    "@wirewright/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@wirewright/library": "workspace:*"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@wirewright/core",
+  "version": "0.1.0",
+  "description": "Wirewright project model, commands and derived data (no UI)",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./node": {
+      "source": "./src/node.ts",
+      "types": "./dist/node.d.ts",
+      "default": "./dist/node.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "fflate": "^0.8.2",
+    "immer": "^11.2.9",
+    "zod": "^4.6.7"
+  }
+}

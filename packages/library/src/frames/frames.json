@@ -1,0 +1,455 @@
+[
+  {
+    "id": "iec.frame.a3",
+    "name": {
+      "de": "A3 quer, Schaltplan",
+      "en": "A3 landscape, schematic"
+    },
+    "size": {
+      "width": 420,
+      "height": 297
+    },
+    "drawingArea": {
+      "x": 24,
+      "y": 16,
+      "width": 380,
+      "height": 240
+    },
+    "columns": {
+      "count": 10,
+      "x": 24,
+      "width": 38.0
+    },
+    "rows": {
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+      ],
+      "y": 16,
+      "height": 40.0
+    },
+    "graphics": [
+      {
+        "type": "rect",
+        "x": 20,
+        "y": 10,
+        "width": 388,
+        "height": 277
+      },
+      {
+        "type": "rect",
+        "x": 24,
+        "y": 16,
+        "width": 380,
+        "height": 240
+      },
+      {
+        "type": "line",
+        "x1": 20,
+        "y1": 16,
+        "x2": 24,
+        "y2": 16
+      },
+      {
+        "type": "line",
+        "x1": 20,
+        "y1": 256,
+        "x2": 408,
+        "y2": 256
+      },
+      {
+        "type": "line",
+        "x1": 110,
+        "y1": 256,
+        "x2": 110,
+        "y2": 287
+      },
+      {
+        "type": "line",
+        "x1": 230,
+        "y1": 256,
+        "x2": 230,
+        "y2": 287
+      },
+      {
+        "type": "line",
+        "x1": 330,
+        "y1": 256,
+        "x2": 330,
+        "y2": 287
+      },
+      {
+        "type": "line",
+        "x1": 370,
+        "y1": 256,
+        "x2": 370,
+        "y2": 271
+      },
+      {
+        "type": "line",
+        "x1": 110,
+        "y1": 271,
+        "x2": 408,
+        "y2": 271
+      },
+      {
+        "type": "line",
+        "x1": 330,
+        "y1": 264,
+        "x2": 370,
+        "y2": 264
+      },
+      {
+        "type": "line",
+        "x1": 62,
+        "y1": 10,
+        "x2": 62,
+        "y2": 16
+      },
+      {
+        "type": "line",
+        "x1": 100,
+        "y1": 10,
+        "x2": 100,
+        "y2": 16
+      },
+      {
+        "type": "line",
+        "x1": 138,
+        "y1": 10,
+        "x2": 138,
+        "y2": 16
+      },
+      {
+        "type": "line",
+        "x1": 176,
+        "y1": 10,
+        "x2": 176,
+        "y2": 16
+      },
+      {
+        "type": "line",
+        "x1": 214,
+        "y1": 10,
+        "x2": 214,
+        "y2": 16
+      },
+      {
+        "type": "line",
+        "x1": 252,
+        "y1": 10,
+        "x2": 252,
+        "y2": 16
+      },
+      {
+        "type": "line",
+        "x1": 290,
+        "y1": 10,
+        "x2": 290,
+        "y2": 16
+      },
+      {
+        "type": "line",
+        "x1": 328,
+        "y1": 10,
+        "x2": 328,
+        "y2": 16
+      },
+      {
+        "type": "line",
+        "x1": 366,
+        "y1": 10,
+        "x2": 366,
+        "y2": 16
+      },
+      {
+        "type": "line",
+        "x1": 20,
+        "y1": 56,
+        "x2": 24,
+        "y2": 56
+      },
+      {
+        "type": "line",
+        "x1": 20,
+        "y1": 96,
+        "x2": 24,
+        "y2": 96
+      },
+      {
+        "type": "line",
+        "x1": 20,
+        "y1": 136,
+        "x2": 24,
+        "y2": 136
+      },
+      {
+        "type": "line",
+        "x1": 20,
+        "y1": 176,
+        "x2": 24,
+        "y2": 176
+      },
+      {
+        "type": "line",
+        "x1": 20,
+        "y1": 216,
+        "x2": 24,
+        "y2": 216
+      }
+    ],
+    "fields": [
+      {
+        "source": "project.properties.customer",
+        "x": 22,
+        "y": 262,
+        "size": 3.5
+      },
+      {
+        "source": "project.name",
+        "x": 22,
+        "y": 270,
+        "size": 3.5
+      },
+      {
+        "source": "project.properties.drawingNumber",
+        "x": 22,
+        "y": 278,
+        "size": 2.5
+      },
+      {
+        "source": "project.properties.createdBy",
+        "x": 22,
+        "y": 285,
+        "size": 2.5
+      },
+      {
+        "source": "page.description",
+        "x": 170,
+        "y": 265,
+        "size": 5,
+        "align": "center",
+        "height": 13
+      },
+      {
+        "source": "page.properties.revision",
+        "x": 232,
+        "y": 262,
+        "size": 2.5
+      },
+      {
+        "source": "page.properties.date",
+        "x": 232,
+        "y": 269,
+        "size": 2.5
+      },
+      {
+        "source": "page.structure",
+        "x": 350,
+        "y": 261,
+        "size": 3,
+        "align": "center"
+      },
+      {
+        "source": "page.name",
+        "x": 389,
+        "y": 266,
+        "size": 5,
+        "align": "center"
+      },
+      {
+        "source": "page.index/project.pageCount",
+        "x": 350,
+        "y": 269.5,
+        "size": 2.5,
+        "align": "center"
+      },
+      {
+        "source": "page.fullName",
+        "x": 369,
+        "y": 281,
+        "size": 3.5,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "id": "iec.frame.a3.report",
+    "name": {
+      "de": "A3 quer, Auswertung",
+      "en": "A3 landscape, report"
+    },
+    "size": {
+      "width": 420,
+      "height": 297
+    },
+    "drawingArea": {
+      "x": 24,
+      "y": 16,
+      "width": 380,
+      "height": 240
+    },
+    "columns": {
+      "count": 1,
+      "x": 24,
+      "width": 380
+    },
+    "rows": {
+      "labels": [
+        "A"
+      ],
+      "y": 16,
+      "height": 240.0
+    },
+    "graphics": [
+      {
+        "type": "rect",
+        "x": 20,
+        "y": 10,
+        "width": 388,
+        "height": 277
+      },
+      {
+        "type": "rect",
+        "x": 24,
+        "y": 16,
+        "width": 380,
+        "height": 240
+      },
+      {
+        "type": "line",
+        "x1": 20,
+        "y1": 16,
+        "x2": 24,
+        "y2": 16
+      },
+      {
+        "type": "line",
+        "x1": 20,
+        "y1": 256,
+        "x2": 408,
+        "y2": 256
+      },
+      {
+        "type": "line",
+        "x1": 110,
+        "y1": 256,
+        "x2": 110,
+        "y2": 287
+      },
+      {
+        "type": "line",
+        "x1": 230,
+        "y1": 256,
+        "x2": 230,
+        "y2": 287
+      },
+      {
+        "type": "line",
+        "x1": 330,
+        "y1": 256,
+        "x2": 330,
+        "y2": 287
+      },
+      {
+        "type": "line",
+        "x1": 370,
+        "y1": 256,
+        "x2": 370,
+        "y2": 271
+      },
+      {
+        "type": "line",
+        "x1": 110,
+        "y1": 271,
+        "x2": 408,
+        "y2": 271
+      },
+      {
+        "type": "line",
+        "x1": 330,
+        "y1": 264,
+        "x2": 370,
+        "y2": 264
+      }
+    ],
+    "fields": [
+      {
+        "source": "project.properties.customer",
+        "x": 22,
+        "y": 262,
+        "size": 3.5
+      },
+      {
+        "source": "project.name",
+        "x": 22,
+        "y": 270,
+        "size": 3.5
+      },
+      {
+        "source": "project.properties.drawingNumber",
+        "x": 22,
+        "y": 278,
+        "size": 2.5
+      },
+      {
+        "source": "project.properties.createdBy",
+        "x": 22,
+        "y": 285,
+        "size": 2.5
+      },
+      {
+        "source": "page.description",
+        "x": 170,
+        "y": 265,
+        "size": 5,
+        "align": "center",
+        "height": 13
+      },
+      {
+        "source": "page.properties.revision",
+        "x": 232,
+        "y": 262,
+        "size": 2.5
+      },
+      {
+        "source": "page.properties.date",
+        "x": 232,
+        "y": 269,
+        "size": 2.5
+      },
+      {
+        "source": "page.structure",
+        "x": 350,
+        "y": 261,
+        "size": 3,
+        "align": "center"
+      },
+      {
+        "source": "page.name",
+        "x": 389,
+        "y": 266,
+        "size": 5,
+        "align": "center"
+      },
+      {
+        "source": "page.index/project.pageCount",
+        "x": 350,
+        "y": 269.5,
+        "size": 2.5,
+        "align": "center"
+      },
+      {
+        "source": "page.fullName",
+        "x": 369,
+        "y": 281,
+        "size": 3.5,
+        "align": "center"
+      }
+    ]
+  }
+]

@@ -1,0 +1,8009 @@
+[
+  {
+    "id": "beckhoff.el1002",
+    "name": {
+      "de": "Beckhoff EL1002, 2 DI 24 V DC 3 ms",
+      "en": "Beckhoff EL1002, 2 DI 24 V DC 3 ms"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1002",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1004",
+    "name": {
+      "de": "Beckhoff EL1004, 4 DI 24 V DC 3 ms",
+      "en": "Beckhoff EL1004, 4 DI 24 V DC 3 ms"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1004",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1008",
+    "name": {
+      "de": "Beckhoff EL1008, 8 DI 24 V DC 3 ms",
+      "en": "Beckhoff EL1008, 8 DI 24 V DC 3 ms"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1008",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 3 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DI 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 5 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DI 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 7 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 8 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 8,
+          "kind": "DI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1012",
+    "name": {
+      "de": "Beckhoff EL1012, 2 DI 24 V DC 10 µs",
+      "en": "Beckhoff EL1012, 2 DI 24 V DC 10 µs"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1012",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1014",
+    "name": {
+      "de": "Beckhoff EL1014, 4 DI 24 V DC 10 µs",
+      "en": "Beckhoff EL1014, 4 DI 24 V DC 10 µs"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1014",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1018",
+    "name": {
+      "de": "Beckhoff EL1018, 8 DI 24 V DC 10 µs",
+      "en": "Beckhoff EL1018, 8 DI 24 V DC 10 µs"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1018",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 3 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DI 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 5 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DI 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 7 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 8 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 8,
+          "kind": "DI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1034",
+    "name": {
+      "de": "Beckhoff EL1034, 4 DI 24 V DC, potential-free inputs",
+      "en": "Beckhoff EL1034, 4 DI 24 V DC, potential-free inputs"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1034",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1084",
+    "name": {
+      "de": "Beckhoff EL1084, 4 DI 24 V DC, negative switching",
+      "en": "Beckhoff EL1084, 4 DI 24 V DC, negative switching"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1084",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1088",
+    "name": {
+      "de": "Beckhoff EL1088, 8 DI 24 V DC, negative switching",
+      "en": "Beckhoff EL1088, 8 DI 24 V DC, negative switching"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1088",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 3 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DI 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 5 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DI 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 7 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 8 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 8,
+          "kind": "DI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1104",
+    "name": {
+      "de": "Beckhoff EL1104, 4 DI 24 V DC, sensor supply",
+      "en": "Beckhoff EL1104, 4 DI 24 V DC, sensor supply"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1104",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1124",
+    "name": {
+      "de": "Beckhoff EL1124, 4 DI 5 V DC",
+      "en": "Beckhoff EL1124, 4 DI 5 V DC"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1124",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1202",
+    "name": {
+      "de": "Beckhoff EL1202, 2 DI 24 V DC, 1 µs",
+      "en": "Beckhoff EL1202, 2 DI 24 V DC, 1 µs"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1202",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1702",
+    "name": {
+      "de": "Beckhoff EL1702, 2 DI 120–230 V AC",
+      "en": "Beckhoff EL1702, 2 DI 120–230 V AC"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1702",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1712",
+    "name": {
+      "de": "Beckhoff EL1712, 2 DI 120 V AC/DC",
+      "en": "Beckhoff EL1712, 2 DI 120 V AC/DC"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1712",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1809",
+    "name": {
+      "de": "Beckhoff EL1809, 16 DI 24 V DC 3 ms",
+      "en": "Beckhoff EL1809, 16 DI 24 V DC 3 ms"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1809",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 2 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 3 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 4 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 5 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DI 6 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DI 7 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 8 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 9,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DI 9 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 10,
+        "pins": {
+          "1": "10"
+        },
+        "label": "DI 10 (pin 10)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 11,
+        "pins": {
+          "1": "11"
+        },
+        "label": "DI 11 (pin 11)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 12,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DI 12 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 13,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DI 13 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 14,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DI 14 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 15,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DI 15 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 16,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DI 16 (pin 16)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "6"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "7"
+        },
+        {
+          "channel": 8,
+          "kind": "DI",
+          "pin": "8"
+        },
+        {
+          "channel": 9,
+          "kind": "DI",
+          "pin": "9"
+        },
+        {
+          "channel": 10,
+          "kind": "DI",
+          "pin": "10"
+        },
+        {
+          "channel": 11,
+          "kind": "DI",
+          "pin": "11"
+        },
+        {
+          "channel": 12,
+          "kind": "DI",
+          "pin": "12"
+        },
+        {
+          "channel": 13,
+          "kind": "DI",
+          "pin": "13"
+        },
+        {
+          "channel": 14,
+          "kind": "DI",
+          "pin": "14"
+        },
+        {
+          "channel": 15,
+          "kind": "DI",
+          "pin": "15"
+        },
+        {
+          "channel": 16,
+          "kind": "DI",
+          "pin": "16"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1819",
+    "name": {
+      "de": "Beckhoff EL1819, 16 DI 24 V DC 10 µs",
+      "en": "Beckhoff EL1819, 16 DI 24 V DC 10 µs"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1819",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 2 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 3 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 4 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 5 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DI 6 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DI 7 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 8 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 9,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DI 9 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 10,
+        "pins": {
+          "1": "10"
+        },
+        "label": "DI 10 (pin 10)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 11,
+        "pins": {
+          "1": "11"
+        },
+        "label": "DI 11 (pin 11)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 12,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DI 12 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 13,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DI 13 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 14,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DI 14 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 15,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DI 15 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 16,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DI 16 (pin 16)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "6"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "7"
+        },
+        {
+          "channel": 8,
+          "kind": "DI",
+          "pin": "8"
+        },
+        {
+          "channel": 9,
+          "kind": "DI",
+          "pin": "9"
+        },
+        {
+          "channel": 10,
+          "kind": "DI",
+          "pin": "10"
+        },
+        {
+          "channel": 11,
+          "kind": "DI",
+          "pin": "11"
+        },
+        {
+          "channel": 12,
+          "kind": "DI",
+          "pin": "12"
+        },
+        {
+          "channel": 13,
+          "kind": "DI",
+          "pin": "13"
+        },
+        {
+          "channel": 14,
+          "kind": "DI",
+          "pin": "14"
+        },
+        {
+          "channel": 15,
+          "kind": "DI",
+          "pin": "15"
+        },
+        {
+          "channel": 16,
+          "kind": "DI",
+          "pin": "16"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1889",
+    "name": {
+      "de": "Beckhoff EL1889, 16 DI 24 V DC, negative switching",
+      "en": "Beckhoff EL1889, 16 DI 24 V DC, negative switching"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1889",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DI 2 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DI 3 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DI 4 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DI 5 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DI 6 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DI 7 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DI 8 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 9,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DI 9 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 10,
+        "pins": {
+          "1": "10"
+        },
+        "label": "DI 10 (pin 10)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 11,
+        "pins": {
+          "1": "11"
+        },
+        "label": "DI 11 (pin 11)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 12,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DI 12 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 13,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DI 13 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 14,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DI 14 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 15,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DI 15 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 16,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DI 16 (pin 16)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "2"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "3"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "4"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "5"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "6"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "7"
+        },
+        {
+          "channel": 8,
+          "kind": "DI",
+          "pin": "8"
+        },
+        {
+          "channel": 9,
+          "kind": "DI",
+          "pin": "9"
+        },
+        {
+          "channel": 10,
+          "kind": "DI",
+          "pin": "10"
+        },
+        {
+          "channel": 11,
+          "kind": "DI",
+          "pin": "11"
+        },
+        {
+          "channel": 12,
+          "kind": "DI",
+          "pin": "12"
+        },
+        {
+          "channel": 13,
+          "kind": "DI",
+          "pin": "13"
+        },
+        {
+          "channel": 14,
+          "kind": "DI",
+          "pin": "14"
+        },
+        {
+          "channel": 15,
+          "kind": "DI",
+          "pin": "15"
+        },
+        {
+          "channel": 16,
+          "kind": "DI",
+          "pin": "16"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2002",
+    "name": {
+      "de": "Beckhoff EL2002, 2 DO 24 V DC 0,5 A",
+      "en": "Beckhoff EL2002, 2 DO 24 V DC 0,5 A"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2002",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2004",
+    "name": {
+      "de": "Beckhoff EL2004, 4 DO 24 V DC 0,5 A",
+      "en": "Beckhoff EL2004, 4 DO 24 V DC 0,5 A"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2004",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2008",
+    "name": {
+      "de": "Beckhoff EL2008, 8 DO 24 V DC 0,5 A",
+      "en": "Beckhoff EL2008, 8 DO 24 V DC 0,5 A"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2008",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 3 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DO 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 5 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DO 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 7 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 8 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 8,
+          "kind": "DO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2022",
+    "name": {
+      "de": "Beckhoff EL2022, 2 DO 24 V DC 2 A",
+      "en": "Beckhoff EL2022, 2 DO 24 V DC 2 A"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2022",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2024",
+    "name": {
+      "de": "Beckhoff EL2024, 4 DO 24 V DC 2 A",
+      "en": "Beckhoff EL2024, 4 DO 24 V DC 2 A"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2024",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2032",
+    "name": {
+      "de": "Beckhoff EL2032, 2 DO 24 V DC 2 A, diagnostics",
+      "en": "Beckhoff EL2032, 2 DO 24 V DC 2 A, diagnostics"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2032",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2034",
+    "name": {
+      "de": "Beckhoff EL2034, 4 DO 24 V DC 2 A, diagnostics",
+      "en": "Beckhoff EL2034, 4 DO 24 V DC 2 A, diagnostics"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2034",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2042",
+    "name": {
+      "de": "Beckhoff EL2042, 2 DO 24 V DC 4 A",
+      "en": "Beckhoff EL2042, 2 DO 24 V DC 4 A"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2042",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2084",
+    "name": {
+      "de": "Beckhoff EL2084, 4 DO 24 V DC 0,5 A, negative switching",
+      "en": "Beckhoff EL2084, 4 DO 24 V DC 0,5 A, negative switching"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2084",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2088",
+    "name": {
+      "de": "Beckhoff EL2088, 8 DO 24 V DC 0,5 A, negative switching",
+      "en": "Beckhoff EL2088, 8 DO 24 V DC 0,5 A, negative switching"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2088",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 3 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DO 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 5 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DO 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 7 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 8 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 8,
+          "kind": "DO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2124",
+    "name": {
+      "de": "Beckhoff EL2124, 4 DO 5 V DC",
+      "en": "Beckhoff EL2124, 4 DO 5 V DC"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2124",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2602",
+    "name": {
+      "de": "Beckhoff EL2602, 2 relay outputs 230 V AC 5 A, NO",
+      "en": "Beckhoff EL2602, 2 relay outputs 230 V AC 5 A, NO"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2602",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2612",
+    "name": {
+      "de": "Beckhoff EL2612, 2 relay outputs 125 V AC 0,5 A, changeover",
+      "en": "Beckhoff EL2612, 2 relay outputs 125 V AC 0,5 A, changeover"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2612",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2622",
+    "name": {
+      "de": "Beckhoff EL2622, 2 relay outputs 230 V AC 5 A, NO, isolated",
+      "en": "Beckhoff EL2622, 2 relay outputs 230 V AC 5 A, NO, isolated"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2622",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2624",
+    "name": {
+      "de": "Beckhoff EL2624, 4 relay outputs 125 V AC 2 A, NO",
+      "en": "Beckhoff EL2624, 4 relay outputs 125 V AC 2 A, NO"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2624",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2808",
+    "name": {
+      "de": "Beckhoff EL2808, 8 DO 24 V DC 0,5 A",
+      "en": "Beckhoff EL2808, 8 DO 24 V DC 0,5 A"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2808",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 3 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DO 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 5 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DO 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 7 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 8 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 8,
+          "kind": "DO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2809",
+    "name": {
+      "de": "Beckhoff EL2809, 16 DO 24 V DC 0,5 A",
+      "en": "Beckhoff EL2809, 16 DO 24 V DC 0,5 A"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2809",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 2 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 3 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 4 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 5 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DO 6 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DO 7 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 8 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 9,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DO 9 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 10,
+        "pins": {
+          "1": "10"
+        },
+        "label": "DO 10 (pin 10)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 11,
+        "pins": {
+          "1": "11"
+        },
+        "label": "DO 11 (pin 11)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 12,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DO 12 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 13,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DO 13 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 14,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DO 14 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 15,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DO 15 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 16,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DO 16 (pin 16)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "6"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "7"
+        },
+        {
+          "channel": 8,
+          "kind": "DO",
+          "pin": "8"
+        },
+        {
+          "channel": 9,
+          "kind": "DO",
+          "pin": "9"
+        },
+        {
+          "channel": 10,
+          "kind": "DO",
+          "pin": "10"
+        },
+        {
+          "channel": 11,
+          "kind": "DO",
+          "pin": "11"
+        },
+        {
+          "channel": 12,
+          "kind": "DO",
+          "pin": "12"
+        },
+        {
+          "channel": 13,
+          "kind": "DO",
+          "pin": "13"
+        },
+        {
+          "channel": 14,
+          "kind": "DO",
+          "pin": "14"
+        },
+        {
+          "channel": 15,
+          "kind": "DO",
+          "pin": "15"
+        },
+        {
+          "channel": 16,
+          "kind": "DO",
+          "pin": "16"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2819",
+    "name": {
+      "de": "Beckhoff EL2819, 16 DO 24 V DC 0,5 A, diagnostics",
+      "en": "Beckhoff EL2819, 16 DO 24 V DC 0,5 A, diagnostics"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2819",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 2 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 3 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 4 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 5 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DO 6 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DO 7 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 8 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 9,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DO 9 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 10,
+        "pins": {
+          "1": "10"
+        },
+        "label": "DO 10 (pin 10)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 11,
+        "pins": {
+          "1": "11"
+        },
+        "label": "DO 11 (pin 11)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 12,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DO 12 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 13,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DO 13 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 14,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DO 14 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 15,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DO 15 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 16,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DO 16 (pin 16)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "6"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "7"
+        },
+        {
+          "channel": 8,
+          "kind": "DO",
+          "pin": "8"
+        },
+        {
+          "channel": 9,
+          "kind": "DO",
+          "pin": "9"
+        },
+        {
+          "channel": 10,
+          "kind": "DO",
+          "pin": "10"
+        },
+        {
+          "channel": 11,
+          "kind": "DO",
+          "pin": "11"
+        },
+        {
+          "channel": 12,
+          "kind": "DO",
+          "pin": "12"
+        },
+        {
+          "channel": 13,
+          "kind": "DO",
+          "pin": "13"
+        },
+        {
+          "channel": 14,
+          "kind": "DO",
+          "pin": "14"
+        },
+        {
+          "channel": 15,
+          "kind": "DO",
+          "pin": "15"
+        },
+        {
+          "channel": 16,
+          "kind": "DO",
+          "pin": "16"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2889",
+    "name": {
+      "de": "Beckhoff EL2889, 16 DO 24 V DC 0,5 A, negative switching",
+      "en": "Beckhoff EL2889, 16 DO 24 V DC 0,5 A, negative switching"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2889",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "DO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "2"
+        },
+        "label": "DO 2 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "3"
+        },
+        "label": "DO 3 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "4"
+        },
+        "label": "DO 4 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "5"
+        },
+        "label": "DO 5 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "6"
+        },
+        "label": "DO 6 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "7"
+        },
+        "label": "DO 7 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "DO 8 (pin 8)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 9,
+        "pins": {
+          "1": "9"
+        },
+        "label": "DO 9 (pin 9)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 10,
+        "pins": {
+          "1": "10"
+        },
+        "label": "DO 10 (pin 10)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 11,
+        "pins": {
+          "1": "11"
+        },
+        "label": "DO 11 (pin 11)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 12,
+        "pins": {
+          "1": "12"
+        },
+        "label": "DO 12 (pin 12)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 13,
+        "pins": {
+          "1": "13"
+        },
+        "label": "DO 13 (pin 13)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 14,
+        "pins": {
+          "1": "14"
+        },
+        "label": "DO 14 (pin 14)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 15,
+        "pins": {
+          "1": "15"
+        },
+        "label": "DO 15 (pin 15)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 16,
+        "pins": {
+          "1": "16"
+        },
+        "label": "DO 16 (pin 16)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "2"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "3"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "4"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "5"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "6"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "7"
+        },
+        {
+          "channel": 8,
+          "kind": "DO",
+          "pin": "8"
+        },
+        {
+          "channel": 9,
+          "kind": "DO",
+          "pin": "9"
+        },
+        {
+          "channel": 10,
+          "kind": "DO",
+          "pin": "10"
+        },
+        {
+          "channel": 11,
+          "kind": "DO",
+          "pin": "11"
+        },
+        {
+          "channel": 12,
+          "kind": "DO",
+          "pin": "12"
+        },
+        {
+          "channel": 13,
+          "kind": "DO",
+          "pin": "13"
+        },
+        {
+          "channel": 14,
+          "kind": "DO",
+          "pin": "14"
+        },
+        {
+          "channel": 15,
+          "kind": "DO",
+          "pin": "15"
+        },
+        {
+          "channel": 16,
+          "kind": "DO",
+          "pin": "16"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3001",
+    "name": {
+      "de": "Beckhoff EL3001, 1 AI ±10 V, single-ended",
+      "en": "Beckhoff EL3001, 1 AI ±10 V, single-ended"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3001",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3002",
+    "name": {
+      "de": "Beckhoff EL3002, 2 AI ±10 V, single-ended",
+      "en": "Beckhoff EL3002, 2 AI ±10 V, single-ended"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3002",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3004",
+    "name": {
+      "de": "Beckhoff EL3004, 4 AI ±10 V, single-ended",
+      "en": "Beckhoff EL3004, 4 AI ±10 V, single-ended"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3004",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3008",
+    "name": {
+      "de": "Beckhoff EL3008, 8 AI ±10 V, single-ended",
+      "en": "Beckhoff EL3008, 8 AI ±10 V, single-ended"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3008",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AI 3 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "AI 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 5,
+        "pins": {
+          "1": "3"
+        },
+        "label": "AI 5 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "AI 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 7,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 7 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 8 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "2"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "AI",
+          "pin": "3"
+        },
+        {
+          "channel": 6,
+          "kind": "AI",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 8,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3012",
+    "name": {
+      "de": "Beckhoff EL3012, 2 AI 0–20 mA, differential",
+      "en": "Beckhoff EL3012, 2 AI 0–20 mA, differential"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3012",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3014",
+    "name": {
+      "de": "Beckhoff EL3014, 4 AI 0–20 mA, differential",
+      "en": "Beckhoff EL3014, 4 AI 0–20 mA, differential"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3014",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3022",
+    "name": {
+      "de": "Beckhoff EL3022, 2 AI 4–20 mA, differential",
+      "en": "Beckhoff EL3022, 2 AI 4–20 mA, differential"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3022",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3024",
+    "name": {
+      "de": "Beckhoff EL3024, 4 AI 4–20 mA, differential",
+      "en": "Beckhoff EL3024, 4 AI 4–20 mA, differential"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3024",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3042",
+    "name": {
+      "de": "Beckhoff EL3042, 2 AI 0–20 mA, single-ended",
+      "en": "Beckhoff EL3042, 2 AI 0–20 mA, single-ended"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3042",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3044",
+    "name": {
+      "de": "Beckhoff EL3044, 4 AI 0–20 mA, single-ended",
+      "en": "Beckhoff EL3044, 4 AI 0–20 mA, single-ended"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3044",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3048",
+    "name": {
+      "de": "Beckhoff EL3048, 8 AI 0–20 mA, single-ended",
+      "en": "Beckhoff EL3048, 8 AI 0–20 mA, single-ended"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3048",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AI 3 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "AI 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 5,
+        "pins": {
+          "1": "3"
+        },
+        "label": "AI 5 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "AI 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 7,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 7 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 8 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "2"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "AI",
+          "pin": "3"
+        },
+        {
+          "channel": 6,
+          "kind": "AI",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 8,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3052",
+    "name": {
+      "de": "Beckhoff EL3052, 2 AI 4–20 mA, single-ended",
+      "en": "Beckhoff EL3052, 2 AI 4–20 mA, single-ended"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3052",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3054",
+    "name": {
+      "de": "Beckhoff EL3054, 4 AI 4–20 mA, single-ended",
+      "en": "Beckhoff EL3054, 4 AI 4–20 mA, single-ended"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3054",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3058",
+    "name": {
+      "de": "Beckhoff EL3058, 8 AI 4–20 mA, single-ended",
+      "en": "Beckhoff EL3058, 8 AI 4–20 mA, single-ended"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3058",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AI 3 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "AI 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 5,
+        "pins": {
+          "1": "3"
+        },
+        "label": "AI 5 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "AI 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 7,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 7 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 8 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "2"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "AI",
+          "pin": "3"
+        },
+        {
+          "channel": 6,
+          "kind": "AI",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 8,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3062",
+    "name": {
+      "de": "Beckhoff EL3062, 2 AI 0–10 V, single-ended",
+      "en": "Beckhoff EL3062, 2 AI 0–10 V, single-ended"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3062",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3064",
+    "name": {
+      "de": "Beckhoff EL3064, 4 AI 0–10 V, single-ended",
+      "en": "Beckhoff EL3064, 4 AI 0–10 V, single-ended"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3064",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3068",
+    "name": {
+      "de": "Beckhoff EL3068, 8 AI 0–10 V, single-ended",
+      "en": "Beckhoff EL3068, 8 AI 0–10 V, single-ended"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3068",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AI 3 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "AI 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 5,
+        "pins": {
+          "1": "3"
+        },
+        "label": "AI 5 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "AI 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 7,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 7 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 8 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "2"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "AI",
+          "pin": "3"
+        },
+        {
+          "channel": 6,
+          "kind": "AI",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 8,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3102",
+    "name": {
+      "de": "Beckhoff EL3102, 2 AI ±10 V, differential, 16 bit",
+      "en": "Beckhoff EL3102, 2 AI ±10 V, differential, 16 bit"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3102",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3104",
+    "name": {
+      "de": "Beckhoff EL3104, 4 AI ±10 V, differential, 16 bit",
+      "en": "Beckhoff EL3104, 4 AI ±10 V, differential, 16 bit"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3104",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3122",
+    "name": {
+      "de": "Beckhoff EL3122, 2 AI 4–20 mA, differential, 16 bit",
+      "en": "Beckhoff EL3122, 2 AI 4–20 mA, differential, 16 bit"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3122",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3124",
+    "name": {
+      "de": "Beckhoff EL3124, 4 AI 4–20 mA, differential, 16 bit",
+      "en": "Beckhoff EL3124, 4 AI 4–20 mA, differential, 16 bit"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3124",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3162",
+    "name": {
+      "de": "Beckhoff EL3162, 2 AI 0–10 V, single-ended, 16 bit",
+      "en": "Beckhoff EL3162, 2 AI 0–10 V, single-ended, 16 bit"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3162",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3164",
+    "name": {
+      "de": "Beckhoff EL3164, 4 AI 0–10 V, single-ended, 16 bit",
+      "en": "Beckhoff EL3164, 4 AI 0–10 V, single-ended, 16 bit"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3164",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3201",
+    "name": {
+      "de": "Beckhoff EL3201, 1 AI PT100 (RTD)",
+      "en": "Beckhoff EL3201, 1 AI PT100 (RTD)"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3201",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3202",
+    "name": {
+      "de": "Beckhoff EL3202, 2 AI PT100 (RTD)",
+      "en": "Beckhoff EL3202, 2 AI PT100 (RTD)"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3202",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3204",
+    "name": {
+      "de": "Beckhoff EL3204, 4 AI PT100 (RTD)",
+      "en": "Beckhoff EL3204, 4 AI PT100 (RTD)"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3204",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3208",
+    "name": {
+      "de": "Beckhoff EL3208, 8 AI PT1000 (RTD)",
+      "en": "Beckhoff EL3208, 8 AI PT1000 (RTD)"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3208",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AI 3 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "AI 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 5,
+        "pins": {
+          "1": "3"
+        },
+        "label": "AI 5 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "AI 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 7,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 7 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 8 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "2"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "AI",
+          "pin": "3"
+        },
+        {
+          "channel": 6,
+          "kind": "AI",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 8,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3312",
+    "name": {
+      "de": "Beckhoff EL3312, 2 AI thermocouple",
+      "en": "Beckhoff EL3312, 2 AI thermocouple"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3312",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3314",
+    "name": {
+      "de": "Beckhoff EL3314, 4 AI thermocouple",
+      "en": "Beckhoff EL3314, 4 AI thermocouple"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3314",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el3318",
+    "name": {
+      "de": "Beckhoff EL3318, 8 AI thermocouple",
+      "en": "Beckhoff EL3318, 8 AI thermocouple"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL3318",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AI 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AI 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 3,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AI 3 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "AI 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 5,
+        "pins": {
+          "1": "3"
+        },
+        "label": "AI 5 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "AI 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 7,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AI 7 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ai",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AI 8 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AI",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AI",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AI",
+          "pin": "2"
+        },
+        {
+          "channel": 4,
+          "kind": "AI",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "AI",
+          "pin": "3"
+        },
+        {
+          "channel": 6,
+          "kind": "AI",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "AI",
+          "pin": "4"
+        },
+        {
+          "channel": 8,
+          "kind": "AI",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el4001",
+    "name": {
+      "de": "Beckhoff EL4001, 1 AO 0–10 V",
+      "en": "Beckhoff EL4001, 1 AO 0–10 V"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL4001",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 1 (pin 1)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "1"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el4002",
+    "name": {
+      "de": "Beckhoff EL4002, 2 AO 0–10 V",
+      "en": "Beckhoff EL4002, 2 AO 0–10 V"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL4002",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AO 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el4004",
+    "name": {
+      "de": "Beckhoff EL4004, 4 AO 0–10 V",
+      "en": "Beckhoff EL4004, 4 AO 0–10 V"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL4004",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AO 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AO 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AO",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el4008",
+    "name": {
+      "de": "Beckhoff EL4008, 8 AO 0–10 V",
+      "en": "Beckhoff EL4008, 8 AO 0–10 V"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL4008",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 3,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AO 3 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "AO 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 5,
+        "pins": {
+          "1": "3"
+        },
+        "label": "AO 5 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "AO 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 7,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AO 7 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AO 8 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AO",
+          "pin": "2"
+        },
+        {
+          "channel": 4,
+          "kind": "AO",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "AO",
+          "pin": "3"
+        },
+        {
+          "channel": 6,
+          "kind": "AO",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "AO",
+          "pin": "4"
+        },
+        {
+          "channel": 8,
+          "kind": "AO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el4012",
+    "name": {
+      "de": "Beckhoff EL4012, 2 AO 0–20 mA",
+      "en": "Beckhoff EL4012, 2 AO 0–20 mA"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL4012",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AO 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el4014",
+    "name": {
+      "de": "Beckhoff EL4014, 4 AO 0–20 mA",
+      "en": "Beckhoff EL4014, 4 AO 0–20 mA"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL4014",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AO 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AO 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AO",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el4018",
+    "name": {
+      "de": "Beckhoff EL4018, 8 AO 0–20 mA",
+      "en": "Beckhoff EL4018, 8 AO 0–20 mA"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL4018",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 3,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AO 3 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "AO 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 5,
+        "pins": {
+          "1": "3"
+        },
+        "label": "AO 5 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "AO 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 7,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AO 7 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AO 8 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AO",
+          "pin": "2"
+        },
+        {
+          "channel": 4,
+          "kind": "AO",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "AO",
+          "pin": "3"
+        },
+        {
+          "channel": 6,
+          "kind": "AO",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "AO",
+          "pin": "4"
+        },
+        {
+          "channel": 8,
+          "kind": "AO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el4022",
+    "name": {
+      "de": "Beckhoff EL4022, 2 AO 4–20 mA",
+      "en": "Beckhoff EL4022, 2 AO 4–20 mA"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL4022",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AO 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el4024",
+    "name": {
+      "de": "Beckhoff EL4024, 4 AO 4–20 mA",
+      "en": "Beckhoff EL4024, 4 AO 4–20 mA"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL4024",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AO 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AO 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AO",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el4028",
+    "name": {
+      "de": "Beckhoff EL4028, 8 AO 4–20 mA",
+      "en": "Beckhoff EL4028, 8 AO 4–20 mA"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL4028",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 3,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AO 3 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "AO 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 5,
+        "pins": {
+          "1": "3"
+        },
+        "label": "AO 5 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "AO 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 7,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AO 7 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AO 8 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AO",
+          "pin": "2"
+        },
+        {
+          "channel": 4,
+          "kind": "AO",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "AO",
+          "pin": "3"
+        },
+        {
+          "channel": 6,
+          "kind": "AO",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "AO",
+          "pin": "4"
+        },
+        {
+          "channel": 8,
+          "kind": "AO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el4032",
+    "name": {
+      "de": "Beckhoff EL4032, 2 AO ±10 V",
+      "en": "Beckhoff EL4032, 2 AO ±10 V"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL4032",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AO 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el4034",
+    "name": {
+      "de": "Beckhoff EL4034, 4 AO ±10 V",
+      "en": "Beckhoff EL4034, 4 AO ±10 V"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL4034",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AO 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AO 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AO",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el4038",
+    "name": {
+      "de": "Beckhoff EL4038, 8 AO ±10 V",
+      "en": "Beckhoff EL4038, 8 AO ±10 V"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL4038",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 3,
+        "pins": {
+          "1": "2"
+        },
+        "label": "AO 3 (pin 2)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 4,
+        "pins": {
+          "1": "6"
+        },
+        "label": "AO 4 (pin 6)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 5,
+        "pins": {
+          "1": "3"
+        },
+        "label": "AO 5 (pin 3)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 6,
+        "pins": {
+          "1": "7"
+        },
+        "label": "AO 6 (pin 7)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 7,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AO 7 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 8,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AO 8 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AO",
+          "pin": "2"
+        },
+        {
+          "channel": 4,
+          "kind": "AO",
+          "pin": "6"
+        },
+        {
+          "channel": 5,
+          "kind": "AO",
+          "pin": "3"
+        },
+        {
+          "channel": 6,
+          "kind": "AO",
+          "pin": "7"
+        },
+        {
+          "channel": 7,
+          "kind": "AO",
+          "pin": "4"
+        },
+        {
+          "channel": 8,
+          "kind": "AO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el4102",
+    "name": {
+      "de": "Beckhoff EL4102, 2 AO 0–10 V, 16 bit",
+      "en": "Beckhoff EL4102, 2 AO 0–10 V, 16 bit"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL4102",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AO 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el4104",
+    "name": {
+      "de": "Beckhoff EL4104, 4 AO 0–10 V, 16 bit",
+      "en": "Beckhoff EL4104, 4 AO 0–10 V, 16 bit"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL4104",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AO 2 (pin 5)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 3,
+        "pins": {
+          "1": "4"
+        },
+        "label": "AO 3 (pin 4)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 4,
+        "pins": {
+          "1": "8"
+        },
+        "label": "AO 4 (pin 8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "5"
+        },
+        {
+          "channel": 3,
+          "kind": "AO",
+          "pin": "4"
+        },
+        {
+          "channel": 4,
+          "kind": "AO",
+          "pin": "8"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el4122",
+    "name": {
+      "de": "Beckhoff EL4122, 2 AO 4–20 mA, 16 bit",
+      "en": "Beckhoff EL4122, 2 AO 4–20 mA, 16 bit"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL4122",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AO 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el4132",
+    "name": {
+      "de": "Beckhoff EL4132, 2 AO ±10 V, 16 bit",
+      "en": "Beckhoff EL4132, 2 AO ±10 V, 16 bit"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL4132",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 1,
+        "pins": {
+          "1": "1"
+        },
+        "label": "AO 1 (pin 1)"
+      },
+      {
+        "symbol": "wirewright.plc.ao",
+        "channel": 2,
+        "pins": {
+          "1": "5"
+        },
+        "label": "AO 2 (pin 5)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "1"
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1904",
+    "name": {
+      "de": "Beckhoff EL1904, TwinSAFE 4 safe DI 24 V DC (with clock outputs)",
+      "en": "Beckhoff EL1904, TwinSAFE 4 safe DI 24 V DC (with clock outputs)"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1904",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 1,
+        "pins": {
+          "1": "Out1",
+          "2": "In1"
+        },
+        "label": "DI 1 (pin Out1, In1)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 2,
+        "pins": {
+          "1": "Out2",
+          "2": "In2"
+        },
+        "label": "DI 2 (pin Out2, In2)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 3,
+        "pins": {
+          "1": "Out3",
+          "2": "In3"
+        },
+        "label": "DI 3 (pin Out3, In3)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 4,
+        "pins": {
+          "1": "Out4",
+          "2": "In4"
+        },
+        "label": "DI 4 (pin Out4, In4)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "In1",
+          "extraPins": [
+            {
+              "pin": "Out1",
+              "label": "Takt"
+            }
+          ]
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "In2",
+          "extraPins": [
+            {
+              "pin": "Out2",
+              "label": "Takt"
+            }
+          ]
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "In3",
+          "extraPins": [
+            {
+              "pin": "Out3",
+              "label": "Takt"
+            }
+          ]
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "In4",
+          "extraPins": [
+            {
+              "pin": "Out4",
+              "label": "Takt"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el1918",
+    "name": {
+      "de": "Beckhoff EL1918, TwinSAFE logic, 8 safe DI 24 V DC (with clock outputs)",
+      "en": "Beckhoff EL1918, TwinSAFE logic, 8 safe DI 24 V DC (with clock outputs)"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL1918",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 1,
+        "pins": {
+          "1": "Out1",
+          "2": "In1"
+        },
+        "label": "DI 1 (pin Out1, In1)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 2,
+        "pins": {
+          "1": "Out2",
+          "2": "In2"
+        },
+        "label": "DI 2 (pin Out2, In2)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 3,
+        "pins": {
+          "1": "Out3",
+          "2": "In3"
+        },
+        "label": "DI 3 (pin Out3, In3)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 4,
+        "pins": {
+          "1": "Out4",
+          "2": "In4"
+        },
+        "label": "DI 4 (pin Out4, In4)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 5,
+        "pins": {
+          "1": "Out5",
+          "2": "In5"
+        },
+        "label": "DI 5 (pin Out5, In5)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 6,
+        "pins": {
+          "1": "Out6",
+          "2": "In6"
+        },
+        "label": "DI 6 (pin Out6, In6)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 7,
+        "pins": {
+          "1": "Out7",
+          "2": "In7"
+        },
+        "label": "DI 7 (pin Out7, In7)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 8,
+        "pins": {
+          "1": "Out8",
+          "2": "In8"
+        },
+        "label": "DI 8 (pin Out8, In8)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "In1",
+          "extraPins": [
+            {
+              "pin": "Out1",
+              "label": "Takt"
+            }
+          ]
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "In2",
+          "extraPins": [
+            {
+              "pin": "Out2",
+              "label": "Takt"
+            }
+          ]
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "In3",
+          "extraPins": [
+            {
+              "pin": "Out3",
+              "label": "Takt"
+            }
+          ]
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "In4",
+          "extraPins": [
+            {
+              "pin": "Out4",
+              "label": "Takt"
+            }
+          ]
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "In5",
+          "extraPins": [
+            {
+              "pin": "Out5",
+              "label": "Takt"
+            }
+          ]
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "In6",
+          "extraPins": [
+            {
+              "pin": "Out6",
+              "label": "Takt"
+            }
+          ]
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "In7",
+          "extraPins": [
+            {
+              "pin": "Out7",
+              "label": "Takt"
+            }
+          ]
+        },
+        {
+          "channel": 8,
+          "kind": "DI",
+          "pin": "In8",
+          "extraPins": [
+            {
+              "pin": "Out8",
+              "label": "Takt"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.el2904",
+    "name": {
+      "de": "Beckhoff EL2904, TwinSAFE 4 safe DO 24 V DC 0,5 A",
+      "en": "Beckhoff EL2904, TwinSAFE 4 safe DO 24 V DC 0,5 A"
+    },
+    "category": "plc.beckhoff",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EL2904",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "Out1"
+        },
+        "label": "DO 1 (pin Out1)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "Out2"
+        },
+        "label": "DO 2 (pin Out2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "Out3"
+        },
+        "label": "DO 3 (pin Out3)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "Out4"
+        },
+        "label": "DO 4 (pin Out4)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "Out1"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "Out2"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "Out3"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "Out4"
+        }
+      ]
+    }
+  },
+  {
+    "id": "beckhoff.ek1100",
+    "name": {
+      "de": "Beckhoff EK1100, EtherCAT coupler",
+      "en": "Beckhoff EK1100, EtherCAT coupler"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EK1100",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "beckhoff.ek9300",
+    "name": {
+      "de": "Beckhoff EK9300, PROFINET bus coupler for EtherCAT terminals",
+      "en": "Beckhoff EK9300, PROFINET bus coupler for EtherCAT terminals"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Beckhoff",
+    "partNumber": "EK9300",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "beckhoff.cx5130",
+    "name": {
+      "de": "Beckhoff CX5130, embedded PC",
+      "en": "Beckhoff CX5130, embedded PC"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Beckhoff",
+    "partNumber": "CX5130",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "beckhoff.cx9020",
+    "name": {
+      "de": "Beckhoff CX9020, embedded PC",
+      "en": "Beckhoff CX9020, embedded PC"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Beckhoff",
+    "partNumber": "CX9020",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  },
+  {
+    "id": "beckhoff.cx7000",
+    "name": {
+      "de": "Beckhoff CX7000, embedded PC with I/Os",
+      "en": "Beckhoff CX7000, embedded PC with I/Os"
+    },
+    "category": "plc.cpu",
+    "manufacturer": "Beckhoff",
+    "partNumber": "CX7000",
+    "description": {
+      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
+      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Übersicht",
+          "en": "Overview"
+        }
+      }
+    ]
+  }
+]

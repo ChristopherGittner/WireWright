@@ -1,0 +1,657 @@
+[
+  {
+    "id": "wirewright.connection.corner.up-right",
+    "name": {
+      "de": "Ecke oben → rechts",
+      "en": "Corner up → right"
+    },
+    "category": "connections",
+    "function": "connection.corner",
+    "defaultRole": "none",
+    "graphics": [],
+    "connections": [
+      {
+        "id": "up",
+        "x": 0,
+        "y": 0,
+        "direction": "up"
+      },
+      {
+        "id": "right",
+        "x": 0,
+        "y": 0,
+        "direction": "right"
+      }
+    ],
+    "links": [
+      [
+        "up",
+        "right"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.connection.corner.right-down",
+    "name": {
+      "de": "Ecke rechts → unten",
+      "en": "Corner right → down"
+    },
+    "category": "connections",
+    "function": "connection.corner",
+    "defaultRole": "none",
+    "graphics": [],
+    "connections": [
+      {
+        "id": "right",
+        "x": 0,
+        "y": 0,
+        "direction": "right"
+      },
+      {
+        "id": "down",
+        "x": 0,
+        "y": 0,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "right",
+        "down"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.connection.corner.down-left",
+    "name": {
+      "de": "Ecke unten → links",
+      "en": "Corner down → left"
+    },
+    "category": "connections",
+    "function": "connection.corner",
+    "defaultRole": "none",
+    "graphics": [],
+    "connections": [
+      {
+        "id": "down",
+        "x": 0,
+        "y": 0,
+        "direction": "down"
+      },
+      {
+        "id": "left",
+        "x": 0,
+        "y": 0,
+        "direction": "left"
+      }
+    ],
+    "links": [
+      [
+        "down",
+        "left"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.connection.corner.left-up",
+    "name": {
+      "de": "Ecke links → oben",
+      "en": "Corner left → up"
+    },
+    "category": "connections",
+    "function": "connection.corner",
+    "defaultRole": "none",
+    "graphics": [],
+    "connections": [
+      {
+        "id": "left",
+        "x": 0,
+        "y": 0,
+        "direction": "left"
+      },
+      {
+        "id": "up",
+        "x": 0,
+        "y": 0,
+        "direction": "up"
+      }
+    ],
+    "links": [
+      [
+        "left",
+        "up"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.connection.tee.up-right-down",
+    "name": {
+      "de": "T-Anschluss oben ← rechts → unten",
+      "en": "T-junction up ← right → down"
+    },
+    "category": "connections",
+    "function": "connection.tee",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 0.6,
+        "fill": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "up",
+        "x": 0,
+        "y": 0,
+        "direction": "up"
+      },
+      {
+        "id": "right",
+        "x": 0,
+        "y": 0,
+        "direction": "right"
+      },
+      {
+        "id": "down",
+        "x": 0,
+        "y": 0,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "up",
+        "right",
+        "down"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.connection.tee.right-down-left",
+    "name": {
+      "de": "T-Anschluss links ← unten → rechts",
+      "en": "T-junction left ← down → right"
+    },
+    "category": "connections",
+    "function": "connection.tee",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 0.6,
+        "fill": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "right",
+        "x": 0,
+        "y": 0,
+        "direction": "right"
+      },
+      {
+        "id": "down",
+        "x": 0,
+        "y": 0,
+        "direction": "down"
+      },
+      {
+        "id": "left",
+        "x": 0,
+        "y": 0,
+        "direction": "left"
+      }
+    ],
+    "links": [
+      [
+        "right",
+        "down",
+        "left"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.connection.tee.down-left-up",
+    "name": {
+      "de": "T-Anschluss oben ← links → unten",
+      "en": "T-junction up ← left → down"
+    },
+    "category": "connections",
+    "function": "connection.tee",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 0.6,
+        "fill": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "down",
+        "x": 0,
+        "y": 0,
+        "direction": "down"
+      },
+      {
+        "id": "left",
+        "x": 0,
+        "y": 0,
+        "direction": "left"
+      },
+      {
+        "id": "up",
+        "x": 0,
+        "y": 0,
+        "direction": "up"
+      }
+    ],
+    "links": [
+      [
+        "down",
+        "left",
+        "up"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.connection.tee.left-up-right",
+    "name": {
+      "de": "T-Anschluss links ← oben → rechts",
+      "en": "T-junction left ← up → right"
+    },
+    "category": "connections",
+    "function": "connection.tee",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 0.6,
+        "fill": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "left",
+        "x": 0,
+        "y": 0,
+        "direction": "left"
+      },
+      {
+        "id": "up",
+        "x": 0,
+        "y": 0,
+        "direction": "up"
+      },
+      {
+        "id": "right",
+        "x": 0,
+        "y": 0,
+        "direction": "right"
+      }
+    ],
+    "links": [
+      [
+        "left",
+        "up",
+        "right"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.connection.cross",
+    "name": {
+      "de": "Kreuzung",
+      "en": "Cross (not connected)"
+    },
+    "category": "connections",
+    "function": "connection.cross",
+    "defaultRole": "none",
+    "graphics": [],
+    "connections": [
+      {
+        "id": "a",
+        "x": 0,
+        "y": 0,
+        "direction": "left"
+      },
+      {
+        "id": "b",
+        "x": 0,
+        "y": 0,
+        "direction": "right"
+      },
+      {
+        "id": "c",
+        "x": 0,
+        "y": 0,
+        "direction": "up"
+      },
+      {
+        "id": "d",
+        "x": 0,
+        "y": 0,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "c",
+        "d"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.connection.crossConnected",
+    "name": {
+      "de": "Kreuzung verbunden",
+      "en": "Cross (connected)"
+    },
+    "category": "connections",
+    "function": "connection.crossConnected",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 0.6,
+        "fill": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "a",
+        "x": 0,
+        "y": 0,
+        "direction": "left"
+      },
+      {
+        "id": "b",
+        "x": 0,
+        "y": 0,
+        "direction": "right"
+      },
+      {
+        "id": "c",
+        "x": 0,
+        "y": 0,
+        "direction": "up"
+      },
+      {
+        "id": "d",
+        "x": 0,
+        "y": 0,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "a",
+        "b",
+        "c",
+        "d"
+      ]
+    ],
+    "texts": []
+  },
+  {
+    "id": "wirewright.connection.interruption",
+    "name": {
+      "de": "Unterbrechungsstelle",
+      "en": "Interruption point"
+    },
+    "category": "connections",
+    "function": "connection.interruption",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.5,
+            0
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1.5,
+            0
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "a",
+        "x": 0,
+        "y": 0,
+        "direction": "up"
+      }
+    ],
+    "texts": [
+      {
+        "field": "name",
+        "x": 2,
+        "y": 3
+      },
+      {
+        "field": "xref",
+        "x": 2,
+        "y": 6
+      }
+    ]
+  },
+  {
+    "id": "wirewright.connection.break",
+    "name": {
+      "de": "Abbruchstelle",
+      "en": "Break point"
+    },
+    "category": "connections",
+    "function": "connection.break",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": -1.5,
+        "y1": 0,
+        "x2": 1.5,
+        "y2": 0
+      }
+    ],
+    "connections": [
+      {
+        "id": "a",
+        "x": 0,
+        "y": 0,
+        "direction": "up"
+      }
+    ],
+    "texts": [
+      {
+        "field": "text",
+        "x": 2,
+        "y": 3
+      }
+    ]
+  },
+  {
+    "id": "wirewright.connection.potential",
+    "name": {
+      "de": "Potenzialanschlusspunkt",
+      "en": "Potential point"
+    },
+    "category": "connections",
+    "function": "connection.potential",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.5,
+            -2
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1.5,
+            -2
+          ]
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "a",
+        "x": 0,
+        "y": 0,
+        "direction": "down"
+      }
+    ],
+    "texts": [
+      {
+        "field": "name",
+        "x": 0,
+        "y": -3,
+        "align": "center"
+      }
+    ]
+  },
+  {
+    "id": "wirewright.connection.potentialDefinition",
+    "name": {
+      "de": "Potenzialdefinitionspunkt",
+      "en": "Potential definition point"
+    },
+    "category": "connections",
+    "function": "connection.potentialDefinition",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "polyline",
+        "points": [
+          [
+            0,
+            -1.5
+          ],
+          [
+            1.5,
+            0
+          ],
+          [
+            0,
+            1.5
+          ],
+          [
+            -1.5,
+            0
+          ]
+        ],
+        "closed": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "a",
+        "x": 0,
+        "y": 0,
+        "direction": "up"
+      },
+      {
+        "id": "b",
+        "x": 0,
+        "y": 0,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "a",
+        "b"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "name",
+        "x": 2.5,
+        "y": 1
+      }
+    ]
+  },
+  {
+    "id": "wirewright.connection.definition",
+    "name": {
+      "de": "Verbindungsdefinitionspunkt",
+      "en": "Connection definition point"
+    },
+    "category": "connections",
+    "function": "connection.definition",
+    "defaultRole": "none",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -1,
+        "y": -1,
+        "width": 2,
+        "height": 2
+      }
+    ],
+    "connections": [
+      {
+        "id": "a",
+        "x": 0,
+        "y": 0,
+        "direction": "up"
+      },
+      {
+        "id": "b",
+        "x": 0,
+        "y": 0,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "a",
+        "b"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "wire",
+        "x": 2.5,
+        "y": 1
+      }
+    ]
+  }
+]

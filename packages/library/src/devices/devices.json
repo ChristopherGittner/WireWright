@@ -1,0 +1,488 @@
+[
+  {
+    "id": "relay.2co",
+    "name": {
+      "de": "Relais 2 Wechsler",
+      "en": "Relay, 2 changeover"
+    },
+    "category": "relays",
+    "functions": [
+      {
+        "symbol": "iec60617.relay.coil",
+        "main": true
+      },
+      {
+        "symbol": "iec60617.contact.co",
+        "pins": {
+          "1": "11",
+          "2": "12",
+          "3": "14"
+        }
+      },
+      {
+        "symbol": "iec60617.contact.co",
+        "pins": {
+          "1": "21",
+          "2": "22",
+          "3": "24"
+        }
+      },
+      {
+        "symbol": "iec60617.contact.no",
+        "pins": {
+          "1": "11",
+          "2": "14"
+        }
+      },
+      {
+        "symbol": "iec60617.contact.nc",
+        "pins": {
+          "1": "11",
+          "2": "12"
+        }
+      },
+      {
+        "symbol": "iec60617.contact.no",
+        "pins": {
+          "1": "21",
+          "2": "24"
+        }
+      },
+      {
+        "symbol": "iec60617.contact.nc",
+        "pins": {
+          "1": "21",
+          "2": "22"
+        }
+      }
+    ],
+    "contacts": [
+      {
+        "function": "contact.co",
+        "pins": [
+          "11",
+          "12",
+          "14"
+        ]
+      },
+      {
+        "function": "contact.co",
+        "pins": [
+          "21",
+          "22",
+          "24"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "contactor.3p.1no1nc",
+    "name": {
+      "de": "Schütz 3-polig + 1 Schließer + 1 Öffner",
+      "en": "Contactor 3-pole + 1 NO + 1 NC"
+    },
+    "category": "relays",
+    "functions": [
+      {
+        "symbol": "iec60617.contactor.coil",
+        "main": true
+      },
+      {
+        "symbol": "iec60617.contactor.main3"
+      },
+      {
+        "symbol": "iec60617.contact.no",
+        "pins": {
+          "1": "13",
+          "2": "14"
+        }
+      },
+      {
+        "symbol": "iec60617.contact.nc",
+        "pins": {
+          "1": "21",
+          "2": "22"
+        }
+      }
+    ],
+    "contacts": [
+      {
+        "function": "contactor.main",
+        "pins": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ]
+      },
+      {
+        "function": "contact.no",
+        "pins": [
+          "13",
+          "14"
+        ]
+      },
+      {
+        "function": "contact.nc",
+        "pins": [
+          "21",
+          "22"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cable.3g1.5.colors",
+    "name": {
+      "de": "Leitung 3G1,5 (farbig)",
+      "en": "Cable 3G1.5 (colored)"
+    },
+    "category": "cables",
+    "functions": [
+      {
+        "symbol": "wirewright.cable",
+        "main": true,
+        "label": {
+          "de": "Kabeldefinition",
+          "en": "Cable definition"
+        }
+      },
+      {
+        "symbol": "wirewright.cable",
+        "label": {
+          "de": "Weitere Kabeldefinition",
+          "en": "Further cable definition"
+        }
+      }
+    ],
+    "cable": {
+      "type": "3G1.5",
+      "crossSection": 1.5,
+      "coreIdentification": "colors",
+      "cores": [
+        {
+          "id": "1",
+          "color": "BN"
+        },
+        {
+          "id": "2",
+          "color": "BU"
+        },
+        {
+          "id": "PE",
+          "color": "GNYE"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cable.4g1.5.colors",
+    "name": {
+      "de": "Leitung 4G1,5 (farbig)",
+      "en": "Cable 4G1.5 (colored)"
+    },
+    "category": "cables",
+    "functions": [
+      {
+        "symbol": "wirewright.cable",
+        "main": true,
+        "label": {
+          "de": "Kabeldefinition",
+          "en": "Cable definition"
+        }
+      },
+      {
+        "symbol": "wirewright.cable",
+        "label": {
+          "de": "Weitere Kabeldefinition",
+          "en": "Further cable definition"
+        }
+      }
+    ],
+    "cable": {
+      "type": "4G1.5",
+      "crossSection": 1.5,
+      "coreIdentification": "colors",
+      "cores": [
+        {
+          "id": "1",
+          "color": "BN"
+        },
+        {
+          "id": "2",
+          "color": "BK"
+        },
+        {
+          "id": "3",
+          "color": "GY"
+        },
+        {
+          "id": "PE",
+          "color": "GNYE"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cable.5g1.5.colors",
+    "name": {
+      "de": "Leitung 5G1,5 (farbig)",
+      "en": "Cable 5G1.5 (colored)"
+    },
+    "category": "cables",
+    "functions": [
+      {
+        "symbol": "wirewright.cable",
+        "main": true,
+        "label": {
+          "de": "Kabeldefinition",
+          "en": "Cable definition"
+        }
+      },
+      {
+        "symbol": "wirewright.cable",
+        "label": {
+          "de": "Weitere Kabeldefinition",
+          "en": "Further cable definition"
+        }
+      }
+    ],
+    "cable": {
+      "type": "5G1.5",
+      "crossSection": 1.5,
+      "coreIdentification": "colors",
+      "cores": [
+        {
+          "id": "1",
+          "color": "BN"
+        },
+        {
+          "id": "2",
+          "color": "BK"
+        },
+        {
+          "id": "3",
+          "color": "GY"
+        },
+        {
+          "id": "4",
+          "color": "BU"
+        },
+        {
+          "id": "PE",
+          "color": "GNYE"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cable.4g2.5.numbers",
+    "name": {
+      "de": "Leitung 4G2,5 (nummeriert)",
+      "en": "Cable 4G2.5 (numbered)"
+    },
+    "category": "cables",
+    "functions": [
+      {
+        "symbol": "wirewright.cable",
+        "main": true,
+        "label": {
+          "de": "Kabeldefinition",
+          "en": "Cable definition"
+        }
+      },
+      {
+        "symbol": "wirewright.cable",
+        "label": {
+          "de": "Weitere Kabeldefinition",
+          "en": "Further cable definition"
+        }
+      }
+    ],
+    "cable": {
+      "type": "4G2.5",
+      "crossSection": 2.5,
+      "coreIdentification": "numbers",
+      "cores": [
+        {
+          "id": "1",
+          "number": "1",
+          "color": "BK"
+        },
+        {
+          "id": "2",
+          "number": "2",
+          "color": "BK"
+        },
+        {
+          "id": "3",
+          "number": "3",
+          "color": "BK"
+        },
+        {
+          "id": "PE",
+          "color": "GNYE"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cable.7g1.5.numbers",
+    "name": {
+      "de": "Steuerleitung 7G1,5 (nummeriert)",
+      "en": "Control cable 7G1.5 (numbered)"
+    },
+    "category": "cables",
+    "functions": [
+      {
+        "symbol": "wirewright.cable",
+        "main": true,
+        "label": {
+          "de": "Kabeldefinition",
+          "en": "Cable definition"
+        }
+      },
+      {
+        "symbol": "wirewright.cable",
+        "label": {
+          "de": "Weitere Kabeldefinition",
+          "en": "Further cable definition"
+        }
+      }
+    ],
+    "cable": {
+      "type": "7G1.5",
+      "crossSection": 1.5,
+      "coreIdentification": "numbers",
+      "cores": [
+        {
+          "id": "1",
+          "number": "1",
+          "color": "BK"
+        },
+        {
+          "id": "2",
+          "number": "2",
+          "color": "BK"
+        },
+        {
+          "id": "3",
+          "number": "3",
+          "color": "BK"
+        },
+        {
+          "id": "4",
+          "number": "4",
+          "color": "BK"
+        },
+        {
+          "id": "5",
+          "number": "5",
+          "color": "BK"
+        },
+        {
+          "id": "6",
+          "number": "6",
+          "color": "BK"
+        },
+        {
+          "id": "PE",
+          "color": "GNYE"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cable.12g0.75.numbers",
+    "name": {
+      "de": "Steuerleitung 12G0,75 (nummeriert)",
+      "en": "Control cable 12G0.75 (numbered)"
+    },
+    "category": "cables",
+    "functions": [
+      {
+        "symbol": "wirewright.cable",
+        "main": true,
+        "label": {
+          "de": "Kabeldefinition",
+          "en": "Cable definition"
+        }
+      },
+      {
+        "symbol": "wirewright.cable",
+        "label": {
+          "de": "Weitere Kabeldefinition",
+          "en": "Further cable definition"
+        }
+      }
+    ],
+    "cable": {
+      "type": "12G0.75",
+      "crossSection": 0.75,
+      "coreIdentification": "numbers",
+      "cores": [
+        {
+          "id": "1",
+          "number": "1",
+          "color": "BK"
+        },
+        {
+          "id": "2",
+          "number": "2",
+          "color": "BK"
+        },
+        {
+          "id": "3",
+          "number": "3",
+          "color": "BK"
+        },
+        {
+          "id": "4",
+          "number": "4",
+          "color": "BK"
+        },
+        {
+          "id": "5",
+          "number": "5",
+          "color": "BK"
+        },
+        {
+          "id": "6",
+          "number": "6",
+          "color": "BK"
+        },
+        {
+          "id": "7",
+          "number": "7",
+          "color": "BK"
+        },
+        {
+          "id": "8",
+          "number": "8",
+          "color": "BK"
+        },
+        {
+          "id": "9",
+          "number": "9",
+          "color": "BK"
+        },
+        {
+          "id": "10",
+          "number": "10",
+          "color": "BK"
+        },
+        {
+          "id": "11",
+          "number": "11",
+          "color": "BK"
+        },
+        {
+          "id": "PE",
+          "color": "GNYE"
+        }
+      ]
+    }
+  }
+]

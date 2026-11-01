@@ -1,0 +1,28 @@
+{
+  "name": "@wirewright/editor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Wirewright schematic editor (React). Runs in the browser and inside the desktop app.",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@wirewright/core": "workspace:*",
+    "@wirewright/library": "workspace:*",
+    "@wirewright/render": "workspace:*",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@material-symbols/svg-400": "0.48.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.5"
+  }
+}

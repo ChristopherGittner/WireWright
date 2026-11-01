@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Wirewright app icon: a W bent from one wire, stripped at the left end, with a ferrule on the right. -->
+  <defs>
+    <linearGradient id="bg" gradientUnits="userSpaceOnUse" x1="16" y1="16" x2="496" y2="496">
+      <stop offset="0" stop-color="#3a86ff"/>
+      <stop offset="1" stop-color="#1446b8"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#bg)"/>
+  <!-- stripped copper core, left end -->
+  <path d="M136.5 206.1 L114.4 117.8" fill="none" stroke="#f6a54c" stroke-width="18" stroke-linecap="round"/>
+  <!-- insulation -->
+  <path d="M136 204.2 L180 380 L256 196 L332 380 L376 204.2" fill="none" stroke="#ffffff" stroke-width="46" stroke-linecap="butt" stroke-linejoin="round"/>
+  <!-- ferrule, right end: metal sleeve and red collar (1.0 mm²), rounded at the top -->
+  <g transform="translate(376 204.2) rotate(14.05)">
+    <rect x="-16" y="-96" width="32" height="70" rx="16" fill="#d3d9e2"/>
+    <path d="M-34 12 V-28 Q-34 -44 -18 -44 H18 Q34 -44 34 -28 V12 Z" fill="#e5484d"/>
+  </g>
+</svg>

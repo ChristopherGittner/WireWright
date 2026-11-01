@@ -1,0 +1,28 @@
+{
+  "name": "wirewright",
+  "private": true,
+  "type": "module",
+  "license": "GPL-3.0-or-later",
+  "packageManager": "pnpm@10.28.0",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "build": "tsc -b && pnpm --filter @wirewright/editor build",
+    "typecheck": "tsc -b && tsc -p tsconfig.tests.json && tsc -p packages/editor/tsconfig.json && tsc -p apps/desktop/e2e/tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "clean": "tsc -b --clean",
+    "start": "pnpm build && pnpm --filter @wirewright/desktop start",
+    "desktop": "pnpm start"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^22.19.0",
+    "eslint": "^10.14.0",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vitest": "^5.0.5"
+  }
+}
