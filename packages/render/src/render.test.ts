@@ -183,6 +183,29 @@ describe('turned symbols', () => {
       expect(overlaps).toBe(false);
     }
   });
+
+  it('a turned connection symbol keeps its labels upright as a block beside it, clear of the symbol and each other', () => {
+    const d = new ProjectDocument(createDemoProject(library), library);
+    const rotations = [0, 90, 180, 270] as const;
+    const ids = d.apply([
+      ...rotations.map((rotation, i) => ({ type: 'placeSymbol' as const, pageId: 'p_sensors', symbol: 'wirewright.connection.potential', x: 260 + 30 * i, y: 30, rotation, props: { name: '0V' } })),
+      ...rotations.map((rotation, i) => ({ type: 'placeSymbol' as const, pageId: 'p_sensors', symbol: 'wirewright.connection.interruption', x: 260 + 30 * i, y: 70, rotation, props: { name: 'X9' } })),
+      // the partner, so the interruption points get cross-references
+      { type: 'placeSymbol' as const, pageId: 'p_control', symbol: 'wirewright.connection.interruption', x: 380, y: 250, props: { name: 'X9' } },
+    ]).created.slice(0, 8);
+    const elements = renderPage(renderContext(d), 'p_sensors').elements;
+    const hit = (a: { x1: number; y1: number; x2: number; y2: number }, b: typeof a) => a.x1 < b.x2 && a.x2 > b.x1 && a.y1 < b.y2 && a.y2 > b.y1;
+    for (const id of ids) {
+      const graphics = elements.filter((e) => e.meta?.itemId === id && e.meta.role === 'symbol' && e.kind !== 'text').map(elementBox);
+      const labels = elements.filter((e) => e.kind === 'text' && e.meta?.itemId === id) as Extract<SceneElement, { kind: 'text' }>[];
+      expect(labels.length).toBeGreaterThan(0);
+      const boxes = labels.map(textBox);
+      for (const [i, t] of boxes.entries()) {
+        expect(graphics.some((g) => hit(t, g))).toBe(false);
+        expect(boxes.slice(i + 1).some((o) => hit(t, o))).toBe(false);
+      }
+    }
+  });
 });
 
 describe('acknowledged potential conflict', () => {

@@ -43,6 +43,7 @@ import {
   type SchematicPage,
   type Sheet,
   type SymbolDefinition,
+  type TextArrangement,
   type TextField,
 } from '@wirewright/core';
 import { elementBox, estimateTextWidth, fitText, type ElementMeta, type Scene, type SceneElement, type Stroke, type TextAlign, type TextAngle } from './scene.js';
@@ -510,7 +511,8 @@ class Renderer {
     if (def.function === 'text') return this.freeText(item);
     const first = this.elements.length;
     for (const g of def.graphics) this.graphic(g, at, this.stroke(COLORS.symbol, WIDTH.symbol), meta, item);
-    const arranged = item.textArrangement ? this.arrange(page, item, def, this.elements.slice(first)) : undefined;
+    const arrangement = item.textArrangement ?? turnedLabels(item, def);
+    const arranged = arrangement ? this.arrange(page, item, def, this.elements.slice(first), arrangement) : undefined;
     for (const field of def.texts) this.field(page, item, def, field, at, arranged?.get(field.field));
     if (def.generator === 'plcCard') this.plcCardRows(page, item);
     if (def.generator === 'cable') this.cableCores(page, item);
@@ -607,8 +609,8 @@ class Renderer {
    * function text, technical data, cross-references) next to the outline of its graphics, on the
    * chosen side and centered along it, turned by the arrangement's angle.
    */
-  arrange(page: SchematicPage, item: Item, def: SymbolDefinition, graphics: readonly SceneElement[]): Map<string, ArrangedText> | undefined {
-    const { side, angle } = item.textArrangement!;
+  arrange(page: SchematicPage, item: Item, def: SymbolDefinition, graphics: readonly SceneElement[], arrangement: TextArrangement): Map<string, ArrangedText> | undefined {
+    const { side, angle } = arrangement;
     if (graphics.length === 0) return undefined;
     const box = graphics.map(elementBox).reduce((a, b) => ({ x1: Math.min(a.x1, b.x1), y1: Math.min(a.y1, b.y1), x2: Math.max(a.x2, b.x2), y2: Math.max(a.y2, b.y2) }));
     // The lines of the block: offset of each text's first line along the stacking direction.
@@ -977,6 +979,19 @@ interface ArrangedText {
   y: number;
   angle: TextAngle;
   align: TextAlign;
+}
+
+/**
+ * A turned symbol that only carries labels (connection symbols: name, cross-references …) keeps
+ * them upright as one block beside its graphics, on the side its first label turns to. Turned
+ * one by one, the labels would run into the small symbol or into each other.
+ */
+function turnedLabels(item: Item, def: SymbolDefinition): TextArrangement | undefined {
+  const [first] = def.texts;
+  if (item.rotation === 0 || !first || !def.texts.every((t) => (ARRANGED_TEXT_FIELDS as readonly string[]).includes(t.field))) return undefined;
+  const p = transformPoint({ x: first.x, y: first.y }, item.rotation, item.mirror);
+  const side = Math.abs(p.x) > Math.abs(p.y) ? (p.x > 0 ? 'right' : 'left') : p.y > 0 ? 'below' : 'above';
+  return { side, angle: 0 };
 }
 
 /** Distance between a symbol's graphics and its arranged texts (mm). */
