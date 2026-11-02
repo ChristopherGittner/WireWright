@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import type { Command } from './commands/schema.js';
 import type { ProjectDocument } from './document.js';
+import { issueKey } from './issues.js';
 import { documentWithPage } from './test/fixtures.js';
 
 type Place = Omit<Extract<Command, { type: 'placeSymbol' }>, 'type' | 'pageId'>;
@@ -98,9 +99,9 @@ describe('potentials', () => {
       { id: 'i_x', symbol: 'blackbox', x: 100, y: 60, tag: { product: 'A1' } },
       { id: 'i_n', symbol: 'potential', x: 100, y: 80, rotation: 180, props: { name: 'N' } },
     );
-    expect(potential(doc, 'i_x:1')).toEqual({ conflict: ['L1', 'N'] });
     const issue = doc.check().find((i) => i.code === 'potential.conflict');
     expect(issue?.message).toBe('Potentials L1 and N are connected (possible short circuit) via =SG+10-A1');
+    expect(potential(doc, 'i_x:1')).toEqual({ conflict: ['L1', 'N'], conflictKey: issueKey(issue!) });
   });
 
   it('source pins start a new potential', () => {

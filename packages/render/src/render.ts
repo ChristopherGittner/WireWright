@@ -470,15 +470,20 @@ class Renderer {
 
   connections(page: SchematicPage): void {
     const { connectivity } = this.ctx;
+    // Conflicts the designer acknowledged are intended: drawn like any other conductor.
+    const acknowledged = new Set((this.ctx.state.project.acknowledged ?? []).map((a) => a.key));
     for (const s of connectivity.segments) {
       if (s.pageId !== page.id || (s.x1 === s.x2 && s.y1 === s.y2)) continue;
       const potential = connectivity.potentialOf.get(s.a) ?? {};
-      const conflict = potential.conflict !== undefined;
+      const ignored = potential.conflictKey !== undefined && acknowledged.has(potential.conflictKey);
+      const conflict = potential.conflict !== undefined && !ignored;
+      // An acknowledged conflict takes the line of its first potential instead of "no potential".
+      const name = potential.name ?? (ignored ? potential.conflict?.[0] : undefined);
       // Pipes carry a medium (gray unless it has its own color); wires a potential.
       const stroke =
         connectivity.points.get(s.a)?.medium === 'fluid'
-          ? pipeStroke(potential.name, conflict, this.ctx.state.project.media ?? [], this.options.monochrome)
-          : connectionStroke(potential.name, conflict, this.ctx.state.project.potentials, this.options.monochrome);
+          ? pipeStroke(name, conflict, this.ctx.state.project.media ?? [], this.options.monochrome)
+          : connectionStroke(name, conflict, this.ctx.state.project.potentials, this.options.monochrome);
       this.line(s.x1, s.y1, s.x2, s.y2, stroke, {
         role: 'connection',
         connection: { a: s.a, b: s.b, ...(potential.name ? { potential: potential.name } : {}), ...(conflict ? { conflict } : {}) },
@@ -654,12 +659,14 @@ class Renderer {
     const size = field.size ?? fieldSize(field.field);
     // Texts stay upright unless the item turns them (angle against the sheet). Upside down, a text
     // above the symbol must hang below it, and left/right alignment swaps with mirroring and
-    // rotation by 180°. A text with its own angle or alignment, or placed by the item's text
-    // arrangement, is placed exactly as set.
+    // rotation by 180°. Turned by 90° or 270°, a text beside the symbol comes to lie above or
+    // below it; below, it hangs too, so it does not run up into the symbol. A text with its own
+    // angle or alignment, or placed by the item's text arrangement, is placed exactly as set.
     const angle: TextAngle = offset.angle ?? arranged?.angle ?? 0;
     const own = offset.angle !== undefined || offset.align !== undefined || arranged !== undefined;
+    const hangs = !own && (item.rotation === 180 || ((item.rotation === 90 || item.rotation === 270) && py > item.y));
     const x = px + offset.dx;
-    const y = py + offset.dy + (item.rotation === 180 && !own ? size * 0.7 : 0);
+    const y = py + offset.dy + (hangs ? size * 0.7 : 0);
     const flip = item.mirror !== (item.rotation === 180);
     const base = offset.align ?? arranged?.align ?? field.align ?? 'left';
     const align: TextAlign = own

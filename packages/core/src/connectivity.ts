@@ -10,7 +10,7 @@
 //   potential points, potential definition points and source pins.
 import { schematicPages, itemRole } from './devices.js';
 import { boxRect, containsPoint, transformDirection, transformPoint } from './geometry.js';
-import { issueMessage, type Issue } from './issues.js';
+import { issueKey, issueMessage, type Issue } from './issues.js';
 import type { Library } from './library.js';
 import type { Direction, Item, ProjectState, SchematicPage, SymbolDefinition } from './schema.js';
 import { channelPins, isPlcPoint, plcPointKind, resolveSymbol } from './symbols.js';
@@ -47,6 +47,8 @@ export interface PotentialState {
   name?: string;
   /** All potential names that meet here, when there is more than one (conflict). */
   conflict?: string[];
+  /** Key of the `potential.conflict` issue of a conflict, to tell whether it is acknowledged. */
+  conflictKey?: string;
 }
 
 export interface Connectivity {
@@ -457,7 +459,7 @@ export function buildConnectivity(state: ProjectState, library: Library): Connec
     const to = sourceByGroupName.get(`${group}\u0000${second}`)!;
     const via = conflictPath(graph, from, to);
     const p = points.get(from)!;
-    issues.push({
+    const issue: Issue = {
       severity: 'error',
       code: 'potential.conflict',
       ...(via.length > 0
@@ -465,7 +467,10 @@ export function buildConnectivity(state: ProjectState, library: Library): Connec
         : issueMessage('Potentials {names} and {last} are connected (possible short circuit)', potentialNames(names))),
       pageId: p.pageId,
       itemId: p.itemId,
-    });
+    };
+    issues.push(issue);
+    const state = stateOfGroup.get(group);
+    if (state) state.conflictKey = issueKey(issue);
   }
 
   const itemsById = new Map<string, Item>();

@@ -1,4 +1,4 @@
-import { ProjectDocument } from '@wirewright/core';
+import { issueKey, ProjectDocument } from '@wirewright/core';
 import { createDemoProject, createStandardLibrary } from '@wirewright/library';
 import { describe, expect, it } from 'vitest';
 import { renderContext, renderPage, renderSheet } from './render.js';
@@ -165,6 +165,40 @@ describe('text angle', () => {
     expect(second!.x).toBeLessThan(first!.x);
     expect(second!.y).toBe(first!.y);
     expect(sceneToSvg(scene)).toContain(`transform="rotate(-90 `);
+  });
+});
+
+describe('turned symbols', () => {
+  it('a text that comes to lie below a symbol turned by 90° or 270° hangs from its point, clear of the symbol', () => {
+    const d = new ProjectDocument(createDemoProject(library), library);
+    const ids = d.apply(
+      ([90, 270] as const).map((rotation, i) => ({ type: 'placeSymbol' as const, pageId: 'p_sensors', symbol: 'wirewright.connection.potentialDefinition', x: 300 + 40 * i, y: 40, rotation, props: { name: 'L1' } })),
+    ).created;
+    const elements = renderPage(renderContext(d), 'p_sensors').elements;
+    for (const id of ids) {
+      const graphics = elements.filter((e) => e.meta?.itemId === id && e.meta.role === 'symbol' && e.kind !== 'text').map(elementBox);
+      const name = elements.find((e) => e.kind === 'text' && e.meta?.itemId === id && e.meta.field === 'name') as Extract<SceneElement, { kind: 'text' }>;
+      const t = textBox(name);
+      const overlaps = graphics.some((g) => t.x1 < g.x2 && t.x2 > g.x1 && t.y1 < g.y2 && t.y2 > g.y1);
+      expect(overlaps).toBe(false);
+    }
+  });
+});
+
+describe('acknowledged potential conflict', () => {
+  it('is drawn in the line of its first potential instead of the conflict color', () => {
+    const d = new ProjectDocument(createDemoProject(library), library);
+    const [l1] = d.apply([
+      { type: 'placeSymbol', pageId: 'p_sensors', symbol: 'wirewright.connection.potential', x: 380, y: 30, props: { name: 'L1' }, autoName: false },
+      { type: 'placeSymbol', pageId: 'p_sensors', symbol: 'wirewright.connection.potential', x: 380, y: 50, rotation: 180, props: { name: 'N' }, autoName: false },
+    ]).created as [string, string];
+    const wire = () => renderPage(renderContext(d), 'p_sensors').elements.find((e) => e.kind === 'line' && [e.meta?.connection?.a, e.meta?.connection?.b].includes(`${l1}:a`));
+    const issue = d.check().find((i) => i.code === 'potential.conflict' && i.pageId === 'p_sensors')!;
+    expect(wire()?.meta?.connection?.conflict).toBe(true);
+    d.apply({ type: 'acknowledgeIssues', keys: [issueKey(issue)] });
+    const after = wire();
+    expect(after?.meta?.connection?.conflict).toBeUndefined();
+    expect(after?.kind === 'line' && after.stroke.color).toBe('#000000');
   });
 });
 
