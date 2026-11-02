@@ -1,4 +1,4 @@
-import { channelPins, createProjectState, plcPointSymbol, ProjectDocument } from '@wirewright/core';
+import { channelPins, createProjectState, localize, plcPointSymbol, ProjectDocument } from '@wirewright/core';
 import { describe, expect, it } from 'vitest';
 import { createStandardLibrary } from './index.js';
 
@@ -73,6 +73,29 @@ describe('standard library', () => {
     expect(count('siemens.et200sp.')).toBeGreaterThan(20);
     expect(count('siemens.s71500.')).toBeGreaterThan(30);
     expect(library.device('wago.750-667-000-003')?.functions[1]).toMatchObject({ symbol: 'wirewright.plc.di.2', pins: { '1': '1', '2': '5' } }); // clock T1 on terminal 1, input I1 on 5 (manual)
+  });
+
+  it('has the Beckhoff terminal points of the Beckhoff documentation', () => {
+    const channels = (id: string) => library.device(id)?.plc?.channels;
+    expect(library.devices().filter((d) => d.id.startsWith('beckhoff.')).length).toBeGreaterThan(190);
+    // EL1002: input 1 on 1 with sensor supply +24 V on 2, 0 V on 3, PE on 4; input 2 on 5
+    expect(channels('beckhoff.el1002')?.[0]).toEqual({
+      channel: 1, kind: 'DI', pin: '1',
+      extraPins: [{ pin: '2', label: '+24 V', after: true }, { pin: '3', label: '0 V', after: true }, { pin: '4', label: 'PE', after: true }],
+    });
+    // EL1004: inputs 1-4 on 1, 5, 4, 8; input 3 has its +24 V on 3
+    expect(channels('beckhoff.el1004')?.map((c) => c.pin)).toEqual(['1', '5', '4', '8']);
+    expect(channels('beckhoff.el1004')?.[2]?.extraPins).toEqual([{ pin: '3', label: '+24 V', after: true }]);
+    // EL3102: differential input, +Input 1 on 1, -Input 1 on 2, GND on 3, shield on 4
+    expect(channels('beckhoff.el3102')?.[0]).toMatchObject({ pin: '1', pinLabel: '+Input 1', extraPins: [{ pin: '2', label: '-Input 1' }, { pin: '3', label: 'GND' }, { pin: '4', label: 'Shield' }] });
+    // EL2612: changeover relay 1 with contacts 14 (1), 11 (2), 12 (3)
+    expect(channels('beckhoff.el2612')?.[0]).toMatchObject({ kind: 'DO', pin: '1', pinLabel: '14', extraPins: [{ pin: '2', label: '11' }, { pin: '3', label: '12' }] });
+    // EL1124/EL1144/EL1134 share one table "+5 / 12 / 48 V": each gets its own supply voltage
+    expect(channels('beckhoff.el1144')?.[0]?.extraPins?.[0]?.label).toBe('+12 V');
+    // every Beckhoff I/O card names the page its terminal points come from
+    for (const d of library.devices().filter((d) => /^beckhoff\.el[1-4]/.test(d.id) && !/el19[01]|el2904/.test(d.id))) {
+      expect(localize(d.description, 'en'), d.id).toMatch(/^Pin assignment from the Beckhoff documentation, as of 2026-11: https:\/\/infosys\.beckhoff\.com\//);
+    }
   });
 
   it('template contacts use functions that exist in the library', () => {

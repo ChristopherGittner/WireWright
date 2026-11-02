@@ -684,12 +684,12 @@ generated from tables):
 | Family | Content |
 |---|---|
 | WAGO 750/753 | every product of the series listed on wago.com (469, accessories left out), with English and German names. For 262 I/O modules the terminal assignment is read from the product manual's table (Kanal / Benennung / Anschluss / Funktion), including further terminals per channel: clock outputs of safety inputs, sensor supply of 3-conductor inputs, 0 V of 2-conductor modules, − of differential and RTD inputs. 25 modules whose table could not be read use the family pattern (marked "check"); couplers, controllers and special modules have no channel list |
-| Beckhoff EtherCAT terminals | EL1xxx, EL2xxx (incl. relays), EL3xxx (voltage, current, RTD, thermocouple), EL4xxx, TwinSAFE EL1904/EL1918/EL2904, EK1100/EK9300 couplers, CX embedded PCs |
+| Beckhoff EtherCAT terminals | 199 I/O terminals EL1xxx (incl. 120/230 V AC, HD), EL2xxx (incl. relays, triac, solid state), EL3xxx (voltage, current, RTD, thermocouple), EL4xxx. For these the terminal points are read from the connection table of the Beckhoff documentation (infosys.beckhoff.com, link in each description), including further terminals per channel: sensor supply, 0 V/GND, PE/shield, − of differential, RTD and thermocouple inputs, the contacts 11/12/14 of relays. Supply terminals shared by several channels (e.g. 0 V on 9–16 of HD terminals) are left out. Special-function terminals (counters, PWM, power measurement) are not included. Also TwinSAFE EL1904/EL1918/EL2904 (family pattern, marked "check"), EK1100/EK9300 couplers, CX embedded PCs |
 | Siemens ET 200SP | DI/DQ/RQ ST, HF, BA; F-DI with sensor supplies, F-DQ; AI/AQ; IM 155-6 interface modules |
 | Siemens S7-1500 / ET 200MP | DI/DQ 16/32, AC and relay modules, F-DI/F-DQ, AI/AQ (channels `CH0` …), IM 155-5; CPUs 1511 … 1518 incl. F and compact C, ET 200SP CPUs 1510SP/1512SP |
 
-For Beckhoff and Siemens, channel counts follow the product and pin assignments
-follow each family's usual terminal pattern (Beckhoff 1/5/4/8 …, ET 200MP 2–9/12–19 …).
+For Siemens and the Beckhoff TwinSAFE terminals, channel counts follow the product
+and pin assignments follow each family's usual terminal pattern (ET 200MP 2–9/12–19 …).
 Such definitions say so in their description: check pin assignment and order
 number against the manufacturer's documentation before use, and correct a
 definition by saving it to the project or the library folder. CPUs, couplers and
