@@ -156,9 +156,12 @@ function fits(row: ContactImageRow, fn: string, pins: string[]): boolean {
  */
 export function pinLabel(page: SchematicPage, item: Item, point: { pin: string; designation?: string }, library: Library): string {
   const tag = formatTag(effectiveTag(page, item, library));
-  if (library.symbol(item.symbol)?.function === 'terminal') {
+  const def = library.symbol(item.symbol);
+  if (def?.function === 'terminal') {
     const terminal = typeof item.props?.terminal === 'string' ? item.props.terminal : (point.designation ?? point.pin);
-    return `${tag}:${terminal}`;
+    // A level of a multi-level terminal: `-X1:1.2`.
+    const level = def.terminalLevels?.find((l) => l.pins.includes(point.pin))?.level;
+    return `${tag}:${level !== undefined && terminal !== '' ? `${terminal}.${level}` : terminal}`;
   }
   return `${tag}:${point.designation ?? point.pin}`;
 }

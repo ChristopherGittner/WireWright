@@ -12,7 +12,7 @@ import { buildCableIndex, buildWireIndex } from '../cables.js';
 import { buildConnectivity } from '../connectivity.js';
 import { CABLE_LENGTH, plcCardLayout } from '../symbols.js';
 import { normalizeJunction } from '../junctions.js';
-import { terminalDesignation } from '../terminals.js';
+import { terminalBridges, terminalDesignation } from '../terminals.js';
 import { setLanguage } from '../translations.js';
 import { naturalCompare } from '../reports.js';
 import {
@@ -328,10 +328,20 @@ function renumberTerminals(draft: DraftState, cmd: CommandOf<'renumberTerminals'
     .filter(({ item }) => /^\d*$/.test(terminalDesignation(item, ctx.library)))
     .sort((a, b) => (order.get(a.f.pageId) ?? 0) - (order.get(b.f.pageId) ?? 0) || a.item.x - b.item.x || a.item.y - b.item.y);
   if (terminals.length === 0) throw commandError('{device} has no numbered terminals', { device: device.key });
-  terminals.forEach(({ f }, i) => {
-    const item = findItem(getSchematicPage(draft, f.pageId), f.itemId);
-    item.props = { ...item.props, terminal: String((cmd.start ?? 1) + i * (cmd.step ?? 1)) };
-  });
+  // The levels of a multi-level terminal (drawn apart, same number) keep one number.
+  const levelNumbers = new Map<string, string>();
+  let next = 0;
+  for (const { f, item } of terminals) {
+    const old = terminalDesignation(item, ctx.library);
+    const levels = ctx.library.symbol(item.symbol)?.terminalLevels !== undefined && old !== '';
+    let number = levels ? levelNumbers.get(old) : undefined;
+    if (number === undefined) {
+      number = String((cmd.start ?? 1) + next++ * (cmd.step ?? 1));
+      if (levels) levelNumbers.set(old, number);
+    }
+    const placed = findItem(getSchematicPage(draft, f.pageId), f.itemId);
+    placed.props = { ...placed.props, terminal: number };
+  }
 }
 
 /**
@@ -811,7 +821,7 @@ function continueTerminalStrips(draft: DraftState, pageId: string, placedIds: Re
     const others = existing.map((f) => findItem(state.pages[f.pageId] as SchematicPage, f.itemId));
     const numbers = others.map((i) => terminalDesignation(i, library)).filter((d) => /^\d+$/.test(d)).map(Number);
     const offset = numbers.length > 0 ? Math.max(...numbers) : 0;
-    const usedBridges = new Set(others.map((i) => i.props?.bridge).filter((b): b is string => typeof b === 'string' && b !== ''));
+    const usedBridges = new Set(others.flatMap((i) => terminalBridges(i)));
     const bridgeMap = new Map<string, string>();
     const freeBridge = () => {
       for (let n = 0; ; n++) {
@@ -821,7 +831,7 @@ function continueTerminalStrips(draft: DraftState, pageId: string, placedIds: Re
     };
     const page = getSchematicPage(draft, pageId);
     // Labels of the placed terminals that the strip does not use yet stay; the others get free ones.
-    const placedLabels = new Set(ids.map((id) => findItem(page, id).props?.bridge).filter((b): b is string => typeof b === 'string' && b !== ''));
+    const placedLabels = new Set(ids.flatMap((id) => terminalBridges(findItem(page, id))));
     const clashing = [...placedLabels].filter((label) => usedBridges.has(label));
     for (const label of placedLabels) usedBridges.add(label);
     for (const label of clashing) bridgeMap.set(label, freeBridge());
@@ -831,6 +841,7 @@ function continueTerminalStrips(draft: DraftState, pageId: string, placedIds: Re
       const props = { ...item.props };
       if (/^\d+$/.test(designation)) props.terminal = String(Number(designation) + offset);
       if (typeof props.bridge === 'string' && bridgeMap.has(props.bridge)) props.bridge = bridgeMap.get(props.bridge)!;
+      if (props.bridges) props.bridges = Object.fromEntries(Object.entries(props.bridges).map(([level, label]) => [level, bridgeMap.get(label) ?? label]));
       item.props = props;
     }
   }

@@ -176,7 +176,7 @@ describe('standard macros', () => {
 describe('terminal macros', () => {
   it('has 1 … 20 bridged terminals with 2 and with 3 connections', () => {
     const ids = library.macros().filter((m) => m.category?.startsWith('terminals')).map((m) => m.id);
-    expect(ids).toHaveLength(40);
+    expect(ids).toHaveLength(100);
     expect(library.macro('wirewright.macro.terminals3.20')?.items).toHaveLength(20);
     expect(library.symbol('iec60617.terminal.3')?.connections.map((c) => c.id)).toEqual(['1', '2', '3']);
   });

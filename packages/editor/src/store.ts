@@ -89,6 +89,7 @@ export type Dialog =
   | { kind: 'saveDevice'; device: string }
   | { kind: 'wires' }
   | { kind: 'terminals' }
+  | { kind: 'terminalStrip' }
   | { kind: 'saveMacro' }
   | { kind: 'translations' }
   | { kind: 'renumber' }

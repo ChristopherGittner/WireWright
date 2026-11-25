@@ -398,6 +398,17 @@ card.
   terminals side by side with one bridge, e.g. a 24V distribution. Placed on
   a strip that already has terminals, the numbering continues and the bridge
   gets a free label (also when pasting terminals).
+- **Multi-level terminals:** Symbols → Terminals has double- and triple-level
+  terminals (levels separate, levels connected, PE), the single levels to
+  place on their own (e.g. level 1 on page 3, level 2 on page 7) and
+  terminals with 3 … 6 connections. Levels are designated `1.1`, `1.2`; the
+  properties dialog of a symbol with all levels has one bridge field per
+  level. Macros → Double-level terminals (1 … 20 each).
+- **Terminal strip configurator** (button in the Symbols tab, or "New terminal
+  strip…" in the Terminals dialog): strip, number of terminals, first number,
+  levels, connections per terminal, levels connected / PE, and per level
+  "all terminals bridged". Place: the strip follows the mouse, a click places
+  all terminals at once.
 
 ## Device library
 

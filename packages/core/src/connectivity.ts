@@ -15,6 +15,7 @@ import type { Library } from './library.js';
 import type { Direction, Item, ProjectState, SchematicPage, SymbolDefinition } from './schema.js';
 import { channelPins, isPlcPoint, plcPointKind, resolveSymbol } from './symbols.js';
 import { effectiveTag, formatTag } from './tags.js';
+import { terminalDesignation, terminalLevels } from './terminals.js';
 
 export interface ConnectionPointInfo {
   /** `itemId:pin`; the inner side of a device box border pin is `itemId:pin:in`. */
@@ -405,17 +406,26 @@ export function buildConnectivity(state: ProjectState, library: Library): Connec
     }
   }
 
-  // Bridged terminals (same strip, same bridge label) carry the same potential.
+  // Bridged terminals (same strip, same bridge label; per level on a multi-level terminal) carry
+  // the same potential, and so do the levels of a terminal whose levels are connected inside
+  // (same strip, same number), also when the levels are drawn apart.
   const bridges = new Map<string, string>();
-  for (const { item, def, page } of devices) {
-    const bridge = item.props?.bridge;
-    const pin = def.connections[0];
-    if (def.function !== 'terminal' || typeof bridge !== 'string' || bridge === '' || !pin) continue;
-    const key = `${formatTag(effectiveTag(page, item, library))}\u0000${bridge}`;
-    const net = nets.find(`${item.id}:${pin.id}`);
+  const join = (key: string, net: string) => {
     const other = bridges.get(key);
     if (other === undefined) bridges.set(key, net);
     else potentials.union(other, net);
+  };
+  for (const { item, def, page } of devices) {
+    if (def.function !== 'terminal') continue;
+    const strip = formatTag(effectiveTag(page, item, library));
+    for (const level of terminalLevels(item, library)) {
+      const pin = level.pins[0];
+      if (!pin || !points.has(`${item.id}:${pin}`)) continue;
+      const net = nets.find(`${item.id}:${pin}`);
+      if (level.bridge !== undefined) join(`${strip}\u0000${level.bridge}`, net);
+      const base = terminalDesignation(item, library);
+      if (def.levelsConnected && base !== '') join(`${strip}\u0001${base}`, net);
+    }
   }
 
   const namesByGroup = new Map<string, Set<string>>();

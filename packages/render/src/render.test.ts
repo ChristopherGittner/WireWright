@@ -311,3 +311,23 @@ describe('terminal diagram', () => {
     expect(scene.elements.filter((e) => e.kind === 'circle')).toHaveLength(3);
   });
 });
+
+describe('multi-level terminals', () => {
+  it('draws the bridge of one level below that level only, and the level designations', () => {
+    const d = new ProjectDocument(createDemoProject(library), library);
+    d.apply([0, 1, 2].map((i) => ({
+      type: 'placeSymbol' as const,
+      pageId: 'p_sensors',
+      symbol: 'iec60617.terminal.2level',
+      x: 200 + 16 * i,
+      y: 240,
+      tag: { product: 'X7' },
+      props: { terminal: String(i + 1), bridges: { '2': 'B' } },
+    })));
+    const scene = renderPage(renderContext(d), 'p_sensors');
+    const lines = scene.elements.filter((e) => e.kind === 'line' && e.meta?.field === 'bridge' && e.y1 > 240);
+    expect(lines).toMatchObject([{ x1: 208, x2: 240, y1: 243.5, y2: 243.5 }]);
+    expect(texts(scene.elements)).toEqual(expect.arrayContaining(['1.1', '1.2', '3.2']));
+  });
+});
+

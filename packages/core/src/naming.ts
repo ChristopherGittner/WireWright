@@ -5,6 +5,7 @@ import type { Library } from './library.js';
 import { buildDeviceIndex, schematicPages, type Device } from './devices.js';
 import type { FrameDefinition, Item, LocalizedText, ProjectSettings, ProjectState, SchematicPage, Tag } from './schema.js';
 import { formatTag } from './tags.js';
+import { terminalBridges } from './terminals.js';
 
 /** Column number (1-based) of an x coordinate in the frame's column grid. */
 export function columnAt(frame: FrameDefinition | undefined, x: number): number {
@@ -251,7 +252,7 @@ export function suggestionLists(state: ProjectState, library: Library, language:
     if (page.type !== 'schematic') continue;
     for (const item of page.items) {
       if (typeof item.props?.name === 'string' && item.props.name) names.add(item.props.name);
-      if (typeof item.props?.bridge === 'string' && item.props.bridge) bridges.add(item.props.bridge);
+      for (const bridge of terminalBridges(item)) bridges.add(bridge);
     }
   }
   const byName = (a: string, b: string) => a.localeCompare(b, undefined, { numeric: true });

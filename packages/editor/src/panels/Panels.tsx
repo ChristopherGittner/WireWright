@@ -442,6 +442,9 @@ const MACRO_CATEGORIES: [string, string][] = [
   ['control', 'Control circuits'],
   ['terminals', 'Terminals, bridged'],
   ['terminals3', 'Terminals with 3 connections, bridged'],
+  ['terminals2level', 'Double-level terminals'],
+  ['terminals2level.connected', 'Double-level terminals, levels connected'],
+  ['terminals2level.pe', 'PE double-level terminals'],
 ];
 const DEVICE_CATEGORIES: [string, string][] = [
   ['plc.cpu', 'PLC: CPUs, controllers, couplers'],
@@ -578,6 +581,7 @@ export function SymbolsPanel() {
           label={tr('Symbol editor: new symbol, or a copy of the symbol chosen for placing')}
           onClick={() => store.set({ dialog: { kind: 'symbolEditor', mode: 'symbol', ...(tool.kind === 'place' ? { id: tool.symbol } : {}) } })}
         />
+        <PanelButton icon="terminals" label={tr('Terminal strip configurator: terminals, levels and bridges, placed at once')} onClick={() => store.set({ dialog: { kind: 'terminalStrip' } })} />
       </div>
       <div className="symbols">
         {section('symbols', 'Symbols', symbols, (g) => (

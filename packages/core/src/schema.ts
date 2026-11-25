@@ -148,6 +148,8 @@ export const itemPropsSchema = z.looseObject({
   terminal: z.string().optional(),
   /** Terminal: terminals of a strip with the same bridge label are bridged. */
   bridge: z.string().optional(),
+  /** Multi-level terminal drawn as one symbol: the bridge label of each level (key: level number). */
+  bridges: z.record(z.string(), z.string()).optional(),
   /** Show the device name even when the symbol to the left already shows it (default: hidden there). */
   showTag: z.boolean().optional(),
   /**
@@ -488,6 +490,14 @@ export const symbolDefinitionSchema = z.object({
   contactImage: z.array(graphicSchema).optional(),
   /** Main functions (coils …) that show a contact image of their contacts, with or without a contact template. */
   hasContactImage: z.boolean().optional(),
+  /**
+   * Terminals with several levels in one housing (double-level terminals): the pins of each
+   * level. A level is designated `<terminal>.<level>` (`-X1:1.2`). A symbol with one entry is
+   * one level of such a terminal, placed on its own (the other levels may be drawn elsewhere).
+   */
+  terminalLevels: z.array(z.object({ level: z.int().min(1), pins: z.array(z.string()).min(1) })).optional(),
+  /** The levels of the terminal are connected inside it (e.g. PE double-level terminals). */
+  levelsConnected: z.boolean().optional(),
 });
 
 export const frameFieldSchema = z.object({

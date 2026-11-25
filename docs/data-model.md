@@ -876,7 +876,25 @@ may be drawn on any number of pages.
   terminals continues its numbering after the highest number and gives the
   placed bridges labels the strip does not use yet.
 - **Checks:** duplicate designations (warning), terminals without
-  designation (info), a bridge label used by only one terminal (warning).
+  designation (info), a bridge label used by only one terminal (warning),
+  levels of one terminal drawn as connected and as separate (info).
+- **Multi-level terminals** (double-level WDK/ZDK, triple-level): the symbol
+  lists its levels (`terminalLevels`: level number and pins). Each level is a
+  terminal of its own in the strip, designated `<number>.<level>` (`-X1:1.2`);
+  `props.terminal` holds the number. A symbol with all levels (`…2level`)
+  takes one bridge label per level (`props.bridges: {"2": "B"}`); a symbol of
+  one level (`…level.2`) is placed on its own, anywhere, and joins the other
+  levels of the same number. `levelsConnected` (PE double-level terminals,
+  `….connected`): all levels of the number carry one potential, also when
+  drawn apart; each clamping point keeps its own wire. Renumbering keeps the
+  levels of a number together.
+- **Multi-connection terminals** (`iec60617.terminal.multi.3` … `.6`): one
+  terminal, one designation, all clamping points linked.
+- **Terminal strip configurator** (`terminalStripItems`): number of
+  terminals, levels (1 … 3), connections per terminal (2 … 6 for one level),
+  levels connected / PE, and per level a bridge across all terminals; the
+  result is placed like a paste (numbering and bridge labels continue on an
+  existing strip).
 
 ## Connection symbols
 

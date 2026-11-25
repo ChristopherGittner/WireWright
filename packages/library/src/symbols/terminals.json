@@ -1,0 +1,1824 @@
+[
+  {
+    "id": "iec60617.terminal.2level",
+    "name": {
+      "de": "Doppelstockklemme (z. B. WDK, ZDK)",
+      "en": "Double-level terminal (e.g. WDK, ZDK)"
+    },
+    "category": "terminals",
+    "function": "terminal",
+    "defaultRole": "auxiliary",
+    "letterCode": "X",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -2.5,
+        "y": -2.5,
+        "width": 13.0,
+        "height": 5.0
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.5,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "circle",
+        "cx": 8,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -4,
+        "x2": 8,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 1.5,
+        "x2": 8,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -2.5,
+        "x2": 4,
+        "y2": -1.7
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -1.1,
+        "x2": 4,
+        "y2": -0.3
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 0.3,
+        "x2": 4,
+        "y2": 1.1
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 1.7,
+        "x2": 4,
+        "y2": 2.5
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 4,
+        "direction": "down"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "4",
+        "x": 8,
+        "y": 4,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ],
+      [
+        "3",
+        "4"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -4,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "terminal:1",
+        "x": 1,
+        "y": -4.8,
+        "size": 2
+      },
+      {
+        "field": "terminal:2",
+        "x": 9,
+        "y": -4.8,
+        "size": 2
+      }
+    ],
+    "terminalLevels": [
+      {
+        "level": 1,
+        "pins": [
+          "1",
+          "2"
+        ]
+      },
+      {
+        "level": 2,
+        "pins": [
+          "3",
+          "4"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "iec60617.terminal.2level.connected",
+    "name": {
+      "de": "Doppelstockklemme, Etagen verbunden",
+      "en": "Double-level terminal, levels connected"
+    },
+    "category": "terminals",
+    "function": "terminal",
+    "defaultRole": "auxiliary",
+    "letterCode": "X",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -2.5,
+        "y": -2.5,
+        "width": 13.0,
+        "height": 5.0
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.5,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "circle",
+        "cx": 8,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -4,
+        "x2": 8,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 1.5,
+        "x2": 8,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 1.5,
+        "y1": 0,
+        "x2": 6.5,
+        "y2": 0
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 4,
+        "direction": "down"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "4",
+        "x": 8,
+        "y": 4,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -4,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "terminal:1",
+        "x": 1,
+        "y": -4.8,
+        "size": 2
+      },
+      {
+        "field": "terminal:2",
+        "x": 9,
+        "y": -4.8,
+        "size": 2
+      }
+    ],
+    "terminalLevels": [
+      {
+        "level": 1,
+        "pins": [
+          "1",
+          "2"
+        ]
+      },
+      {
+        "level": 2,
+        "pins": [
+          "3",
+          "4"
+        ]
+      }
+    ],
+    "levelsConnected": true
+  },
+  {
+    "id": "iec60617.terminal.2level.pe",
+    "name": {
+      "de": "Schutzleiter-Doppelstockklemme",
+      "en": "Protective earth double-level terminal"
+    },
+    "category": "terminals",
+    "function": "terminal",
+    "defaultRole": "auxiliary",
+    "letterCode": "X",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -2.5,
+        "y": -2.5,
+        "width": 13.0,
+        "height": 5.0
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.5,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "circle",
+        "cx": 8,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -4,
+        "x2": 8,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 1.5,
+        "x2": 8,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 1.5,
+        "y1": 0,
+        "x2": 6.5,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 11.5,
+        "y1": -1.5,
+        "x2": 11.5,
+        "y2": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 12.5,
+        "y1": -1,
+        "x2": 12.5,
+        "y2": 1
+      },
+      {
+        "type": "line",
+        "x1": 13.5,
+        "y1": -0.5,
+        "x2": 13.5,
+        "y2": 0.5
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 4,
+        "direction": "down"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "4",
+        "x": 8,
+        "y": 4,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -4,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "terminal:1",
+        "x": 1,
+        "y": -4.8,
+        "size": 2
+      },
+      {
+        "field": "terminal:2",
+        "x": 9,
+        "y": -4.8,
+        "size": 2
+      }
+    ],
+    "terminalLevels": [
+      {
+        "level": 1,
+        "pins": [
+          "1",
+          "2"
+        ]
+      },
+      {
+        "level": 2,
+        "pins": [
+          "3",
+          "4"
+        ]
+      }
+    ],
+    "levelsConnected": true
+  },
+  {
+    "id": "iec60617.terminal.3level",
+    "name": {
+      "de": "Dreistockklemme",
+      "en": "Triple-level terminal"
+    },
+    "category": "terminals",
+    "function": "terminal",
+    "defaultRole": "auxiliary",
+    "letterCode": "X",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -2.5,
+        "y": -2.5,
+        "width": 21.0,
+        "height": 5.0
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.5,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "circle",
+        "cx": 8,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -4,
+        "x2": 8,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 1.5,
+        "x2": 8,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -2.5,
+        "x2": 4,
+        "y2": -1.7
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -1.1,
+        "x2": 4,
+        "y2": -0.3
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 0.3,
+        "x2": 4,
+        "y2": 1.1
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 1.7,
+        "x2": 4,
+        "y2": 2.5
+      },
+      {
+        "type": "circle",
+        "cx": 16,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": -4,
+        "x2": 16,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": 1.5,
+        "x2": 16,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": -2.5,
+        "x2": 12,
+        "y2": -1.7
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": -1.1,
+        "x2": 12,
+        "y2": -0.3
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": 0.3,
+        "x2": 12,
+        "y2": 1.1
+      },
+      {
+        "type": "line",
+        "x1": 12,
+        "y1": 1.7,
+        "x2": 12,
+        "y2": 2.5
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 4,
+        "direction": "down"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "4",
+        "x": 8,
+        "y": 4,
+        "direction": "down"
+      },
+      {
+        "id": "5",
+        "x": 16,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "6",
+        "x": 16,
+        "y": 4,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ],
+      [
+        "3",
+        "4"
+      ],
+      [
+        "5",
+        "6"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -4,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "terminal:1",
+        "x": 1,
+        "y": -4.8,
+        "size": 2
+      },
+      {
+        "field": "terminal:2",
+        "x": 9,
+        "y": -4.8,
+        "size": 2
+      },
+      {
+        "field": "terminal:3",
+        "x": 17,
+        "y": -4.8,
+        "size": 2
+      }
+    ],
+    "terminalLevels": [
+      {
+        "level": 1,
+        "pins": [
+          "1",
+          "2"
+        ]
+      },
+      {
+        "level": 2,
+        "pins": [
+          "3",
+          "4"
+        ]
+      },
+      {
+        "level": 3,
+        "pins": [
+          "5",
+          "6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "iec60617.terminal.3level.connected",
+    "name": {
+      "de": "Dreistockklemme, Etagen verbunden",
+      "en": "Triple-level terminal, levels connected"
+    },
+    "category": "terminals",
+    "function": "terminal",
+    "defaultRole": "auxiliary",
+    "letterCode": "X",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -2.5,
+        "y": -2.5,
+        "width": 21.0,
+        "height": 5.0
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.5,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "circle",
+        "cx": 8,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -4,
+        "x2": 8,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 1.5,
+        "x2": 8,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 1.5,
+        "y1": 0,
+        "x2": 6.5,
+        "y2": 0
+      },
+      {
+        "type": "circle",
+        "cx": 16,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": -4,
+        "x2": 16,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": 1.5,
+        "x2": 16,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 9.5,
+        "y1": 0,
+        "x2": 14.5,
+        "y2": 0
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 4,
+        "direction": "down"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "4",
+        "x": 8,
+        "y": 4,
+        "direction": "down"
+      },
+      {
+        "id": "5",
+        "x": 16,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "6",
+        "x": 16,
+        "y": 4,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -4,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "terminal:1",
+        "x": 1,
+        "y": -4.8,
+        "size": 2
+      },
+      {
+        "field": "terminal:2",
+        "x": 9,
+        "y": -4.8,
+        "size": 2
+      },
+      {
+        "field": "terminal:3",
+        "x": 17,
+        "y": -4.8,
+        "size": 2
+      }
+    ],
+    "terminalLevels": [
+      {
+        "level": 1,
+        "pins": [
+          "1",
+          "2"
+        ]
+      },
+      {
+        "level": 2,
+        "pins": [
+          "3",
+          "4"
+        ]
+      },
+      {
+        "level": 3,
+        "pins": [
+          "5",
+          "6"
+        ]
+      }
+    ],
+    "levelsConnected": true
+  },
+  {
+    "id": "iec60617.terminal.level.1",
+    "name": {
+      "de": "Klemmenetage 1 (obere Etage)",
+      "en": "Terminal level 1 (upper level)"
+    },
+    "category": "terminals",
+    "function": "terminal",
+    "defaultRole": "auxiliary",
+    "letterCode": "X",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -2.5,
+        "y": -2.5,
+        "width": 5.0,
+        "height": 5.0
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.5,
+        "x2": 0,
+        "y2": 4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 4,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -4,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "terminal",
+        "x": 3.5,
+        "y": 1
+      }
+    ],
+    "terminalLevels": [
+      {
+        "level": 1,
+        "pins": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "iec60617.terminal.level.2",
+    "name": {
+      "de": "Klemmenetage 2 (untere Etage)",
+      "en": "Terminal level 2 (lower level)"
+    },
+    "category": "terminals",
+    "function": "terminal",
+    "defaultRole": "auxiliary",
+    "letterCode": "X",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -2.5,
+        "y": -2.5,
+        "width": 5.0,
+        "height": 5.0
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.5,
+        "x2": 0,
+        "y2": 4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 4,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -4,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "terminal",
+        "x": 3.5,
+        "y": 1
+      }
+    ],
+    "terminalLevels": [
+      {
+        "level": 2,
+        "pins": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "iec60617.terminal.level.3",
+    "name": {
+      "de": "Klemmenetage 3 (dritte Etage)",
+      "en": "Terminal level 3 (third level)"
+    },
+    "category": "terminals",
+    "function": "terminal",
+    "defaultRole": "auxiliary",
+    "letterCode": "X",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -2.5,
+        "y": -2.5,
+        "width": 5.0,
+        "height": 5.0
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.5,
+        "x2": 0,
+        "y2": 4
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 4,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -4,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "terminal",
+        "x": 3.5,
+        "y": 1
+      }
+    ],
+    "terminalLevels": [
+      {
+        "level": 3,
+        "pins": [
+          "1",
+          "2"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "iec60617.terminal.level.1.connected",
+    "name": {
+      "de": "Klemmenetage 1 (obere Etage), Etagen verbunden",
+      "en": "Terminal level 1 (upper level), levels connected"
+    },
+    "category": "terminals",
+    "function": "terminal",
+    "defaultRole": "auxiliary",
+    "letterCode": "X",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -2.5,
+        "y": -2.5,
+        "width": 5.0,
+        "height": 5.0
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.5,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 1.5,
+        "y1": 0,
+        "x2": 2.5,
+        "y2": 0
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 4,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -4,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "terminal",
+        "x": 3.5,
+        "y": 1
+      }
+    ],
+    "terminalLevels": [
+      {
+        "level": 1,
+        "pins": [
+          "1",
+          "2"
+        ]
+      }
+    ],
+    "levelsConnected": true
+  },
+  {
+    "id": "iec60617.terminal.level.2.connected",
+    "name": {
+      "de": "Klemmenetage 2 (untere Etage), Etagen verbunden",
+      "en": "Terminal level 2 (lower level), levels connected"
+    },
+    "category": "terminals",
+    "function": "terminal",
+    "defaultRole": "auxiliary",
+    "letterCode": "X",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -2.5,
+        "y": -2.5,
+        "width": 5.0,
+        "height": 5.0
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.5,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 1.5,
+        "y1": 0,
+        "x2": 2.5,
+        "y2": 0
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 4,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -4,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "terminal",
+        "x": 3.5,
+        "y": 1
+      }
+    ],
+    "terminalLevels": [
+      {
+        "level": 2,
+        "pins": [
+          "1",
+          "2"
+        ]
+      }
+    ],
+    "levelsConnected": true
+  },
+  {
+    "id": "iec60617.terminal.multi.3",
+    "name": {
+      "de": "Mehrfachklemme mit 3 Anschlüssen",
+      "en": "Terminal with 3 connections"
+    },
+    "category": "terminals",
+    "function": "terminal",
+    "defaultRole": "auxiliary",
+    "letterCode": "X",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -2,
+        "y": -2,
+        "width": 8,
+        "height": 4
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.5,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "circle",
+        "cx": 4,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 1.5,
+        "x2": 4,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 1.5,
+        "y1": 0,
+        "x2": 2.5,
+        "y2": 0
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 4,
+        "direction": "down"
+      },
+      {
+        "id": "3",
+        "x": 4,
+        "y": 4,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2",
+        "3"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -3,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "terminal",
+        "x": 7,
+        "y": 1
+      }
+    ]
+  },
+  {
+    "id": "iec60617.terminal.multi.4",
+    "name": {
+      "de": "Mehrfachklemme mit 4 Anschlüssen",
+      "en": "Terminal with 4 connections"
+    },
+    "category": "terminals",
+    "function": "terminal",
+    "defaultRole": "auxiliary",
+    "letterCode": "X",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -2,
+        "y": -2,
+        "width": 8,
+        "height": 4
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.5,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "circle",
+        "cx": 4,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -4,
+        "x2": 4,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 1.5,
+        "x2": 4,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 1.5,
+        "y1": 0,
+        "x2": 2.5,
+        "y2": 0
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 4,
+        "direction": "down"
+      },
+      {
+        "id": "3",
+        "x": 4,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "4",
+        "x": 4,
+        "y": 4,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -3,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "terminal",
+        "x": 7,
+        "y": 1
+      }
+    ]
+  },
+  {
+    "id": "iec60617.terminal.multi.5",
+    "name": {
+      "de": "Mehrfachklemme mit 5 Anschlüssen",
+      "en": "Terminal with 5 connections"
+    },
+    "category": "terminals",
+    "function": "terminal",
+    "defaultRole": "auxiliary",
+    "letterCode": "X",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -2,
+        "y": -2,
+        "width": 12,
+        "height": 4
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.5,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "circle",
+        "cx": 4,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -4,
+        "x2": 4,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 1.5,
+        "x2": 4,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 1.5,
+        "y1": 0,
+        "x2": 2.5,
+        "y2": 0
+      },
+      {
+        "type": "circle",
+        "cx": 8,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 1.5,
+        "x2": 8,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 5.5,
+        "y1": 0,
+        "x2": 6.5,
+        "y2": 0
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 4,
+        "direction": "down"
+      },
+      {
+        "id": "3",
+        "x": 4,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "4",
+        "x": 4,
+        "y": 4,
+        "direction": "down"
+      },
+      {
+        "id": "5",
+        "x": 8,
+        "y": 4,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -3,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "terminal",
+        "x": 11,
+        "y": 1
+      }
+    ]
+  },
+  {
+    "id": "iec60617.terminal.multi.6",
+    "name": {
+      "de": "Mehrfachklemme mit 6 Anschlüssen",
+      "en": "Terminal with 6 connections"
+    },
+    "category": "terminals",
+    "function": "terminal",
+    "defaultRole": "auxiliary",
+    "letterCode": "X",
+    "graphics": [
+      {
+        "type": "rect",
+        "x": -2,
+        "y": -2,
+        "width": 12,
+        "height": 4
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 0,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.5,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "circle",
+        "cx": 4,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -4,
+        "x2": 4,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 1.5,
+        "x2": 4,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 1.5,
+        "y1": 0,
+        "x2": 2.5,
+        "y2": 0
+      },
+      {
+        "type": "circle",
+        "cx": 8,
+        "cy": 0,
+        "r": 1.5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -4,
+        "x2": 8,
+        "y2": -1.5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 1.5,
+        "x2": 8,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 5.5,
+        "y1": 0,
+        "x2": 6.5,
+        "y2": 0
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 4,
+        "direction": "down"
+      },
+      {
+        "id": "3",
+        "x": 4,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "4",
+        "x": 4,
+        "y": 4,
+        "direction": "down"
+      },
+      {
+        "id": "5",
+        "x": 8,
+        "y": -4,
+        "direction": "up"
+      },
+      {
+        "id": "6",
+        "x": 8,
+        "y": 4,
+        "direction": "down"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -3,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "terminal",
+        "x": 11,
+        "y": 1
+      }
+    ]
+  }
+]

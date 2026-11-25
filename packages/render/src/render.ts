@@ -21,6 +21,7 @@ import {
   tagFromLeftNeighbour,
   reportForm,
   tagContext,
+  terminalLevels,
   transformDirection,
   transformPoint,
   type Connectivity,
@@ -739,6 +740,12 @@ class Renderer {
       return item.pins?.[id] ?? def.connections.find((c) => c.id === id)?.designation ?? '';
     }
     if (field === 'cableType') return props.cable?.type ?? '';
+    // Terminals: the designation; a level of a multi-level terminal `1.2` (`terminal:2` on a symbol with all levels).
+    if (field === 'terminal' || field.startsWith('terminal:')) {
+      const level = field === 'terminal' ? undefined : Number(field.slice(9));
+      const levels = terminalLevels(item, this.ctx.library);
+      return (level === undefined ? levels[0] : levels.find((l) => l.level === level))?.designation ?? '';
+    }
     const value = props[field];
     return typeof value === 'string' ? value : '';
   }
@@ -854,22 +861,31 @@ class Renderer {
   // same height are joined by a bridge line below their circles.
 
   bridges(page: SchematicPage): void {
-    const groups = new Map<string, Item[]>();
+    // Per bridged level: where its bridge line meets it (below the level's circle).
+    const groups = new Map<string, { itemId: string; x: number; y: number }[]>();
     for (const item of page.items) {
-      const bridge = item.props?.bridge;
-      if (typeof bridge !== 'string' || bridge === '' || item.rotation % 180 !== 0) continue;
-      if (this.ctx.library.symbol(item.symbol)?.function !== 'terminal') continue;
-      const key = `${formatTag(effectiveTag(page, item, this.ctx.library))}\u0000${bridge}\u0000${item.y}`;
-      groups.set(key, [...(groups.get(key) ?? []), item]);
+      if (item.rotation % 180 !== 0) continue;
+      const def = this.ctx.library.symbol(item.symbol);
+      if (def?.function !== 'terminal') continue;
+      // Terminals drawn with a housing (multi-level, multi-connection): the line runs below it.
+      const below = def.graphics.some((g) => g.type === 'rect') ? 3.5 : 2.5;
+      for (const level of terminalLevels(item, this.ctx.library)) {
+        const pin = def.connections.find((c) => c.id === level.pins[0]);
+        if (level.bridge === undefined || !pin) continue;
+        const x = item.x + transformPoint({ x: pin.x, y: 0 }, item.rotation, item.mirror).x;
+        const y = item.y + below;
+        const key = `${formatTag(effectiveTag(page, item, this.ctx.library))}\u0000${level.bridge}\u0000${y}`;
+        groups.set(key, [...(groups.get(key) ?? []), { itemId: item.id, x, y }]);
+      }
     }
     const stroke = this.stroke(COLORS.symbol, WIDTH.symbol);
-    for (const items of groups.values()) {
-      if (items.length < 2) continue;
-      items.sort((a, b) => a.x - b.x);
-      const y = items[0]!.y + 2.5;
-      const meta: ElementMeta = { role: 'symbol', itemId: items[0]!.id, field: 'bridge' };
-      this.line(items[0]!.x, y, items.at(-1)!.x, y, stroke, meta);
-      for (const item of items) this.elements.push({ kind: 'circle', cx: item.x, cy: y, r: 0.5, fill: stroke.color, meta: { ...meta, itemId: item.id } });
+    for (const points of groups.values()) {
+      if (points.length < 2) continue;
+      points.sort((a, b) => a.x - b.x);
+      const { y } = points[0]!;
+      const meta: ElementMeta = { role: 'symbol', itemId: points[0]!.itemId, field: 'bridge' };
+      this.line(points[0]!.x, y, points.at(-1)!.x, y, stroke, meta);
+      for (const p of points) this.elements.push({ kind: 'circle', cx: p.x, cy: y, r: 0.5, fill: stroke.color, meta: { ...meta, itemId: p.itemId } });
     }
   }
 

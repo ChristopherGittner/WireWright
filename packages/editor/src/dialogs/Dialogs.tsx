@@ -1,4 +1,9 @@
 import {
+  levelBridgeProps,
+  terminalStripItems,
+  terminalStripSymbol,
+  type TerminalStripConfig,
+  type Graphic,
   effectiveTag,
   formatTag,
   itemRole,
@@ -191,6 +196,8 @@ function DialogSwitch() {
       return <WiresDialog />;
     case 'terminals':
       return <TerminalsDialog />;
+    case 'terminalStrip':
+      return <TerminalStripDialog />;
     case 'saveMacro':
       return <SaveMacroDialog />;
     case 'translations':
@@ -415,6 +422,9 @@ function ItemDialog({ dialog }: { dialog: Extract<Dialog, { kind: 'item' }> }) {
   const [pinPotentials, setPinPotentials] = useState<Record<string, string>>(() => ({ ...single?.pinPotentials }));
   const [extraText, setExtraText] = useState(() => (typeof single?.props?.text === 'string' ? single.props.text : ''));
   const [terminal, setTerminal] = useState(() => (typeof single?.props?.terminal === 'string' ? single.props.terminal : ''));
+  // A symbol with all levels of a multi-level terminal: one bridge label per level.
+  const levelCount = def?.terminalLevels && def.terminalLevels.length > 1 ? def.terminalLevels.length : 0;
+  const [levelBridges, setLevelBridges] = useState<Record<string, string>>(() => ({ ...single?.props?.bridges }));
   const [borderPins, setBorderPins] = useState<BorderPin[]>(() => single?.borderPins ?? []);
   const [links, setLinks] = useState(() => (single?.links ?? []).map((g) => g.join(',')).join('; '));
   const [size, setSize] = useState(() => ({ width: single?.width ?? 40, height: single?.height ?? 24 }));
@@ -490,6 +500,10 @@ function ItemDialog({ dialog }: { dialog: Extract<Dialog, { kind: 'item' }> }) {
         if (isDevice) props.parts = parts.length > 0 ? parts : null;
         if (def?.function === 'connection.break') props.text = extraText || null;
         if (def?.function === 'terminal') props.terminal = terminal || null;
+        if (levelCount > 0) {
+          const bridges = Object.fromEntries(Object.entries(levelBridges).filter(([, label]) => label !== ''));
+          props.bridges = Object.keys(bridges).length > 0 ? bridges : null;
+        }
         if (plc) props.plc = plc;
         if (isPlcPoint(def)) props.channel = channel ?? null;
         if (def?.generator === 'cable') props.cable = cable ?? null;
@@ -605,9 +619,17 @@ function ItemDialog({ dialog }: { dialog: Extract<Dialog, { kind: 'item' }> }) {
                   <input value={terminal} onChange={(e) => setTerminal(e.target.value)} />
                 </Field>
               )}
-              <Field label={tr('Bridge (same label = bridged)')}>
-                <input list="sg-bridges" value={bridge} placeholder={initialFlags.bridge.mixed && bridgeEdit === undefined ? MIXED : undefined} onChange={(e) => setBridge(e.target.value)} />
-              </Field>
+              {levelCount > 0 ? (
+                Array.from({ length: levelCount }, (_, i) => String(i + 1)).map((level) => (
+                  <Field key={level} label={tr('Bridge level {n}', { n: level })}>
+                    <input list="sg-bridges" size={4} value={levelBridges[level] ?? ''} onChange={(e) => setLevelBridges({ ...levelBridges, [level]: e.target.value })} />
+                  </Field>
+                ))
+              ) : (
+                <Field label={tr('Bridge (same label = bridged)')}>
+                  <input list="sg-bridges" value={bridge} placeholder={initialFlags.bridge.mixed && bridgeEdit === undefined ? MIXED : undefined} onChange={(e) => setBridge(e.target.value)} />
+                </Field>
+              )}
             </div>
           )}
           {single && isDevice && (
@@ -1096,6 +1118,144 @@ function WiresDialog() {
   );
 }
 
+/**
+ * Terminal strip configurator: terminals, levels, clamping points and bridges; the strip then
+ * follows the mouse and a click places all terminals at once (like a paste).
+ */
+function TerminalStripDialog() {
+  const store = useStore();
+  const doc = useEditor((s) => s.doc)!;
+  const strips = doc.terminals().strips.map((s) => s.device.replace(/^-/, ''));
+  const [strip, setStrip] = useState('X1');
+  const [count, setCount] = useState('10');
+  const [levels, setLevels] = useState<1 | 2 | 3>(2);
+  const [pins, setPins] = useState(2);
+  const [connected, setConnected] = useState(false);
+  const [pe, setPe] = useState(false);
+  const [bridged, setBridged] = useState([false, false, false]);
+  const [start, setStart] = useState('1');
+  const config: TerminalStripConfig = {
+    strip: strip.trim() || 'X1',
+    count: Math.min(200, Math.max(1, Math.trunc(Number(count)) || 1)),
+    levels,
+    pins,
+    levelsConnected: connected,
+    pe: levels === 2 && pe,
+    bridged,
+    start: Math.trunc(Number(start)) || 1,
+  };
+  const { symbol, pitch } = terminalStripSymbol(config);
+  const def = store.library.symbol(symbol);
+  const ok = () => {
+    const page = store.currentPage();
+    if (!page) return store.notify(tr('Open a schematic page first'), true);
+    const items = terminalStripItems(config);
+    store.set({ dialog: null, tool: { kind: 'paste', items, origin: { x: 0, y: 0 }, lockX: false, lockY: false }, selection: { items: [] } });
+    store.notify(tr('Click on the page to place the terminal strip'));
+  };
+  const shown = Math.min(config.count, 6);
+  return (
+    <Modal title={tr('Terminal strip configurator')} onOk={ok} okLabel={tr('Place')}>
+      <div className="tag-fields">
+        <Field label={tr('Terminal strip')}>
+          <input list="sg-strips" value={strip} onChange={(e) => setStrip(e.target.value)} />
+          <datalist id="sg-strips">
+            {strips.map((s) => (
+              <option key={s} value={s} />
+            ))}
+          </datalist>
+        </Field>
+        <Field label={tr('Terminals')}>
+          <input value={count} inputMode="numeric" onChange={(e) => setCount(e.target.value)} />
+        </Field>
+        <Field label={tr('First number')}>
+          <input value={start} inputMode="numeric" onChange={(e) => setStart(e.target.value)} />
+        </Field>
+      </div>
+      <div className="tag-fields">
+        <Field label={tr('Levels')}>
+          <select value={levels} onChange={(e) => setLevels(Number(e.target.value) as 1 | 2 | 3)}>
+            <option value={1}>1</option>
+            <option value={2}>{tr('2 (double-level)')}</option>
+            <option value={3}>{tr('3 (triple-level)')}</option>
+          </select>
+        </Field>
+        <Field label={tr('Connections per terminal')}>
+          {levels === 1 ? (
+            <select value={pins} onChange={(e) => setPins(Number(e.target.value))}>
+              {[2, 3, 4, 5, 6].map((n) => (
+                <option key={n} value={n}>
+                  {n}
+                </option>
+              ))}
+            </select>
+          ) : (
+            <input value={tr('{n} (2 per level)', { n: levels * 2 })} readOnly />
+          )}
+        </Field>
+      </div>
+      {levels > 1 && (
+        <>
+          <label className="check">
+            <input type="checkbox" checked={connected || (levels === 2 && pe)} disabled={levels === 2 && pe} onChange={(e) => setConnected(e.target.checked)} />
+            {tr('Levels connected inside the terminal')}
+          </label>
+          {levels === 2 && (
+            <label className="check">
+              <input type="checkbox" checked={pe} onChange={(e) => setPe(e.target.checked)} />
+              {tr('Protective earth terminals (PE)')}
+            </label>
+          )}
+        </>
+      )}
+      {Array.from({ length: levels }, (_, i) => (
+        <label key={i} className="check">
+          <input type="checkbox" checked={bridged[i] ?? false} onChange={(e) => setBridged(bridged.map((b, n) => (n === i ? e.target.checked : b)))} />
+          {levels === 1 ? tr('All terminals bridged (cross-connector)') : tr('Level {n}: all terminals bridged (cross-connector)', { n: i + 1 })}
+        </label>
+      ))}
+      {def && (
+        <svg className="strip-preview" viewBox={`-6 -9 ${(shown - 1) * pitch + 22} 20`} width="100%" height="110">
+          {Array.from({ length: shown }, (_, i) => (
+            <g key={i} transform={`translate(${i * pitch} 0)`} fill="none" stroke="currentColor" strokeWidth={0.35}>
+              {def.graphics.map((g, n) => (
+                <PreviewGraphic key={n} g={g} />
+              ))}
+            </g>
+          ))}
+          {(config.levels === 1 ? [0] : Array.from({ length: config.levels }, (_, i) => i)).map((level) =>
+            config.count > 1 && bridged[level] ? (
+              <line key={level} x1={8 * level} y1={config.levels === 1 ? 2.5 : 3.5} x2={(shown - 1) * pitch + 8 * level} y2={config.levels === 1 ? 2.5 : 3.5} stroke="currentColor" strokeWidth={0.5} />
+            ) : null,
+          )}
+        </svg>
+      )}
+      <p className="hint">
+        {tr('{count} × {symbol}, {pitch} mm apart. On a strip that already has terminals the numbering continues.', {
+          count: config.count,
+          symbol: def ? localize(def.name, store.state.language, [store.state.language]) : symbol,
+          pitch,
+        })}
+      </p>
+    </Modal>
+  );
+}
+
+function PreviewGraphic({ g }: { g: Graphic }) {
+  switch (g.type) {
+    case 'line':
+      return <line x1={g.x1} y1={g.y1} x2={g.x2} y2={g.y2} />;
+    case 'rect':
+      return <rect x={g.x} y={g.y} width={g.width} height={g.height} />;
+    case 'circle':
+      return <circle cx={g.cx} cy={g.cy} r={g.r} />;
+    case 'polyline':
+      return g.closed ? <polygon points={g.points.join(' ')} /> : <polyline points={g.points.join(' ')} />;
+    default:
+      return null;
+  }
+}
+
 function TerminalsDialog() {
   const store = useStore();
   const doc = useEditor((s) => s.doc)!;
@@ -1104,7 +1264,7 @@ function TerminalsDialog() {
   const [start, setStart] = useState('1');
   const [step, setStep] = useState('1');
   const strip = strips.find((s) => s.device === selected) ?? strips[0];
-  const setTerminal = (pageId: string, itemId: string, props: { terminal?: string | null; bridge?: string | null }) =>
+  const setTerminal = (pageId: string, itemId: string, props: Record<string, unknown>) =>
     store.apply([{ type: 'setItemProperties', pageId, itemId, props }], 'edit terminal');
   const renumber = () => {
     if (strip && store.apply([{ type: 'renumberTerminals', strip: strip.device, start: Number(start) || 0, step: Math.max(1, Math.trunc(Number(step)) || 1) }], 'renumber terminals')) {
@@ -1115,6 +1275,9 @@ function TerminalsDialog() {
     return (
       <Modal title={tr('Terminal strips')}>
         <p className="hint">{tr('The project has no terminals. Place terminal symbols with a tag like -X1 to create a strip.')}</p>
+        <button type="button" onClick={() => store.set({ dialog: { kind: 'terminalStrip' } })}>
+          {tr('New terminal strip…')}
+        </button>
       </Modal>
     );
   }
@@ -1140,6 +1303,9 @@ function TerminalsDialog() {
       <button type="button" onClick={renumber} title={tr('Numbers the terminals in drawing order; PE, N and other names stay')}>
         {tr('Renumber strip')}
       </button>
+      <button type="button" onClick={() => store.set({ dialog: { kind: 'terminalStrip' } })}>
+        {tr('New terminal strip…')}
+      </button>
       <p className="hint">
         {tr("Terminals with the same bridge label are bridged and share their potential. Internal targets are in the strip's location ({location}), external targets elsewhere.", { location: strip.location ? `+${strip.location}` : tr('none') })}
       </p>
@@ -1154,13 +1320,24 @@ function TerminalsDialog() {
           </tr>
         </thead>
         <tbody>
-          {strip.terminals.map((t) => (
-            <tr key={t.itemId}>
+          {strip.terminals.map((t) => {
+            // A level of a multi-level terminal: the number is edited, the level stays (`1` + `.2`).
+            const suffix = t.level !== undefined ? `.${t.level}` : '';
+            const number = suffix && t.designation.endsWith(suffix) ? t.designation.slice(0, -suffix.length) : t.designation;
+            const item = (doc.state.pages[t.pageId] as SchematicPage | undefined)?.items.find((i) => i.id === t.itemId);
+            return (
+            <tr key={`${t.itemId}:${t.level ?? ''}`}>
               <td>
-                <input defaultValue={t.designation} key={t.designation} onBlur={(e) => e.target.value !== t.designation && setTerminal(t.pageId, t.itemId, { terminal: e.target.value || null })} />
+                <input defaultValue={number} key={number} size={suffix ? 4 : undefined} onBlur={(e) => e.target.value !== number && setTerminal(t.pageId, t.itemId, { terminal: e.target.value || null })} />
+                {suffix}
               </td>
               <td>
-                <input defaultValue={t.bridge ?? ''} key={t.bridge ?? ''} size={4} onBlur={(e) => e.target.value !== (t.bridge ?? '') && setTerminal(t.pageId, t.itemId, { bridge: e.target.value || null })} />
+                <input
+                  defaultValue={t.bridge ?? ''}
+                  key={t.bridge ?? ''}
+                  size={4}
+                  onBlur={(e) => item && e.target.value !== (t.bridge ?? '') && setTerminal(t.pageId, t.itemId, levelBridgeProps(item, store.library, t.level, e.target.value || null))}
+                />
               </td>
               <td>{t.external.join(', ')}</td>
               <td>{t.internal.join(', ')}</td>
@@ -1170,7 +1347,8 @@ function TerminalsDialog() {
                 </a>
               </td>
             </tr>
-          ))}
+            );
+          })}
         </tbody>
       </table>
     </Modal>
