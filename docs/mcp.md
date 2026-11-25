@@ -74,7 +74,7 @@ and the project is saved as usual (the changes count as unsaved until then).
 | `create_page` | New schematic page with name, description and structure (`=` / `+`) |
 | `create_report_page` | New report page that is always up to date |
 | `set_page` | Page name, description, structure, properties (revision, date) |
-| `place_symbol` | Places a symbol; main functions are named automatically (`-5K3`); contacts take the given tag, or that of the nearest device to their left at the same height; `props` sets further properties (e.g. terminal designation and bridge) |
+| `place_symbol` | Places a symbol; main functions are named automatically (`-5K3`); contacts take the given tag, or that of the nearest device to their left at the same height; `props` sets further properties (e.g. terminal designation and bridge); device boxes take `borderPins` (named pins on the outline) and `links` |
 | `draw_current_path` | Lays out a vertical current path in a column: potential at the top, symbols top to bottom on one line, potential at the bottom; autoconnect wires it |
 | `connect_pins` | Joins two pins that are not on one line with corner symbols (L or Z route) |
 | `create_revision` | Releases a revision: marks changed pages in the title block, keeps a snapshot for comparing |
@@ -82,14 +82,14 @@ and the project is saved as usual (the changes count as unsaved until then).
 | `move_items` | Moves items; boxes move with their contents |
 | `delete_items` | Deletes items |
 | `set_tag` | Changes a tag: on a main function the device is renamed, on a contact the contact moves to another device |
-| `set_properties` | Function text, properties, connection designations |
+| `set_properties` | Function text, properties, connection designations, potentials fed by source pins (`pinPotentials`, e.g. a power supply's +/−), device box size, border pins and links |
 | `rename_device` | Renames a device by its full tag |
 | `renumber_devices` | Renames devices by page and column; returns the changes (before → after); `dryRun` only lists them, `exclude` keeps names |
 | `apply_commands` | Any core commands as one atomic step |
 | `list_device_definitions` | Device library: relays, contactors, PLC cards (WAGO, Beckhoff, Siemens …) with their functions and channels |
 | `place_device_function` | Places one function of a device definition (card overview, DI 2, coil, contact …); copies the definition into the project |
 | `set_plc` | Creates, changes or removes a PLC station (Siemens, Codesys, Mitsubishi FX/iQ-R) |
-| `add_plc_card` | Adds an I/O card, CPU or coupler from the device library to a PLC (next slot, next tag) without drawing it |
+| `add_plc_card` | Adds an I/O card, CPU or coupler from the device library to a PLC (next slot, next tag) without drawing it; a make not in the library as a generic card with its own `channels` |
 | `place_plc_card` | Draws a card of the project on a page (a second drawing is reported) |
 | `set_card` | Assigns an I/O card to a PLC, with slot and start addresses |
 | `number_plc_addresses` | Numbers start addresses per PLC (all, given cards, or only missing) |

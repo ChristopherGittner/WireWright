@@ -289,6 +289,42 @@ describe('Wirewright MCP server', () => {
     expect(JSON.stringify(await ok('check_project'))).toContain('plc.cardDrawnTwice');
   });
 
+  it('adds a generic PLC card with its own channels', async () => {
+    await ok('create_project', { name: 'Generic' });
+    await ok('set_plc', { name: 'PLC1', family: 'codesys' });
+    const channels = [
+      { channel: 0, kind: 'DI', pin: 'I0', label: 'I0' },
+      { channel: 0, kind: 'DO', pin: 'Q0', label: 'Q0' },
+    ];
+    const card = await ok('add_plc_card', { plc: 'PLC1', channels, tag: '-A1', functionText: 'TM3DM24R' });
+    expect(card.channels.map((c: { pin: string }) => c.pin)).toEqual(['I0', 'Q0']);
+    expect((await call('add_plc_card', { plc: 'PLC1', device: 'wago.750-430', channels })).isError).toBe(true);
+  });
+
+  it('places device boxes with border pins and links; sets source potentials', async () => {
+    await ok('create_project', { name: 'Box' });
+    await ok('create_page', { name: '1' });
+    const box = await ok('place_symbol', {
+      page: '1',
+      symbol: 'wirewright.box.device',
+      x: 100,
+      y: 60,
+      width: 40,
+      height: 24,
+      tag: '-A1',
+      borderPins: [
+        { id: '13', side: 'top', offset: 8, designation: '13' },
+        { id: '14', side: 'bottom', offset: 8, designation: '14' },
+      ],
+      links: [['13', '14']],
+    });
+    expect(box.connections.map((c: { pin: string }) => c.pin).sort()).toEqual(['13', '14']);
+    const psu = await ok('place_symbol', { page: '1', symbol: 'iec60617.psu.acdc', x: 240, y: 60 });
+    await ok('set_properties', { page: '1', item: psu.id, pinPotentials: { '+': '24V', '-': '0V' } });
+    const page = await ok('get_page', { page: '1' });
+    expect(JSON.stringify(page.items.find((i: { id: string }) => i.id === psu.id))).toContain('24V');
+  });
+
   it('releases revisions and reports the changes since', async () => {
     await ok('create_project', { name: 'Rev' });
     await ok('create_page', { name: '1' });

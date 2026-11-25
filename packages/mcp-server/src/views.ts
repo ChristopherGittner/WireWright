@@ -11,6 +11,7 @@ import {
   layoutFootprint,
   layoutSize,
   localize,
+  pageConnectionPoints,
   pageFullName,
   pagePosition,
   relativeTag,
@@ -138,7 +139,13 @@ export function itemView(
   }
   const point = plc?.bySlave.get(item.id);
   if (point) view.plcPoint = { card: point.card.device, channel: channelLabel(point.channel.channel), pin: point.channel.channel.pin, address: point.channel.address, name: point.channel.name, function: point.channel.function };
-  if (def && def.connections.length > 0) {
+  if (item.links) view.links = item.links;
+  if (item.borderPins && item.borderPins.length > 0) {
+    // Device boxes: the outer side of each border pin, in page coordinates.
+    view.connections = pageConnectionPoints({ ...page, items: [item] }, library)
+      .filter((p) => !p.inner)
+      .map((p) => ({ pin: p.pin, designation: p.designation, x: p.x, y: p.y, direction: p.direction }));
+  } else if (def && def.connections.length > 0) {
     view.connections = def.connections.map((c) => {
       const p = transformPoint(c, item.rotation, item.mirror);
       return {

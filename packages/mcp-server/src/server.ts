@@ -50,6 +50,9 @@ import {
   mergePart,
   readPartsTable,
   type SchematicPage,
+  borderPinSchema,
+  ioChannelSchema,
+  PLC_STORE_PAGE,
 } from '@wirewright/core';
 import { createStandardLibrary } from '@wirewright/library';
 import { renderContext, renderSheet, sceneToSvg } from '@wirewright/render';
@@ -481,6 +484,11 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
         height: z.int().min(1).optional().describe('Boxes; cable lines: vertical length (instead of width)'),
         name: z.string().optional().describe('Name of an interruption point or potential point, e.g. "L1"'),
         props: z.record(z.string(), z.unknown()).optional().describe('Further item properties, e.g. {"terminal": "3", "bridge": "A"} for a terminal'),
+        borderPins: z
+          .array(borderPinSchema)
+          .optional()
+          .describe('Device boxes: named pins on the outline, e.g. [{"id":"A1","side":"top","offset":8,"designation":"A1"}]; offset in mm from the left (top/bottom) or top (left/right) corner, on the 4 mm grid'),
+        links: z.array(z.array(z.string())).optional().describe('Device boxes: groups of border pin IDs connected inside the device (e.g. [["13","14"]]); default none'),
       },
     },
     (args) =>
@@ -503,7 +511,9 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
             ...(args.width !== undefined ? { width: args.width } : {}),
             ...(args.height !== undefined ? { height: args.height } : {}),
             ...(Object.keys(props).length > 0 ? { props } : {}),
+            ...(args.borderPins ? { borderPins: args.borderPins } : {}),
           });
+          if (args.links !== undefined) doc.apply({ type: 'setItemProperties', pageId: page.id, itemId: created[0]!, links: args.links });
           return placedItem(doc, page.id, created[0]!);
         }),
       ),
@@ -735,6 +745,14 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
         functionText: z.string().optional().describe('Function text in the display language'),
         props: z.record(z.string(), z.unknown()).optional(),
         pins: z.record(z.string(), z.string().nullable()).optional().describe('Connection designations by pin ID, e.g. {"1": "23", "2": "24"}'),
+        pinPotentials: z
+          .record(z.string(), z.string().nullable())
+          .optional()
+          .describe('Potentials a source pin feeds, by pin ID, e.g. {"+": "24V", "-": "0V"} on a power supply; null removes one'),
+        borderPins: z.array(borderPinSchema).optional().describe('Device boxes: replaces the named pins on the outline'),
+        links: z.array(z.array(z.string())).nullable().optional().describe('Device boxes: pin link groups; null removes them'),
+        width: z.int().min(1).optional().describe('Boxes: new width'),
+        height: z.int().min(1).optional().describe('Boxes: new height'),
       },
     },
     (args) =>
@@ -753,6 +771,11 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
             itemId: args.item,
             ...(Object.keys(props).length > 0 ? { props } : {}),
             ...(args.pins ? { pins: args.pins } : {}),
+            ...(args.pinPotentials ? { pinPotentials: args.pinPotentials } : {}),
+            ...(args.borderPins ? { borderPins: args.borderPins } : {}),
+            ...(args.links !== undefined ? { links: args.links } : {}),
+            ...(args.width !== undefined ? { width: args.width } : {}),
+            ...(args.height !== undefined ? { height: args.height } : {}),
           });
           return placedItem(doc, page.id, args.item);
         }),
@@ -1053,9 +1076,14 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
     'add_plc_card',
     {
       description:
-        'Adds an I/O card from the device library (list_device_definitions) to the project, without drawing it: it appears in the PLC tab. Draw it with place_plc_card, or let generate_plc_overview draw all cards not drawn yet.',
+        'Adds an I/O card to the project, without drawing it: it appears in the PLC tab. Either a card from the device library (`device`, see list_device_definitions) or a generic card with its own `channels` (a make not in the library). Draw it with place_plc_card, or let generate_plc_overview draw all cards not drawn yet.',
       inputSchema: {
-        device: z.string().describe('Device definition ID, e.g. "wago.750-430" (I/O card, CPU or coupler)'),
+        device: z.string().optional().describe('Device definition ID, e.g. "wago.750-430" (I/O card, CPU or coupler)'),
+        channels: z
+          .array(ioChannelSchema)
+          .optional()
+          .describe('Generic card (no device): its channels, e.g. [{"channel":0,"kind":"DI","pin":"I0","label":"I0"}]; a CPU or coupler without I/O has none'),
+        functionText: z.string().optional().describe('Generic card: function text, e.g. the type "TM3DM24R"'),
         tag: tagArg.optional().describe('Full tag of the card, e.g. "=FB+CAB1-A10"; default: the next free -A<n> beside the PLC\'s other cards'),
         plc: z.string().optional(),
         slot: z.int().min(0).optional().describe('Default: the PLC\'s next slot'),
@@ -1065,7 +1093,17 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
       respond(() =>
         session.run((doc) => {
           if (args.plc && !doc.state.project.plcs.some((p) => p.name === args.plc)) throw new ToolError(`PLC "${args.plc}" is not defined; create it with set_plc`);
-          const { created } = doc.apply({ type: 'addPlcCard', device: args.device, ...(args.tag ? { tag: parseTagArg(args.tag) } : {}), ...(args.plc ? { station: args.plc } : {}), ...(args.slot !== undefined ? { slot: args.slot } : {}) });
+          if (args.device !== undefined && args.channels !== undefined) throw new ToolError('Give either a device or channels, not both');
+          const { created } = doc.apply({
+            type: 'addPlcCard',
+            ...(args.device !== undefined ? { device: args.device } : { channels: args.channels ?? [] }),
+            ...(args.tag ? { tag: parseTagArg(args.tag) } : {}),
+            ...(args.plc ? { station: args.plc } : {}),
+            ...(args.slot !== undefined ? { slot: args.slot } : {}),
+          });
+          if (args.functionText !== undefined) {
+            doc.apply({ type: 'setItemProperties', pageId: PLC_STORE_PAGE, itemId: created[0]!, props: { functionText: { [doc.state.project.settings.displayLanguage]: args.functionText } } });
+          }
           const card = doc.plc().byCard.get(created[0]!)!;
           return { item: card.itemId, device: card.device, slot: card.slot, drawn: false, channels: card.channels.map((c) => ({ channel: channelLabel(c.channel), pin: c.channel.pin, address: c.address })) };
         }),
