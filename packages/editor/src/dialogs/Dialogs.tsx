@@ -1206,7 +1206,13 @@ function TerminalStripDialog() {
   };
   const shown = Math.min(config.count, 6);
   // Bridge line of a level in the preview: below its clamp; each further level sits 4 mm lower.
-  const bridgeY = (level: number) => (symbol === 'iec60617.terminal' ? 2.5 : levels === 1 ? 3.5 : level === 0 ? -3 : level === levels - 1 ? 4 * levels - 1 : 4 * levels + 0.5);
+  // Circles of a level (0-based) in the symbol, left to right: the preview draws bridges like the
+  // schematic, dashed from the last circle of a terminal to the first circle of the next one.
+  const levelCircles = (level: number) => {
+    const pins = def?.terminalLevels?.find((l) => l.level === level + 1)?.pins ?? def?.connections.map((c) => c.id) ?? [];
+    const xs = new Set(def?.connections.filter((c) => pins.includes(c.id)).map((c) => c.x));
+    return (def?.graphics ?? []).flatMap((g) => (g.type === 'circle' && xs.has(g.cx) ? [g] : [])).sort((p, q) => p.cx - q.cx);
+  };
   return (
     <Modal title={tr('Terminal strip configurator')} onOk={ok} okLabel={tr('Place')}>
       <div className="tag-fields">
@@ -1276,11 +1282,23 @@ function TerminalStripDialog() {
               ))}
             </g>
           ))}
-          {(config.levels === 1 ? [0] : Array.from({ length: config.levels }, (_, i) => i)).map((level) =>
-            config.count > 1 && bridged[level] ? (
-              <line key={level} x1={4 * level} y1={bridgeY(level)} x2={(shown - 1) * pitch + 4 * level} y2={bridgeY(level)} stroke="currentColor" strokeWidth={0.5} />
-            ) : null,
-          )}
+          {Array.from({ length: config.levels }, (_, level) => {
+            const circles = levelCircles(level);
+            const [first, last] = [circles[0], circles.at(-1)];
+            if (!bridged[level] || !first || !last) return null;
+            return Array.from({ length: shown - 1 }, (_, i) => (
+              <line
+                key={`${level}:${i}`}
+                x1={i * pitch + last.cx + last.r}
+                y1={last.cy}
+                x2={(i + 1) * pitch + first.cx - first.r}
+                y2={first.cy}
+                stroke="currentColor"
+                strokeWidth={0.35}
+                strokeDasharray="0.8 0.5"
+              />
+            ));
+          })}
         </svg>
       )}
       <p className="hint">
