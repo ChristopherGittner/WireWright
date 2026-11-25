@@ -78,7 +78,7 @@ describe('multi-level terminals', () => {
   it('bridges per level: level 2 of three terminals bridged, level 1 separate, each clamping point its own wire', () => {
     const { doc, pageId } = setup();
     doc.apply([
-      feed(pageId, 88, '0V'),
+      feed(pageId, 84, '0V'),
       ...[0, 1, 2].map((i) => ({
         type: 'placeSymbol' as const,
         pageId,

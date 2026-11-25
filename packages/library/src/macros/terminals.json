@@ -6914,7 +6914,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -6956,7 +6956,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -6970,7 +6970,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7012,7 +7012,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7026,7 +7026,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7040,7 +7040,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7082,7 +7082,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7096,7 +7096,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7110,7 +7110,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7124,7 +7124,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7166,7 +7166,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7180,7 +7180,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7194,7 +7194,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7208,7 +7208,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7222,7 +7222,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7264,7 +7264,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7278,7 +7278,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7292,7 +7292,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7306,7 +7306,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7320,7 +7320,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7334,7 +7334,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7376,7 +7376,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7390,7 +7390,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7404,7 +7404,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7418,7 +7418,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7432,7 +7432,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7446,7 +7446,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7460,7 +7460,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7502,7 +7502,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7516,7 +7516,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7530,7 +7530,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7544,7 +7544,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7558,7 +7558,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7572,7 +7572,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7586,7 +7586,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7600,7 +7600,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7642,7 +7642,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7656,7 +7656,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7670,7 +7670,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7684,7 +7684,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7698,7 +7698,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7712,7 +7712,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7726,7 +7726,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7740,7 +7740,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7754,7 +7754,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7796,7 +7796,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7810,7 +7810,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7824,7 +7824,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7838,7 +7838,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7852,7 +7852,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7866,7 +7866,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7880,7 +7880,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7894,7 +7894,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7908,7 +7908,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7922,7 +7922,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7964,7 +7964,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7978,7 +7978,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -7992,7 +7992,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8006,7 +8006,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8020,7 +8020,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8034,7 +8034,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8048,7 +8048,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8062,7 +8062,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8076,7 +8076,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8090,7 +8090,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8104,7 +8104,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8146,7 +8146,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8160,7 +8160,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8174,7 +8174,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8188,7 +8188,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8202,7 +8202,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8216,7 +8216,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8230,7 +8230,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8244,7 +8244,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8258,7 +8258,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8272,7 +8272,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8286,7 +8286,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8300,7 +8300,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8342,7 +8342,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8356,7 +8356,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8370,7 +8370,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8384,7 +8384,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8398,7 +8398,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8412,7 +8412,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8426,7 +8426,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8440,7 +8440,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8454,7 +8454,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8468,7 +8468,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8482,7 +8482,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8496,7 +8496,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8510,7 +8510,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8552,7 +8552,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8566,7 +8566,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8580,7 +8580,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8594,7 +8594,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8608,7 +8608,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8622,7 +8622,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8636,7 +8636,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8650,7 +8650,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8664,7 +8664,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8678,7 +8678,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8692,7 +8692,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8706,7 +8706,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8720,7 +8720,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8734,7 +8734,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8776,7 +8776,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8790,7 +8790,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8804,7 +8804,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8818,7 +8818,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8832,7 +8832,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8846,7 +8846,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8860,7 +8860,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8874,7 +8874,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8888,7 +8888,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8902,7 +8902,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8916,7 +8916,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8930,7 +8930,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8944,7 +8944,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8958,7 +8958,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -8972,7 +8972,7 @@
       {
         "id": "i_t16",
         "symbol": "iec60617.terminal.2level",
-        "x": 240,
+        "x": 180,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9014,7 +9014,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9028,7 +9028,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9042,7 +9042,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9056,7 +9056,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9070,7 +9070,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9084,7 +9084,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9098,7 +9098,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9112,7 +9112,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9126,7 +9126,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9140,7 +9140,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9154,7 +9154,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9168,7 +9168,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9182,7 +9182,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9196,7 +9196,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9210,7 +9210,7 @@
       {
         "id": "i_t16",
         "symbol": "iec60617.terminal.2level",
-        "x": 240,
+        "x": 180,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9224,7 +9224,7 @@
       {
         "id": "i_t17",
         "symbol": "iec60617.terminal.2level",
-        "x": 256,
+        "x": 192,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9266,7 +9266,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9280,7 +9280,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9294,7 +9294,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9308,7 +9308,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9322,7 +9322,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9336,7 +9336,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9350,7 +9350,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9364,7 +9364,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9378,7 +9378,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9392,7 +9392,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9406,7 +9406,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9420,7 +9420,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9434,7 +9434,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9448,7 +9448,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9462,7 +9462,7 @@
       {
         "id": "i_t16",
         "symbol": "iec60617.terminal.2level",
-        "x": 240,
+        "x": 180,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9476,7 +9476,7 @@
       {
         "id": "i_t17",
         "symbol": "iec60617.terminal.2level",
-        "x": 256,
+        "x": 192,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9490,7 +9490,7 @@
       {
         "id": "i_t18",
         "symbol": "iec60617.terminal.2level",
-        "x": 272,
+        "x": 204,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9532,7 +9532,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9546,7 +9546,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9560,7 +9560,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9574,7 +9574,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9588,7 +9588,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9602,7 +9602,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9616,7 +9616,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9630,7 +9630,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9644,7 +9644,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9658,7 +9658,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9672,7 +9672,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9686,7 +9686,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9700,7 +9700,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9714,7 +9714,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9728,7 +9728,7 @@
       {
         "id": "i_t16",
         "symbol": "iec60617.terminal.2level",
-        "x": 240,
+        "x": 180,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9742,7 +9742,7 @@
       {
         "id": "i_t17",
         "symbol": "iec60617.terminal.2level",
-        "x": 256,
+        "x": 192,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9756,7 +9756,7 @@
       {
         "id": "i_t18",
         "symbol": "iec60617.terminal.2level",
-        "x": 272,
+        "x": 204,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9770,7 +9770,7 @@
       {
         "id": "i_t19",
         "symbol": "iec60617.terminal.2level",
-        "x": 288,
+        "x": 216,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9812,7 +9812,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9826,7 +9826,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9840,7 +9840,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9854,7 +9854,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9868,7 +9868,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9882,7 +9882,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9896,7 +9896,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9910,7 +9910,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9924,7 +9924,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9938,7 +9938,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9952,7 +9952,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9966,7 +9966,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9980,7 +9980,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -9994,7 +9994,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10008,7 +10008,7 @@
       {
         "id": "i_t16",
         "symbol": "iec60617.terminal.2level",
-        "x": 240,
+        "x": 180,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10022,7 +10022,7 @@
       {
         "id": "i_t17",
         "symbol": "iec60617.terminal.2level",
-        "x": 256,
+        "x": 192,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10036,7 +10036,7 @@
       {
         "id": "i_t18",
         "symbol": "iec60617.terminal.2level",
-        "x": 272,
+        "x": 204,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10050,7 +10050,7 @@
       {
         "id": "i_t19",
         "symbol": "iec60617.terminal.2level",
-        "x": 288,
+        "x": 216,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10064,7 +10064,7 @@
       {
         "id": "i_t20",
         "symbol": "iec60617.terminal.2level",
-        "x": 304,
+        "x": 228,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10134,7 +10134,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10176,7 +10176,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10190,7 +10190,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10232,7 +10232,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10246,7 +10246,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10260,7 +10260,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10302,7 +10302,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10316,7 +10316,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10330,7 +10330,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10344,7 +10344,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10386,7 +10386,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10400,7 +10400,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10414,7 +10414,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10428,7 +10428,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10442,7 +10442,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10484,7 +10484,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10498,7 +10498,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10512,7 +10512,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10526,7 +10526,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10540,7 +10540,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10554,7 +10554,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10596,7 +10596,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10610,7 +10610,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10624,7 +10624,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10638,7 +10638,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10652,7 +10652,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10666,7 +10666,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10680,7 +10680,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10722,7 +10722,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10736,7 +10736,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10750,7 +10750,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10764,7 +10764,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10778,7 +10778,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10792,7 +10792,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10806,7 +10806,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10820,7 +10820,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10862,7 +10862,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10876,7 +10876,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10890,7 +10890,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10904,7 +10904,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10918,7 +10918,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10932,7 +10932,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10946,7 +10946,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10960,7 +10960,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -10974,7 +10974,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11016,7 +11016,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11030,7 +11030,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11044,7 +11044,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11058,7 +11058,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11072,7 +11072,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11086,7 +11086,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11100,7 +11100,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11114,7 +11114,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11128,7 +11128,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11142,7 +11142,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11184,7 +11184,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11198,7 +11198,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11212,7 +11212,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11226,7 +11226,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11240,7 +11240,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11254,7 +11254,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11268,7 +11268,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11282,7 +11282,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11296,7 +11296,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11310,7 +11310,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11324,7 +11324,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11366,7 +11366,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11380,7 +11380,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11394,7 +11394,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11408,7 +11408,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11422,7 +11422,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11436,7 +11436,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11450,7 +11450,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11464,7 +11464,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11478,7 +11478,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11492,7 +11492,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11506,7 +11506,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11520,7 +11520,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11562,7 +11562,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11576,7 +11576,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11590,7 +11590,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11604,7 +11604,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11618,7 +11618,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11632,7 +11632,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11646,7 +11646,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11660,7 +11660,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11674,7 +11674,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11688,7 +11688,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11702,7 +11702,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11716,7 +11716,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11730,7 +11730,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11772,7 +11772,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11786,7 +11786,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11800,7 +11800,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11814,7 +11814,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11828,7 +11828,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11842,7 +11842,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11856,7 +11856,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11870,7 +11870,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11884,7 +11884,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11898,7 +11898,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11912,7 +11912,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11926,7 +11926,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11940,7 +11940,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11954,7 +11954,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -11996,7 +11996,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12010,7 +12010,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12024,7 +12024,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12038,7 +12038,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12052,7 +12052,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12066,7 +12066,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12080,7 +12080,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12094,7 +12094,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12108,7 +12108,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12122,7 +12122,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12136,7 +12136,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12150,7 +12150,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12164,7 +12164,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12178,7 +12178,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12192,7 +12192,7 @@
       {
         "id": "i_t16",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 240,
+        "x": 180,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12234,7 +12234,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12248,7 +12248,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12262,7 +12262,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12276,7 +12276,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12290,7 +12290,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12304,7 +12304,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12318,7 +12318,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12332,7 +12332,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12346,7 +12346,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12360,7 +12360,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12374,7 +12374,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12388,7 +12388,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12402,7 +12402,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12416,7 +12416,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12430,7 +12430,7 @@
       {
         "id": "i_t16",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 240,
+        "x": 180,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12444,7 +12444,7 @@
       {
         "id": "i_t17",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 256,
+        "x": 192,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12486,7 +12486,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12500,7 +12500,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12514,7 +12514,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12528,7 +12528,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12542,7 +12542,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12556,7 +12556,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12570,7 +12570,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12584,7 +12584,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12598,7 +12598,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12612,7 +12612,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12626,7 +12626,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12640,7 +12640,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12654,7 +12654,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12668,7 +12668,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12682,7 +12682,7 @@
       {
         "id": "i_t16",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 240,
+        "x": 180,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12696,7 +12696,7 @@
       {
         "id": "i_t17",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 256,
+        "x": 192,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12710,7 +12710,7 @@
       {
         "id": "i_t18",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 272,
+        "x": 204,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12752,7 +12752,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12766,7 +12766,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12780,7 +12780,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12794,7 +12794,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12808,7 +12808,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12822,7 +12822,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12836,7 +12836,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12850,7 +12850,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12864,7 +12864,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12878,7 +12878,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12892,7 +12892,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12906,7 +12906,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12920,7 +12920,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12934,7 +12934,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12948,7 +12948,7 @@
       {
         "id": "i_t16",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 240,
+        "x": 180,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12962,7 +12962,7 @@
       {
         "id": "i_t17",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 256,
+        "x": 192,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12976,7 +12976,7 @@
       {
         "id": "i_t18",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 272,
+        "x": 204,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -12990,7 +12990,7 @@
       {
         "id": "i_t19",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 288,
+        "x": 216,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13032,7 +13032,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13046,7 +13046,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13060,7 +13060,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13074,7 +13074,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13088,7 +13088,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13102,7 +13102,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13116,7 +13116,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13130,7 +13130,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13144,7 +13144,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13158,7 +13158,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13172,7 +13172,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13186,7 +13186,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13200,7 +13200,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13214,7 +13214,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13228,7 +13228,7 @@
       {
         "id": "i_t16",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 240,
+        "x": 180,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13242,7 +13242,7 @@
       {
         "id": "i_t17",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 256,
+        "x": 192,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13256,7 +13256,7 @@
       {
         "id": "i_t18",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 272,
+        "x": 204,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13270,7 +13270,7 @@
       {
         "id": "i_t19",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 288,
+        "x": 216,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13284,7 +13284,7 @@
       {
         "id": "i_t20",
         "symbol": "iec60617.terminal.2level.connected",
-        "x": 304,
+        "x": 228,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13354,7 +13354,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13396,7 +13396,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13410,7 +13410,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13452,7 +13452,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13466,7 +13466,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13480,7 +13480,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13522,7 +13522,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13536,7 +13536,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13550,7 +13550,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13564,7 +13564,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13606,7 +13606,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13620,7 +13620,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13634,7 +13634,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13648,7 +13648,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13662,7 +13662,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13704,7 +13704,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13718,7 +13718,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13732,7 +13732,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13746,7 +13746,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13760,7 +13760,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13774,7 +13774,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13816,7 +13816,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13830,7 +13830,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13844,7 +13844,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13858,7 +13858,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13872,7 +13872,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13886,7 +13886,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13900,7 +13900,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13942,7 +13942,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13956,7 +13956,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13970,7 +13970,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13984,7 +13984,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -13998,7 +13998,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14012,7 +14012,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14026,7 +14026,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14040,7 +14040,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14082,7 +14082,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14096,7 +14096,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14110,7 +14110,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14124,7 +14124,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14138,7 +14138,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14152,7 +14152,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14166,7 +14166,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14180,7 +14180,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14194,7 +14194,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14236,7 +14236,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14250,7 +14250,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14264,7 +14264,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14278,7 +14278,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14292,7 +14292,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14306,7 +14306,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14320,7 +14320,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14334,7 +14334,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14348,7 +14348,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14362,7 +14362,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14404,7 +14404,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14418,7 +14418,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14432,7 +14432,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14446,7 +14446,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14460,7 +14460,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14474,7 +14474,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14488,7 +14488,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14502,7 +14502,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14516,7 +14516,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14530,7 +14530,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14544,7 +14544,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14586,7 +14586,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14600,7 +14600,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14614,7 +14614,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14628,7 +14628,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14642,7 +14642,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14656,7 +14656,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14670,7 +14670,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14684,7 +14684,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14698,7 +14698,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14712,7 +14712,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14726,7 +14726,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14740,7 +14740,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14782,7 +14782,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14796,7 +14796,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14810,7 +14810,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14824,7 +14824,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14838,7 +14838,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14852,7 +14852,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14866,7 +14866,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14880,7 +14880,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14894,7 +14894,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14908,7 +14908,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14922,7 +14922,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14936,7 +14936,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14950,7 +14950,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -14992,7 +14992,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15006,7 +15006,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15020,7 +15020,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15034,7 +15034,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15048,7 +15048,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15062,7 +15062,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15076,7 +15076,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15090,7 +15090,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15104,7 +15104,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15118,7 +15118,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15132,7 +15132,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15146,7 +15146,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15160,7 +15160,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15174,7 +15174,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15216,7 +15216,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15230,7 +15230,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15244,7 +15244,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15258,7 +15258,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15272,7 +15272,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15286,7 +15286,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15300,7 +15300,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15314,7 +15314,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15328,7 +15328,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15342,7 +15342,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15356,7 +15356,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15370,7 +15370,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15384,7 +15384,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15398,7 +15398,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15412,7 +15412,7 @@
       {
         "id": "i_t16",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 240,
+        "x": 180,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15454,7 +15454,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15468,7 +15468,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15482,7 +15482,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15496,7 +15496,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15510,7 +15510,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15524,7 +15524,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15538,7 +15538,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15552,7 +15552,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15566,7 +15566,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15580,7 +15580,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15594,7 +15594,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15608,7 +15608,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15622,7 +15622,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15636,7 +15636,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15650,7 +15650,7 @@
       {
         "id": "i_t16",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 240,
+        "x": 180,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15664,7 +15664,7 @@
       {
         "id": "i_t17",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 256,
+        "x": 192,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15706,7 +15706,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15720,7 +15720,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15734,7 +15734,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15748,7 +15748,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15762,7 +15762,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15776,7 +15776,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15790,7 +15790,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15804,7 +15804,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15818,7 +15818,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15832,7 +15832,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15846,7 +15846,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15860,7 +15860,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15874,7 +15874,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15888,7 +15888,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15902,7 +15902,7 @@
       {
         "id": "i_t16",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 240,
+        "x": 180,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15916,7 +15916,7 @@
       {
         "id": "i_t17",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 256,
+        "x": 192,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15930,7 +15930,7 @@
       {
         "id": "i_t18",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 272,
+        "x": 204,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15972,7 +15972,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -15986,7 +15986,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16000,7 +16000,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16014,7 +16014,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16028,7 +16028,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16042,7 +16042,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16056,7 +16056,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16070,7 +16070,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16084,7 +16084,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16098,7 +16098,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16112,7 +16112,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16126,7 +16126,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16140,7 +16140,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16154,7 +16154,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16168,7 +16168,7 @@
       {
         "id": "i_t16",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 240,
+        "x": 180,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16182,7 +16182,7 @@
       {
         "id": "i_t17",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 256,
+        "x": 192,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16196,7 +16196,7 @@
       {
         "id": "i_t18",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 272,
+        "x": 204,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16210,7 +16210,7 @@
       {
         "id": "i_t19",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 288,
+        "x": 216,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16252,7 +16252,7 @@
       {
         "id": "i_t2",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 16,
+        "x": 12,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16266,7 +16266,7 @@
       {
         "id": "i_t3",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 32,
+        "x": 24,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16280,7 +16280,7 @@
       {
         "id": "i_t4",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 48,
+        "x": 36,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16294,7 +16294,7 @@
       {
         "id": "i_t5",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 64,
+        "x": 48,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16308,7 +16308,7 @@
       {
         "id": "i_t6",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 80,
+        "x": 60,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16322,7 +16322,7 @@
       {
         "id": "i_t7",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 96,
+        "x": 72,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16336,7 +16336,7 @@
       {
         "id": "i_t8",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 112,
+        "x": 84,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16350,7 +16350,7 @@
       {
         "id": "i_t9",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 128,
+        "x": 96,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16364,7 +16364,7 @@
       {
         "id": "i_t10",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 144,
+        "x": 108,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16378,7 +16378,7 @@
       {
         "id": "i_t11",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 160,
+        "x": 120,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16392,7 +16392,7 @@
       {
         "id": "i_t12",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 176,
+        "x": 132,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16406,7 +16406,7 @@
       {
         "id": "i_t13",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 192,
+        "x": 144,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16420,7 +16420,7 @@
       {
         "id": "i_t14",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 208,
+        "x": 156,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16434,7 +16434,7 @@
       {
         "id": "i_t15",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 224,
+        "x": 168,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16448,7 +16448,7 @@
       {
         "id": "i_t16",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 240,
+        "x": 180,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16462,7 +16462,7 @@
       {
         "id": "i_t17",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 256,
+        "x": 192,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16476,7 +16476,7 @@
       {
         "id": "i_t18",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 272,
+        "x": 204,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16490,7 +16490,7 @@
       {
         "id": "i_t19",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 288,
+        "x": 216,
         "y": 0,
         "rotation": 0,
         "mirror": false,
@@ -16504,7 +16504,7 @@
       {
         "id": "i_t20",
         "symbol": "iec60617.terminal.2level.pe",
-        "x": 304,
+        "x": 228,
         "y": 0,
         "rotation": 0,
         "mirror": false,

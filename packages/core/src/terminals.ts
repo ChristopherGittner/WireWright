@@ -224,7 +224,8 @@ export function terminalStripSymbol(config: TerminalStripConfig): { symbol: stri
     return pins === 2 ? { symbol: 'iec60617.terminal', pitch: 8 } : { symbol: `iec60617.terminal.multi.${pins}`, pitch: 4 * Math.ceil(pins / 2) + 4 };
   }
   const kind = config.levels === 2 && config.pe ? '.pe' : config.levelsConnected || config.pe ? '.connected' : '';
-  return { symbol: `iec60617.terminal.${config.levels}level${kind}`, pitch: 8 * config.levels };
+  // The housing is as wide as the pitch (4 mm per level + 4): side by side, the housings touch.
+  return { symbol: `iec60617.terminal.${config.levels}level${kind}`, pitch: 4 * config.levels + 4 };
 }
 
 /**

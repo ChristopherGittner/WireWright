@@ -867,14 +867,19 @@ class Renderer {
       if (item.rotation % 180 !== 0) continue;
       const def = this.ctx.library.symbol(item.symbol);
       if (def?.function !== 'terminal') continue;
-      // Terminals drawn with a housing (multi-level, multi-connection): the line runs below it.
-      const below = def.terminalLevels || def.graphics.some((g) => g.type === 'rect') ? 3.5 : 2.5;
+      // Terminals drawn with a housing (multi-connection): the line runs below it.
+      const below = def.graphics.some((g) => g.type === 'rect') ? 3.5 : 2.5;
       for (const level of terminalLevels(item, this.ctx.library)) {
         const pins = def.connections.filter((c) => level.pins.includes(c.id));
         if (level.bridge === undefined || pins.length === 0) continue;
-        // Below the level's clamp: a lower level (drawn lower) gets its bridge line lower too.
-        const centre = def.terminalLevels ? pins.reduce((sum, c) => sum + c.y, 0) / pins.length : 0;
-        const p = transformPoint({ x: pins[0]!.x, y: centre + below }, item.rotation, item.mirror);
+        // Multi-level terminals: level 1 is bridged just above the housing (below its top pin), the
+        // last level just below it (above its bottom pin), a middle level below the bottom pins;
+        // so the levels' bridge lines lie at different heights.
+        const top = Math.min(...pins.map((c) => c.y));
+        const bottom = Math.max(...pins.map((c) => c.y));
+        const last = Math.max(...(def.terminalLevels ?? []).map((l) => l.level));
+        const y0 = !def.terminalLevels ? below : level.level === 1 ? top + 1 : level.level === last ? bottom - 1 : bottom + 0.5;
+        const p = transformPoint({ x: pins[0]!.x, y: y0 }, item.rotation, item.mirror);
         const x = item.x + p.x;
         const y = item.y + p.y;
         const key = `${formatTag(effectiveTag(page, item, this.ctx.library))}\u0000${level.level ?? 1}\u0000${level.bridge}\u0000${y}`;
