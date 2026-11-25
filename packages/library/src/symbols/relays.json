@@ -172,5 +172,324 @@
       }
     ],
     "hasContactImage": true
+  },
+  {
+    "id": "iec60617.relay.coil.ondelay",
+    "name": {
+      "de": "Relaisspule, anzugverzögert (Zeitrelais)",
+      "en": "Relay coil, slow operating (on-delay timer)"
+    },
+    "category": "relays",
+    "function": "relay.coil",
+    "defaultRole": "main",
+    "letterCode": "K",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -3
+      },
+      {
+        "type": "rect",
+        "x": -4,
+        "y": -3,
+        "width": 8,
+        "height": 6
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 3,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "rect",
+        "x": 4,
+        "y": -3,
+        "width": 3,
+        "height": 6
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -3,
+        "x2": 7,
+        "y2": 3
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 3,
+        "x2": 7,
+        "y2": -3
+      }
+    ],
+    "connections": [
+      {
+        "id": "A1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "A1"
+      },
+      {
+        "id": "A2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "A2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:A1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:A2",
+        "x": 1.5,
+        "y": 6.5
+      },
+      {
+        "field": "contactImage",
+        "x": 3,
+        "y": 12
+      }
+    ],
+    "hasContactImage": true
+  },
+  {
+    "id": "iec60617.relay.coil.offdelay",
+    "name": {
+      "de": "Relaisspule, abfallverzögert (Zeitrelais)",
+      "en": "Relay coil, slow releasing (off-delay timer)"
+    },
+    "category": "relays",
+    "function": "relay.coil",
+    "defaultRole": "main",
+    "letterCode": "K",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -3
+      },
+      {
+        "type": "rect",
+        "x": -4,
+        "y": -3,
+        "width": 8,
+        "height": 6
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 3,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "rect",
+        "x": 4,
+        "y": -3,
+        "width": 3,
+        "height": 6,
+        "fill": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "A1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "A1"
+      },
+      {
+        "id": "A2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "A2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:A1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:A2",
+        "x": 1.5,
+        "y": 6.5
+      },
+      {
+        "field": "contactImage",
+        "x": 3,
+        "y": 12
+      }
+    ],
+    "hasContactImage": true
+  },
+  {
+    "id": "iec60617.relay.coil.impulse",
+    "name": {
+      "de": "Stromstoßschalter (Spule)",
+      "en": "Impulse relay coil (latching relay)"
+    },
+    "category": "relays",
+    "function": "relay.coil",
+    "defaultRole": "main",
+    "letterCode": "K",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -3
+      },
+      {
+        "type": "rect",
+        "x": -4,
+        "y": -3,
+        "width": 8,
+        "height": 6
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 3,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -2.5,
+            1.5
+          ],
+          [
+            -1,
+            1.5
+          ],
+          [
+            -1,
+            -1.5
+          ],
+          [
+            1,
+            -1.5
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            2.5,
+            1.5
+          ]
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "A1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "A1"
+      },
+      {
+        "id": "A2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "A2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:A1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:A2",
+        "x": 1.5,
+        "y": 6.5
+      },
+      {
+        "field": "contactImage",
+        "x": 3,
+        "y": 12
+      }
+    ],
+    "hasContactImage": true
   }
 ]

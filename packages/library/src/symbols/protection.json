@@ -2386,5 +2386,349 @@
         "y": 6.5
       }
     ]
+  },
+  {
+    "id": "iec60617.surge.arrester",
+    "name": {
+      "de": "Überspannungsableiter",
+      "en": "Surge arrester"
+    },
+    "category": "protection",
+    "function": "surge",
+    "defaultRole": "main",
+    "letterCode": "F",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -5
+      },
+      {
+        "type": "rect",
+        "x": -2,
+        "y": -5,
+        "width": 4,
+        "height": 10
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 5,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -3.5,
+        "x2": 0,
+        "y2": 3.5
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -0.55,
+            2.21
+          ],
+          [
+            0,
+            3.5
+          ],
+          [
+            0.55,
+            2.21
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.surge.sparkgap",
+    "name": {
+      "de": "Funkenstrecke",
+      "en": "Spark gap"
+    },
+    "category": "protection",
+    "function": "surge",
+    "defaultRole": "main",
+    "letterCode": "F",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -2.2
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1,
+            -2.2
+          ],
+          [
+            1,
+            -2.2
+          ],
+          [
+            0,
+            -0.6
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 8,
+        "x2": 0,
+        "y2": 2.2
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1,
+            2.2
+          ],
+          [
+            1,
+            2.2
+          ],
+          [
+            0,
+            0.6
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.surge.gdt",
+    "name": {
+      "de": "Gasgefüllter Überspannungsableiter",
+      "en": "Gas discharge tube arrester"
+    },
+    "category": "protection",
+    "function": "surge",
+    "defaultRole": "main",
+    "letterCode": "F",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -2.2
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1,
+            -2.2
+          ],
+          [
+            1,
+            -2.2
+          ],
+          [
+            0,
+            -0.6
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 8,
+        "x2": 0,
+        "y2": 2.2
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1,
+            2.2
+          ],
+          [
+            1,
+            2.2
+          ],
+          [
+            0,
+            0.6
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 3.2
+      },
+      {
+        "type": "circle",
+        "cx": 1.9,
+        "cy": 0,
+        "r": 0.4,
+        "fill": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
   }
 ]

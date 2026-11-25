@@ -1,0 +1,1566 @@
+[
+  {
+    "id": "iec60617.resistor",
+    "name": {
+      "de": "Widerstand",
+      "en": "Resistor"
+    },
+    "category": "components",
+    "function": "resistor",
+    "defaultRole": "main",
+    "letterCode": "R",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -5
+      },
+      {
+        "type": "rect",
+        "x": -1.5,
+        "y": -5,
+        "width": 3,
+        "height": 10
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 5,
+        "x2": 0,
+        "y2": 8
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.resistor.variable",
+    "name": {
+      "de": "Widerstand, einstellbar",
+      "en": "Variable resistor"
+    },
+    "category": "components",
+    "function": "resistor",
+    "defaultRole": "main",
+    "letterCode": "R",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -5
+      },
+      {
+        "type": "rect",
+        "x": -1.5,
+        "y": -5,
+        "width": 3,
+        "height": 10
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 5,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": -3.5,
+        "y1": 4.5,
+        "x2": 3.5,
+        "y2": -4.5
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            3.24,
+            -3.53
+          ],
+          [
+            3.5,
+            -4.5
+          ],
+          [
+            2.63,
+            -4.01
+          ]
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.potentiometer",
+    "name": {
+      "de": "Potentiometer",
+      "en": "Potentiometer"
+    },
+    "category": "components",
+    "function": "resistor",
+    "defaultRole": "main",
+    "letterCode": "R",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -5
+      },
+      {
+        "type": "rect",
+        "x": -1.5,
+        "y": -5,
+        "width": 3,
+        "height": 10
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 5,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 0,
+        "x2": 2.5,
+        "y2": 0
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            2.5,
+            -0.8
+          ],
+          [
+            1.5,
+            0
+          ],
+          [
+            2.5,
+            0.8
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "3",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "3"
+      },
+      {
+        "id": "2",
+        "x": 8,
+        "y": 0,
+        "direction": "right",
+        "designation": "2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:3",
+        "x": 1.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:2",
+        "x": 5,
+        "y": -1
+      }
+    ]
+  },
+  {
+    "id": "iec60617.resistor.ntc",
+    "name": {
+      "de": "Heißleiter (NTC)",
+      "en": "Thermistor (NTC)"
+    },
+    "category": "components",
+    "function": "resistor",
+    "defaultRole": "main",
+    "letterCode": "R",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -5
+      },
+      {
+        "type": "rect",
+        "x": -1.5,
+        "y": -5,
+        "width": 3,
+        "height": 10
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 5,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -4,
+            5
+          ],
+          [
+            -3,
+            5
+          ],
+          [
+            3.5,
+            -4.5
+          ]
+        ]
+      },
+      {
+        "type": "text",
+        "x": 2.4,
+        "y": 5,
+        "text": "−ϑ",
+        "size": 2,
+        "align": "left"
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.resistor.ptc",
+    "name": {
+      "de": "Kaltleiter (PTC)",
+      "en": "Thermistor (PTC)"
+    },
+    "category": "components",
+    "function": "resistor",
+    "defaultRole": "main",
+    "letterCode": "R",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -5
+      },
+      {
+        "type": "rect",
+        "x": -1.5,
+        "y": -5,
+        "width": 3,
+        "height": 10
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 5,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -4,
+            5
+          ],
+          [
+            -3,
+            5
+          ],
+          [
+            3.5,
+            -4.5
+          ]
+        ]
+      },
+      {
+        "type": "text",
+        "x": 2.4,
+        "y": 5,
+        "text": "+ϑ",
+        "size": 2,
+        "align": "left"
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.varistor",
+    "name": {
+      "de": "Varistor (VDR)",
+      "en": "Varistor (VDR)"
+    },
+    "category": "components",
+    "function": "resistor",
+    "defaultRole": "main",
+    "letterCode": "R",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -5
+      },
+      {
+        "type": "rect",
+        "x": -1.5,
+        "y": -5,
+        "width": 3,
+        "height": 10
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 5,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -4,
+            5
+          ],
+          [
+            -3,
+            5
+          ],
+          [
+            3.5,
+            -4.5
+          ]
+        ]
+      },
+      {
+        "type": "text",
+        "x": 2.4,
+        "y": 5,
+        "text": "U",
+        "size": 2,
+        "align": "left"
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.capacitor",
+    "name": {
+      "de": "Kondensator",
+      "en": "Capacitor"
+    },
+    "category": "components",
+    "function": "capacitor",
+    "defaultRole": "main",
+    "letterCode": "C",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -0.8
+      },
+      {
+        "type": "line",
+        "x1": -3,
+        "y1": -0.8,
+        "x2": 3,
+        "y2": -0.8
+      },
+      {
+        "type": "line",
+        "x1": -3,
+        "y1": 0.8,
+        "x2": 3,
+        "y2": 0.8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 0.8,
+        "x2": 0,
+        "y2": 8
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.capacitor.polarized",
+    "name": {
+      "de": "Elektrolytkondensator",
+      "en": "Polarized capacitor (electrolytic)"
+    },
+    "category": "components",
+    "function": "capacitor",
+    "defaultRole": "main",
+    "letterCode": "C",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -1.4
+      },
+      {
+        "type": "rect",
+        "x": -3,
+        "y": -1.4,
+        "width": 6,
+        "height": 0.6
+      },
+      {
+        "type": "rect",
+        "x": -3,
+        "y": 0.8,
+        "width": 6,
+        "height": 0.6,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "text",
+        "x": 2.2,
+        "y": -2.3,
+        "text": "+",
+        "size": 2,
+        "align": "left"
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "+"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "−"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.inductor",
+    "name": {
+      "de": "Spule, Induktivität (Drossel)",
+      "en": "Inductor (choke)"
+    },
+    "category": "components",
+    "function": "inductor",
+    "defaultRole": "main",
+    "letterCode": "R",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -6
+      },
+      {
+        "type": "arc",
+        "cx": 0,
+        "cy": -4.5,
+        "r": 1.5,
+        "start": 270,
+        "end": 90
+      },
+      {
+        "type": "arc",
+        "cx": 0,
+        "cy": -1.5,
+        "r": 1.5,
+        "start": 270,
+        "end": 90
+      },
+      {
+        "type": "arc",
+        "cx": 0,
+        "cy": 1.5,
+        "r": 1.5,
+        "start": 270,
+        "end": 90
+      },
+      {
+        "type": "arc",
+        "cx": 0,
+        "cy": 4.5,
+        "r": 1.5,
+        "start": 270,
+        "end": 90
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 6,
+        "x2": 0,
+        "y2": 8
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.diode",
+    "name": {
+      "de": "Diode",
+      "en": "Diode"
+    },
+    "category": "components",
+    "function": "diode",
+    "defaultRole": "main",
+    "letterCode": "R",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -1.8
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -2.2,
+            -1.8
+          ],
+          [
+            2.2,
+            -1.8
+          ],
+          [
+            0,
+            1.8
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "type": "line",
+        "x1": -2.2,
+        "y1": 1.8,
+        "x2": 2.2,
+        "y2": 1.8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.8,
+        "x2": 0,
+        "y2": 8
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "A"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "K"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.diode.zener",
+    "name": {
+      "de": "Z-Diode",
+      "en": "Zener diode"
+    },
+    "category": "components",
+    "function": "diode",
+    "defaultRole": "main",
+    "letterCode": "R",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -1.8
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -2.2,
+            -1.8
+          ],
+          [
+            2.2,
+            -1.8
+          ],
+          [
+            0,
+            1.8
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -2.9,
+            1
+          ],
+          [
+            -2.2,
+            1.8
+          ],
+          [
+            2.2,
+            1.8
+          ],
+          [
+            2.9,
+            2.6
+          ]
+        ]
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.8,
+        "x2": 0,
+        "y2": 8
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "A"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "K"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.diode.led",
+    "name": {
+      "de": "Leuchtdiode (LED)",
+      "en": "Light-emitting diode (LED)"
+    },
+    "category": "components",
+    "function": "lamp",
+    "defaultRole": "main",
+    "letterCode": "P",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -1.8
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -2.2,
+            -1.8
+          ],
+          [
+            2.2,
+            -1.8
+          ],
+          [
+            0,
+            1.8
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "type": "line",
+        "x1": -2.2,
+        "y1": 1.8,
+        "x2": 2.2,
+        "y2": 1.8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.8,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 2.6,
+        "y1": -0.6,
+        "x2": 5,
+        "y2": -3
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            4.62,
+            -2.07
+          ],
+          [
+            5,
+            -3
+          ],
+          [
+            4.07,
+            -2.62
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": 2.6,
+        "y1": 1.4,
+        "x2": 5,
+        "y2": -1
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            4.62,
+            -0.07
+          ],
+          [
+            5,
+            -1
+          ],
+          [
+            4.07,
+            -0.62
+          ]
+        ],
+        "closed": true,
+        "fill": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "A"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "K"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.battery",
+    "name": {
+      "de": "Akkumulator, Batterie (Zelle)",
+      "en": "Battery (cell)"
+    },
+    "category": "components",
+    "function": "battery",
+    "defaultRole": "main",
+    "letterCode": "G",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -0.8
+      },
+      {
+        "type": "line",
+        "x1": -3,
+        "y1": -0.8,
+        "x2": 3,
+        "y2": -0.8
+      },
+      {
+        "type": "rect",
+        "x": -1.5,
+        "y": 0.5,
+        "width": 3,
+        "height": 0.7,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 1.2,
+        "x2": 0,
+        "y2": 8
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "+"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "−"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.horn",
+    "name": {
+      "de": "Hupe",
+      "en": "Horn"
+    },
+    "category": "components",
+    "function": "signal",
+    "defaultRole": "main",
+    "letterCode": "P",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -2.5
+      },
+      {
+        "type": "rect",
+        "x": -1.5,
+        "y": -2.5,
+        "width": 3,
+        "height": 5
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 2.5,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            1.5,
+            -1.5
+          ],
+          [
+            4.5,
+            -4
+          ],
+          [
+            4.5,
+            4
+          ],
+          [
+            1.5,
+            1.5
+          ]
+        ],
+        "closed": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.bell",
+    "name": {
+      "de": "Wecker, Klingel",
+      "en": "Bell"
+    },
+    "category": "components",
+    "function": "signal",
+    "defaultRole": "main",
+    "letterCode": "P",
+    "graphics": [
+      {
+        "type": "arc",
+        "cx": 0,
+        "cy": 2,
+        "r": 5,
+        "start": 180,
+        "end": 0
+      },
+      {
+        "type": "line",
+        "x1": -5,
+        "y1": 2,
+        "x2": 5,
+        "y2": 2
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": 2,
+        "x2": -4,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 2,
+        "x2": 4,
+        "y2": 8
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": -4,
+        "y": 8,
+        "direction": "down",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 4,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -7,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -7,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -7,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": -4.5,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:2",
+        "x": 4.5,
+        "y": 7
+      }
+    ]
+  }
+]

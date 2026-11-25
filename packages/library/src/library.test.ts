@@ -63,6 +63,40 @@ describe('standard library', () => {
     for (const id of ['iec60617.heater', 'iec60617.luminaire', 'iec60617.socket']) expect(library.symbol(id), id).toBeDefined();
   });
 
+  it('contact variants (early, late, passing, delayed) stay contacts, so cross-references and contact images list them', () => {
+    const variants: Record<string, string> = {
+      'iec60617.contact.no.early': 'contact.no', 'iec60617.contact.no.late': 'contact.no',
+      'iec60617.contact.nc.early': 'contact.nc', 'iec60617.contact.nc.late': 'contact.nc',
+      'iec60617.contact.no.passing': 'contact.no', 'iec60617.contact.no.passing.release': 'contact.no', 'iec60617.contact.no.passing.both': 'contact.no',
+      'iec60617.contact.no.ondelay': 'contact.no', 'iec60617.contact.no.offdelay': 'contact.no',
+      'iec60617.contact.nc.ondelay': 'contact.nc', 'iec60617.contact.nc.offdelay': 'contact.nc',
+      'iec60617.contact.co.mbb': 'contact.co', 'iec60617.contact.co.center': 'contact.co',
+    };
+    for (const [id, fn] of Object.entries(variants)) {
+      const s = library.symbol(id);
+      expect(s?.function, id).toBe(fn);
+      expect(s?.contactImage, id).toBeDefined();
+    }
+    for (const id of ['iec60617.relay.coil.ondelay', 'iec60617.relay.coil.offdelay', 'iec60617.relay.coil.impulse']) {
+      expect(library.symbol(id)?.function, id).toBe('relay.coil');
+    }
+  });
+
+  it('contains installation switches, surge protection, instrument transformers and components', () => {
+    const poles: Record<string, number> = {
+      'iec60617.installation.switch.oneway': 1, 'iec60617.installation.switch.twoway': 1, 'iec60617.installation.switch.series': 1,
+      'iec60617.installation.switch.intermediate': 1, 'iec60617.switch.multiposition.4': 1,
+      'iec60617.limitswitch.no': 1, 'iec60617.limitswitch.nc': 1, 'iec60617.transformer.current': 1,
+    };
+    for (const [id, n] of Object.entries(poles)) expect(library.symbol(id)?.links, id).toHaveLength(n);
+    for (const id of [
+      'iec60617.installation.dimmer', 'iec60617.surge.arrester', 'iec60617.surge.sparkgap', 'iec60617.surge.gdt', 'iec60617.transformer.voltage',
+      'iec60617.resistor', 'iec60617.resistor.variable', 'iec60617.potentiometer', 'iec60617.resistor.ntc', 'iec60617.resistor.ptc', 'iec60617.varistor',
+      'iec60617.capacitor', 'iec60617.capacitor.polarized', 'iec60617.inductor', 'iec60617.diode', 'iec60617.diode.zener', 'iec60617.diode.led',
+      'iec60617.battery', 'iec60617.horn', 'iec60617.bell',
+    ]) expect(library.symbol(id), id).toBeDefined();
+  });
+
   it('device definitions use existing symbols, and I/O cards have consistent channels', () => {
     expect(library.devices().length).toBeGreaterThanOrEqual(8);
     for (const d of library.devices()) {

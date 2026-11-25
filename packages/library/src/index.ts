@@ -6,6 +6,8 @@ import connections from './symbols/connections.json' with { type: 'json' };
 import consumers from './symbols/consumers.json' with { type: 'json' };
 import contacts from './symbols/contacts.json' with { type: 'json' };
 import plc from './symbols/plc.json' with { type: 'json' };
+import components from './symbols/components.json' with { type: 'json' };
+import installation from './symbols/installation.json' with { type: 'json' };
 import cables from './symbols/cables.json' with { type: 'json' };
 import devices from './devices/devices.json' with { type: 'json' };
 import plcWago from './devices/plc-wago.json' with { type: 'json' };
@@ -26,7 +28,7 @@ let content: LibraryContent | undefined;
 /** The validated standard library content. */
 export function standardLibraryContent(): LibraryContent {
   content ??= parseLibraryContent({
-    symbols: [...relays, ...contacts, ...protection, ...consumers, ...plc, ...cables, ...connections, ...fluid, ...pipes, ...boxes],
+    symbols: [...relays, ...contacts, ...installation, ...protection, ...consumers, ...components, ...plc, ...cables, ...connections, ...fluid, ...pipes, ...boxes],
     frames,
     templates,
     forms,

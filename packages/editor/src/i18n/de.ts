@@ -585,6 +585,8 @@ export const de: Record<string, string> = {
   "Selected": "Ausgewählt",
   "Selected cards ({count})": "Gewählte Karten ({count})",
   "Sensors": "Sensoren",
+  "Electrical installation": "Elektroinstallation",
+  "Electronic components": "Elektronische Bauelemente",
   "Settings": "Einstellungen",
   "Shared library folder": "Gemeinsamer Bibliotheksordner",
   "Shared library: {error}": "Gemeinsame Bibliothek: {error}",

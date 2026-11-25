@@ -1349,5 +1349,261 @@
         "y": -5
       }
     ]
+  },
+  {
+    "id": "iec60617.transformer.current",
+    "name": {
+      "de": "Stromwandler",
+      "en": "Current transformer"
+    },
+    "category": "power",
+    "function": "transformer",
+    "defaultRole": "main",
+    "letterCode": "T",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 0,
+        "r": 3
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            2.4,
+            -1.8
+          ],
+          [
+            4,
+            -4
+          ],
+          [
+            8,
+            -4
+          ]
+        ]
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            2.4,
+            1.8
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            8,
+            4
+          ]
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "P1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "P1"
+      },
+      {
+        "id": "P2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "P2"
+      },
+      {
+        "id": "S1",
+        "x": 8,
+        "y": -4,
+        "direction": "right",
+        "designation": "S1"
+      },
+      {
+        "id": "S2",
+        "x": 8,
+        "y": 4,
+        "direction": "right",
+        "designation": "S2"
+      }
+    ],
+    "links": [
+      [
+        "P1",
+        "P2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -5,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -5,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -5,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:P1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:P2",
+        "x": 1.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:S1",
+        "x": 5.5,
+        "y": -5
+      },
+      {
+        "field": "pin:S2",
+        "x": 5.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.transformer.voltage",
+    "name": {
+      "de": "Spannungswandler",
+      "en": "Voltage transformer"
+    },
+    "category": "power",
+    "function": "transformer",
+    "defaultRole": "main",
+    "letterCode": "T",
+    "graphics": [
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": -3,
+        "r": 4
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 3,
+        "r": 4
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": -12,
+        "x2": -4,
+        "y2": -6
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -12,
+        "x2": 4,
+        "y2": -6
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": 12,
+        "x2": -4,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": 12,
+        "x2": 4,
+        "y2": 6
+      }
+    ],
+    "connections": [
+      {
+        "id": "A",
+        "x": -4,
+        "y": -12,
+        "direction": "up",
+        "designation": "A"
+      },
+      {
+        "id": "B",
+        "x": 4,
+        "y": -12,
+        "direction": "up",
+        "designation": "B"
+      },
+      {
+        "id": "a",
+        "x": -4,
+        "y": 12,
+        "direction": "down",
+        "designation": "a"
+      },
+      {
+        "id": "b",
+        "x": 4,
+        "y": 12,
+        "direction": "down",
+        "designation": "b"
+      }
+    ],
+    "links": [],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -8,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -8,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "pin:A",
+        "x": -4.5,
+        "y": -13,
+        "align": "right"
+      },
+      {
+        "field": "pin:B",
+        "x": 4.5,
+        "y": -13
+      },
+      {
+        "field": "pin:a",
+        "x": -4.5,
+        "y": 14,
+        "align": "right"
+      },
+      {
+        "field": "pin:b",
+        "x": 4.5,
+        "y": 14
+      }
+    ]
   }
 ]

@@ -1,0 +1,961 @@
+[
+  {
+    "id": "iec60617.installation.switch.oneway",
+    "name": {
+      "de": "Ausschalter",
+      "en": "One-way switch (light switch)"
+    },
+    "category": "installation",
+    "function": "switch.manual",
+    "defaultRole": "main",
+    "letterCode": "S",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": -2,
+        "x2": -8,
+        "y2": 2
+      },
+      {
+        "type": "line",
+        "x1": -8.0,
+        "y1": 0.0,
+        "x2": -7.15,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": -6.45,
+        "y1": 0.0,
+        "x2": -5.6,
+        "y2": 0.0
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -5.6,
+            0.0
+          ],
+          [
+            -4.6,
+            1.3
+          ],
+          [
+            -3.6,
+            0.0
+          ]
+        ]
+      },
+      {
+        "type": "line",
+        "x1": -3.6,
+        "y1": 0.0,
+        "x2": -2.9,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": -2.2,
+        "y1": 0.0,
+        "x2": -1.5,
+        "y2": 0.0
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "L"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "1"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -10,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -10,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -10,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.installation.switch.twoway",
+    "name": {
+      "de": "Wechselschalter",
+      "en": "Two-way switch"
+    },
+    "category": "installation",
+    "function": "switch.manual",
+    "defaultRole": "main",
+    "letterCode": "S",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 8,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": -8,
+        "x2": -4,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -4,
+        "y1": -4,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 4,
+        "y1": -8,
+        "x2": 4,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -10,
+        "y1": -2,
+        "x2": -10,
+        "y2": 2
+      },
+      {
+        "type": "line",
+        "x1": -10.0,
+        "y1": 0.0,
+        "x2": -9.15,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": -8.45,
+        "y1": 0.0,
+        "x2": -7.6,
+        "y2": 0.0
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -7.6,
+            0.0
+          ],
+          [
+            -6.6,
+            1.3
+          ],
+          [
+            -5.6,
+            0.0
+          ]
+        ]
+      },
+      {
+        "type": "line",
+        "x1": -5.6,
+        "y1": 0.0,
+        "x2": -4.74,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": -4.04,
+        "y1": 0.0,
+        "x2": -3.18,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": -2.48,
+        "y1": 0.0,
+        "x2": -1.62,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": -0.92,
+        "y1": 0.0,
+        "x2": -0.06,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": 0.64,
+        "y1": 0.0,
+        "x2": 1.5,
+        "y2": 0.0
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "L"
+      },
+      {
+        "id": "2",
+        "x": -4,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "3",
+        "x": 4,
+        "y": -8,
+        "direction": "up",
+        "designation": "2"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2",
+        "3"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -12,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -12,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -12,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:2",
+        "x": -4.5,
+        "y": -9,
+        "align": "right"
+      },
+      {
+        "field": "pin:3",
+        "x": 4.5,
+        "y": -9
+      }
+    ]
+  },
+  {
+    "id": "iec60617.installation.switch.series",
+    "name": {
+      "de": "Serienschalter",
+      "en": "Series switch (two-circuit switch)"
+    },
+    "category": "installation",
+    "function": "switch.manual",
+    "defaultRole": "main",
+    "letterCode": "S",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 8,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 6,
+        "x2": 8,
+        "y2": 6
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 6,
+        "x2": 8,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -8,
+        "x2": 8,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 11,
+        "y2": -4
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": 6,
+        "r": 0.35,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": -2,
+        "x2": -8,
+        "y2": 2
+      },
+      {
+        "type": "line",
+        "x1": -8.0,
+        "y1": 0.0,
+        "x2": -7.15,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": -6.45,
+        "y1": 0.0,
+        "x2": -5.6,
+        "y2": 0.0
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -5.6,
+            0.0
+          ],
+          [
+            -4.6,
+            1.3
+          ],
+          [
+            -3.6,
+            0.0
+          ]
+        ]
+      },
+      {
+        "type": "line",
+        "x1": -3.6,
+        "y1": 0.0,
+        "x2": -2.9,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": -2.2,
+        "y1": 0.0,
+        "x2": -1.5,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": 9.5,
+        "y1": 0.0,
+        "x2": 10.7,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": 11.4,
+        "y1": 0.0,
+        "x2": 12.6,
+        "y2": 0.0
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            12.6,
+            0.0
+          ],
+          [
+            13.6,
+            1.3
+          ],
+          [
+            14.6,
+            0.0
+          ]
+        ]
+      },
+      {
+        "type": "line",
+        "x1": 14.6,
+        "y1": 0.0,
+        "x2": 15.45,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": 16.15,
+        "y1": 0.0,
+        "x2": 17.0,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": 17,
+        "y1": -2,
+        "x2": 17,
+        "y2": 2
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "L"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": -8,
+        "direction": "up",
+        "designation": "2"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2",
+        "3"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -10,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -10,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -10,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:3",
+        "x": 9.5,
+        "y": -5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.installation.switch.intermediate",
+    "name": {
+      "de": "Kreuzschalter",
+      "en": "Intermediate switch"
+    },
+    "category": "installation",
+    "function": "switch.manual",
+    "defaultRole": "main",
+    "letterCode": "S",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 8,
+        "x2": 0,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -1.5,
+        "y2": -3.6
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 8,
+        "x2": 8,
+        "y2": 4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 6.5,
+        "y2": -3.6
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -8,
+        "x2": 8,
+        "y2": -4
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -3,
+            -4
+          ],
+          [
+            -3,
+            -6
+          ],
+          [
+            8,
+            -6
+          ]
+        ]
+      },
+      {
+        "type": "circle",
+        "cx": 8,
+        "cy": -6,
+        "r": 0.35,
+        "fill": true
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            5,
+            -4
+          ],
+          [
+            5,
+            -5
+          ],
+          [
+            0,
+            -5
+          ]
+        ]
+      },
+      {
+        "type": "circle",
+        "cx": 0,
+        "cy": -5,
+        "r": 0.35,
+        "fill": true
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": -2,
+        "x2": -8,
+        "y2": 2
+      },
+      {
+        "type": "line",
+        "x1": -8.0,
+        "y1": 0.0,
+        "x2": -7.15,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": -6.45,
+        "y1": 0.0,
+        "x2": -5.6,
+        "y2": 0.0
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -5.6,
+            0.0
+          ],
+          [
+            -4.6,
+            1.3
+          ],
+          [
+            -3.6,
+            0.0
+          ]
+        ]
+      },
+      {
+        "type": "line",
+        "x1": -3.6,
+        "y1": 0.0,
+        "x2": -2.66,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": -1.96,
+        "y1": 0.0,
+        "x2": -1.01,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": -0.31,
+        "y1": 0.0,
+        "x2": 0.63,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": 1.33,
+        "y1": 0.0,
+        "x2": 2.27,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": 2.97,
+        "y1": 0.0,
+        "x2": 3.91,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": 4.61,
+        "y1": 0.0,
+        "x2": 5.56,
+        "y2": 0.0
+      },
+      {
+        "type": "line",
+        "x1": 6.26,
+        "y1": 0.0,
+        "x2": 7.2,
+        "y2": 0.0
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 8,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      },
+      {
+        "id": "3",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "3"
+      },
+      {
+        "id": "4",
+        "x": 8,
+        "y": -8,
+        "direction": "up",
+        "designation": "4"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -10,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -10,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -10,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:2",
+        "x": 9.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:3",
+        "x": 1.5,
+        "y": -8.5
+      },
+      {
+        "field": "pin:4",
+        "x": 9.5,
+        "y": -8.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.installation.dimmer",
+    "name": {
+      "de": "Dimmer",
+      "en": "Dimmer"
+    },
+    "category": "installation",
+    "function": "dimmer",
+    "defaultRole": "main",
+    "letterCode": "T",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -5
+      },
+      {
+        "type": "rect",
+        "x": -3,
+        "y": -5,
+        "width": 6,
+        "height": 10
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 5,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -2,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            -1
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "type": "line",
+        "x1": -4.5,
+        "y1": 4.5,
+        "x2": 4.5,
+        "y2": -4.5
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            4.12,
+            -3.57
+          ],
+          [
+            4.5,
+            -4.5
+          ],
+          [
+            3.57,
+            -4.12
+          ]
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "L"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "1"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -7,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -7,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -7,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  }
+]
