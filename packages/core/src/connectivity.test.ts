@@ -126,6 +126,16 @@ describe('potentials', () => {
     expect(potential(doc, 'i_k:2')).toEqual({ name: '0V' });
   });
 
+  it('earth symbols put PE on their wire, or the potential they name', () => {
+    const { doc } = setup(
+      { id: 'i_k', symbol: 'coil', x: 100, y: 100, tag: { product: 'K1' } },
+      { id: 'i_e', symbol: 'earth', x: 100, y: 120 },
+    );
+    expect(potential(doc, 'i_k:2')).toEqual({ name: 'PE' });
+    doc.apply({ type: 'setItemProperties', pageId: 'p_five', itemId: 'i_e', props: { name: 'N' } });
+    expect(potential(doc, 'i_k:2')).toEqual({ name: 'N' });
+  });
+
   it('warns about potentials that are not defined in the project', () => {
     const { doc } = setup({ id: 'i_x', symbol: 'potential', x: 100, y: 40, props: { name: '48V' } });
     expect(codes(doc)).toContain('potential.undefined');

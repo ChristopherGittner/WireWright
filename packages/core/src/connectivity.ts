@@ -282,6 +282,13 @@ export function buildConnectivity(state: ProjectState, library: Library): Connec
             }
           }
           continue;
+        case 'connection.earth':
+          // Earth: a potential point of the protective earth, unless named otherwise (e.g. FE).
+          for (const key of keys) {
+            push(byName.potential, name ?? 'PE', points.get(key)!);
+            sources.push({ key, name: name ?? 'PE' });
+          }
+          continue;
         case 'connection.medium':
           // A pipe source names the medium of its pipes (like a potential point for wires).
           if (name === undefined) {

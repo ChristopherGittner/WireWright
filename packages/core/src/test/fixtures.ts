@@ -57,6 +57,7 @@ export const library = new MapLibrary({
     symbol({ id: 'interruption', function: 'connection.interruption', defaultRole: 'none', connections: [{ id: 'a', x: 0, y: 0, direction: 'up' }] }),
     symbol({ id: 'break', function: 'connection.break', defaultRole: 'none', connections: [{ id: 'a', x: 0, y: 0, direction: 'up' }] }),
     symbol({ id: 'potential', function: 'connection.potential', defaultRole: 'none', connections: [{ id: 'a', x: 0, y: 0, direction: 'down' }] }),
+    symbol({ id: 'earth', function: 'connection.earth', defaultRole: 'none', connections: [{ id: 'a', x: 0, y: 0, direction: 'up' }] }),
     symbol({ id: 'potentialDefinition', function: 'connection.potentialDefinition', defaultRole: 'none', links: [['a', 'b']], connections: [
       { id: 'a', x: 0, y: 0, direction: 'up' },
       { id: 'b', x: 0, y: 0, direction: 'down' },
