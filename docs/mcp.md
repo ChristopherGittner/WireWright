@@ -81,6 +81,8 @@ and the project is saved as usual (the changes count as unsaved until then).
 | `get_changes` | New, changed and deleted pages and items since a revision |
 | `move_items` | Moves items; boxes move with their contents |
 | `delete_items` | Deletes items |
+| `group_items` | Groups items (selected and moved as one in the editor) |
+| `ungroup_items` | Dissolves the groups of the given items |
 | `set_tag` | Changes a tag: on a main function the device is renamed, on a contact the contact moves to another device |
 | `set_properties` | Function text, properties, connection designations, potentials fed by source pins (`pinPotentials`, e.g. a power supply's +/−), device box size, border pins and links |
 | `rename_device` | Renames a device by its full tag |

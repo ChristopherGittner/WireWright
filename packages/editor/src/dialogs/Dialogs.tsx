@@ -3749,6 +3749,8 @@ const SHORTCUTS: [string, string][] = [
   ['F5', 'Place a corner (90° junction); press again to turn it'],
   ['F6', 'Place a T-junction; press again to turn it'],
   ['F7', 'Place an interruption point'],
+  ['Ctrl+G / Ctrl+Shift+G', 'Group / ungroup the selected symbols'],
+  ['Alt+click', 'Select a single symbol of a group'],
   ['Ctrl+Shift+C', 'Style brush: copy the text layout of the selected symbol to the symbols clicked next'],
   ['Ctrl+H', 'Find and replace'],
   ['Insert', 'Search symbols'],

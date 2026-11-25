@@ -254,6 +254,10 @@ function Toolbar({ tabs }: { tabs: TabState }) {
   const dirty = useEditor((s) => s.dirty);
   const sheet = useEditor((s) => s.sheet);
   const selected = useEditor((s) => s.selection.items.length);
+  const grouped = useEditor((s) => {
+    const page = s.doc && s.sheet ? s.doc.state.pages[s.sheet.pageId] : undefined;
+    return page?.type === 'schematic' && page.items.some((i) => i.group !== undefined && s.selection.items.includes(i.id));
+  });
   const tool = useEditor((s) => s.tool);
   const project = useEditor((s) => s.project);
   const page = sheet ? doc.state.pages[sheet.pageId] : undefined;
@@ -287,6 +291,8 @@ function Toolbar({ tabs }: { tabs: TabState }) {
           disabled={tool.kind !== 'brush' && selected !== 1}
           onClick={() => (tool.kind === 'brush' ? store.set({ tool: { kind: 'select' } }) : startStyleBrush(store))}
         />
+        <ToolButton icon="group" label={tr('Group the selected symbols (selected and moved as one; Alt+click selects a single one)')} shortcut="Ctrl+G" disabled={selected < 2} onClick={() => store.group()} />
+        <ToolButton icon="ungroup" label={tr('Ungroup')} shortcut="Ctrl+Shift+G" disabled={!grouped} onClick={() => store.ungroup()} />
         <ToolButton icon="find" label={tr('Find and replace')} shortcut="Ctrl+H" onClick={() => store.set({ dialog: { kind: 'find' } })} />
         <ToolButton icon="renumber" label={tr('Renumber devices by page and column')} onClick={() => store.set({ dialog: { kind: 'renumber' } })} />
       </ToolSection>
@@ -432,6 +438,7 @@ function useKeyboard(store: EditorStore, setTab: (t: Tab) => void) {
       if ((ctrl && key === 'y') || (ctrl && e.shiftKey && key === 'z')) return void (e.preventDefault(), store.redo());
       if (ctrl && key === 'h') return void (e.preventDefault(), store.set({ dialog: { kind: 'find' } }));
       if (ctrl && e.shiftKey && key === 'c') return void (e.preventDefault(), startStyleBrush(store));
+      if (ctrl && key === 'g') return void (e.preventDefault(), e.shiftKey ? store.ungroup() : store.group());
       if (ctrl && key === 'k') return void (e.preventDefault(), store.set({ dialog: { kind: 'palette' } }));
       if (ctrl && key === 'c') return store.copy();
       if (ctrl && key === 'x') return store.cut();

@@ -235,6 +235,8 @@ export const itemSchema = z.object({
   /** Where the label texts (tag, name, function text, technical data, cross-references) go; absent: as in the symbol definition. */
   textArrangement: textArrangementSchema.optional(),
   props: itemPropsSchema.optional(),
+  /** Group (`g_…`): items of a page with the same group are selected and moved together. Only for selection; tags, wiring and cross-references stay per item. */
+  group: idSchema.optional(),
 });
 
 const pageBase = {

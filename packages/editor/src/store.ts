@@ -460,6 +460,24 @@ export class EditorStore {
     this.set({ selection });
   }
 
+  /** Ctrl+G: the selected symbols become one group (selected and moved as one). */
+  group(): void {
+    const page = this.currentPage();
+    const { items } = this.#state.selection;
+    if (!page) return;
+    if (items.length < 2) return this.notify('Select at least two symbols to group them', true);
+    if (this.apply({ type: 'groupItems', pageId: page.id, itemIds: items }, 'group')) this.notify('Grouped');
+  }
+
+  /** Ctrl+Shift+G: dissolves the groups of the selected symbols; the symbols stay selected. */
+  ungroup(): void {
+    const page = this.currentPage();
+    const { items } = this.#state.selection;
+    if (!page || items.length === 0) return;
+    if (!page.items.some((i) => items.includes(i.id) && i.group !== undefined)) return this.notify('The selection contains no group', true);
+    if (this.apply({ type: 'ungroupItems', pageId: page.id, itemIds: items }, 'ungroup')) this.notify('Ungrouped');
+  }
+
   notify(text: string, error = false): void {
     clearTimeout(this.#messageTimer);
     this.set({ message: { text: tr(text), error } });

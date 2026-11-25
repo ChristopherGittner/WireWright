@@ -14,6 +14,8 @@ import wiresSvg from '@material-symbols/svg-400/outlined/cable.svg?raw';
 import plcSvg from '@material-symbols/svg-400/outlined/memory.svg?raw';
 import librarySvg from '@material-symbols/svg-400/outlined/library_books.svg?raw';
 import saveMacroSvg from '@material-symbols/svg-400/outlined/bookmark_add.svg?raw';
+import groupSvg from '@material-symbols/svg-400/outlined/join.svg?raw';
+import ungroupSvg from '@material-symbols/svg-400/outlined/arrow_split.svg?raw';
 import translationsSvg from '@material-symbols/svg-400/outlined/translate.svg?raw';
 import settingsSvg from '@material-symbols/svg-400/outlined/settings.svg?raw';
 import computerSvg from '@material-symbols/svg-400/outlined/computer.svg?raw';
@@ -87,6 +89,8 @@ const ICONS = {
   plc: material(plcSvg),
   library: material(librarySvg),
   saveMacro: material(saveMacroSvg),
+  group: material(groupSvg),
+  ungroup: material(ungroupSvg),
   translations: material(translationsSvg),
   settings: material(settingsSvg),
   machine: material(computerSvg),

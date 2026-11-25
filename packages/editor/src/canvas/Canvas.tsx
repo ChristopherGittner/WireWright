@@ -1,7 +1,7 @@
-import { CommandError, pageConnectionPoints, effectiveTag, itemRole, placeFunctionCommand, placedFunctions, placePlcCommand, relativeTag, tagContext, tagFromLeftNeighbour, type Command, type Rotation, type SchematicPage } from '@wirewright/core';
+import { CommandError, pageConnectionPoints, effectiveTag, itemRole, placeFunctionCommand, placedFunctions, placePlcCommand, relativeTag, tagContext, tagFromLeftNeighbour, type Command, type Item, type Rotation, type SchematicPage } from '@wirewright/core';
 import { renderContext, renderSheet, type Scene } from '@wirewright/render';
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react';
-import { fieldCommands, fieldValue } from '../editing.js';
+import { fieldCommands, fieldValue, withGroups } from '../editing.js';
 import { insertBreak, readBreaks, showBreaks } from '../lineInput.js';
 import { PLC_DRAG_TYPE, startStyleBrush, SYMBOL_DRAG_TYPE, useEditor, useStore, type PlcDragPayload, type SymbolDragPayload } from '../store.js';
 import { elementBounds, inside, itemBounds, pad, union, type Box } from './bounds.js';
@@ -344,10 +344,12 @@ function SchematicCanvas() {
     }
     if (itemId) {
       // Shift+click (and Ctrl+click on the symbol's graphics) adds to or removes from the selection.
+      // A grouped symbol brings its whole group; Alt+click takes only the symbol itself.
       const additive = e.shiftKey || ((e.ctrlKey || e.metaKey) && !field);
+      const clicked = e.altKey ? [itemId] : withGroups(page, [itemId]);
       let items = selection.items;
-      if (additive) items = items.includes(itemId) ? items.filter((i) => i !== itemId) : [...items, itemId];
-      else if (!items.includes(itemId)) items = [itemId];
+      if (additive) items = items.includes(itemId) ? items.filter((i) => !clicked.includes(i)) : [...new Set([...items, ...clicked])];
+      else if (!items.includes(itemId) || (e.altKey && items.length > 1)) items = clicked;
       store.select({ items });
       if (!additive) setDrag({ kind: 'move', start: snap(p), itemIds: items });
       return;
@@ -485,7 +487,7 @@ function SchematicCanvas() {
         const hits = [...bounds].filter(([, b]) => inside(b, band)).map(([id]) => id);
         if (hits.length > 0) store.apply({ type: 'applyItemStyle', pageId: page.id, itemIds: hits, style: tool.style }, 'copy style');
       } else if (drag.kind === 'band' && band) {
-        const hits = [...bounds].filter(([, b]) => inside(b, band)).map(([id]) => id);
+        const hits = withGroups(page, [...bounds].filter(([, b]) => inside(b, band)).map(([id]) => id));
         store.select({ items: drag.additive ? [...new Set([...selection.items, ...hits])] : hits });
       }
       if (drag.kind === 'box' && band && tool.kind === 'box') createBox(band);
@@ -620,7 +622,7 @@ function SchematicCanvas() {
     const target = e.target as SVGElement;
     const itemId = target.dataset.item ?? target.dataset.hit;
     if (!itemId) return setMenu(null);
-    if (!selection.items.includes(itemId)) store.select({ items: [itemId] });
+    if (!selection.items.includes(itemId)) store.select({ items: e.altKey ? [itemId] : withGroups(page, [itemId]) });
     const host = container?.getBoundingClientRect();
     setMenu({ x: e.clientX - (host?.left ?? 0), y: e.clientY - (host?.top ?? 0) });
   };
@@ -641,6 +643,12 @@ function SchematicCanvas() {
 
   // Selection overlay
   const selected = new Set(selection.items);
+  // Groups with a selected member: one outline around all their members.
+  const pageItems: readonly Item[] = page.type === 'schematic' ? page.items : [];
+  const groupOutlines = [...new Set(pageItems.filter((i) => selected.has(i.id) && i.group !== undefined).map((i) => i.group!))].flatMap((group) => {
+    const boxes = pageItems.filter((i) => i.group === group).map((i) => bounds.get(i.id)).filter((b): b is Box => b !== undefined);
+    return boxes.length > 0 ? [{ group, box: boxes.reduce((a, b) => union(a, b)) }] : [];
+  });
   const selectedText = selection.text
     ? scene.elements.find((e) => {
         const { text } = selection;
@@ -694,6 +702,9 @@ function SchematicCanvas() {
         )}
         <SceneTexts elements={scene.elements} interactive={editable} />
         <g className="selection" pointerEvents="none">
+          {groupOutlines.map(({ group, box }) => (
+            <rect key={group} className="group-outline" {...rectOf(pad(box, 2.5))} fill="none" stroke="#7b3fe4" strokeWidth={Math.max(0.2, 1.2 / scale)} strokeDasharray={`${6 / scale} ${2 / scale} ${1 / scale} ${2 / scale}`} />
+          ))}
           {[...selected].map((id) => {
             const b = bounds.get(id);
             return b ? <rect key={id} {...rectOf(pad(b, 1.2))} fill="rgba(30,111,255,0.06)" stroke="#1e6fff" strokeWidth={Math.max(0.2, 1.2 / scale)} strokeDasharray={`${2 / scale * 2} ${1.5 / scale * 2}`} /> : null;
@@ -772,6 +783,7 @@ function ItemMenu({ at, pageId, itemIds, onClose }: { at: { x: number; y: number
   const page = store.currentPage();
   const single = !several ? page?.items.find((i) => i.id === itemIds[0]) : undefined;
   const deviceBox = single !== undefined && store.library.symbol(single.symbol)?.function === 'box.device';
+  const grouped = page?.items.some((i) => itemIds.includes(i.id) && i.group !== undefined) ?? false;
   return (
     <div className="context-menu" role="menu" ref={ref} style={{ left: at.x, top: at.y }}>
       <button role="menuitem" onClick={run(() => store.set({ dialog: { kind: 'item', pageId, itemIds } }))}>
@@ -785,6 +797,16 @@ function ItemMenu({ at, pageId, itemIds, onClose }: { at: { x: number; y: number
       {!several && (
         <button role="menuitem" onClick={run(() => startStyleBrush(store))}>
           {tr('Copy style (brush)')} <kbd>{trKeys('Ctrl+Shift+C')}</kbd>
+        </button>
+      )}
+      {several && (
+        <button role="menuitem" onClick={run(() => store.group())}>
+          {tr('Group')} <kbd>{trKeys('Ctrl+G')}</kbd>
+        </button>
+      )}
+      {grouped && (
+        <button role="menuitem" onClick={run(() => store.ungroup())}>
+          {tr('Ungroup')} <kbd>{trKeys('Ctrl+Shift+G')}</kbd>
         </button>
       )}
       <button role="menuitem" onClick={run(() => store.apply({ type: 'rotateItems', pageId, itemIds, rotation: 90 }, 'rotate'))}>

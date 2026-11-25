@@ -724,6 +724,33 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
   );
 
   server.registerTool(
+    'group_items',
+    {
+      description: 'Groups items of a page (at least two): a group is selected and moved as one in the editor. Items already in a group leave it. Grouping changes nothing else (tags, wiring, cross-references stay per item).',
+      inputSchema: { page: pageArg, items: z.array(z.string()).min(2).describe('Item IDs') },
+    },
+    ({ page, items }) =>
+      respond(() =>
+        session.run((doc) => {
+          const result = doc.apply({ type: 'groupItems', pageId: resolveSchematicPage(doc.state, page).id, itemIds: items });
+          return { group: result.created[0], items };
+        }),
+      ),
+  );
+
+  server.registerTool(
+    'ungroup_items',
+    { description: 'Dissolves the groups the given items belong to (all members of those groups).', inputSchema: { page: pageArg, items: z.array(z.string()).min(1) } },
+    ({ page, items }) =>
+      respond(() =>
+        session.run((doc) => {
+          doc.apply({ type: 'ungroupItems', pageId: resolveSchematicPage(doc.state, page).id, itemIds: items });
+          return { ungrouped: items };
+        }),
+      ),
+  );
+
+  server.registerTool(
     'set_tag',
     {
       description:

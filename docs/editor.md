@@ -178,7 +178,10 @@ and drop and undo are shared. Closing that window docks the tab again.
 | Click or drag on a symbol (graphics or any of its texts) | Selects and moves the whole symbol |
 | **Ctrl+click** on a symbol text (tag, function text, pin, cross-reference) | Selects only that text: drag to move it, F2 edits it, F follows a cross-reference, **R** turns it 0° → 90° → 270° (against the sheet) |
 | Shift+click (Ctrl+click on graphics) | Adds to or removes from the selection |
-| Drag on empty space | Box selection |
+| Drag on empty space | Box selection (a grouped symbol in the box brings its whole group) |
+| Click a grouped symbol | Selects the whole group (outlined in purple); dragging moves it as one |
+| **Alt+click** a grouped symbol | Selects only that symbol (to move or edit it alone) |
+| **Ctrl+G** / **Ctrl+Shift+G** (toolbar, right-click menu) | Groups the selected symbols / dissolves the groups of the selection |
 | Esc | Clears the selection, cancels the current action |
 | **F** (follow) on a cross-reference selected with Ctrl+click | Jumps to where it points and selects that symbol |
 | **F** on a selected slave | Jumps to its master: from a contact to its coil, from an I/O point to the PLC card, from an interruption point to its partner. On a master, select one of its cross-references and press F. |

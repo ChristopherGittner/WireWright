@@ -787,6 +787,19 @@ self-holding contact, a motor feeder, a device box with its contents.
   library folder (`macros/<id>.json`) and the project's `library.json`; a
   placed macro is copied into `library.json`.
 
+## Groups
+
+Items of a schematic page can be **grouped**: they carry the same `"group": "g_…"`.
+A group only affects selection – a click on a member selects all members, so
+they move, rotate and are copied together. Tags, wiring, cross-references and
+devices stay per item (a contact in a group still follows its coil).
+
+- Groups are flat: grouping items that are already in a group moves them into
+  the new group. A group left with one item (delete, regroup) is dissolved.
+- Copy/paste and macros keep the grouping: the copy gets a new group ID, so
+  it is not part of the original's group. A single copied member is not grouped.
+- PLC cards moved to the card store (PLC tab) leave their group.
+
 ## Cables
 
 - A **cable** is a device (`-W1`, letter W). It is drawn as a **definition
@@ -1158,6 +1171,7 @@ First command set:
 | Macros, paste | `placeItems` (items or a library macro at a position, with new device names) |
 | Pages | `createPage`, `createReportPage`, `deletePage`, `movePage`, `setPageProperties` |
 | Items | `placeSymbol`, `moveItems`, `rotateItems`, `mirrorItems`, `deleteItems`, `setItemProperties`, `setItemTag`, `moveItemText` |
+| Groups | `groupItems` (at least two items; new group ID in `created`), `ungroupItems` (dissolves the groups of the given items) |
 | Devices | `renameDevice`, `renumberDevices`, `applyDeviceTemplate` |
 | Texts | `replaceTexts` (find and replace across tags and texts, with filters) |
 

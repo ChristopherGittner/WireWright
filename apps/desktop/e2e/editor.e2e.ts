@@ -85,6 +85,44 @@ test('shows alignment guides while moving a symbol', async ({ win }) => {
   await expect(win.locator('.canvas .guides line')).toHaveCount(0);
 });
 
+test('groups symbols: a click selects the group, Alt+click one member, Ctrl+Shift+G ungroups', async ({ win }) => {
+  await win.evaluate(() => window.wirewrightStore.navigate('p_control'));
+  const [a, b, c] = await win.evaluate(() => {
+    const s = window.wirewrightStore;
+    const place = (x: number) => s.apply({ type: 'placeSymbol', pageId: 'p_control', symbol: 'iec60617.lamp', x, y: 220 }, 'place').created[0] as string;
+    return [place(340), place(380), place(420)];
+  });
+  const selection = () => win.evaluate(() => [...window.wirewrightStore.state.selection.items].sort());
+  const hit = (id: string) => win.locator(`.canvas [data-hit="${id}"]`);
+  await hit(a).click();
+  await hit(b).click({ modifiers: ['Shift'] });
+  await win.keyboard.press('Control+g');
+  await expect(win.locator('.canvas .group-outline')).toHaveCount(1);
+  // A click on one member selects the whole group; the third lamp is not part of it.
+  await hit(c).click();
+  await hit(b).click();
+  expect(await selection()).toEqual([a, b].sort());
+  // Alt+click takes only the clicked member.
+  await hit(a).click({ modifiers: ['Alt'] });
+  expect(await selection()).toEqual([a]);
+  // Moving one member by dragging moves the whole group.
+  await hit(c).click();
+  const mmToPx = await win.evaluate(() => (document.querySelector('.canvas svg') as SVGSVGElement).getScreenCTM()!.a);
+  const box = (await hit(a).boundingBox())!;
+  await win.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
+  await win.mouse.down();
+  await win.mouse.move(box.x + box.width / 2, box.y + box.height / 2 + 16 * mmToPx, { steps: 8 });
+  await win.mouse.up();
+  const ys = await win.evaluate((ids) => window.wirewrightStore.state.doc.state.pages.p_control.items.filter((i: { id: string }) => ids.includes(i.id)).map((i: { y: number }) => i.y), [a, b, c]);
+  expect(ys).toEqual([236, 236, 220]);
+  // Ungroup: afterwards a click selects only the clicked lamp.
+  await win.keyboard.press('Control+Shift+g');
+  await expect(win.locator('.canvas .group-outline')).toHaveCount(0);
+  await hit(c).click();
+  await hit(b).click();
+  expect(await selection()).toEqual([b]);
+});
+
 test('style brush copies the text layout to clicked symbols', async ({ win }) => {
   await win.evaluate(() => window.wirewrightStore.navigate('p_control'));
   const ids = await win.evaluate(() => {

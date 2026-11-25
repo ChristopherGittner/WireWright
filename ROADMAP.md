@@ -153,6 +153,7 @@ device directory, and export it as a PDF. An AI can do the same through MCP.
 - [x] Macros: save a selection, place with new device names (contacts follow their coil), standard/shared/project macros; paste works the same way
 - [x] Symbol and frame editor UI (graphics, connection points, text fields, pin links drawn and edited graphically; frames with title block fields, drawing area, columns and rows)
 - [x] Save a device box as a macro (select box and contents)
+- [x] Group / ungroup (Ctrl+G / Ctrl+Shift+G, toolbar, right-click): a click selects the whole group, Alt+click a single member; kept by copy/paste and macros as a new group; MCP group_items, ungroup_items
 - [x] Turn a device box into a library symbol (outline, inner graphics and wires, border pins, pin links; reviewed in the symbol editor)
 - [x] MCP: high-level circuit tools: `draw_current_path` (a current path laid out in a column between two potentials), `connect_pins` (L/Z routes with corners)
 - [x] MCP: live mode inside the desktop app (Streamable HTTP on 127.0.0.1 with access token, shared undo)
