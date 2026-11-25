@@ -907,4 +907,8 @@ export const de: Record<string, string> = {
   "Double-level terminals, levels connected": "Doppelstockklemmen, Etagen verbunden",
   "PE double-level terminals": "Schutzleiter-Doppelstockklemmen",
   "{device}: the levels of terminal {terminal} are drawn as connected and as separate levels": "{device}: Die Etagen von Klemme {terminal} sind teils als verbunden, teils als getrennt gezeichnet",
+  "Bridged with the neighbouring terminal": "Gebrückt mit der Nachbarklemme",
+  "Level {n}": "Etage {n}",
+  "to the left": "nach links",
+  "to the right": "nach rechts",
 };

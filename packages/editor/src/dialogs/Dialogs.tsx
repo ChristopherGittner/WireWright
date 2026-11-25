@@ -1,5 +1,6 @@
 import {
   levelBridgeProps,
+  terminalLevels,
   terminalStripItems,
   terminalStripSymbol,
   type TerminalStripConfig,
@@ -441,6 +442,15 @@ function ItemDialog({ dialog }: { dialog: Extract<Dialog, { kind: 'item' }> }) {
   // A pipe source names a medium (Project settings → Media), the others a potential or partner.
   const namesMedium = defs.every((d) => d?.function === 'connection.medium');
   const allTerminals = defs.every((d) => d?.function === 'terminal');
+  // Bridged to the neighbouring terminal on the left / right, per level (the levels the selected terminals have).
+  const sideLevels = allTerminals ? [...new Set(items.flatMap((i) => terminalLevels(i, store.library).map((l) => l.level ?? 1)))].sort() : [];
+  const [sideEdits, setSideEdits] = useState<Record<string, boolean>>({});
+  const sideState = (side: 'bridgeLeft' | 'bridgeRight', level: number) => {
+    const key = `${side}:${level}`;
+    if (sideEdits[key] !== undefined) return { checked: sideEdits[key], mixed: false };
+    const has = items.filter((i) => terminalLevels(i, store.library).some((l) => (l.level ?? 1) === level)).map((i) => i.props?.[side]?.includes(level) === true);
+    return { checked: has.every(Boolean), mixed: has.some(Boolean) && !has.every(Boolean) };
+  };
 
   const ok = () => {
     const commands: Command[] = [];
@@ -459,6 +469,21 @@ function ItemDialog({ dialog }: { dialog: Extract<Dialog, { kind: 'item' }> }) {
       }
       if (nameEdit !== undefined && hasName) props.name = nameEdit || null;
       if (bridgeEdit !== undefined && allTerminals) props.bridge = bridgeEdit || null;
+      if (allTerminals) {
+        const own = new Set(terminalLevels(item, store.library).map((l) => l.level ?? 1));
+        for (const side of ['bridgeLeft', 'bridgeRight'] as const) {
+          const edits = Object.entries(sideEdits).filter(([k]) => k.startsWith(`${side}:`));
+          if (edits.length === 0) continue;
+          const levels = new Set(item.props?.[side] ?? []);
+          for (const [k, on] of edits) {
+            const level = Number(k.slice(side.length + 1));
+            if (!own.has(level)) continue;
+            if (on) levels.add(level);
+            else levels.delete(level);
+          }
+          props[side] = levels.size > 0 ? [...levels].sort() : null;
+        }
+      }
       const isMain = masterEdit ?? roles[items.indexOf(item)] === 'main';
       if (showTagEdit !== undefined && allDevices) props.showTag = showTagEdit && !isMain ? true : null;
       if (masterEdit !== undefined && allDevices) {
@@ -631,6 +656,32 @@ function ItemDialog({ dialog }: { dialog: Extract<Dialog, { kind: 'item' }> }) {
                 </Field>
               )}
             </div>
+          )}
+          {allTerminals && sideLevels.length > 0 && (
+            <fieldset>
+              <legend>{tr('Bridged with the neighbouring terminal')}</legend>
+              {sideLevels.map((level) => (
+                <div key={level} className="tag-fields">
+                  {sideLevels.length > 1 && <span>{tr('Level {n}', { n: level })}</span>}
+                  {(['bridgeLeft', 'bridgeRight'] as const).map((side) => {
+                    const state = sideState(side, level);
+                    return (
+                      <label key={side} className="check">
+                        <input
+                          type="checkbox"
+                          checked={state.checked}
+                          ref={(el) => {
+                            if (el) el.indeterminate = state.mixed;
+                          }}
+                          onChange={(e) => setSideEdits({ ...sideEdits, [`${side}:${level}`]: e.target.checked })}
+                        />
+                        {side === 'bridgeLeft' ? tr('to the left') : tr('to the right')}
+                      </label>
+                    );
+                  })}
+                </div>
+              ))}
+            </fieldset>
           )}
           {single && isDevice && (
             <fieldset>

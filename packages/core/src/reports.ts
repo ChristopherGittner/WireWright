@@ -331,7 +331,7 @@ function terminalRows(ctx: ReportContext): ReportRow[] {
       terminal: t.designation,
       external: t.external.join(', '),
       internal: t.internal.join(', '),
-      bridge: t.bridge ?? '',
+      bridge: t.bridged ?? t.bridge ?? '',
       page: t.reference,
     })),
   );
@@ -350,7 +350,7 @@ function terminalDiagramRows(ctx: ReportContext): ReportRow[] {
       terminal: t.designation,
       external: t.external.join(', '),
       internal: t.internal.join(', '),
-      bridge: t.bridge ?? '',
+      bridge: t.bridged ?? t.bridge ?? '',
       page: t.reference,
     })),
   ]);

@@ -15,7 +15,7 @@ import type { Library } from './library.js';
 import type { Direction, Item, ProjectState, SchematicPage, SymbolDefinition } from './schema.js';
 import { channelPins, isPlcPoint, plcPointKind, resolveSymbol } from './symbols.js';
 import { effectiveTag, formatTag } from './tags.js';
-import { terminalDesignation, terminalLevels } from './terminals.js';
+import { pageTerminalBridges, terminalDesignation, terminalLevels } from './terminals.js';
 
 export interface ConnectionPointInfo {
   /** `itemId:pin`; the inner side of a device box border pin is `itemId:pin:in`. */
@@ -415,6 +415,17 @@ export function buildConnectivity(state: ProjectState, library: Library): Connec
     if (other === undefined) bridges.set(key, net);
     else potentials.union(other, net);
   };
+  // Terminals bridged with their neighbour (drawn side by side): per level.
+  const levelNet = (item: Item, level: number) => {
+    const pin = terminalLevels(item, library).find((l) => (l.level ?? 1) === level)?.pins[0];
+    return pin && points.has(`${item.id}:${pin}`) ? nets.find(`${item.id}:${pin}`) : undefined;
+  };
+  for (const page of schematicPages(state)) {
+    for (const { a, b, level, neighbour } of pageTerminalBridges(page, library)) {
+      const [na, nb] = [levelNet(a, level), levelNet(b, level)];
+      if (neighbour && na !== undefined && nb !== undefined) potentials.union(na, nb);
+    }
+  }
   for (const { item, def, page } of devices) {
     if (def.function !== 'terminal') continue;
     const strip = formatTag(effectiveTag(page, item, library));

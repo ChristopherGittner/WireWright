@@ -11,7 +11,7 @@ import type { Library } from './library.js';
 import { formatReference, pagePosition } from './references.js';
 import { naturalCompare } from './reports.js';
 import type { Item, ProjectState, SchematicPage } from './schema.js';
-import { effectiveTag } from './tags.js';
+import { effectiveTag, formatTag } from './tags.js';
 
 export interface TerminalInfo {
   pageId: string;
@@ -20,6 +20,11 @@ export interface TerminalInfo {
   level?: number;
   designation: string;
   bridge?: string;
+  /**
+   * The bridge as shown in lists and the terminal diagram: the label, or for terminals bridged
+   * only with their neighbours `~1`, `~2` … (one per group of bridged terminals).
+   */
+  bridged?: string;
   /** Device pins in other locations (field side). */
   external: string[];
   /** Device pins in the strip's location (cabinet side). */
@@ -129,6 +134,7 @@ export function buildTerminalStrips(state: ProjectState, library: Library, devic
 
   const strips: TerminalStrip[] = [];
   const issues: Issue[] = [];
+  const neighbourPairs = Object.values(state.pages).flatMap((page) => (page.type === 'schematic' ? pageTerminalBridges(page, library) : []));
   for (const device of devices.devices.values()) {
     const functions = device.functions.filter((f) => f.function === 'terminal');
     if (functions.length === 0) continue;
@@ -173,6 +179,37 @@ export function buildTerminalStrips(state: ProjectState, library: Library, devic
       issues.push({ severity: 'info', code: 'terminal.levelMismatch', ...issueMessage('{device}: the levels of terminal {terminal} are drawn as connected and as separate levels', { device: device.key, terminal: base }), pageId: t.pageId, itemId: t.itemId, device: device.key });
     }
     strip.terminals.sort((a, b) => naturalCompare(a.designation, b.designation));
+    // Bridge groups: same label, or bridged with the neighbour.
+    const parent = new Map<string, string>();
+    const find = (k: string): string => {
+      const p = parent.get(k) ?? k;
+      if (p === k) return k;
+      const root = find(p);
+      parent.set(k, root);
+      return root;
+    };
+    const union = (a: string, b: string) => parent.set(find(a), find(b));
+    const levelKey = (t: { itemId: string; level?: number | undefined }) => `${t.itemId}\u0000${t.level ?? 1}`;
+    const byLabel = new Map<string, string>();
+    for (const t of strip.terminals) {
+      if (!t.bridge) continue;
+      const k = `${t.level ?? 1}\u0000${t.bridge}`;
+      if (byLabel.has(k)) union(levelKey(t), byLabel.get(k)!);
+      else byLabel.set(k, levelKey(t));
+    }
+    const members = new Set(strip.terminals.map(levelKey));
+    for (const { a, b, level, neighbour } of neighbourPairs) {
+      const [ka, kb] = [levelKey({ itemId: a.id, level }), levelKey({ itemId: b.id, level })];
+      if (neighbour && members.has(ka) && members.has(kb)) union(ka, kb);
+    }
+    const groups = new Map<string, TerminalInfo[]>();
+    for (const t of strip.terminals) groups.set(find(levelKey(t)), [...(groups.get(find(levelKey(t))) ?? []), t]);
+    let unnamed = 0;
+    for (const group of groups.values()) {
+      if (group.length < 2) continue;
+      const name = group.find((t) => t.bridge)?.bridge ?? `~${++unnamed}`;
+      for (const t of group) t.bridged = name;
+    }
     const seen = new Map<string, TerminalInfo>();
     for (const t of strip.terminals) {
       if (t.designation === '') {
@@ -230,21 +267,14 @@ export function terminalStripSymbol(config: TerminalStripConfig): { symbol: stri
 
 /**
  * The items of a configured terminal strip, side by side from (0, 0), numbered from `start`.
- * Bridges get the labels A, B … (one per bridged level); placed on a strip that already uses
- * them, they are relabelled (see placeItems).
+ * A bridged level is bridged from each terminal to its right neighbour (`bridgeRight`).
  */
 export function terminalStripItems(config: TerminalStripConfig): Item[] {
   const { symbol, pitch } = terminalStripSymbol(config);
   const count = Math.max(1, Math.trunc(config.count));
   const start = Math.trunc(config.start ?? 1);
-  const labels = (config.bridged ?? []).slice(0, config.levels).map((on, i) => (on ? String.fromCharCode(65 + i) : undefined));
-  const bridgeProps: Record<string, unknown> = {};
-  if (config.levels === 1) {
-    if (labels[0]) bridgeProps.bridge = labels[0];
-  } else {
-    const bridges = Object.fromEntries(labels.flatMap((label, i) => (label ? [[String(i + 1), label]] : [])));
-    if (Object.keys(bridges).length > 0) bridgeProps.bridges = bridges;
-  }
+  // Bridged levels: each terminal bridged to its right neighbour (the last one has none).
+  const bridged = (config.bridged ?? []).slice(0, config.levels).flatMap((on, i) => (on ? [i + 1] : []));
   return Array.from({ length: count }, (_, i) => ({
     id: `i_t${i + 1}`,
     symbol,
@@ -253,6 +283,51 @@ export function terminalStripItems(config: TerminalStripConfig): Item[] {
     rotation: 0,
     mirror: false,
     tag: { product: config.strip.replace(/^-/, '') || 'X1' },
-    props: { terminal: String(start + i), ...(count > 1 ? bridgeProps : {}) },
+    props: { terminal: String(start + i), ...(i < count - 1 && bridged.length > 0 ? { bridgeRight: bridged } : {}) },
   })) as Item[];
+}
+
+/** Two terminal levels of a strip drawn side by side and bridged: by a bridge label or as neighbours. */
+export interface TerminalBridgePair {
+  a: Item;
+  b: Item;
+  level: number;
+  /** Bridged with the neighbour (bridgeLeft / bridgeRight), not (only) by a label. */
+  neighbour: boolean;
+}
+
+/**
+ * Bridges between terminals drawn side by side on a page: per row (same strip, same height,
+ * not turned by 90°) and level, from left to right, each pair of neighbouring terminals that is
+ * bridged (`bridgeRight` of the left one or `bridgeLeft` of the right one), and each pair of
+ * consecutive terminals with the same bridge label.
+ */
+export function pageTerminalBridges(page: SchematicPage, library: Library): TerminalBridgePair[] {
+  const rows = new Map<string, Item[]>();
+  for (const item of page.items) {
+    if (item.rotation % 180 !== 0 || library.symbol(item.symbol)?.function !== 'terminal') continue;
+    const key = `${formatTag(effectiveTag(page, item, library))}\u0000${item.y}`;
+    rows.set(key, [...(rows.get(key) ?? []), item]);
+  }
+  const pairs: TerminalBridgePair[] = [];
+  for (const row of rows.values()) {
+    row.sort((a, b) => a.x - b.x);
+    const levels = new Map(row.map((item) => [item.id, terminalLevels(item, library)]));
+    const all = new Set(row.flatMap((item) => levels.get(item.id)!.map((l) => l.level ?? 1)));
+    for (const level of all) {
+      const members = row.filter((item) => levels.get(item.id)!.some((l) => (l.level ?? 1) === level));
+      const label = (item: Item) => levels.get(item.id)!.find((l) => (l.level ?? 1) === level)?.bridge;
+      const found = new Map<string, TerminalBridgePair>();
+      members.forEach((a, i) => {
+        const b = members[i + 1];
+        if (b && (a.props?.bridgeRight?.includes(level) || b.props?.bridgeLeft?.includes(level))) found.set(`${a.id}\u0000${b.id}`, { a, b, level, neighbour: true });
+        // The next terminal with the same label (others may lie between).
+        const own = label(a);
+        const next = own === undefined ? undefined : members.slice(i + 1).find((m) => label(m) === own);
+        if (next && !found.has(`${a.id}\u0000${next.id}`)) found.set(`${a.id}\u0000${next.id}`, { a, b: next, level, neighbour: false });
+      });
+      pairs.push(...found.values());
+    }
+  }
+  return pairs;
 }

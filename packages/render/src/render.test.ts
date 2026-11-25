@@ -313,20 +313,25 @@ describe('terminal diagram', () => {
 });
 
 describe('multi-level terminals', () => {
-  it('draws the bridge of one level below that level only, and the level designations', () => {
+  it('draws bridges dashed from circle to circle of the same level, and the level designations', () => {
     const d = new ProjectDocument(createDemoProject(library), library);
     d.apply([0, 1, 2].map((i) => ({
       type: 'placeSymbol' as const,
       pageId: 'p_sensors',
       symbol: 'iec60617.terminal.2level',
-      x: 200 + 16 * i,
+      x: 200 + 12 * i,
       y: 240,
       tag: { product: 'X7' },
-      props: { terminal: String(i + 1), bridges: { '2': 'B' } },
+      props: { terminal: String(i + 1), bridges: { '2': 'B' }, ...(i === 0 ? { bridgeRight: [1] } : {}) },
     })));
     const scene = renderPage(renderContext(d), 'p_sensors');
-    const lines = scene.elements.filter((e) => e.kind === 'line' && e.meta?.field === 'bridge' && e.y1 > 240);
-    expect(lines).toMatchObject([{ x1: 204, x2: 236, y1: 247, y2: 247 }]);
+    const lines = scene.elements.filter((e) => e.kind === 'line' && e.meta?.field === 'bridge' && e.y1 >= 240);
+    // level 1 (circles at y 240): terminal 1 → 2 only; level 2 (circles at y 244, 4 mm right): 1 → 2 → 3
+    expect(lines).toMatchObject([
+      { x1: 201.5, x2: 210.5, y1: 240, y2: 240, stroke: { dash: [0.8, 0.5] } },
+      { x1: 205.5, x2: 214.5, y1: 244, y2: 244 },
+      { x1: 217.5, x2: 226.5, y1: 244, y2: 244 },
+    ]);
     expect(texts(scene.elements)).toEqual(expect.arrayContaining(['1.1', '1.2', '3.2']));
   });
 });

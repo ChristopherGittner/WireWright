@@ -150,6 +150,9 @@ export const itemPropsSchema = z.looseObject({
   bridge: z.string().optional(),
   /** Multi-level terminal drawn as one symbol: the bridge label of each level (key: level number). */
   bridges: z.record(z.string(), z.string()).optional(),
+  /** Terminal: levels bridged to the neighbouring terminal of the strip on the left / right (same height). */
+  bridgeLeft: z.array(z.int().min(1)).optional(),
+  bridgeRight: z.array(z.int().min(1)).optional(),
   /** Show the device name even when the symbol to the left already shows it (default: hidden there). */
   showTag: z.boolean().optional(),
   /**

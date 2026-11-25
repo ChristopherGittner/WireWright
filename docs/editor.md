@@ -392,7 +392,10 @@ card.
   bridge label are edited in place; the page link jumps to the terminal.
   "Renumber strip" numbers the terminals from the given start with the given
   step (1, 2, 3 or 10, 20, 30) in drawing order (PE, N … stay).
-- The properties dialog of a terminal also has designation and bridge.
+- The properties dialog of a terminal also has designation and bridge label,
+  and per level "bridged with the neighbouring terminal" to the left / right
+  (also for several selected terminals). Bridges are drawn automatically
+  (dashed, circle to circle).
 - **Macros → Terminals, bridged** (1 … 20 terminals) and **Terminals with 3
   connections, bridged** (one feed above, two outgoing below): numbered
   terminals side by side with one bridge, e.g. a 24V distribution. Placed on

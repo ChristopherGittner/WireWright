@@ -126,22 +126,40 @@ describe('multi-level terminals', () => {
     expect(rows(doc)).toEqual(['7', '8.1', '8.2', '9.1', '9.2', '10.1', '10.2', '11.1', '11.2']);
   });
 
-  it('the terminal strip configurator places a strip with bridged levels; a second one gets free bridge labels', () => {
+  it('the terminal strip configurator bridges each level to the right neighbour; levels stay apart', () => {
     const { doc, pageId } = setup();
     const items = terminalStripItems({ strip: 'X1', count: 3, levels: 2, bridged: [true, true] });
     doc.apply([feed(pageId, 80, '24V'), { type: 'placeItems', pageId, items, x: 80, y: 80 }]);
-    expect(rows(doc)).toEqual(['1.1A', '1.2B', '2.1A', '2.2B', '3.1A', '3.2B']);
+    const strip = doc.terminals().strips[0]!;
+    expect(strip.terminals.map((t) => `${t.designation}${t.bridged}`)).toEqual(['1.1~1', '1.2~2', '2.1~1', '2.2~2', '3.1~1', '3.2~2']);
     const ids = (doc.state.pages[pageId] as SchematicPage).items.filter((i) => i.symbol === 'iec60617.terminal.2level').map((i) => i.id);
     expect(ids.map((id) => potential(doc, `${id}:2`))).toEqual(['24V', '24V', '24V']);
-    doc.apply({ type: 'placeItems', pageId, items, x: 80, y: 160 });
-    expect(rows(doc).slice(6)).toEqual(['4.1C', '4.2D', '5.1C', '5.2D', '6.1C', '6.2D']);
+    expect(ids.map((id) => potential(doc, `${id}:4`))).toEqual([undefined, undefined, undefined]);
+    // A second strip beside it is not bridged to the first (its last terminal has no bridge to the right).
+    doc.apply({ type: 'placeItems', pageId, items, x: 116, y: 80 });
+    expect(doc.terminals().strips[0]!.terminals.slice(6).map((t) => `${t.designation}${t.bridged}`)).toEqual(['4.1~3', '4.2~4', '5.1~3', '5.2~4', '6.1~3', '6.2~4']);
+  });
+
+  it('bridged to the left or right joins neighbouring terminals of one level only', () => {
+    const { doc, pageId } = setup();
+    doc.apply([
+      feed(pageId, 80, '24V'),
+      { type: 'placeSymbol', pageId, id: 'i_a', symbol: 'iec60617.terminal', x: 80, y: 80, tag: X1, props: { terminal: '1', bridgeRight: [1] } },
+      { type: 'placeSymbol', pageId, id: 'i_b', symbol: 'iec60617.terminal.2level', x: 88, y: 80, tag: X1, props: { terminal: '2' } },
+      { type: 'placeSymbol', pageId, id: 'i_c', symbol: 'iec60617.terminal', x: 100, y: 80, tag: X1, props: { terminal: '3', bridgeLeft: [1] } },
+      { type: 'placeSymbol', pageId, id: 'i_d', symbol: 'iec60617.terminal', x: 108, y: 80, tag: X1, props: { terminal: '4' } },
+    ]);
+    // a → b level 1 (a's right), b level 1 → c (c's left); d not bridged; b level 2 not bridged
+    expect(['i_a:2', 'i_b:2', 'i_b:4', 'i_c:2', 'i_d:2'].map((k) => potential(doc, k))).toEqual(['24V', '24V', undefined, '24V', undefined]);
   });
 
   it('configures single-level strips with 2 … 6 connections', () => {
-    expect(terminalStripItems({ strip: '-X2', count: 2, levels: 1, pins: 4, bridged: [true] })).toMatchObject([
-      { symbol: 'iec60617.terminal.multi.4', x: 0, tag: { product: 'X2' }, props: { terminal: '1', bridge: 'A' } },
-      { symbol: 'iec60617.terminal.multi.4', x: 12, props: { terminal: '2', bridge: 'A' } },
+    const multi = terminalStripItems({ strip: '-X2', count: 2, levels: 1, pins: 4, bridged: [true] });
+    expect(multi).toMatchObject([
+      { symbol: 'iec60617.terminal.multi.4', x: 0, tag: { product: 'X2' }, props: { terminal: '1', bridgeRight: [1] } },
+      { symbol: 'iec60617.terminal.multi.4', x: 12, props: { terminal: '2' } },
     ]);
+    expect(multi[1]!.props?.bridgeRight).toBeUndefined();
     expect(terminalStripItems({ strip: 'X1', count: 1, levels: 1, pins: 2 })[0]).toMatchObject({ symbol: 'iec60617.terminal', props: { terminal: '1' } });
     expect(terminalStripItems({ strip: 'X1', count: 1, levels: 2, pe: true })[0]!.symbol).toBe('iec60617.terminal.2level.pe');
     for (const n of [3, 4, 5, 6]) expect(library.symbol(`iec60617.terminal.multi.${n}`)?.connections, String(n)).toHaveLength(n);

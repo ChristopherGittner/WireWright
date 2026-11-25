@@ -22,6 +22,7 @@ import {
   reportForm,
   tagContext,
   terminalLevels,
+  pageTerminalBridges,
   transformDirection,
   transformPoint,
   type Connectivity,
@@ -857,44 +858,33 @@ class Renderer {
   }
 
   // -------------------------------------------------------------------------
-  // Terminal bridges: bridged terminals of a strip drawn side by side at the
-  // same height are joined by a bridge line below their circles.
+  // Terminal bridges, drawn from the terminals' settings (bridge label, bridged to the left /
+  // right): a dashed line straight from the circle of a level to the circle of the same level of
+  // the next bridged terminal of the strip at the same height.
 
   bridges(page: SchematicPage): void {
-    // Per bridged level: where its bridge line meets it (below the level's circle).
-    const groups = new Map<string, { itemId: string; x: number; y: number }[]>();
-    for (const item of page.items) {
-      if (item.rotation % 180 !== 0) continue;
-      const def = this.ctx.library.symbol(item.symbol);
-      if (def?.function !== 'terminal') continue;
-      // Terminals drawn with a housing (multi-connection): the line runs below it.
-      const below = def.graphics.some((g) => g.type === 'rect') ? 3.5 : 2.5;
-      for (const level of terminalLevels(item, this.ctx.library)) {
-        const pins = def.connections.filter((c) => level.pins.includes(c.id));
-        if (level.bridge === undefined || pins.length === 0) continue;
-        // Multi-level terminals: level 1 is bridged just above the housing (below its top pin), the
-        // last level just below it (above its bottom pin), a middle level below the bottom pins;
-        // so the levels' bridge lines lie at different heights.
-        const top = Math.min(...pins.map((c) => c.y));
-        const bottom = Math.max(...pins.map((c) => c.y));
-        const last = Math.max(...(def.terminalLevels ?? []).map((l) => l.level));
-        const y0 = !def.terminalLevels ? below : level.level === 1 ? top + 1 : level.level === last ? bottom - 1 : bottom + 0.5;
-        const p = transformPoint({ x: pins[0]!.x, y: y0 }, item.rotation, item.mirror);
-        const x = item.x + p.x;
-        const y = item.y + p.y;
-        const key = `${formatTag(effectiveTag(page, item, this.ctx.library))}\u0000${level.level ?? 1}\u0000${level.bridge}\u0000${y}`;
-        groups.set(key, [...(groups.get(key) ?? []), { itemId: item.id, x, y }]);
-      }
+    const stroke: Stroke = { ...this.stroke(COLORS.symbol, WIDTH.symbol), dash: [0.8, 0.5] };
+    for (const { a, b, level } of pageTerminalBridges(page, this.ctx.library)) {
+      const from = this.levelCircles(a, level).at(-1);
+      const to = this.levelCircles(b, level)[0];
+      if (!from || !to) continue;
+      const meta: ElementMeta = { role: 'symbol', itemId: a.id, field: 'bridge' };
+      this.line(from.x + from.r, from.y, to.x - to.r, to.y, stroke, meta);
     }
-    const stroke = this.stroke(COLORS.symbol, WIDTH.symbol);
-    for (const points of groups.values()) {
-      if (points.length < 2) continue;
-      points.sort((a, b) => a.x - b.x);
-      const { y } = points[0]!;
-      const meta: ElementMeta = { role: 'symbol', itemId: points[0]!.itemId, field: 'bridge' };
-      this.line(points[0]!.x, y, points.at(-1)!.x, y, stroke, meta);
-      for (const p of points) this.elements.push({ kind: 'circle', cx: p.x, cy: y, r: 0.5, fill: stroke.color, meta: { ...meta, itemId: p.itemId } });
-    }
+  }
+
+  /** The circles of a terminal level in page coordinates, left to right. */
+  levelCircles(item: Item, level: number): { x: number; y: number; r: number }[] {
+    const def = this.ctx.library.symbol(item.symbol);
+    const pins = terminalLevels(item, this.ctx.library).find((l) => (l.level ?? 1) === level)?.pins ?? [];
+    const xs = new Set((def?.connections ?? []).filter((c) => pins.includes(c.id)).map((c) => c.x));
+    return (def?.graphics ?? [])
+      .flatMap((g) => (g.type === 'circle' && xs.has(g.cx) ? [g] : []))
+      .map((g) => {
+        const p = transformPoint({ x: g.cx, y: g.cy }, item.rotation, item.mirror);
+        return { x: item.x + p.x, y: item.y + p.y, r: g.r };
+      })
+      .sort((p, q) => p.x - q.x);
   }
 
   // -------------------------------------------------------------------------

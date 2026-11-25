@@ -861,8 +861,14 @@ may be drawn on any number of pages.
 
 - **Bridges:** terminals of the same strip with the same `props.bridge`
   label are bridged. They carry the same potential (like a device's linked
-  pins, the nets themselves stay apart). Terminals bridged side by side at
-  the same height on a page are drawn with a bridge line.
+  pins, the nets themselves stay apart). A terminal can also be bridged with
+  its neighbour (`props.bridgeLeft` / `bridgeRight`: the levels bridged to
+  the next terminal of the strip at the same height on the left / right).
+  Bridges join one level only, never the levels of a terminal. They are
+  drawn automatically from these settings: a dashed line from the circle of
+  the level to the circle of the same level of the next bridged terminal.
+  Lists and the terminal diagram show the label, or `~1`, `~2` … for groups
+  bridged only as neighbours.
 - **Targets:** for each terminal the conductors are followed through
   connection symbols (corners, tees, wire markers, interruption points) to
   the next device pins; a potential point ends the search, so a terminal on a
@@ -892,9 +898,9 @@ may be drawn on any number of pages.
   terminal, one designation, all clamping points linked.
 - **Terminal strip configurator** (`terminalStripItems`): number of
   terminals, levels (1 … 3), connections per terminal (2 … 6 for one level),
-  levels connected / PE, and per level a bridge across all terminals; the
-  result is placed like a paste (numbering and bridge labels continue on an
-  existing strip).
+  levels connected / PE, and per level a bridge across all terminals (each
+  terminal bridged to its right neighbour); the result is placed like a
+  paste (numbering continues on an existing strip).
 
 ## Connection symbols
 
