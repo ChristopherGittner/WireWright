@@ -902,5 +902,1489 @@
       }
     ],
     "hasContactImage": true
+  },
+  {
+    "id": "iec60617.mcb.2p",
+    "name": {
+      "de": "Leitungsschutzschalter 2-polig",
+      "en": "Circuit breaker, 2-pole"
+    },
+    "category": "protection",
+    "function": "breaker",
+    "defaultRole": "main",
+    "letterCode": "F",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -1,
+        "y1": -5,
+        "x2": 1,
+        "y2": -3
+      },
+      {
+        "type": "line",
+        "x1": -1,
+        "y1": -3,
+        "x2": 1,
+        "y2": -5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -8,
+        "x2": 8,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 8,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 5,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 7,
+        "y1": -5,
+        "x2": 9,
+        "y2": -3
+      },
+      {
+        "type": "line",
+        "x1": 7,
+        "y1": -3,
+        "x2": 9,
+        "y2": -5
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.5,
+            0
+          ],
+          [
+            6.5,
+            0
+          ]
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": -8,
+        "direction": "up",
+        "designation": "3"
+      },
+      {
+        "id": "4",
+        "x": 8,
+        "y": 8,
+        "direction": "down",
+        "designation": "4"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ],
+      [
+        "3",
+        "4"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:3",
+        "x": 9.5,
+        "y": -5
+      },
+      {
+        "field": "pin:4",
+        "x": 9.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.rcbo.2p",
+    "name": {
+      "de": "FI/LS-Schalter 2-polig",
+      "en": "RCBO, 2-pole (residual current circuit breaker with overcurrent protection)"
+    },
+    "category": "protection",
+    "function": "breaker.rcd",
+    "defaultRole": "main",
+    "letterCode": "F",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -1,
+        "y1": -5,
+        "x2": 1,
+        "y2": -3
+      },
+      {
+        "type": "line",
+        "x1": -1,
+        "y1": -3,
+        "x2": 1,
+        "y2": -5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -8,
+        "x2": 8,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 8,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 5,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 7,
+        "y1": -5,
+        "x2": 9,
+        "y2": -3
+      },
+      {
+        "type": "line",
+        "x1": 7,
+        "y1": -3,
+        "x2": 9,
+        "y2": -5
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.5,
+            0
+          ],
+          [
+            6.5,
+            0
+          ]
+        ]
+      },
+      {
+        "type": "rect",
+        "x": -3,
+        "y": 4.5,
+        "width": 14,
+        "height": 3
+      },
+      {
+        "type": "text",
+        "x": 12,
+        "y": 7.5,
+        "text": "IΔ",
+        "size": 2.5,
+        "align": "left"
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": -8,
+        "direction": "up",
+        "designation": "3"
+      },
+      {
+        "id": "4",
+        "x": 8,
+        "y": 8,
+        "direction": "down",
+        "designation": "4"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ],
+      [
+        "3",
+        "4"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 10.5
+      },
+      {
+        "field": "pin:3",
+        "x": 9.5,
+        "y": -5
+      },
+      {
+        "field": "pin:4",
+        "x": 9.5,
+        "y": 10.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.rcbo.4p",
+    "name": {
+      "de": "FI/LS-Schalter 4-polig",
+      "en": "RCBO, 4-pole"
+    },
+    "category": "protection",
+    "function": "breaker.rcd",
+    "defaultRole": "main",
+    "letterCode": "F",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -1,
+        "y1": -5,
+        "x2": 1,
+        "y2": -3
+      },
+      {
+        "type": "line",
+        "x1": -1,
+        "y1": -3,
+        "x2": 1,
+        "y2": -5
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -8,
+        "x2": 8,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 8,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 5,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 7,
+        "y1": -5,
+        "x2": 9,
+        "y2": -3
+      },
+      {
+        "type": "line",
+        "x1": 7,
+        "y1": -3,
+        "x2": 9,
+        "y2": -5
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": -8,
+        "x2": 16,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": 4,
+        "x2": 16,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": 4,
+        "x2": 13,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 15,
+        "y1": -5,
+        "x2": 17,
+        "y2": -3
+      },
+      {
+        "type": "line",
+        "x1": 15,
+        "y1": -3,
+        "x2": 17,
+        "y2": -5
+      },
+      {
+        "type": "line",
+        "x1": 24,
+        "y1": -8,
+        "x2": 24,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 24,
+        "y1": 4,
+        "x2": 24,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 24,
+        "y1": 4,
+        "x2": 21,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 23,
+        "y1": -5,
+        "x2": 25,
+        "y2": -3
+      },
+      {
+        "type": "line",
+        "x1": 23,
+        "y1": -3,
+        "x2": 25,
+        "y2": -5
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.5,
+            0
+          ],
+          [
+            22.5,
+            0
+          ]
+        ]
+      },
+      {
+        "type": "rect",
+        "x": -3,
+        "y": 4.5,
+        "width": 30,
+        "height": 3
+      },
+      {
+        "type": "text",
+        "x": 28,
+        "y": 7.5,
+        "text": "IΔ",
+        "size": 2.5,
+        "align": "left"
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": -8,
+        "direction": "up",
+        "designation": "3"
+      },
+      {
+        "id": "4",
+        "x": 8,
+        "y": 8,
+        "direction": "down",
+        "designation": "4"
+      },
+      {
+        "id": "5",
+        "x": 16,
+        "y": -8,
+        "direction": "up",
+        "designation": "5"
+      },
+      {
+        "id": "6",
+        "x": 16,
+        "y": 8,
+        "direction": "down",
+        "designation": "6"
+      },
+      {
+        "id": "7",
+        "x": 24,
+        "y": -8,
+        "direction": "up",
+        "designation": "N"
+      },
+      {
+        "id": "8",
+        "x": 24,
+        "y": 8,
+        "direction": "down",
+        "designation": "N"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ],
+      [
+        "3",
+        "4"
+      ],
+      [
+        "5",
+        "6"
+      ],
+      [
+        "7",
+        "8"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 10.5
+      },
+      {
+        "field": "pin:3",
+        "x": 9.5,
+        "y": -5
+      },
+      {
+        "field": "pin:4",
+        "x": 9.5,
+        "y": 10.5
+      },
+      {
+        "field": "pin:5",
+        "x": 17.5,
+        "y": -5
+      },
+      {
+        "field": "pin:6",
+        "x": 17.5,
+        "y": 10.5
+      },
+      {
+        "field": "pin:7",
+        "x": 25.5,
+        "y": -5
+      },
+      {
+        "field": "pin:8",
+        "x": 25.5,
+        "y": 10.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.rccb.4p",
+    "name": {
+      "de": "FI-Schutzschalter 4-polig",
+      "en": "Residual current device (RCCB), 4-pole"
+    },
+    "category": "protection",
+    "function": "breaker.rcd",
+    "defaultRole": "main",
+    "letterCode": "F",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -8,
+        "x2": 8,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 8,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 5,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": -8,
+        "x2": 16,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": 4,
+        "x2": 16,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": 4,
+        "x2": 13,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 24,
+        "y1": -8,
+        "x2": 24,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 24,
+        "y1": 4,
+        "x2": 24,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 24,
+        "y1": 4,
+        "x2": 21,
+        "y2": -4
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.5,
+            0
+          ],
+          [
+            22.5,
+            0
+          ]
+        ]
+      },
+      {
+        "type": "rect",
+        "x": -3,
+        "y": 4.5,
+        "width": 30,
+        "height": 3
+      },
+      {
+        "type": "text",
+        "x": 28,
+        "y": 7.5,
+        "text": "IΔ",
+        "size": 2.5,
+        "align": "left"
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": -8,
+        "direction": "up",
+        "designation": "3"
+      },
+      {
+        "id": "4",
+        "x": 8,
+        "y": 8,
+        "direction": "down",
+        "designation": "4"
+      },
+      {
+        "id": "5",
+        "x": 16,
+        "y": -8,
+        "direction": "up",
+        "designation": "5"
+      },
+      {
+        "id": "6",
+        "x": 16,
+        "y": 8,
+        "direction": "down",
+        "designation": "6"
+      },
+      {
+        "id": "7",
+        "x": 24,
+        "y": -8,
+        "direction": "up",
+        "designation": "N"
+      },
+      {
+        "id": "8",
+        "x": 24,
+        "y": 8,
+        "direction": "down",
+        "designation": "N"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ],
+      [
+        "3",
+        "4"
+      ],
+      [
+        "5",
+        "6"
+      ],
+      [
+        "7",
+        "8"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 10.5
+      },
+      {
+        "field": "pin:3",
+        "x": 9.5,
+        "y": -5
+      },
+      {
+        "field": "pin:4",
+        "x": 9.5,
+        "y": 10.5
+      },
+      {
+        "field": "pin:5",
+        "x": 17.5,
+        "y": -5
+      },
+      {
+        "field": "pin:6",
+        "x": 17.5,
+        "y": 10.5
+      },
+      {
+        "field": "pin:7",
+        "x": 25.5,
+        "y": -5
+      },
+      {
+        "field": "pin:8",
+        "x": 25.5,
+        "y": 10.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.switch.disconnector.3p",
+    "name": {
+      "de": "Lasttrennschalter 3-polig (Hauptschalter)",
+      "en": "Switch-disconnector, 3-pole (main switch)"
+    },
+    "category": "protection",
+    "function": "switch.disconnector",
+    "defaultRole": "main",
+    "letterCode": "Q",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -4.5,
+        "y1": -4,
+        "x2": 1.5,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -8,
+        "x2": 8,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 8,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 5,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 3.5,
+        "y1": -4,
+        "x2": 9.5,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": -8,
+        "x2": 16,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": 4,
+        "x2": 16,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 16,
+        "y1": 4,
+        "x2": 13,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 11.5,
+        "y1": -4,
+        "x2": 17.5,
+        "y2": -4
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.5,
+            0
+          ],
+          [
+            14.5,
+            0
+          ]
+        ]
+      },
+      {
+        "type": "line",
+        "x1": -1.5,
+        "y1": 0,
+        "x2": -6,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -6,
+        "y1": 0,
+        "x2": -8,
+        "y2": -2
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": -2,
+        "x2": -10,
+        "y2": 0
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": -8,
+        "direction": "up",
+        "designation": "3"
+      },
+      {
+        "id": "4",
+        "x": 8,
+        "y": 8,
+        "direction": "down",
+        "designation": "4"
+      },
+      {
+        "id": "5",
+        "x": 16,
+        "y": -8,
+        "direction": "up",
+        "designation": "5"
+      },
+      {
+        "id": "6",
+        "x": 16,
+        "y": 8,
+        "direction": "down",
+        "designation": "6"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ],
+      [
+        "3",
+        "4"
+      ],
+      [
+        "5",
+        "6"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -12,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -12,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -12,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:3",
+        "x": 9.5,
+        "y": -5
+      },
+      {
+        "field": "pin:4",
+        "x": 9.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:5",
+        "x": 17.5,
+        "y": -5
+      },
+      {
+        "field": "pin:6",
+        "x": 17.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.fuse.disconnector.1p",
+    "name": {
+      "de": "Sicherungstrennschalter 1-polig",
+      "en": "Fuse switch-disconnector, 1-pole"
+    },
+    "category": "protection",
+    "function": "fuse",
+    "defaultRole": "main",
+    "letterCode": "F",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.22,
+            -3.52
+          ],
+          [
+            -4.03,
+            -2.47
+          ],
+          [
+            -1.78,
+            3.52
+          ],
+          [
+            1.03,
+            2.47
+          ]
+        ],
+        "closed": true
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.fuse.disconnector.2p",
+    "name": {
+      "de": "Sicherungstrennschalter 2-polig",
+      "en": "Fuse switch-disconnector, 2-pole"
+    },
+    "category": "protection",
+    "function": "fuse",
+    "defaultRole": "main",
+    "letterCode": "F",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.22,
+            -3.52
+          ],
+          [
+            -4.03,
+            -2.47
+          ],
+          [
+            -1.78,
+            3.52
+          ],
+          [
+            1.03,
+            2.47
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -8,
+        "x2": 8,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 8,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 5,
+        "y2": -4
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            6.78,
+            -3.52
+          ],
+          [
+            3.97,
+            -2.47
+          ],
+          [
+            6.22,
+            3.52
+          ],
+          [
+            9.03,
+            2.47
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.5,
+            0
+          ],
+          [
+            6.5,
+            0
+          ]
+        ]
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": -8,
+        "direction": "up",
+        "designation": "3"
+      },
+      {
+        "id": "4",
+        "x": 8,
+        "y": 8,
+        "direction": "down",
+        "designation": "4"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ],
+      [
+        "3",
+        "4"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -6,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -6,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -6,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:3",
+        "x": 9.5,
+        "y": -5
+      },
+      {
+        "field": "pin:4",
+        "x": 9.5,
+        "y": 6.5
+      }
+    ]
   }
 ]

@@ -41,7 +41,7 @@ export const CURRENT_CAPACITY: readonly [crossSection: number, amps: number][] =
 /** Functions whose rated voltage is checked against the supply at their pins. */
 const RATED_VOLTAGE_FUNCTIONS = new Set(['relay.coil', 'contactor.coil', 'valve.coil', 'lamp']);
 /** Protective devices: their rated current limits the wires at their pins. */
-const PROTECTIVE_FUNCTIONS = new Set(['breaker', 'breaker.motor', 'fuse']);
+const PROTECTIVE_FUNCTIONS = new Set(['breaker', 'breaker.motor', 'breaker.rcd', 'fuse']);
 /** Devices that read a state (belong to inputs) and devices that are driven (belong to outputs). */
 const INPUT_DEVICE = (fn: string) => fn.startsWith('switch.') || fn.startsWith('contact.') || fn === 'sensor';
 const OUTPUT_DEVICE = (fn: string) => RATED_VOLTAGE_FUNCTIONS.has(fn) || fn === 'motor';

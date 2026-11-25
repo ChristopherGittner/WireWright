@@ -44,9 +44,21 @@ describe('standard library', () => {
     for (const s of library.symbols()) {
       if (s.defaultRole !== 'none') expect(s.letterCode, s.id).toBeTruthy();
     }
-    for (const id of ['iec60617.relay.coil', 'iec60617.motor.3ph', 'iec60617.lamp', 'wirewright.box.device']) {
+    for (const id of ['iec60617.relay.coil', 'iec60617.motor.3ph', 'iec60617.lamp', 'iec60617.heater', 'iec60617.luminaire', 'iec60617.socket', 'wirewright.box.device']) {
       expect(library.symbol(id)?.links, id).toEqual([]);
     }
+  });
+
+  it('contains the cabinet protection, switch and consumer symbols with one link group per pole', () => {
+    const poles: Record<string, number> = {
+      'iec60617.mcb.2p': 2, 'iec60617.rcbo.2p': 2, 'iec60617.rcbo.4p': 4, 'iec60617.rccb.4p': 4,
+      'iec60617.switch.disconnector.3p': 3, 'iec60617.fuse.disconnector.1p': 1, 'iec60617.fuse.disconnector.2p': 2,
+      'iec60617.switch.selector.3pos': 2, 'iec60617.pushbutton.illuminated': 1, 'iec60617.thermostat': 1,
+    };
+    for (const [id, n] of Object.entries(poles)) {
+      expect(library.symbol(id)?.links, id).toHaveLength(n);
+    }
+    for (const id of ['iec60617.heater', 'iec60617.luminaire', 'iec60617.socket']) expect(library.symbol(id), id).toBeDefined();
   });
 
   it('device definitions use existing symbols, and I/O cards have consistent channels', () => {

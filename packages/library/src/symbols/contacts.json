@@ -1207,5 +1207,508 @@
         "y2": 1
       }
     ]
+  },
+  {
+    "id": "iec60617.switch.selector.3pos",
+    "name": {
+      "de": "Wahlschalter 3 Stellungen, 2 Schließer",
+      "en": "Selector switch, 3 positions, 2 NO"
+    },
+    "category": "switches",
+    "function": "switch.selector",
+    "defaultRole": "main",
+    "letterCode": "S",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": -8,
+        "x2": 8,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 8,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 8,
+        "y1": 4,
+        "x2": 5,
+        "y2": -4
+      },
+      {
+        "type": "polyline",
+        "points": [
+          [
+            -1.5,
+            0
+          ],
+          [
+            6.5,
+            0
+          ]
+        ]
+      },
+      {
+        "type": "line",
+        "x1": -1.5,
+        "y1": 0,
+        "x2": -6,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -6,
+        "y1": 0,
+        "x2": -8,
+        "y2": -2
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": -2,
+        "x2": -10,
+        "y2": 0
+      },
+      {
+        "type": "text",
+        "x": -8,
+        "y": -4,
+        "text": "0 1 2",
+        "size": 1.5,
+        "align": "center"
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "13"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "14"
+      },
+      {
+        "id": "3",
+        "x": 8,
+        "y": -8,
+        "direction": "up",
+        "designation": "23"
+      },
+      {
+        "id": "4",
+        "x": 8,
+        "y": 8,
+        "direction": "down",
+        "designation": "24"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ],
+      [
+        "3",
+        "4"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -12,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -12,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -12,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:3",
+        "x": 9.5,
+        "y": -5
+      },
+      {
+        "field": "pin:4",
+        "x": 9.5,
+        "y": 6.5
+      }
+    ]
+  },
+  {
+    "id": "iec60617.pushbutton.illuminated",
+    "name": {
+      "de": "Leuchtdrucktaster Schließer",
+      "en": "Illuminated push button, normally open"
+    },
+    "category": "switches",
+    "function": "switch.pushbutton.no",
+    "defaultRole": "main",
+    "letterCode": "S",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": -3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": -1.5,
+        "y1": 0,
+        "x2": -8,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": -8,
+        "y1": -2,
+        "x2": -8,
+        "y2": 2
+      },
+      {
+        "type": "line",
+        "x1": -12,
+        "y1": -8,
+        "x2": -12,
+        "y2": -2.5
+      },
+      {
+        "type": "circle",
+        "cx": -12,
+        "cy": 0,
+        "r": 2.5
+      },
+      {
+        "type": "line",
+        "x1": -13.77,
+        "y1": -1.77,
+        "x2": -10.23,
+        "y2": 1.77
+      },
+      {
+        "type": "line",
+        "x1": -13.77,
+        "y1": 1.77,
+        "x2": -10.23,
+        "y2": -1.77
+      },
+      {
+        "type": "line",
+        "x1": -12,
+        "y1": 2.5,
+        "x2": -12,
+        "y2": 8
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "13"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "14"
+      },
+      {
+        "id": "3",
+        "x": -12,
+        "y": -8,
+        "direction": "up",
+        "designation": "X1"
+      },
+      {
+        "id": "4",
+        "x": -12,
+        "y": 8,
+        "direction": "down",
+        "designation": "X2"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -17,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -17,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -17,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      },
+      {
+        "field": "pin:3",
+        "x": -10.5,
+        "y": -5
+      },
+      {
+        "field": "pin:4",
+        "x": -10.5,
+        "y": 6.5
+      }
+    ],
+    "contactImage": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 0,
+        "x2": 1.2,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 3.6,
+        "y1": 0,
+        "x2": 4.8,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 1.2,
+        "y1": 0,
+        "x2": 3.8,
+        "y2": -1
+      }
+    ]
+  },
+  {
+    "id": "iec60617.thermostat",
+    "name": {
+      "de": "Thermostat (Temperaturschalter), Öffner",
+      "en": "Thermostat (temperature switch), normally closed"
+    },
+    "category": "switches",
+    "function": "switch.thermostat",
+    "defaultRole": "main",
+    "letterCode": "B",
+    "graphics": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -8,
+        "x2": 0,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": -4,
+        "x2": 3,
+        "y2": -4
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 0,
+        "y2": 8
+      },
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 4,
+        "x2": 3.5,
+        "y2": -5
+      },
+      {
+        "type": "line",
+        "x1": 1.75,
+        "y1": 0.5,
+        "x2": -6,
+        "y2": 0.5
+      },
+      {
+        "type": "rect",
+        "x": -11,
+        "y": -2.5,
+        "width": 5,
+        "height": 6
+      },
+      {
+        "type": "text",
+        "x": -8.5,
+        "y": 2,
+        "text": "θ",
+        "size": 3.5,
+        "align": "center"
+      }
+    ],
+    "connections": [
+      {
+        "id": "1",
+        "x": 0,
+        "y": -8,
+        "direction": "up",
+        "designation": "1"
+      },
+      {
+        "id": "2",
+        "x": 0,
+        "y": 8,
+        "direction": "down",
+        "designation": "2"
+      }
+    ],
+    "links": [
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "texts": [
+      {
+        "field": "tag",
+        "x": -14,
+        "y": -1,
+        "align": "right"
+      },
+      {
+        "field": "functionText",
+        "x": -14,
+        "y": 3,
+        "align": "right"
+      },
+      {
+        "field": "xref",
+        "x": -14,
+        "y": 7,
+        "align": "right"
+      },
+      {
+        "field": "pin:1",
+        "x": 1.5,
+        "y": -5
+      },
+      {
+        "field": "pin:2",
+        "x": 1.5,
+        "y": 6.5
+      }
+    ],
+    "contactImage": [
+      {
+        "type": "line",
+        "x1": 0,
+        "y1": 0,
+        "x2": 1.2,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 3.6,
+        "y1": 0,
+        "x2": 4.8,
+        "y2": 0
+      },
+      {
+        "type": "line",
+        "x1": 1.2,
+        "y1": 0,
+        "x2": 3.8,
+        "y2": 1
+      },
+      {
+        "type": "line",
+        "x1": 3.6,
+        "y1": 0,
+        "x2": 3.6,
+        "y2": 1
+      }
+    ]
   }
 ]

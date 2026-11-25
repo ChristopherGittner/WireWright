@@ -19,8 +19,9 @@ generated from the project data.
 
 ## Features
 
-- **Schematics to IEC 60617** with 40 symbols, A3 frames with a self-filling
-  title block, switchable grid (1/2/4/8 mm)
+- **Schematics to IEC 60617** with over 100 symbols (electrical, fluid power,
+  connections), A3 frames with a self-filling title block, switchable grid
+  (1/2/4/8 mm)
 - **Autoconnect**: symbols that face each other on a line are connected
   automatically; corners, T-junctions, crossings, interruption points
   (`Unterbrechungsstellen`), break points (`Abbruchstellen`), potential points

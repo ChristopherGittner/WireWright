@@ -43,6 +43,9 @@ device directory, and export it as a PDF. An AI can do the same through MCP.
 - [x] Basic set of about 30–40 symbols: NO/NC/changeover contacts, coil,
       contactor main contacts, MCB, motor protection switch, fuse, motor,
       lamp, push buttons, selector switch, terminal, PE, transformer, power supply
+- [x] Cabinet installation symbols: 2-pole MCB, RCBO 2/4-pole, RCCB, main switch
+      (switch-disconnector), fuse switch-disconnectors, 3-position selector,
+      illuminated push button, thermostat, heater, luminaire, socket outlet, earth
 - [x] Device templates: relays (1–4 CO), contactors (3 main + aux), motor protection switch
 - [x] Symbol picker in the editor
 
