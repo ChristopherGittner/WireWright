@@ -196,3 +196,16 @@ device directory, and export it as a PDF. An AI can do the same through MCP.
 - [x] Catalog import: BMEcat 1.2/2005 with ECLASS and ETIM features (dimensions, rated voltage/current, classification), feature assignment remembered per machine, merge with existing parts
 - [x] Door layout: door front with round command devices, function-text legend, cutouts (HMI, fan), drilling in the report
 - [x] Revisions and change tracking: release revisions (snapshot, title block marks on changed pages), compare with a revision (Δ pages, new/changed/deleted symbols highlighted), revision list report, MCP create_revision / get_changes
+
+## Open
+
+### Editor
+- [ ] Groups in groups: a group can contain groups; Ctrl+G on groups nests them, Ctrl+Shift+G opens one level; Alt+click (or double-click to enter) selects inside; copy/paste and macros keep the nesting
+- [ ] Macro editor: open a saved macro (standard, shared folder or project) on its own canvas, change it and save it back; rename, describe, move between categories, delete; later variants and placeholders inside a macro
+
+### Device library: Siemens ET 200
+- [ ] ET 200SP modules whose manual is no longer downloadable: AI 4xI 2-/4-wire ST (6ES7134-6GD01-0BA1), AI 8xI 2-/4-wire BA (6ES7134-6GF00-0AA1) – terminals still to be checked
+- [ ] ET 200SP communication and technology modules (CM PtP, CM AS-i, CM DP, TM Count, TM PosInput, TM Timer DIDQ …), further BaseUnits (A0 with add-on terminals, B1 for AC, …), potential distributor modules, F-PM-E
+- [ ] ET 200MP / S7-1500: AQ 8xU/I HS terminals (manual no longer downloadable), CM/CP and TM modules (CM PtP, CP 1543-1, TM Count, TM PosInput), IM 155-5 PN BA/HF
+- [ ] ET 200eco PN: digital (8 DI, 16 DI, 8 DQ, 8 DIO) and analog modules with M12 sockets (pin 1 24 V, pin 2 / 4 signals, pin 3 M, pin 5 FE)
+- [ ] ET 200AL: IM 157-1 PN, DI/DQ/DIQ with M8 and M12, AI/AQ
