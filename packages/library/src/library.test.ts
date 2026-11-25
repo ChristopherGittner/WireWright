@@ -146,6 +146,42 @@ describe('standard library', () => {
     }
   });
 
+  it('has the Siemens terminal assignments of the Siemens equipment manuals', () => {
+    const channels = (id: string) => library.device(id)?.plc?.channels;
+    const pins = (id: string) => channels(id)?.map((c) => c.pin);
+    expect(library.devices().filter((d) => d.id.startsWith('siemens.s71200.')).length).toBeGreaterThan(20);
+    // ET 200SP DI 8x24VDC ST: DI0-DI7 on 1-8, 24 V DC sensor supply of channel n on 9+n
+    expect(channels('siemens.et200sp.di8')?.[1]).toEqual({ channel: 1, kind: 'DI', pin: '2', extraPins: [{ pin: '10', label: '24 V DC', after: true }] });
+    // ET 200SP F-DI: internal sensor supply VSn on 9+n feeds the contact (drawn before the input)
+    expect(channels('siemens.et200sp.fdi8')?.[0]?.extraPins).toEqual([{ pin: '9', label: 'VS0' }]);
+    // ET 200SP RQ 4: changeover contact 14.0 (NO) on 5, 11.0 on 9, 12.0 on 1
+    expect(channels('siemens.et200sp.rq4')?.[0]).toMatchObject({ pin: '5', pinLabel: '14.0', extraPins: [{ pin: '9', label: '11.0' }, { pin: '1', label: '12.0' }] });
+    // ET 200SP AQ 4xU/I ST: Q0+ 1, Q0- 5, S0+ 9, S0- 13
+    expect(channels('siemens.et200sp.aq4.ui')?.[0]).toMatchObject({ pin: '1', extraPins: [{ pin: '5' }, { pin: '9' }, { pin: '13' }] });
+    // 6ES7135-6HB00-0DA1 is the AQ 2xU/I HS
+    expect(library.device('siemens.et200sp.aq2.ui.hs')?.partNumber).toBe('6ES7135-6HB00-0DA1');
+    // S7-1500 front connector: CH0-7 on 1-8, CH8-15 on 11-18, CH16-23 on 21-28, CH24-31 on 31-38
+    expect(pins('siemens.s71500.di32.hf')?.slice(6, 10)).toEqual(['7', '8', '11', '12']);
+    expect(pins('siemens.s71500.dq32.st')?.slice(15, 17)).toEqual(['18', '21']);
+    // isolated AC / relay / F-DQ outputs: 1/2, 5/6, 11/12, 15/16, 21/22 …
+    expect(channels('siemens.s71500.rq8')?.map((c) => [c.extraPins?.[0]?.pin, c.pin])).toEqual([['1', '2'], ['5', '6'], ['11', '12'], ['15', '16'], ['21', '22'], ['25', '26'], ['31', '32'], ['35', '36']]);
+    // AI 8xU/I/RTD/TC ST: U0+ 3, M0-/U0- 4, I0+ 2, UV0 1; channel 4 starts at 21
+    expect(channels('siemens.s71500.ai8.st')?.[0]).toMatchObject({ pin: '3', extraPins: [{ pin: '4' }, { pin: '2' }, { pin: '1' }] });
+    expect(pins('siemens.s71500.ai8.st')?.[4]).toBe('23');
+    // CPU 1511C-1 PN: X11 DI0 on terminal 1, DQ0 on 21, DQ8 on 31 (manual text); X10 AQ0 on 17
+    const c1511 = channels('siemens.s71500.cpu1511c-1pn')!;
+    expect(c1511.find((c) => c.kind === 'DO' && c.channel === 8)?.pin).toBe('X11.31');
+    expect(c1511.find((c) => c.kind === 'AO' && c.channel === 0)?.pin).toBe('X10.17');
+    // S7-1200: terminals named as printed
+    expect(pins('siemens.s71200.cpu1214c.dc-dc-dc')?.filter((p) => p.startsWith('DI')).slice(7, 9)).toEqual(['DIa.7', 'DIb.0']);
+    expect(channels('siemens.s71200.sm1234.ai4aq2')?.at(-1)).toMatchObject({ kind: 'AO', pin: '1', extraPins: [{ pin: '1M' }] });
+    // a card terminal belongs to one channel only
+    for (const d of library.devices().filter((d) => d.manufacturer === 'Siemens')) {
+      const all = (d.plc?.channels ?? []).flatMap((c) => channelPins(c));
+      expect(new Set(all).size, d.id).toBe(all.length);
+    }
+  });
+
   it('template contacts use functions that exist in the library', () => {
     const functions = new Set(library.symbols().map((s) => s.function));
     for (const t of library.templates()) {

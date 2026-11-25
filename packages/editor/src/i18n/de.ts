@@ -429,6 +429,7 @@ export const de: Record<string, string> = {
   "PLC: Beckhoff EtherCAT terminals": "SPS: Beckhoff EtherCAT-Klemmen",
   "PLC: CPUs, controllers, couplers": "SPS: CPUs, Steuerungen, Koppler",
   "PLC: Siemens ET 200SP": "SPS: Siemens ET 200SP",
+  "PLC: Siemens S7-1200": "SPS: Siemens S7-1200",
   "PLC: Siemens S7-1500 / ET 200MP": "SPS: Siemens S7-1500 / ET 200MP",
   "PLC: WAGO 750": "SPS: WAGO 750",
   "PLC: addresses and exports (I/O list, TIA, Codesys, GX Works3)": "SPS: Adressen und Exporte (E/A-Liste, TIA, Codesys, GX Works3)",
