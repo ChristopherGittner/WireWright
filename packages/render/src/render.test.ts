@@ -27,7 +27,7 @@ describe('schematic pages', () => {
     for (const e of power.elements) {
       if (e.kind === 'line' && e.meta?.role === 'connection' && e.meta.connection?.potential) colors.set(e.meta.connection.potential, e.stroke.color);
     }
-    expect(Object.fromEntries(colors)).toEqual({ L1: '#000000', L2: '#000000', L3: '#000000', PE: '#1E9E3A', N: '#3FA9F5', '24V': '#D0021B', '0V': '#00008B' });
+    expect(Object.fromEntries(colors)).toEqual({ L1: '#000000', L2: '#000000', L3: '#000000', PE: '#1E9E3A', N: '#3FA9F5', '24V': '#00008B', '0V': '#00008B' });
     const pe = power.elements.find((e) => e.kind === 'line' && e.meta?.connection?.potential === 'PE');
     expect(pe?.kind === 'line' && pe.stroke.dash).toBeTruthy();
   });

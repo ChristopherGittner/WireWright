@@ -29,7 +29,7 @@ export const TYPE_COLORS: Record<PotentialType, string> = {
   N: '#3FA9F5',
   PE: '#1E9E3A',
   PEN: '#1E9E3A',
-  '+': '#D0021B',
+  '+': '#00008B',
   '-': '#00008B',
   signal: '#000000',
   other: '#000000',
