@@ -246,7 +246,7 @@ export interface TerminalStripConfig {
   pins?: number;
   /** The levels of each terminal are connected inside it (PE double-level terminals …). */
   levelsConnected?: boolean;
-  /** Protective earth double-level terminals (2 levels, connected). */
+  /** Protective earth terminals (multi-level: levels connected). */
   pe?: boolean;
   /** Per level: all terminals of the strip bridged on that level (cross-connectors). */
   bridged?: boolean[];
@@ -258,9 +258,10 @@ export interface TerminalStripConfig {
 export function terminalStripSymbol(config: TerminalStripConfig): { symbol: string; pitch: number } {
   if (config.levels === 1) {
     const pins = Math.min(6, Math.max(2, Math.trunc(config.pins ?? 2)));
-    return pins === 2 ? { symbol: 'iec60617.terminal', pitch: 8 } : { symbol: `iec60617.terminal.multi.${pins}`, pitch: 4 * Math.ceil(pins / 2) + 4 };
+    const pe = config.pe ? '.pe' : '';
+    return pins === 2 ? { symbol: `iec60617.terminal${pe}`, pitch: 8 } : { symbol: `iec60617.terminal.multi.${pins}${pe}`, pitch: 4 * Math.ceil(pins / 2) + 4 };
   }
-  const kind = config.levels === 2 && config.pe ? '.pe' : config.levelsConnected || config.pe ? '.connected' : '';
+  const kind = config.pe ? '.pe' : config.levelsConnected ? '.connected' : '';
   // The housing is as wide as the pitch (4 mm per level + 4): side by side, the housings touch.
   return { symbol: `iec60617.terminal.${config.levels}level${kind}`, pitch: 4 * config.levels + 4 };
 }

@@ -161,7 +161,16 @@ describe('multi-level terminals', () => {
     ]);
     expect(multi[1]!.props?.bridgeRight).toBeUndefined();
     expect(terminalStripItems({ strip: 'X1', count: 1, levels: 1, pins: 2 })[0]).toMatchObject({ symbol: 'iec60617.terminal', props: { terminal: '1' } });
-    expect(terminalStripItems({ strip: 'X1', count: 1, levels: 2, pe: true })[0]!.symbol).toBe('iec60617.terminal.2level.pe');
+    for (const [config, symbol] of [
+      [{ levels: 1, pins: 2 }, 'iec60617.terminal.pe'],
+      [{ levels: 1, pins: 5 }, 'iec60617.terminal.multi.5.pe'],
+      [{ levels: 2 }, 'iec60617.terminal.2level.pe'],
+      [{ levels: 3 }, 'iec60617.terminal.3level.pe'],
+    ] as const) {
+      const item = terminalStripItems({ strip: 'X1', count: 1, pe: true, ...config })[0]!;
+      expect(item.symbol).toBe(symbol);
+      expect(library.symbol(item.symbol), symbol).toBeDefined();
+    }
     for (const n of [3, 4, 5, 6]) expect(library.symbol(`iec60617.terminal.multi.${n}`)?.connections, String(n)).toHaveLength(n);
   });
 });

@@ -1191,7 +1191,7 @@ function TerminalStripDialog() {
     levels,
     pins,
     levelsConnected: connected,
-    pe: levels === 2 && pe,
+    pe,
     bridged,
     start: Math.trunc(Number(start)) || 1,
   };
@@ -1254,19 +1254,15 @@ function TerminalStripDialog() {
         </Field>
       </div>
       {levels > 1 && (
-        <>
-          <label className="check">
-            <input type="checkbox" checked={connected || (levels === 2 && pe)} disabled={levels === 2 && pe} onChange={(e) => setConnected(e.target.checked)} />
-            {tr('Levels connected inside the terminal')}
-          </label>
-          {levels === 2 && (
-            <label className="check">
-              <input type="checkbox" checked={pe} onChange={(e) => setPe(e.target.checked)} />
-              {tr('Protective earth terminals (PE)')}
-            </label>
-          )}
-        </>
+        <label className="check">
+          <input type="checkbox" checked={connected || pe} disabled={pe} onChange={(e) => setConnected(e.target.checked)} />
+          {tr('Levels connected inside the terminal')}
+        </label>
       )}
+      <label className="check">
+        <input type="checkbox" checked={pe} onChange={(e) => setPe(e.target.checked)} />
+        {tr('Protective earth terminals (PE)')}
+      </label>
       {Array.from({ length: levels }, (_, i) => (
         <label key={i} className="check">
           <input type="checkbox" checked={bridged[i] ?? false} onChange={(e) => setBridged(bridged.map((b, n) => (n === i ? e.target.checked : b)))} />
