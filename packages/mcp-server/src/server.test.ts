@@ -325,6 +325,17 @@ describe('Wirewright MCP server', () => {
     expect(JSON.stringify(page.items.find((i: { id: string }) => i.id === psu.id))).toContain('24V');
   });
 
+  it('places a second channel of a device as auxiliary function', async () => {
+    await ok('create_project', { name: 'Two channels' });
+    await ok('create_page', { name: '1' });
+    await ok('place_symbol', { page: '1', symbol: 'iec60617.estop', x: 100, y: 60, tag: '-S2' });
+    const second = await ok('place_symbol', { page: '1', symbol: 'iec60617.estop', x: 140, y: 60, tag: '-S2', main: false });
+    expect(second.role).toBe('auxiliary');
+    expect(JSON.stringify(await ok('check_project'))).not.toContain('device.multipleMainFunctions');
+    await ok('set_properties', { page: '1', item: second.id, main: true });
+    expect(JSON.stringify(await ok('check_project'))).toContain('device.multipleMainFunctions');
+  });
+
   it('releases revisions and reports the changes since', async () => {
     await ok('create_project', { name: 'Rev' });
     await ok('create_page', { name: '1' });

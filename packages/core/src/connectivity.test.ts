@@ -132,8 +132,20 @@ describe('potentials', () => {
       { id: 'i_e', symbol: 'earth', x: 100, y: 120 },
     );
     expect(potential(doc, 'i_k:2')).toEqual({ name: 'PE' });
-    doc.apply({ type: 'setItemProperties', pageId: 'p_five', itemId: 'i_e', props: { name: 'N' } });
-    expect(potential(doc, 'i_k:2')).toEqual({ name: 'N' });
+    doc.apply({ type: 'setItemProperties', pageId: 'p_five', itemId: 'i_e', props: { name: 'FE' } });
+    expect(potential(doc, 'i_k:2')).toEqual({ name: 'FE' });
+  });
+
+  it('an earthed N or 0 V keeps its potential: no short circuit to PE', () => {
+    const { doc } = setup(
+      { id: 'i_n', symbol: 'potential', x: 100, y: 40, props: { name: 'N' } },
+      { id: 'i_e', symbol: 'earth', x: 100, y: 60 },
+      { id: 'i_pe', symbol: 'potential', x: 140, y: 40, props: { name: 'PE' } },
+      { id: 'i_e2', symbol: 'earth', x: 140, y: 60 },
+    );
+    expect(potential(doc, 'i_e:a')).toEqual({ name: 'N' });
+    expect(potential(doc, 'i_e2:a')).toEqual({ name: 'PE' });
+    expect(codes(doc)).not.toContain('potential.conflict');
   });
 
   it('warns about potentials that are not defined in the project', () => {

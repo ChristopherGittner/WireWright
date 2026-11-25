@@ -228,7 +228,8 @@ export function buildConnectivity(state: ProjectState, library: Library): Connec
 
   type Pending = { item: Item; def: SymbolDefinition; page: SchematicPage; keys: string[] };
   const devices: Pending[] = [];
-  const sources: { key: string; name: string; fluid?: boolean }[] = [];
+  // `weak`: only names a net that no other source feeds (earth: an earthed N or 0 V stays N / 0 V).
+  const sources: { key: string; name: string; fluid?: boolean; weak?: boolean }[] = [];
   const plcItems: { item: Item; def: SymbolDefinition; page: SchematicPage }[] = [];
 
   for (const page of schematicPages(state)) {
@@ -283,11 +284,10 @@ export function buildConnectivity(state: ProjectState, library: Library): Connec
           }
           continue;
         case 'connection.earth':
-          // Earth: a potential point of the protective earth, unless named otherwise (e.g. FE).
-          for (const key of keys) {
-            push(byName.potential, name ?? 'PE', points.get(key)!);
-            sources.push({ key, name: name ?? 'PE' });
-          }
+          // Earth: a wire ending at it is protective earth (or the potential it names, e.g. FE),
+          // unless the wire already carries a potential: an earthed PEN, transformer secondary
+          // or 0 V (PELV) is no short circuit to PE. It does not join other nets by name.
+          for (const key of keys) sources.push({ key, name: name ?? 'PE', weak: true });
           continue;
         case 'connection.medium':
           // A pipe source names the medium of its pipes (like a potential point for wires).
@@ -420,8 +420,9 @@ export function buildConnectivity(state: ProjectState, library: Library): Connec
 
   const namesByGroup = new Map<string, Set<string>>();
   const sourceByGroupName = new Map<string, string>();
-  for (const { key, name } of sources) {
+  for (const { key, name, weak } of [...sources.filter((s) => !s.weak), ...sources.filter((s) => s.weak)]) {
     const group = potentials.find(nets.find(key));
+    if (weak && namesByGroup.has(group)) continue;
     let names = namesByGroup.get(group);
     if (!names) namesByGroup.set(group, (names = new Set()));
     names.add(name);

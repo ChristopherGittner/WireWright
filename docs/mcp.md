@@ -74,7 +74,7 @@ and the project is saved as usual (the changes count as unsaved until then).
 | `create_page` | New schematic page with name, description and structure (`=` / `+`) |
 | `create_report_page` | New report page that is always up to date |
 | `set_page` | Page name, description, structure, properties (revision, date) |
-| `place_symbol` | Places a symbol; main functions are named automatically (`-5K3`); contacts take the given tag, or that of the nearest device to their left at the same height; `props` sets further properties (e.g. terminal designation and bridge); device boxes take `borderPins` (named pins on the outline) and `links` |
+| `place_symbol` | Places a symbol; main functions are named automatically (`-5K3`); contacts take the given tag, or that of the nearest device to their left at the same height; `main: false` makes a further drawing of a device an auxiliary function (second emergency stop channel …); `props` sets further properties (e.g. terminal designation and bridge); device boxes take `borderPins` (named pins on the outline) and `links` |
 | `draw_current_path` | Lays out a vertical current path in a column: potential at the top, symbols top to bottom on one line, potential at the bottom; autoconnect wires it |
 | `connect_pins` | Joins two pins that are not on one line with corner symbols (L or Z route) |
 | `create_revision` | Releases a revision: marks changed pages in the title block, keeps a snapshot for comparing |

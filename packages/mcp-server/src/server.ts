@@ -489,6 +489,10 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
           .optional()
           .describe('Device boxes: named pins on the outline, e.g. [{"id":"A1","side":"top","offset":8,"designation":"A1"}]; offset in mm from the left (top/bottom) or top (left/right) corner, on the 4 mm grid'),
         links: z.array(z.array(z.string())).optional().describe('Device boxes: groups of border pin IDs connected inside the device (e.g. [["13","14"]]); default none'),
+        main: z
+          .boolean()
+          .optional()
+          .describe('false: an auxiliary function of the device of `tag` (e.g. the second channel of an emergency stop, a second coil drawing); default: the symbol\'s role'),
       },
     },
     (args) =>
@@ -512,6 +516,7 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
             ...(args.height !== undefined ? { height: args.height } : {}),
             ...(Object.keys(props).length > 0 ? { props } : {}),
             ...(args.borderPins ? { borderPins: args.borderPins } : {}),
+            ...(args.main !== undefined ? { main: args.main } : {}),
           });
           if (args.links !== undefined) doc.apply({ type: 'setItemProperties', pageId: page.id, itemId: created[0]!, links: args.links });
           return placedItem(doc, page.id, created[0]!);
@@ -753,6 +758,7 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
         links: z.array(z.array(z.string())).nullable().optional().describe('Device boxes: pin link groups; null removes them'),
         width: z.int().min(1).optional().describe('Boxes: new width'),
         height: z.int().min(1).optional().describe('Boxes: new height'),
+        main: z.boolean().nullable().optional().describe('Main function (true) or auxiliary function (false) of its device; null: the symbol\'s role'),
       },
     },
     (args) =>
@@ -776,6 +782,7 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
             ...(args.links !== undefined ? { links: args.links } : {}),
             ...(args.width !== undefined ? { width: args.width } : {}),
             ...(args.height !== undefined ? { height: args.height } : {}),
+            ...(args.main !== undefined ? { main: args.main } : {}),
           });
           return placedItem(doc, page.id, args.item);
         }),
