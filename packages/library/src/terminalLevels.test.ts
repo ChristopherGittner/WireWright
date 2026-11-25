@@ -97,6 +97,26 @@ describe('multi-level terminals', () => {
     expect(nets.get('i_w0:4')).not.toBe(nets.get('i_w1:4'));
   });
 
+  it('the same bridge label on level 1 and level 2 never joins the levels', () => {
+    const { doc, pageId } = setup();
+    doc.apply([
+      feed(pageId, 80, '24V'),
+      ...[0, 1].map((i) => ({
+        type: 'placeSymbol' as const,
+        pageId,
+        id: `i_w${i}`,
+        symbol: 'iec60617.terminal.2level',
+        x: 80 + 16 * i,
+        y: 80,
+        tag: X1,
+        props: { terminal: String(i + 1), bridges: { '1': 'A', '2': 'A' } },
+      })),
+    ]);
+    expect([0, 1].map((i) => potential(doc, `i_w${i}:2`))).toEqual(['24V', '24V']);
+    expect([0, 1].map((i) => potential(doc, `i_w${i}:4`))).toEqual([undefined, undefined]);
+    expect(doc.check().filter((i) => i.code.startsWith('terminal.'))).toEqual([]);
+  });
+
   it('a macro of double-level terminals continues the numbering of the strip', () => {
     const { doc, pageId } = setup();
     doc.apply([

@@ -870,11 +870,14 @@ class Renderer {
       // Terminals drawn with a housing (multi-level, multi-connection): the line runs below it.
       const below = def.graphics.some((g) => g.type === 'rect') ? 3.5 : 2.5;
       for (const level of terminalLevels(item, this.ctx.library)) {
-        const pin = def.connections.find((c) => c.id === level.pins[0]);
-        if (level.bridge === undefined || !pin) continue;
-        const x = item.x + transformPoint({ x: pin.x, y: 0 }, item.rotation, item.mirror).x;
-        const y = item.y + below;
-        const key = `${formatTag(effectiveTag(page, item, this.ctx.library))}\u0000${level.bridge}\u0000${y}`;
+        const pins = def.connections.filter((c) => level.pins.includes(c.id));
+        if (level.bridge === undefined || pins.length === 0) continue;
+        // Below the level's clamp: a lower level (drawn lower) gets its bridge line lower too.
+        const centre = def.terminalLevels ? pins.reduce((sum, c) => sum + c.y, 0) / pins.length : 0;
+        const p = transformPoint({ x: pins[0]!.x, y: centre + below }, item.rotation, item.mirror);
+        const x = item.x + p.x;
+        const y = item.y + p.y;
+        const key = `${formatTag(effectiveTag(page, item, this.ctx.library))}\u0000${level.level ?? 1}\u0000${level.bridge}\u0000${y}`;
         groups.set(key, [...(groups.get(key) ?? []), { itemId: item.id, x, y }]);
       }
     }

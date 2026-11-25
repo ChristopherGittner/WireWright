@@ -326,7 +326,7 @@ describe('multi-level terminals', () => {
     })));
     const scene = renderPage(renderContext(d), 'p_sensors');
     const lines = scene.elements.filter((e) => e.kind === 'line' && e.meta?.field === 'bridge' && e.y1 > 240);
-    expect(lines).toMatchObject([{ x1: 208, x2: 240, y1: 243.5, y2: 243.5 }]);
+    expect(lines).toMatchObject([{ x1: 208, x2: 240, y1: 247.5, y2: 247.5 }]);
     expect(texts(scene.elements)).toEqual(expect.arrayContaining(['1.1', '1.2', '3.2']));
   });
 });

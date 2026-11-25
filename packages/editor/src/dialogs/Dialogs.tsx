@@ -1154,6 +1154,8 @@ function TerminalStripDialog() {
     store.notify(tr('Click on the page to place the terminal strip'));
   };
   const shown = Math.min(config.count, 6);
+  // Bridge line of a level in the preview: below its clamp; each further level sits 4 mm lower.
+  const bridgeY = (level: number) => (symbol === 'iec60617.terminal' ? 2.5 : 3.5 + 4 * level);
   return (
     <Modal title={tr('Terminal strip configurator')} onOk={ok} okLabel={tr('Place')}>
       <div className="tag-fields">
@@ -1215,7 +1217,7 @@ function TerminalStripDialog() {
         </label>
       ))}
       {def && (
-        <svg className="strip-preview" viewBox={`-6 -9 ${(shown - 1) * pitch + 22} 20`} width="100%" height="110">
+        <svg className="strip-preview" viewBox={`-6 -9 ${(shown - 1) * pitch + 22} ${20 + 4 * (levels - 1)}`} width="100%" height="120">
           {Array.from({ length: shown }, (_, i) => (
             <g key={i} transform={`translate(${i * pitch} 0)`} fill="none" stroke="currentColor" strokeWidth={0.35}>
               {def.graphics.map((g, n) => (
@@ -1225,7 +1227,7 @@ function TerminalStripDialog() {
           ))}
           {(config.levels === 1 ? [0] : Array.from({ length: config.levels }, (_, i) => i)).map((level) =>
             config.count > 1 && bridged[level] ? (
-              <line key={level} x1={8 * level} y1={config.levels === 1 ? 2.5 : 3.5} x2={(shown - 1) * pitch + 8 * level} y2={config.levels === 1 ? 2.5 : 3.5} stroke="currentColor" strokeWidth={0.5} />
+              <line key={level} x1={8 * level} y1={bridgeY(level)} x2={(shown - 1) * pitch + 8 * level} y2={bridgeY(level)} stroke="currentColor" strokeWidth={0.5} />
             ) : null,
           )}
         </svg>

@@ -183,9 +183,11 @@ export function buildTerminalStrips(state: ProjectState, library: Library, devic
       seen.set(t.designation, t);
     }
     const bridges = new Map<string, number>();
-    for (const t of strip.terminals) if (t.bridge) bridges.set(t.bridge, (bridges.get(t.bridge) ?? 0) + 1);
+    // Bridges join terminals on one level (ordinary terminals count as level 1).
+    const bridgeKey = (t: TerminalInfo) => `${t.level ?? 1}\u0000${t.bridge}`;
+    for (const t of strip.terminals) if (t.bridge) bridges.set(bridgeKey(t), (bridges.get(bridgeKey(t)) ?? 0) + 1);
     for (const t of strip.terminals) {
-      if (t.bridge && bridges.get(t.bridge) === 1) {
+      if (t.bridge && bridges.get(bridgeKey(t)) === 1) {
         issues.push({ severity: 'warning', code: 'terminal.lonelyBridge', ...issueMessage('{device}: bridge "{bridge}" has only terminal {terminal}', { device: device.key, bridge: t.bridge, terminal: t.designation }), pageId: t.pageId, itemId: t.itemId, device: device.key });
       }
     }

@@ -422,7 +422,8 @@ export function buildConnectivity(state: ProjectState, library: Library): Connec
       const pin = level.pins[0];
       if (!pin || !points.has(`${item.id}:${pin}`)) continue;
       const net = nets.find(`${item.id}:${pin}`);
-      if (level.bridge !== undefined) join(`${strip}\u0000${level.bridge}`, net);
+      // A bridge (cross-connector) joins terminals on one level only, never the levels of a terminal.
+      if (level.bridge !== undefined) join(`${strip}\u0000${level.level ?? 1}\u0000${level.bridge}`, net);
       const base = terminalDesignation(item, library);
       if (def.levelsConnected && base !== '') join(`${strip}\u0001${base}`, net);
     }
