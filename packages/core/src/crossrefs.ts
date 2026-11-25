@@ -116,21 +116,28 @@ export function buildCrossReferences(state: ProjectState, library: Library, devi
     if (rows.length + grown.length > 0) info(main.itemId).contactImage = [...rows, ...grown];
   }
 
-  // Interruption points show where their partners are.
-  const interruptions = new Map<string, ReferenceTarget[]>();
+  // Interruption points show where their partners are. With more than three points of one name
+  // (a supply running through many pages) they form a chain in page order: each shows only the
+  // previous and the next point, so the list stays short.
+  const interruptions = new Map<string, (ReferenceTarget & { order: number[] })[]>();
+  const pageOrder = new Map(state.project.pages.map((id, i) => [id, i]));
   for (const page of Object.values(state.pages)) {
     if (page.type !== 'schematic') continue;
     for (const item of page.items) {
       const name = item.props?.name;
       if (library.symbol(item.symbol)?.function === 'connection.interruption' && typeof name === 'string' && name !== '') {
         const list = interruptions.get(name) ?? [];
-        list.push({ pageId: page.id, itemId: item.id });
+        list.push({ pageId: page.id, itemId: item.id, order: [pageOrder.get(page.id) ?? 0, item.x, item.y] });
         interruptions.set(name, list);
       }
     }
   }
   for (const group of interruptions.values()) {
-    for (const from of group) info(from.itemId).references.push(...group.filter((to) => to !== from).map((to) => reference(from, to)));
+    group.sort((a, b) => a.order[0]! - b.order[0]! || a.order[1]! - b.order[1]! || a.order[2]! - b.order[2]!);
+    group.forEach((from, i) => {
+      const partners = group.length > 3 ? [group[i - 1], group[i + 1]].filter((p) => p !== undefined) : group.filter((to) => to !== from);
+      info(from.itemId).references.push(...partners.map((to) => reference(from, { pageId: to.pageId, itemId: to.itemId })));
+    });
   }
 
   return { byItem, issues };

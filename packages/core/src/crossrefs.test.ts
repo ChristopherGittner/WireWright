@@ -99,4 +99,19 @@ describe('cross-references', () => {
     expect(doc.crossReferences().byItem.get('i_u1')?.references.map((r) => r.text)).toEqual(['/7.1']);
     expect(doc.crossReferences().byItem.get('i_u2')?.references.map((r) => r.text)).toEqual(['/5.9']);
   });
+
+  it('more than three interruption points of one name form a chain in page order', () => {
+    const { doc, pageId } = relayProject();
+    doc.apply([
+      { type: 'placeSymbol', pageId, id: 'i_u1', symbol: 'interruption', x: column(9), y: 100, props: { name: 'L+' } },
+      { type: 'placeSymbol', pageId: 'p_seven', id: 'i_u3', symbol: 'interruption', x: column(3), y: 40, rotation: 180, props: { name: 'L+' } },
+      { type: 'placeSymbol', pageId: 'p_seven', id: 'i_u2', symbol: 'interruption', x: column(1), y: 40, rotation: 180, props: { name: 'L+' } },
+      { type: 'placeSymbol', pageId: 'p_seven', id: 'i_u4', symbol: 'interruption', x: column(5), y: 40, rotation: 180, props: { name: 'L+' } },
+    ]);
+    const refs = (id: string) => doc.crossReferences().byItem.get(id)?.references.map((r) => r.text);
+    expect(refs('i_u1')).toEqual(['/7.1']);
+    expect(refs('i_u2')).toEqual(['/5.9', '/7.3']);
+    expect(refs('i_u3')).toEqual(['/7.1', '/7.5']);
+    expect(refs('i_u4')).toEqual(['/7.3']);
+  });
 });

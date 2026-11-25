@@ -463,7 +463,7 @@ Cross-references are derived and shown on the devices:
 | Auxiliary function (contact) | Where its main function is: `/3.4` under or beside the contact |
 | Main function with a contact template | Contact image (`Kontaktspiegel`), see below |
 | Main function without a template | List of its auxiliary functions with references |
-| Interruption point | Its partner(s) with the same name: `/6.1` |
+| Interruption point | Its partner(s) with the same name: `/6.1`; with more than three points of one name only the previous and next in page order (a chain) |
 | PLC I/O point | Its card's main function (stage 2) |
 | Cable definition line | Other definition lines of the same cable (stage 2) |
 
