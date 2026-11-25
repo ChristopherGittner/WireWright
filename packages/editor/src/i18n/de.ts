@@ -924,4 +924,5 @@ export const de: Record<string, string> = {
   "Group / ungroup the selected symbols": "Ausgewählte Symbole gruppieren / Gruppierung aufheben",
   "Select a single symbol of a group": "Ein einzelnes Symbol einer Gruppe auswählen",
   "Group the selected symbols (selected and moved as one; Alt+click selects a single one)": "Ausgewählte Symbole gruppieren (werden zusammen ausgewählt und verschoben; Alt+Klick wählt ein einzelnes)",
+  "Not decided yet? Enter or Esc without a tag places it as -? (Cancel does not place it).": "Noch nicht entschieden? Enter oder Esc ohne Kennzeichen platziert es als -? (Abbrechen platziert nichts).",
 };

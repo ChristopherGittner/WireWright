@@ -3592,19 +3592,26 @@ function PlaceAuxiliaryDialog({ command }: { command: Extract<Command, { type: '
     .filter((d) => d.main)
     .map((d) => (d.tag.function === context.function && d.tag.location === context.location ? `-${d.tag.product}` : d.key))
     .sort(naturalCompare);
+  // Enter and Esc both place the function; without a tag it gets "-?" (device not decided yet).
+  const placed = useRef(false);
   const ok = () => {
+    if (placed.current) return;
     try {
-      const parsed = parseTag(tag.startsWith('-') || tag.startsWith('=') || tag.startsWith('+') ? tag : `-${tag}`);
+      const text = tag.trim() || '?';
+      const parsed = parseTag(text.startsWith('-') || text.startsWith('=') || text.startsWith('+') ? text : `-${text}`);
       const result = store.apply({ ...command, tag: parsed }, 'place');
-      if (result) store.set({ dialog: null, selection: { items: result.created } });
+      if (result) {
+        placed.current = true;
+        store.set({ dialog: null, selection: { items: result.created } });
+      }
     } catch (error) {
       store.notify((error as Error).message, true);
     }
   };
   return (
-    <Modal title={tr('Which device does this function belong to?')} onOk={ok} okLabel={tr('Place')}>
+    <Modal title={tr('Which device does this function belong to?')} onOk={ok} onEscape={ok} okLabel={tr('Place')}>
       <Field label={tr('Device tag')}>
-        <input value={tag} onChange={(e) => setTag(e.target.value)} list="devices" autoFocus placeholder="-3K7" />
+        <input value={tag} onChange={(e) => setTag(e.target.value)} list="devices" autoFocus placeholder="-?" />
       </Field>
       <datalist id="devices">
         {options.map((o) => (
@@ -3612,6 +3619,7 @@ function PlaceAuxiliaryDialog({ command }: { command: Extract<Command, { type: '
         ))}
       </datalist>
       <p className="hint">{tr('Contacts belong to the device of their coil. Type the tag or pick one of the existing devices.')}</p>
+      <p className="hint">{tr('Not decided yet? Enter or Esc without a tag places it as -? (Cancel does not place it).')}</p>
     </Modal>
   );
 }

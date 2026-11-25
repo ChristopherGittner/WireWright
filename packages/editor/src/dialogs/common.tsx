@@ -1,6 +1,6 @@
 // Building blocks of the dialogs: modal frame, labelled fields, multilingual fields.
 import type { LocalizedText } from '@wirewright/core';
-import { useEffect, type ReactNode } from 'react';
+import { useEffect, useRef, type ReactNode } from 'react';
 import { tr } from '../i18n.js';
 import { LineInput, showBreaks } from '../lineInput.js';
 import { useEditor, useStore } from '../store.js';
@@ -24,6 +24,7 @@ export function Modal({
   wide,
   full,
   onCancel,
+  onEscape,
 }: {
   title: string;
   children: ReactNode;
@@ -34,11 +35,15 @@ export function Modal({
   full?: boolean;
   /** Called instead of just closing (Cancel, Esc, click outside). */
   onCancel?: () => void;
+  /** Esc does this instead of cancelling (e.g. accept with a default). */
+  onEscape?: () => void;
 }) {
   const store = useStore();
   const close = () => (onCancel ? onCancel() : store.set({ dialog: null }));
+  const escapeRef = useRef(onEscape);
+  escapeRef.current = onEscape;
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && store.set({ dialog: null });
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && (escapeRef.current ? escapeRef.current() : store.set({ dialog: null }));
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
   }, [store]);
@@ -54,7 +59,7 @@ export function Modal({
         }}
         onKeyDown={(e) => {
           e.stopPropagation();
-          if (e.key === 'Escape') close();
+          if (e.key === 'Escape') (onEscape ?? close)();
         }}
       >
         <h3>{title}</h3>

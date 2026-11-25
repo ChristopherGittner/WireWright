@@ -21,6 +21,11 @@ describe('formatTag / parseTag', () => {
     expect(parseTag(' +FIELD-S1 ')).toEqual({ location: 'FIELD', product: 'S1' });
   });
 
+  it('"?" marks a device not decided yet', () => {
+    expect(parseTag('-?')).toEqual({ product: '?' });
+    expect(formatTag({ function: 'SG', product: '?' })).toBe('=SG-?');
+  });
+
   it('rejects invalid tags', () => {
     expect(() => parseTag('K1')).toThrow();
     expect(() => parseTag('-K1-K2')).toThrow(/twice/);

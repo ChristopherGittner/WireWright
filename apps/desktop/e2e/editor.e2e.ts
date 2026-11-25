@@ -123,6 +123,53 @@ test('groups symbols: a click selects the group, Alt+click one member, Ctrl+Shif
   expect(await selection()).toEqual([b]);
 });
 
+test('band selection: left to right takes what is inside, right to left everything it touches', async ({ win }) => {
+  await win.evaluate(() => window.wirewrightStore.navigate('p_control'));
+  const [a, b] = await win.evaluate(() => {
+    const s = window.wirewrightStore;
+    const place = (x: number) => s.apply({ type: 'placeSymbol', pageId: 'p_control', symbol: 'iec60617.lamp', x, y: 240 }, 'place').created[0] as string;
+    return [place(340), place(380)];
+  });
+  const ba = (await win.locator(`.canvas [data-hit="${a}"]`).boundingBox())!;
+  const bb = (await win.locator(`.canvas [data-hit="${b}"]`).boundingBox())!;
+  const top = ba.y - 15;
+  const bottom = ba.y + ba.height + 15;
+  // From left of lamp a to the middle of lamp b: only a lies completely inside.
+  const drag = async (from: number, to: number) => {
+    await win.mouse.move(from, top);
+    await win.mouse.down();
+    await win.mouse.move(to, bottom, { steps: 6 });
+    if (to < from) await expect(win.locator('.canvas .band.crossing')).toHaveCount(1);
+    await win.mouse.up();
+    return win.evaluate(() => [...window.wirewrightStore.state.selection.items].sort());
+  };
+  expect(await drag(ba.x - 15, bb.x + bb.width / 2)).toEqual([a]);
+  await win.keyboard.press('Escape');
+  // The same frame drawn right to left: both lamps are touched.
+  expect(await drag(bb.x + bb.width / 2, ba.x - 15)).toEqual([a, b].sort());
+});
+
+test('a contact without a device: Esc or Enter with an empty tag places it as -?', async ({ win }) => {
+  await win.evaluate(() => window.wirewrightStore.navigate('p_control'));
+  const place = () =>
+    win.evaluate(() => window.wirewrightStore.set({ dialog: { kind: 'placeAuxiliary', command: { type: 'placeSymbol', pageId: 'p_control', symbol: 'iec60617.contact.no', x: 400, y: 260, rotation: 0, mirror: false } } }));
+  const tags = () => win.evaluate(() => window.wirewrightStore.state.doc.state.pages.p_control.items.filter((i: { tag?: { product?: string } }) => i.tag?.product === '?').length);
+  const before = await tags();
+  await place();
+  await expect(win.locator('.modal')).toContainText('Which device does this function belong to?');
+  await win.keyboard.press('Escape');
+  await expect(win.locator('.modal')).toHaveCount(0);
+  expect(await tags()).toBe(before + 1);
+  await place();
+  await win.keyboard.press('Enter');
+  await expect(win.locator('.modal')).toHaveCount(0);
+  expect(await tags()).toBe(before + 2);
+  // Cancel still places nothing.
+  await place();
+  await win.click('.modal button:has-text("Cancel")');
+  expect(await tags()).toBe(before + 2);
+});
+
 test('style brush copies the text layout to clicked symbols', async ({ win }) => {
   await win.evaluate(() => window.wirewrightStore.navigate('p_control'));
   const ids = await win.evaluate(() => {

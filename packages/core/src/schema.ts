@@ -6,10 +6,10 @@ import { z } from 'zod';
 /** Stable IDs: one lowercase letter, underscore, lowercase letters/digits (`p_8kq2m4x7tz`). Used as file names. */
 export const idSchema = z.string().regex(/^[a-z]_[a-z0-9]{1,40}$/, 'IDs look like "p_8kq2m4x7tz"');
 
-/** One aspect of an IEC 81346 tag, stored without its prefix (`A1`, `CAB1`, `5K3.1`). */
+/** One aspect of an IEC 81346 tag, stored without its prefix (`A1`, `CAB1`, `5K3.1`); "?" marks a device not decided yet (`-?`). */
 export const tagValueSchema = z
   .string()
-  .regex(/^[\p{L}\p{N}_.]+$/u, 'Tag values may only contain letters, digits, "." and "_"');
+  .regex(/^[\p{L}\p{N}_.?]+$/u, 'Tag values may only contain letters, digits, ".", "_" and "?"');
 
 export const tagSchema = z.object({
   function: tagValueSchema.optional(),

@@ -7,7 +7,7 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEven
 import { tr } from '../i18n.js';
 import { Icon } from '../icons.js';
 import { useEditor, useStore } from '../store.js';
-import { elementBounds, inside, pad, union, type Box } from './bounds.js';
+import { bandHits, elementBounds, isCrossing, pad, union, type Box } from './bounds.js';
 import { SceneGraphics, SceneTexts } from './SceneView.js';
 
 /** Snap of positions and lengths on the plate (real mm). */
@@ -320,7 +320,7 @@ export function LayoutCanvas({ pageId }: { pageId: string }) {
       if (result) setSelection(result.created);
     }
     if (drag?.kind === 'band' && band) {
-      const hits = [...bounds].filter(([, b]) => inside(b, band)).map(([id]) => id);
+      const hits = bandHits(bounds, band, isCrossing(drag.start, band));
       setSelection((s) => (drag.additive ? [...new Set([...s, ...hits])] : hits));
     }
     setDrag(null);
@@ -372,7 +372,11 @@ export function LayoutCanvas({ pageId }: { pageId: string }) {
             const b = bounds.get(id);
             return b ? <rect key={id} {...rectOf(pad(b, 0.6))} fill="rgba(30,111,255,0.08)" stroke="#1e6fff" strokeWidth={Math.max(0.2, 1.2 / scale)} /> : null;
           })}
-          {band && <rect {...rectOf(band)} fill="rgba(30,111,255,0.08)" stroke="#1e6fff" strokeWidth={1 / scale} />}
+          {band && (drag?.kind === 'band' && isCrossing(drag.start, band) ? (
+            <rect className="band crossing" {...rectOf(band)} fill="rgba(46,158,68,0.08)" stroke="#2e9e44" strokeWidth={1 / scale} strokeDasharray={`${4 / scale} ${3 / scale}`} />
+          ) : (
+            <rect className="band" {...rectOf(band)} fill="rgba(30,111,255,0.08)" stroke="#1e6fff" strokeWidth={1 / scale} />
+          ))}
         </g>
       </svg>
       <div className="layout-tools" role="toolbar" aria-label={tr('Cabinet layout')}>

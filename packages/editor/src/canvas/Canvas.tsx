@@ -4,7 +4,7 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEven
 import { fieldCommands, fieldValue, withGroups } from '../editing.js';
 import { insertBreak, readBreaks, showBreaks } from '../lineInput.js';
 import { PLC_DRAG_TYPE, startStyleBrush, SYMBOL_DRAG_TYPE, useEditor, useStore, type PlcDragPayload, type SymbolDragPayload } from '../store.js';
-import { elementBounds, inside, itemBounds, pad, union, type Box } from './bounds.js';
+import { bandHits, elementBounds, isCrossing, itemBounds, pad, union, type Box } from './bounds.js';
 
 /** Half size (mm) of the clickable spot of connection symbols such as corners. */
 const JUNCTION_HIT = 1.5;
@@ -483,11 +483,12 @@ function SchematicCanvas() {
   const onPointerUp = () => {
     if (drag && editable) {
       if ((drag.kind === 'move' || drag.kind === 'text') && preview) store.apply(preview, drag.kind === 'move' ? 'move' : 'move text');
+      const crossing = drag.kind === 'band' && band !== null && isCrossing(drag.start, band);
       if (drag.kind === 'band' && band && tool.kind === 'brush') {
-        const hits = [...bounds].filter(([, b]) => inside(b, band)).map(([id]) => id);
+        const hits = bandHits(bounds, band, crossing, isBox);
         if (hits.length > 0) store.apply({ type: 'applyItemStyle', pageId: page.id, itemIds: hits, style: tool.style }, 'copy style');
       } else if (drag.kind === 'band' && band) {
-        const hits = withGroups(page, [...bounds].filter(([, b]) => inside(b, band)).map(([id]) => id));
+        const hits = withGroups(page, bandHits(bounds, band, crossing, isBox));
         store.select({ items: drag.additive ? [...new Set([...selection.items, ...hits])] : hits });
       }
       if (drag.kind === 'box' && band && tool.kind === 'box') createBox(band);
@@ -742,7 +743,12 @@ function SchematicCanvas() {
               strokeWidth={Math.max(0.3, 1.5 / scale)}
             />
           )}
-          {band && tool.kind !== 'cable' && <rect {...rectOf(band)} fill={tool.kind === 'box' ? 'rgba(0,163,163,0.08)' : 'rgba(30,111,255,0.08)'} stroke={tool.kind === 'box' ? '#00a3a3' : '#1e6fff'} strokeWidth={1 / scale} />}
+          {band && tool.kind !== 'cable' && (drag?.kind === 'band' && isCrossing(drag.start, band) ? (
+            // Right to left: crossing (green, dashed) selects everything it touches.
+            <rect className="band crossing" {...rectOf(band)} fill="rgba(46,158,68,0.08)" stroke="#2e9e44" strokeWidth={1 / scale} strokeDasharray={`${4 / scale} ${3 / scale}`} />
+          ) : (
+            <rect className="band" {...rectOf(band)} fill={tool.kind === 'box' ? 'rgba(0,163,163,0.08)' : 'rgba(30,111,255,0.08)'} stroke={tool.kind === 'box' ? '#00a3a3' : '#1e6fff'} strokeWidth={1 / scale} />
+          ))}
           {(tool.kind === 'place' || tool.kind === 'box' || tool.kind === 'device' || tool.kind === 'cable' || tool.kind === 'macro' || tool.kind === 'plc' || tool.kind === 'paste') && hover && (
             <g stroke="#1e6fff" strokeWidth={0.8 / scale}>
               <line x1={hover.x - 3} y1={hover.y} x2={hover.x + 3} y2={hover.y} />

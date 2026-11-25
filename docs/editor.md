@@ -178,7 +178,8 @@ and drop and undo are shared. Closing that window docks the tab again.
 | Click or drag on a symbol (graphics or any of its texts) | Selects and moves the whole symbol |
 | **Ctrl+click** on a symbol text (tag, function text, pin, cross-reference) | Selects only that text: drag to move it, F2 edits it, F follows a cross-reference, **R** turns it 0° → 90° → 270° (against the sheet) |
 | Shift+click (Ctrl+click on graphics) | Adds to or removes from the selection |
-| Drag on empty space | Box selection (a grouped symbol in the box brings its whole group) |
+| Drag on empty space **left to right** | Window selection (blue frame): selects what lies completely inside. A grouped symbol brings its whole group |
+| Drag on empty space **right to left** | Crossing selection (green, dashed frame): selects everything the frame touches; a device box only where the frame crosses its border |
 | Click a grouped symbol | Selects the whole group (outlined in purple); dragging moves it as one |
 | **Alt+click** a grouped symbol | Selects only that symbol (to move or edit it alone) |
 | **Ctrl+G** / **Ctrl+Shift+G** (toolbar, right-click menu) | Groups the selected symbols / dissolves the groups of the selection |
@@ -302,7 +303,9 @@ continues on the next line; in report tables the lines are joined.
 - A main function gets its name automatically (`-5K3`). An auxiliary function
   joins the device of the nearest device symbol to its left at the same
   height; if there is none, the editor asks for its device, with
-  autocomplete of existing devices.
+  autocomplete of existing devices. Not decided yet? Enter or Esc with an
+  empty field places it as `-?` ("?" is allowed in tags as a placeholder);
+  Cancel does not place it.
 - The same holds later: unchecking **Master** of a symbol (e.g. the second
   contact block of an e-stop drawn right of the first) or clearing the device
   name of a contact makes it join the device to its left, with
