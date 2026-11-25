@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { coresFromType } from './cables.js';
 import { reportRows } from './reports.js';
+import { resolveSymbol } from './symbols.js';
 import type { Command } from './commands/schema.js';
 import type { SchematicPage } from './schema.js';
 import { documentWithPage } from './test/fixtures.js';
@@ -62,6 +63,18 @@ describe('cables', () => {
       ['1', false],
       ['PE', false],
     ]);
+  });
+
+  it('draws the shield of a shielded cable as an ellipse around the line', () => {
+    const { doc, pageId } = cableProject();
+    const page = () => doc.state.pages[pageId] as SchematicPage;
+    const graphics = () => resolveSymbol(page().items.find((i) => i.id === 'i_w')!, doc.library)!.graphics;
+    expect(graphics()).toHaveLength(3);
+    doc.apply({ type: 'setItemProperties', pageId, itemId: 'i_w', props: { cable: { ...page().items.find((i) => i.id === 'i_w')!.props!.cable!, shield: true } } });
+    const ellipse = graphics()[3]!;
+    expect(ellipse).toMatchObject({ type: 'polyline', closed: true });
+    const xs = (ellipse as { points: [number, number][] }).points.map((p) => p[0]);
+    expect([Math.min(...xs), Math.max(...xs)]).toEqual([1, 49]);
   });
 
   it('reports too few cores and a missing PE core', () => {

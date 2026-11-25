@@ -77,22 +77,38 @@ function cableSymbol(def: SymbolDefinition, item: Item): SymbolDefinition {
   const { vertical, length } = cableLine(item);
   const at = (along: number, across: number) => (vertical ? { x: across, y: along } : { x: along, y: across });
   const line = (a: { x: number; y: number }, b: { x: number; y: number }): Graphic => ({ type: 'line', x1: a.x, y1: a.y, x2: b.x, y2: b.y });
+  // A shielded cable: the screen drawn as an ellipse around the conductors it crosses (IEC 60617-3).
+  const shield: Graphic[] = item.props?.cable?.shield
+    ? [
+        {
+          type: 'polyline',
+          closed: true,
+          points: Array.from({ length: 32 }, (_, i) => {
+            const a = (i / 32) * 2 * Math.PI;
+            const p = at(length / 2 + (length / 2 - 1) * Math.cos(a), 2.5 * Math.sin(a));
+            return [Math.round(p.x * 100) / 100, Math.round(p.y * 100) / 100] as [number, number];
+          }),
+        },
+      ]
+    : [];
   return {
     ...def,
     graphics: [
       line(at(0, 0), at(length, 0)),
       line(at(0, -1.5), at(0, 1.5)),
       line(at(length, -1.5), at(length, 1.5)),
+      ...shield,
     ],
     connections: [],
+    // Beside a shield the texts move out of the ellipse.
     texts: vertical
       ? [
-          { field: 'tag', x: 1.5, y: 3 },
-          { field: 'cableType', x: 1.5, y: 6 },
+          { field: 'tag', x: shield.length ? 3.5 : 1.5, y: 3 },
+          { field: 'cableType', x: shield.length ? 3.5 : 1.5, y: 6 },
         ]
       : [
-          { field: 'tag', x: 1, y: -1.5 },
-          { field: 'cableType', x: 1, y: 3.5 },
+          { field: 'tag', x: 1, y: shield.length ? -3.5 : -1.5 },
+          { field: 'cableType', x: 1, y: shield.length ? 5.5 : 3.5 },
         ],
   };
 }
