@@ -868,7 +868,7 @@ class Renderer {
       const def = this.ctx.library.symbol(item.symbol);
       if (def?.function !== 'terminal') continue;
       // Terminals drawn with a housing (multi-level, multi-connection): the line runs below it.
-      const below = def.graphics.some((g) => g.type === 'rect') ? 3.5 : 2.5;
+      const below = def.terminalLevels || def.graphics.some((g) => g.type === 'rect') ? 3.5 : 2.5;
       for (const level of terminalLevels(item, this.ctx.library)) {
         const pins = def.connections.filter((c) => level.pins.includes(c.id));
         if (level.bridge === undefined || pins.length === 0) continue;
