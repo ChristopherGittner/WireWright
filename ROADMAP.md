@@ -209,3 +209,11 @@ device directory, and export it as a PDF. An AI can do the same through MCP.
 - [ ] ET 200MP / S7-1500: AQ 8xU/I HS terminals (manual no longer downloadable), CM/CP and TM modules (CM PtP, CP 1543-1, TM Count, TM PosInput), IM 155-5 PN BA/HF
 - [ ] ET 200eco PN: digital (8 DI, 16 DI, 8 DQ, 8 DIO) and analog modules with M12 sockets (pin 1 24 V, pin 2 / 4 signals, pin 3 M, pin 5 FE)
 - [ ] ET 200AL: IM 157-1 PN, DI/DQ/DIQ with M8 and M12, AI/AQ
+
+### Device library: GSDML / ESI
+- [ ] Import of PROFINET GSDML and EtherCAT ESI files: modules with order number, name, channel count and kind (DI/DQ/AI/AQ from the process data, channel names) as device definitions in the project or shared library; terminals are not in these files – filled in by family pattern and marked "check terminals", editable by hand
+- [ ] Complete the built-in lists from the manufacturers' GSDML/ESI (WAGO 750-375/377, Beckhoff ESI, Siemens ET 200SP/MP/eco/AL), terminals from the manuals as before
+
+### Device library: WAGO and Beckhoff
+- [ ] WAGO: terminals of the 25 modules still marked "check" (e.g. 750-491, 750-498, 750-519, 750-523, 750-562, 753-427, 753-434, 753-460); channels for the special modules that have none yet, first the fail-safe I/O (750-66x), then counters, PWM, encoder/SSI interfaces
+- [ ] Beckhoff: missing EL1xxx-EL4xxx variants; TwinSAFE EL1904/EL1918/EL2904 terminals; EL5xxx (encoder, measurement), EL6xxx (communication, IO-Link), EL7xxx (motor), EL9xxx (power feed, system); ELM, ELX; EP/EPP EtherCAT boxes; KL/KM Bus Terminals; more couplers and controllers (EK1101, EK1122, CX …)
