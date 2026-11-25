@@ -329,7 +329,8 @@ describe('Wirewright MCP server', () => {
     await ok('create_project', { name: 'Two channels' });
     await ok('create_page', { name: '1' });
     await ok('place_symbol', { page: '1', symbol: 'iec60617.estop', x: 100, y: 60, tag: '-S2' });
-    const second = await ok('place_symbol', { page: '1', symbol: 'iec60617.estop', x: 140, y: 60, tag: '-S2', main: false });
+    const second = await ok('place_symbol', { page: '1', symbol: 'iec60617.estop', x: 140, y: 60, tag: '-S2', main: false, pins: { '1': '21', '2': '22' } });
+    expect(second.connections.map((c: { designation: string }) => c.designation)).toEqual(['21', '22']);
     expect(second.role).toBe('auxiliary');
     expect(JSON.stringify(await ok('check_project'))).not.toContain('device.multipleMainFunctions');
     await ok('set_properties', { page: '1', item: second.id, main: true });
@@ -385,6 +386,13 @@ describe('Wirewright MCP server', () => {
     expect(numbered).toEqual([{ number: '1.3.1', ends: [] }]);
     const wires = await ok('get_wires');
     expect(wires[0]).toMatchObject({ number: '1.3.1', color: 'BN', crossSection: 1.5, potential: 'L1', numberSource: 'marker' });
+
+    // A type without a core count: a warning, then the cores given explicitly.
+    const network = await ok('place_symbol', { page: '1', symbol: 'wirewright.cable', x: 92, y: 100, width: 32 });
+    const unknown = await ok('set_cable', { page: '1', item: network.id, type: 'FTP cat5e' });
+    expect(unknown.warning).toContain('cores');
+    const given = await ok('set_cable', { page: '1', item: network.id, cores: 8 });
+    expect(given.find((c: { cores: unknown[] }) => c.cores.length === 8)).toBeDefined();
   });
 
   it('lists and renumbers terminal strips', async () => {

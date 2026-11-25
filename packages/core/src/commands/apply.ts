@@ -6,7 +6,7 @@ import { newId } from '../ids.js';
 import type { Library } from '../library.js';
 import { planPageNames, planRenumbering, proposeDeviceName } from '../naming.js';
 import { addressSize, buildPlcIndex, IO_KINDS, placePlcCommand } from '../plc.js';
-import { devicePages, PLC_STORE_PAGE } from '../plcStore.js';
+import { devicePages, pageOrStore, PLC_STORE_PAGE } from '../plcStore.js';
 import { placeFunctionCommand } from '../devicelib.js';
 import { buildCableIndex, buildWireIndex } from '../cables.js';
 import { buildConnectivity } from '../connectivity.js';
@@ -398,7 +398,8 @@ function assignPlcAddresses(draft: DraftState, cmd: CommandOf<'assignPlcAddresse
   const byStation = new Map<string, Card[]>();
   for (const device of index.devices.values()) {
     const main = device.main;
-    const page = main && (state.pages[main.pageId] as SchematicPage);
+    // Cards not drawn yet (card store) are numbered too.
+    const page = main && (pageOrStore(state, main.pageId) as SchematicPage | undefined);
     const item = page?.items.find((i) => i.id === main!.itemId);
     const plc = item?.props?.plc;
     if (!main || !plc?.station || !stations.has(plc.station)) continue;

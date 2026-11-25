@@ -53,6 +53,7 @@ import {
   borderPinSchema,
   ioChannelSchema,
   PLC_STORE_PAGE,
+  cableCoreSchema,
 } from '@wirewright/core';
 import { createStandardLibrary } from '@wirewright/library';
 import { renderContext, renderSheet, sceneToSvg } from '@wirewright/render';
@@ -489,6 +490,10 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
           .optional()
           .describe('Device boxes: named pins on the outline, e.g. [{"id":"A1","side":"top","offset":8,"designation":"A1"}]; offset in mm from the left (top/bottom) or top (left/right) corner, on the 4 mm grid'),
         links: z.array(z.array(z.string())).optional().describe('Device boxes: groups of border pin IDs connected inside the device (e.g. [["13","14"]]); default none'),
+        pins: z
+          .record(z.string(), z.string())
+          .optional()
+          .describe('Connection designations by pin ID, e.g. {"1": "11", "2": "14"} on a contact, {"1": "I3"} on a PLC point (its card terminal)'),
         main: z
           .boolean()
           .optional()
@@ -517,6 +522,7 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
             ...(Object.keys(props).length > 0 ? { props } : {}),
             ...(args.borderPins ? { borderPins: args.borderPins } : {}),
             ...(args.main !== undefined ? { main: args.main } : {}),
+            ...(args.pins ? { pins: args.pins } : {}),
           });
           if (args.links !== undefined) doc.apply({ type: 'setItemProperties', pageId: page.id, itemId: created[0]!, links: args.links });
           return placedItem(doc, page.id, created[0]!);
@@ -1257,7 +1263,7 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
     'set_cable',
     {
       description:
-        'Sets the data of a cable (its first definition line, symbol wirewright.cable placed across the conductors with width or height as length). With a type like "5G1.5" or "7x0.75" the cores are generated (numbered or HD 308 colors).',
+        'Sets the data of a cable (its first definition line, symbol wirewright.cable placed across the conductors with width or height as length). With a type like "5G1.5" or "7x0.75" the cores are generated (numbered or HD 308 colors); for other types ("FTP cat5e") give `cores`.',
       inputSchema: {
         page: pageArg,
         item: z.string(),
@@ -1267,6 +1273,10 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
         outerDiameterMm: z.number().positive().optional(),
         lengthM: z.number().positive().optional(),
         shield: z.boolean().optional(),
+        cores: z
+          .union([z.int().min(1), z.array(cableCoreSchema)])
+          .optional()
+          .describe('Cores when the type does not say: a number (numbered 1..n) or the list [{id, number?, color?}]'),
       },
     },
     (args) =>
@@ -1289,8 +1299,13 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
           if (args.outerDiameterMm !== undefined) cable.outerDiameterMm = args.outerDiameterMm;
           if (args.lengthM !== undefined) cable.lengthM = args.lengthM;
           if (args.shield !== undefined) cable.shield = args.shield;
+          if (typeof args.cores === 'number') cable.cores = Array.from({ length: args.cores }, (_, i) => ({ id: String(i + 1), number: String(i + 1) }));
+          else if (args.cores) cable.cores = args.cores;
           doc.apply({ type: 'setItemProperties', pageId: page.id, itemId: item.id, props: { cable } });
-          return cablesView(doc);
+          const view = cablesView(doc);
+          return cable.cores.length > 0
+            ? view
+            : { warning: `The cores could not be derived from the type "${cable.type ?? ''}"; give them with cores (e.g. cores: 8)`, cables: view };
         }),
       ),
   );

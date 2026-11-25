@@ -128,6 +128,16 @@ describe('I/O cards and points', () => {
     expect(() => doc.apply({ type: 'assignPlcAddresses', station: 'nope' })).toThrow(/not found/);
   });
 
+  it('numbers cards that are not drawn yet', () => {
+    const { doc, pageId } = cardProject();
+    doc.apply({ type: 'setPlcs', plcs: [{ ...siemens, firstAddress: { DI: 10 } }] });
+    // Deleting the drawing keeps the card in the card store.
+    doc.apply({ type: 'deleteItems', pageId, itemIds: ['i_card'] });
+    expect(doc.state.project.plcCards?.map((i) => i.id)).toEqual(['i_card']);
+    doc.apply({ type: 'assignPlcAddresses' });
+    expect(doc.state.project.plcCards?.[0]?.props?.plc?.start?.DI).toBe(10);
+  });
+
   it('lists the I/O channels of a PLC', () => {
     const { doc, tag } = cardProject();
     doc.apply(placeFunctionCommand(wago, 2, library, { pageId: 'p_six', x: column(4), y: 100, tag }));
