@@ -32,7 +32,7 @@ interface ViewBox {
 type Tool = { kind: 'select' } | { kind: 'rail' } | { kind: 'duct' } | { kind: 'cutout' } | { kind: 'device'; itemId: string };
 
 /** Devices that usually sit in the door (listed first on a door). */
-const DOOR_FUNCTIONS = new Set(['switch.pushbutton.no', 'switch.pushbutton.nc', 'switch.estop', 'switch.selector', 'lamp']);
+const DOOR_FUNCTIONS = new Set(['switch.pushbutton.no', 'switch.pushbutton.nc', 'switch.estop', 'switch.selector', 'switch.keyswitch', 'lamp']);
 
 type Drag =
   | { kind: 'move'; start: Point; itemIds: string[] }

@@ -54,6 +54,8 @@ describe('standard library', () => {
       'iec60617.mcb.2p': 2, 'iec60617.rcbo.2p': 2, 'iec60617.rcbo.4p': 4, 'iec60617.rccb.4p': 4,
       'iec60617.switch.disconnector.3p': 3, 'iec60617.fuse.disconnector.1p': 1, 'iec60617.fuse.disconnector.2p': 2,
       'iec60617.switch.selector.3pos': 2, 'iec60617.pushbutton.illuminated': 1, 'iec60617.thermostat': 1,
+      'iec60617.pushbutton.latched.no': 1, 'iec60617.pushbutton.latched.nc': 1, 'iec60617.switch.selector.momentary': 1,
+      'iec60617.keyswitch.no': 1, 'iec60617.keyswitch.nc': 1, 'iec60617.keyswitch.momentary.no': 1,
     };
     for (const [id, n] of Object.entries(poles)) {
       expect(library.symbol(id)?.links, id).toHaveLength(n);
