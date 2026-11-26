@@ -921,8 +921,8 @@ export const de: Record<string, string> = {
   "Select at least two symbols to group them": "Zum Gruppieren mindestens zwei Symbole auswählen",
   "The selection contains no group": "Die Auswahl enthält keine Gruppe",
   "A group needs at least two items": "Eine Gruppe braucht mindestens zwei Elemente",
-  "Group / ungroup the selected symbols": "Ausgewählte Symbole gruppieren / Gruppierung aufheben",
-  "Select a single symbol of a group": "Ein einzelnes Symbol einer Gruppe auswählen",
-  "Group the selected symbols (selected and moved as one; Alt+click selects a single one)": "Ausgewählte Symbole gruppieren (werden zusammen ausgewählt und verschoben; Alt+Klick wählt ein einzelnes)",
+  "Group the selected symbols (also groups into a group) / dissolve the outermost group": "Ausgewählte Symbole gruppieren (auch Gruppen zu einer Gruppe) / äußerste Gruppe auflösen",
+  "Select one level inside a group (again: the next level, down to the symbol)": "Eine Ebene innerhalb einer Gruppe auswählen (nochmal: die nächste Ebene, bis zum Symbol)",
+  "Group the selected symbols (selected and moved as one; groups can contain groups; Alt+click goes one level in)": "Ausgewählte Symbole gruppieren (werden zusammen ausgewählt und verschoben; Gruppen können Gruppen enthalten; Alt+Klick geht eine Ebene hinein)",
   "Not decided yet? Enter or Esc without a tag places it as -? (Cancel does not place it).": "Noch nicht entschieden? Enter oder Esc ohne Kennzeichen platziert es als -? (Abbrechen platziert nichts).",
 };

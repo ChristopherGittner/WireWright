@@ -123,6 +123,37 @@ test('groups symbols: a click selects the group, Alt+click one member, Ctrl+Shif
   expect(await selection()).toEqual([b]);
 });
 
+test('groups in groups: Alt+click steps inwards, Ctrl+Shift+G opens one level', async ({ win }) => {
+  await win.evaluate(() => window.wirewrightStore.navigate('p_control'));
+  const [a, b, c] = await win.evaluate(() => {
+    const s = window.wirewrightStore;
+    const place = (x: number) => s.apply({ type: 'placeSymbol', pageId: 'p_control', symbol: 'iec60617.lamp', x, y: 200 }, 'place').created[0] as string;
+    return [place(340), place(380), place(420)];
+  });
+  const selection = () => win.evaluate(() => [...window.wirewrightStore.state.selection.items].sort());
+  const hit = (id: string) => win.locator(`.canvas [data-hit="${id}"]`);
+  await hit(a).click();
+  await hit(b).click({ modifiers: ['Shift'] });
+  await win.keyboard.press('Control+g');
+  await hit(c).click({ modifiers: ['Shift'] });
+  await win.keyboard.press('Control+g');
+  // A click selects the outer group (a, b, c); two outlines: outer and the inner group (a, b) that is selected as a whole
+  await hit(c).click({ modifiers: ['Alt'] });
+  await hit(a).click();
+  expect(await selection()).toEqual([a, b, c].sort());
+  await expect(win.locator('.canvas .group-outline')).toHaveCount(2);
+  await hit(a).click({ modifiers: ['Alt'] });
+  expect(await selection()).toEqual([a, b].sort());
+  await hit(a).click({ modifiers: ['Alt'] });
+  expect(await selection()).toEqual([a]);
+  // Ctrl+Shift+G dissolves the outer level only: a and b stay a group.
+  await hit(a).click({ modifiers: ['Alt'] });
+  await win.keyboard.press('Control+Shift+g');
+  await hit(c).click();
+  await hit(b).click();
+  expect(await selection()).toEqual([a, b].sort());
+});
+
 test('band selection: left to right takes what is inside, right to left everything it touches', async ({ win }) => {
   await win.evaluate(() => window.wirewrightStore.navigate('p_control'));
   const [a, b] = await win.evaluate(() => {

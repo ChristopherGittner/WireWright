@@ -1,4 +1,4 @@
-import { CommandError, pageConnectionPoints, effectiveTag, itemRole, placeFunctionCommand, placedFunctions, placePlcCommand, relativeTag, tagContext, tagFromLeftNeighbour, type Command, type Item, type Rotation, type SchematicPage } from '@wirewright/core';
+import { CommandError, pageConnectionPoints, effectiveTag, itemRole, placeFunctionCommand, placedFunctions, placePlcCommand, relativeTag, tagContext, tagFromLeftNeighbour, type Command, type Item, type Rotation, groupMembers, nextGroupLevel, type SchematicPage } from '@wirewright/core';
 import { renderContext, renderSheet, type Scene } from '@wirewright/render';
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react';
 import { fieldCommands, fieldValue, withGroups } from '../editing.js';
@@ -346,10 +346,11 @@ function SchematicCanvas() {
       // Shift+click (and Ctrl+click on the symbol's graphics) adds to or removes from the selection.
       // A grouped symbol brings its whole group; Alt+click takes only the symbol itself.
       const additive = e.shiftKey || ((e.ctrlKey || e.metaKey) && !field);
-      const clicked = e.altKey ? [itemId] : withGroups(page, [itemId]);
+      // Alt+click goes one group level further in each time (groups in groups), down to the symbol itself.
+      const clicked = e.altKey ? (additive ? [itemId] : nextGroupLevel(page.items, itemId, selection.items)) : withGroups(page, [itemId]);
       let items = selection.items;
       if (additive) items = items.includes(itemId) ? items.filter((i) => !clicked.includes(i)) : [...new Set([...items, ...clicked])];
-      else if (!items.includes(itemId) || (e.altKey && items.length > 1)) items = clicked;
+      else if (!items.includes(itemId) || e.altKey) items = clicked;
       store.select({ items });
       if (!additive) setDrag({ kind: 'move', start: snap(p), itemIds: items });
       return;
@@ -646,9 +647,15 @@ function SchematicCanvas() {
   const selected = new Set(selection.items);
   // Groups with a selected member: one outline around all their members.
   const pageItems: readonly Item[] = page.type === 'schematic' ? page.items : [];
-  const groupOutlines = [...new Set(pageItems.filter((i) => selected.has(i.id) && i.group !== undefined).map((i) => i.group!))].flatMap((group) => {
-    const boxes = pageItems.filter((i) => i.group === group).map((i) => bounds.get(i.id)).filter((b): b is Box => b !== undefined);
-    return boxes.length > 0 ? [{ group, box: boxes.reduce((a, b) => union(a, b)) }] : [];
+  // Outlined: the outermost group of every selected symbol, and every inner group that is selected as a whole.
+  const members = groupMembers(pageItems);
+  const outlined = new Set(
+    pageItems.flatMap((i) => (selected.has(i.id) ? (i.groups ?? []).filter((g, k) => k === 0 || members.get(g)!.every((id) => selected.has(id))) : [])),
+  );
+  const groupOutlines = [...outlined].flatMap((group) => {
+    const boxes = members.get(group)!.map((id) => bounds.get(id)).filter((b): b is Box => b !== undefined);
+    const depth = pageItems.find((i) => i.groups?.includes(group))!.groups!.indexOf(group);
+    return boxes.length > 0 ? [{ group, box: boxes.reduce((a, b) => union(a, b)), depth }] : [];
   });
   const selectedText = selection.text
     ? scene.elements.find((e) => {
@@ -703,8 +710,8 @@ function SchematicCanvas() {
         )}
         <SceneTexts elements={scene.elements} interactive={editable} />
         <g className="selection" pointerEvents="none">
-          {groupOutlines.map(({ group, box }) => (
-            <rect key={group} className="group-outline" {...rectOf(pad(box, 2.5))} fill="none" stroke="#7b3fe4" strokeWidth={Math.max(0.2, 1.2 / scale)} strokeDasharray={`${6 / scale} ${2 / scale} ${1 / scale} ${2 / scale}`} />
+          {groupOutlines.map(({ group, box, depth }) => (
+            <rect key={group} className="group-outline" {...rectOf(pad(box, Math.max(1.6, 2.5 - 0.6 * depth)))} fill="none" stroke="#7b3fe4" strokeWidth={Math.max(0.2, 1.2 / scale)} strokeDasharray={`${6 / scale} ${2 / scale} ${1 / scale} ${2 / scale}`} />
           ))}
           {[...selected].map((id) => {
             const b = bounds.get(id);
@@ -789,7 +796,7 @@ function ItemMenu({ at, pageId, itemIds, onClose }: { at: { x: number; y: number
   const page = store.currentPage();
   const single = !several ? page?.items.find((i) => i.id === itemIds[0]) : undefined;
   const deviceBox = single !== undefined && store.library.symbol(single.symbol)?.function === 'box.device';
-  const grouped = page?.items.some((i) => itemIds.includes(i.id) && i.group !== undefined) ?? false;
+  const grouped = page?.items.some((i) => itemIds.includes(i.id) && i.groups !== undefined) ?? false;
   return (
     <div className="context-menu" role="menu" ref={ref} style={{ left: at.x, top: at.y }}>
       <button role="menuitem" onClick={run(() => store.set({ dialog: { kind: 'item', pageId, itemIds } }))}>

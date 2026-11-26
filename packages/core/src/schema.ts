@@ -215,7 +215,7 @@ export const itemStyleSchema = z.object({
 });
 export type ItemStyle = z.infer<typeof itemStyleSchema>;
 
-export const itemSchema = z.object({
+const itemObjectSchema = z.object({
   id: idSchema,
   symbol: z.string().min(1),
   x: z.int(),
@@ -235,9 +235,22 @@ export const itemSchema = z.object({
   /** Where the label texts (tag, name, function text, technical data, cross-references) go; absent: as in the symbol definition. */
   textArrangement: textArrangementSchema.optional(),
   props: itemPropsSchema.optional(),
-  /** Group (`g_…`): items of a page with the same group are selected and moved together. Only for selection; tags, wiring and cross-references stay per item. */
-  group: idSchema.optional(),
+  /**
+   * Groups (`g_…`) the item belongs to, outermost first (groups in groups). Items of a page with
+   * the same outermost group are selected and moved together. Only for selection; tags, wiring and
+   * cross-references stay per item.
+   */
+  groups: z.array(idSchema).min(1).optional(),
 });
+
+/** A page item; files written before groups in groups have `"group": "g_…"`, read as `groups`. */
+export const itemSchema = z.preprocess((value) => {
+  if (value && typeof value === 'object' && 'group' in value) {
+    const { group, ...rest } = value as Record<string, unknown>;
+    return typeof group === 'string' && !('groups' in rest) ? { ...rest, groups: [group] } : rest;
+  }
+  return value;
+}, itemObjectSchema);
 
 const pageBase = {
   id: idSchema,

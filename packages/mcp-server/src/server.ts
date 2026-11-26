@@ -726,7 +726,7 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
   server.registerTool(
     'group_items',
     {
-      description: 'Groups items of a page (at least two): a group is selected and moved as one in the editor. Items already in a group leave it. Grouping changes nothing else (tags, wiring, cross-references stay per item).',
+      description: 'Groups items of a page (at least two units): a group is selected and moved as one in the editor. Groups completely among the items become inner groups (groups in groups); items of partly given groups leave them. Grouping changes nothing else (tags, wiring, cross-references stay per item). Items show their groups as "groups" (outermost first).',
       inputSchema: { page: pageArg, items: z.array(z.string()).min(2).describe('Item IDs') },
     },
     ({ page, items }) =>
@@ -740,7 +740,7 @@ export function createWirewrightServer(options: WirewrightServerOptions): McpSer
 
   server.registerTool(
     'ungroup_items',
-    { description: 'Dissolves the groups the given items belong to (all members of those groups).', inputSchema: { page: pageArg, items: z.array(z.string()).min(1) } },
+    { description: 'Dissolves the outermost group of each given item (one level; inner groups stay).', inputSchema: { page: pageArg, items: z.array(z.string()).min(1) } },
     ({ page, items }) =>
       respond(() =>
         session.run((doc) => {

@@ -789,16 +789,25 @@ self-holding contact, a motor feeder, a device box with its contents.
 
 ## Groups
 
-Items of a schematic page can be **grouped**: they carry the same `"group": "g_…"`.
-A group only affects selection – a click on a member selects all members, so
-they move, rotate and are copied together. Tags, wiring, cross-references and
-devices stay per item (a contact in a group still follows its coil).
+Items of a schematic page can be **grouped**, and groups can contain groups.
+An item lists its groups from the outermost inwards: `"groups": ["g_outer", "g_inner"]`.
+A group only affects selection – a click on a member selects all members of
+its outermost group, so they move, rotate and are copied together; Alt+click
+goes one level further in each time (inner group, then the symbol). Tags,
+wiring, cross-references and devices stay per item (a contact in a group
+still follows its coil).
 
-- Groups are flat: grouping items that are already in a group moves them into
-  the new group. A group left with one item (delete, regroup) is dissolved.
-- Copy/paste and macros keep the grouping: the copy gets a new group ID, so
-  it is not part of the original's group. A single copied member is not grouped.
-- PLC cards moved to the card store (PLC tab) leave their group.
+- `groupItems`: groups completely among the items stay as inner groups of
+  the new group; items of a group that is only partly given leave it. At
+  least two units (whole groups or single items) are needed.
+- `ungroupItems` dissolves the outermost group of each given item (one level).
+- Groups that no longer mean anything are removed: a group with fewer than
+  two items, and an inner group with the same items as the group around it.
+- Copy/paste and macros keep the nesting with new group IDs, so a copy is not
+  part of the original's groups.
+- PLC cards moved to the card store (PLC tab) leave their groups.
+- Files written before groups in groups have `"group": "g_…"`; it is read as
+  `"groups": ["g_…"]`.
 
 ## Cables
 

@@ -2,6 +2,7 @@ export * from './schema.js';
 export * from './library.js';
 export * from './text.js';
 export * from './ids.js';
+export * from './groups.js';
 export * from './geometry.js';
 export * from './tags.js';
 export * from './issues.js';

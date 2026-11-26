@@ -200,7 +200,7 @@ device directory, and export it as a PDF. An AI can do the same through MCP.
 ## Open
 
 ### Editor
-- [ ] Groups in groups: a group can contain groups; Ctrl+G on groups nests them, Ctrl+Shift+G opens one level; Alt+click (or double-click to enter) selects inside; copy/paste and macros keep the nesting
+- [x] Groups in groups: a group can contain groups; Ctrl+G on groups nests them, Ctrl+Shift+G opens one level; Alt+click goes one level in each time; copy/paste and macros keep the nesting; files with the former "group" field are read
 - [ ] Macro editor: open a saved macro (standard, shared folder or project) on its own canvas, change it and save it back; rename, describe, move between categories, delete; later variants and placeholders inside a macro
 
 ### Device library: Siemens ET 200

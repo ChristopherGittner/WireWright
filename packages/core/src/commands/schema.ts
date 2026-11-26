@@ -261,9 +261,9 @@ export const commandSchema = z.discriminatedUnion('type', [
   z.object({ type: z.literal('rotateItems'), pageId, itemIds, rotation: rotationSchema }),
   z.object({ type: z.literal('mirrorItems'), pageId, itemIds }),
   z.object({ type: z.literal('deleteItems'), pageId, itemIds }),
-  /** Groups the items (at least two); items already in a group leave it. The new group ID is in `created`. */
+  /** Groups the items: whole groups among them become inner groups (groups in groups), items of partly selected groups leave them. The new group ID is in `created`. */
   z.object({ type: z.literal('groupItems'), pageId, itemIds: z.array(idSchema).min(2) }),
-  /** Dissolves the groups the items belong to (all their members). */
+  /** Dissolves the outermost group of each given item (one level; inner groups stay). */
   z.object({ type: z.literal('ungroupItems'), pageId, itemIds }),
   z.object({
     type: z.literal('setItemProperties'),

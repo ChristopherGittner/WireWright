@@ -469,12 +469,12 @@ export class EditorStore {
     if (this.apply({ type: 'groupItems', pageId: page.id, itemIds: items }, 'group')) this.notify('Grouped');
   }
 
-  /** Ctrl+Shift+G: dissolves the groups of the selected symbols; the symbols stay selected. */
+  /** Ctrl+Shift+G: dissolves the outermost group of the selected symbols (one level); the symbols stay selected. */
   ungroup(): void {
     const page = this.currentPage();
     const { items } = this.#state.selection;
     if (!page || items.length === 0) return;
-    if (!page.items.some((i) => items.includes(i.id) && i.group !== undefined)) return this.notify('The selection contains no group', true);
+    if (!page.items.some((i) => items.includes(i.id) && i.groups !== undefined)) return this.notify('The selection contains no group', true);
     if (this.apply({ type: 'ungroupItems', pageId: page.id, itemIds: items }, 'ungroup')) this.notify('Ungrouped');
   }
 

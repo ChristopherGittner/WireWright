@@ -180,9 +180,9 @@ and drop and undo are shared. Closing that window docks the tab again.
 | Shift+click (Ctrl+click on graphics) | Adds to or removes from the selection |
 | Drag on empty space **left to right** | Window selection (blue frame): selects what lies completely inside. A grouped symbol brings its whole group |
 | Drag on empty space **right to left** | Crossing selection (green, dashed frame): selects everything the frame touches; a device box only where the frame crosses its border |
-| Click a grouped symbol | Selects the whole group (outlined in purple); dragging moves it as one |
-| **Alt+click** a grouped symbol | Selects only that symbol (to move or edit it alone) |
-| **Ctrl+G** / **Ctrl+Shift+G** (toolbar, right-click menu) | Groups the selected symbols / dissolves the groups of the selection |
+| Click a grouped symbol | Selects its whole (outermost) group, outlined in purple; dragging moves it as one |
+| **Alt+click** a grouped symbol | One level further in each time: the inner group, then the symbol alone (to move or edit it) |
+| **Ctrl+G** / **Ctrl+Shift+G** (toolbar, right-click menu) | Groups the selected symbols – selected groups become inner groups (groups in groups) / dissolves the outermost group of the selection (one level) |
 | Esc | Clears the selection, cancels the current action |
 | **F** (follow) on a cross-reference selected with Ctrl+click | Jumps to where it points and selects that symbol |
 | **F** on a selected slave | Jumps to its master: from a contact to its coil, from an I/O point to the PLC card, from an interruption point to its partner. On a master, select one of its cross-references and press F. |

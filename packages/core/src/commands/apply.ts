@@ -2,6 +2,7 @@ import { current, isDraft, type Draft } from 'immer';
 import { issueMessage, type IssueText } from '../issues.js';
 import { buildDeviceIndex, itemRole, tagFromLeftNeighbour, type Device, type DeviceIndex } from '../devices.js';
 import { addRotation, boxRect, containsPoint, isBoxSymbol } from '../geometry.js';
+import { addGroup, normalizeGroups, removeOutermostGroups } from '../groups.js';
 import { newId } from '../ids.js';
 import type { Library } from '../library.js';
 import { planPageNames, planRenumbering, proposeDeviceName } from '../naming.js';
@@ -761,7 +762,7 @@ function placeItems(draft: DraftState, cmd: CommandOf<'placeItems'>, ctx: ApplyC
   const renamed = new Map<string, string>();
   // Copied groups become new groups (a copy is not part of the original's group).
   const groups = new Map<string, string>();
-  const usedGroups = new Set(Object.values(draft.pages).flatMap((p) => (p.type === 'schematic' ? p.items.map((i) => i.group) : [])));
+  const usedGroups = new Set(Object.values(draft.pages).flatMap((p) => (p.type === 'schematic' ? p.items.flatMap((i) => i.groups ?? []) : [])));
   const groupOf = (old: string) => {
     let id = groups.get(old);
     if (id === undefined) {
@@ -813,9 +814,11 @@ function placeItems(draft: DraftState, cmd: CommandOf<'placeItems'>, ctx: ApplyC
     if (item.links) placed.links = structuredClone(item.links);
     if (item.texts) placed.texts = structuredClone(item.texts);
     if (item.textArrangement) placed.textArrangement = item.textArrangement;
-    if (item.group !== undefined && items.filter((i) => i.group === item.group).length > 1) placed.group = groupOf(item.group);
+    if (item.groups) placed.groups = item.groups.map(groupOf);
     if (main && item.tag?.product !== undefined && placed.tag?.product !== undefined) renamed.set(formatTag(item.tag), placed.tag.product);
   }
+  // A group of which only one item was copied is no group.
+  normalizeGroups(page.items);
   if (rename) continueTerminalStrips(draft, cmd.pageId, new Set(ctx.result.created.slice(firstCreated)), ctx.library);
 }
 
@@ -943,7 +946,7 @@ function stashPlcCards(draft: DraftState, pageId: string, itemIds: readonly stri
     const tag = effectiveTag(snap, item, library);
     const stored: Item = { ...structuredClone(item), x: 0, y: 0, rotation: 0, mirror: false };
     delete stored.texts;
-    delete stored.group;
+    delete stored.groups;
     delete stored.textArrangement;
     if (Object.keys(tag).length > 0) stored.tag = tag;
     (draft.project.plcCards ??= []).push(stored);
@@ -1025,36 +1028,26 @@ function deleteItems(draft: DraftState, cmd: CommandOf<'deleteItems'>, ctx: Appl
   if (cmd.pageId !== PLC_STORE_PAGE) stashPlcCards(draft, cmd.pageId, cmd.itemIds, ctx.library);
   const ids = new Set(cmd.itemIds);
   page.items = page.items.filter((item) => !ids.has(item.id));
-  dropSingleGroups(page);
+  normalizeGroups(page.items);
 }
 
-/** Puts the items into one new group; groups that keep fewer than two items are dissolved. */
+/** Puts the items into one new group; whole groups among them become its inner groups. */
 function groupItems(draft: DraftState, cmd: CommandOf<'groupItems'>, ctx: ApplyContext): void {
   const page = getSchematicPage(draft, cmd.pageId);
-  const ids = new Set(cmd.itemIds);
-  if (ids.size < 2) throw commandError('A group needs at least two items');
-  for (const id of ids) findItem(page, id);
-  const used = new Set(Object.values(draft.pages).flatMap((p) => (p.type === 'schematic' ? p.items.map((i) => i.group) : [])));
+  for (const id of cmd.itemIds) findItem(page, id);
+  const used = new Set(Object.values(draft.pages).flatMap((p) => (p.type === 'schematic' ? p.items.flatMap((i) => i.groups ?? []) : [])));
   let group: string;
   do group = newId('g');
   while (used.has(group));
-  for (const item of page.items) if (ids.has(item.id)) item.group = group;
-  dropSingleGroups(page);
+  if (!addGroup(page.items, cmd.itemIds, group)) throw commandError('A group needs at least two items');
   ctx.result.created.push(group);
 }
 
-/** Removes the groups of the given items from all their members. */
+/** Dissolves the outermost group of the given items (one level); inner groups stay. */
 function ungroupItems(draft: DraftState, cmd: CommandOf<'ungroupItems'>): void {
   const page = getSchematicPage(draft, cmd.pageId);
-  const groups = new Set(cmd.itemIds.map((id) => findItem(page, id).group).filter((g) => g !== undefined));
-  for (const item of page.items) if (item.group !== undefined && groups.has(item.group)) delete item.group;
-}
-
-/** A group with a single item left is no group. */
-function dropSingleGroups(page: Draft<SchematicPage>): void {
-  const count = new Map<string, number>();
-  for (const item of page.items) if (item.group !== undefined) count.set(item.group, (count.get(item.group) ?? 0) + 1);
-  for (const item of page.items) if (item.group !== undefined && count.get(item.group)! < 2) delete item.group;
+  for (const id of cmd.itemIds) findItem(page, id);
+  removeOutermostGroups(page.items, cmd.itemIds);
 }
 
 function setItemProperties(draft: DraftState, cmd: CommandOf<'setItemProperties'>, ctx: ApplyContext): void {

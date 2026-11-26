@@ -12,6 +12,7 @@ import {
   type Library,
   type ProjectState,
   type SchematicPage,
+  withOutermostGroups,
 } from '@wirewright/core';
 
 /** The field F2 edits when a whole item is selected. */
@@ -71,9 +72,7 @@ export function fieldCommands(state: ProjectState, page: SchematicPage, item: It
   return [{ type: 'setItemProperties', pageId, itemId, props: { [field]: value === '' ? null : value } }];
 }
 
-/** The items plus all members of their groups: a click on a grouped symbol selects the whole group. */
+/** The items plus all members of their outermost groups: a click on a grouped symbol selects the whole group. */
 export function withGroups(page: SchematicPage, itemIds: readonly string[]): string[] {
-  const groups = new Set(page.items.filter((i) => itemIds.includes(i.id) && i.group !== undefined).map((i) => i.group));
-  if (groups.size === 0) return [...itemIds];
-  return [...new Set([...itemIds, ...page.items.filter((i) => i.group !== undefined && groups.has(i.group)).map((i) => i.id)])];
+  return withOutermostGroups(page.items, itemIds);
 }
