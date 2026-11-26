@@ -72,7 +72,7 @@ function hideDragImage(e: React.DragEvent) {
  * A clickable and draggable tile (symbols, macros). Not a <button>: Chromium does not start a
  * drag from a button with a real mouse, so it is an element with the button role instead.
  */
-function DragTile(props: { className: string; title: string; onClick: () => void; onDragStart: (e: React.DragEvent) => void; onDragEnd: () => void; children: ReactNode }) {
+function DragTile(props: { className: string; title: string; onClick: () => void; onDoubleClick?: () => void; onDragStart: (e: React.DragEvent) => void; onDragEnd: () => void; children: ReactNode }) {
   return (
     <div
       role="button"
@@ -81,6 +81,7 @@ function DragTile(props: { className: string; title: string; onClick: () => void
       title={props.title}
       draggable
       onClick={props.onClick}
+      {...(props.onDoubleClick ? { onDoubleClick: props.onDoubleClick } : {})}
       onKeyDown={(e) => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
@@ -583,6 +584,7 @@ export function SymbolsPanel() {
           onClick={() => store.set({ dialog: { kind: 'symbolEditor', mode: 'symbol', ...(tool.kind === 'place' ? { id: tool.symbol } : {}) } })}
         />
         <PanelButton icon="terminals" label={tr('Terminal strip configurator: terminals, levels and bridges, placed at once')} onClick={() => store.set({ dialog: { kind: 'terminalStrip' } })} />
+        <PanelButton icon="macros" label={tr('Macros: edit drawing, rename, describe, delete')} onClick={() => store.set({ dialog: { kind: 'macros' } })} />
       </div>
       <div className="symbols">
         {section('symbols', 'Symbols', symbols, (g) => (
@@ -634,8 +636,9 @@ export function SymbolsPanel() {
               <DragTile
                 key={m.id}
                 className={tool.kind === 'macro' && tool.macro === m.id ? 'device-entry active' : 'device-entry'}
-                title={`${localize(m.description, language, ['en'])}\n${m.id}\n${tr('Click, then click on the page – or drag it onto the page')}`.trim()}
+                title={`${localize(m.description, language, ['en'])}\n${m.id}\n${tr('Click, then click on the page – or drag it onto the page')}\n${tr('Double-click: edit the macro')}`.trim()}
                 onClick={() => store.set({ tool: { kind: 'macro', macro: m.id } })}
+                onDoubleClick={() => store.editMacro(m.id)}
                 onDragStart={(e) => dragSymbol(e, { macro: m.id })}
                 onDragEnd={dragEnd}
               >

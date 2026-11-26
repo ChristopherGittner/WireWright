@@ -15,6 +15,7 @@ import plcSvg from '@material-symbols/svg-400/outlined/memory.svg?raw';
 import librarySvg from '@material-symbols/svg-400/outlined/library_books.svg?raw';
 import saveMacroSvg from '@material-symbols/svg-400/outlined/bookmark_add.svg?raw';
 import groupSvg from '@material-symbols/svg-400/outlined/join.svg?raw';
+import macrosSvg from '@material-symbols/svg-400/outlined/edit_note.svg?raw';
 import ungroupSvg from '@material-symbols/svg-400/outlined/arrow_split.svg?raw';
 import translationsSvg from '@material-symbols/svg-400/outlined/translate.svg?raw';
 import settingsSvg from '@material-symbols/svg-400/outlined/settings.svg?raw';
@@ -90,6 +91,7 @@ const ICONS = {
   library: material(librarySvg),
   saveMacro: material(saveMacroSvg),
   group: material(groupSvg),
+  macros: material(macrosSvg),
   ungroup: material(ungroupSvg),
   translations: material(translationsSvg),
   settings: material(settingsSvg),

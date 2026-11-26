@@ -55,6 +55,7 @@ contextBridge.exposeInMainWorld('wirewrightHost', {
   libraryFolder: () => ipcRenderer.invoke('wirewright:libraryFolder'),
   chooseLibraryFolder: () => ipcRenderer.invoke('wirewright:chooseLibraryFolder'),
   saveToSharedLibrary: (device: unknown) => ipcRenderer.invoke('wirewright:saveToSharedLibrary', device),
+  deleteFromSharedLibrary: (kind: string, id: string) => ipcRenderer.invoke('wirewright:deleteFromSharedLibrary', kind, id),
   onSaveAndClose: (save: () => Promise<boolean>) => {
     ipcRenderer.on('wirewright:saveAndClose', () => {
       void save().then((saved) => saved && window.close());

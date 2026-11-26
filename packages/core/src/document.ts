@@ -59,12 +59,22 @@ export class ProjectDocument {
   #library?: { content: ProjectLibrary | undefined; value: Library };
 
   /** `baseLibrary`: standard library, plus the shared company library if there is one. */
-  constructor(
-    state: ProjectState,
-    readonly baseLibrary: Library,
-  ) {
+  #baseLibrary: Library;
+
+  constructor(state: ProjectState, baseLibrary: Library) {
+    this.#baseLibrary = baseLibrary;
     // Immutable like every state the document produces (and so cacheable per page).
     this.#state = freeze(state, true);
+  }
+
+  get baseLibrary(): Library {
+    return this.#baseLibrary;
+  }
+
+  /** Replaces the base library (e.g. after the shared library folder changed); history stays. */
+  setBaseLibrary(library: Library): void {
+    this.#baseLibrary = library;
+    this.#library = undefined;
   }
 
   /** The base library with the project's own library (`library.json`) on top. */

@@ -254,6 +254,7 @@ function Toolbar({ tabs }: { tabs: TabState }) {
   const dirty = useEditor((s) => s.dirty);
   const sheet = useEditor((s) => s.sheet);
   const selected = useEditor((s) => s.selection.items.length);
+  const editingMacro = useEditor((s) => s.macroEdit !== null);
   const grouped = useEditor((s) => {
     const page = s.doc && s.sheet ? s.doc.state.pages[s.sheet.pageId] : undefined;
     return page?.type === 'schematic' && page.items.some((i) => i.groups !== undefined && s.selection.items.includes(i.id));
@@ -324,7 +325,8 @@ function Toolbar({ tabs }: { tabs: TabState }) {
         <ToolButton icon="library" label={tr('Device library')} onClick={() => store.set({ dialog: { kind: 'library' } })} />
         <ToolButton icon="parts" label={tr('Parts database: descriptions, prices, suppliers, ERP numbers')} onClick={() => store.set({ dialog: { kind: 'parts' } })} />
         <ToolButton icon="revisions" label={tr('Revisions: release, compare (changes highlighted)')} pressed={compare !== null} onClick={() => store.set({ dialog: { kind: 'revisions' } })} />
-        <ToolButton icon="saveMacro" label={tr('Save selection as macro')} disabled={selected === 0} onClick={() => store.set({ dialog: { kind: 'saveMacro' } })} />
+        <ToolButton icon="saveMacro" label={tr('Save selection as macro')} disabled={selected === 0 || editingMacro} onClick={() => store.set({ dialog: { kind: 'saveMacro' } })} />
+        <ToolButton icon="macros" label={tr('Macros: edit drawing, rename, describe, delete')} disabled={editingMacro} onClick={() => store.set({ dialog: { kind: 'macros' } })} />
         <ToolButton icon="translations" label={tr('Translations: all texts in all languages, CSV/ODS export and import')} onClick={() => store.set({ dialog: { kind: 'translations' } })} />
         <ToolButton icon="settings" label={tr('Project settings, potentials and PLCs')} onClick={() => store.set({ dialog: { kind: 'project' } })} />
         <ToolButton icon="machine" label={tr('Machine settings: defaults of this computer for new projects')} onClick={() => store.set({ dialog: { kind: 'machine' } })} />

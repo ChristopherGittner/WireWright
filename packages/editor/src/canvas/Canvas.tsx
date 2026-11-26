@@ -1,4 +1,4 @@
-import { CommandError, pageConnectionPoints, effectiveTag, itemRole, placeFunctionCommand, placedFunctions, placePlcCommand, relativeTag, tagContext, tagFromLeftNeighbour, type Command, type Item, type Rotation, groupMembers, nextGroupLevel, type SchematicPage } from '@wirewright/core';
+import { CommandError, localize, pageConnectionPoints, effectiveTag, itemRole, placeFunctionCommand, placedFunctions, placePlcCommand, relativeTag, tagContext, tagFromLeftNeighbour, type Command, type Item, type Rotation, groupMembers, nextGroupLevel, type SchematicPage } from '@wirewright/core';
 import { renderContext, renderSheet, type Scene } from '@wirewright/render';
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react';
 import { fieldCommands, fieldValue, withGroups } from '../editing.js';
@@ -765,7 +765,43 @@ function SchematicCanvas() {
         </g>
       </svg>
       {inlineEdit && editable && <InlineEditor key={`${inlineEdit.itemId}:${inlineEdit.field}`} svg={svgRef.current} scene={scene} />}
+      <MacroEditBar />
       {menu && selection.items.length > 0 && <ItemMenu at={menu} pageId={page.id} itemIds={selection.items} onClose={() => setMenu(null)} />}
+    </div>
+  );
+}
+
+/** Shown while a macro is open for editing: save it back or discard the changes. */
+function MacroEditBar() {
+  const store = useStore();
+  const edit = useEditor((s) => s.macroEdit);
+  const language = useEditor((s) => s.language);
+  const changed = useEditor((s) => s.dirty);
+  const [shared, setShared] = useState(edit?.sources.includes('shared') ?? false);
+  const [confirm, setConfirm] = useState(false);
+  if (!edit) return null;
+  return (
+    <div className="macro-edit-bar" role="region" aria-label={tr('Macro editing')}>
+      <span>
+        {tr('Editing macro')} <strong>{localize(edit.macro.name, language, ['en'])}</strong>
+      </span>
+      {store.host.saveToSharedLibrary && (
+        <label>
+          <input type="checkbox" checked={shared} onChange={(e) => setShared(e.target.checked)} /> {tr('Also save to the shared library folder')}
+        </label>
+      )}
+      <button type="button" className="primary" title={trKeys('Ctrl+S')} onClick={() => void store.finishMacroEdit(true, shared)}>
+        {tr('Save macro')}
+      </button>
+      <button
+        type="button"
+        onClick={() => {
+          if (changed && !confirm) return setConfirm(true);
+          void store.finishMacroEdit(false);
+        }}
+      >
+        {confirm ? tr('Discard the changes?') : tr('Discard')}
+      </button>
     </div>
   );
 }

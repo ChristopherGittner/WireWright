@@ -29,10 +29,12 @@ void host.initial().then((initial) => initial && store.open(initial.project));
 // Unsaved changes: the browser asks before leaving; the desktop app shows its own question
 // (Save / Discard changes / Cancel) and calls back here for "Save".
 window.addEventListener('beforeunload', (e) => {
-  if (store.state.dirty) e.preventDefault();
+  if (store.hasUnsavedChanges) e.preventDefault();
 });
 // MCP live mode (desktop app): AI assistants read the open project and change it in one undo step.
 host.onLiveRequest?.(async (kind, payload) => {
+  // The open document is a scratch project while a macro is edited: the project is not reachable then.
+  if (store.state.macroEdit) throw new Error('A macro is open for editing in Wirewright; save or discard it first');
   const { doc, project } = store.state;
   if (kind === 'state') return doc ? { state: doc.state, ...(project?.folder ? { folder: project.folder } : {}) } : null;
   if (kind === 'apply') {
@@ -42,10 +44,7 @@ host.onLiveRequest?.(async (kind, payload) => {
   }
   throw new Error(`Unknown request ${kind}`);
 });
-host.onSaveAndClose?.(async () => {
-  await store.save();
-  return !store.state.dirty;
-});
+host.onSaveAndClose?.(() => store.saveAll());
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

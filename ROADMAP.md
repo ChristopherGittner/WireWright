@@ -201,7 +201,8 @@ device directory, and export it as a PDF. An AI can do the same through MCP.
 
 ### Editor
 - [x] Groups in groups: a group can contain groups; Ctrl+G on groups nests them, Ctrl+Shift+G opens one level; Alt+click goes one level in each time; copy/paste and macros keep the nesting; files with the former "group" field are read
-- [ ] Macro editor: open a saved macro (standard, shared folder or project) on its own canvas, change it and save it back; rename, describe, move between categories, delete; later variants and placeholders inside a macro
+- [x] Macro editor: open a saved macro (built in, library folder or project) on a page of its own (scratch project), change it with all tools and save it back (Ctrl+S) or discard; Macros dialog to rename, describe, move between categories and delete; double-click a macro in the Symbols tab to edit it
+- [ ] Macro variants and placeholders (e.g. one macro with 1-/3-phase variants, values filled in when placing)
 
 ### Device library: Siemens ET 200
 - [ ] ET 200SP modules whose manual is no longer downloadable: AI 4xI 2-/4-wire ST (6ES7134-6GD01-0BA1), AI 8xI 2-/4-wire BA (6ES7134-6GF00-0AA1) – terminals still to be checked

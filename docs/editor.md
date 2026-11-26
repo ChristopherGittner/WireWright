@@ -291,6 +291,20 @@ continues on the next line; in report tables the lines are joined.
   the ghost shows it at the cursor. Its devices get new names, contacts follow
   their coil. **Save macro** (toolbar) saves the selected items as a macro in
   the project and, in the desktop app, in the shared library folder.
+- **Macros** dialog (toolbar, Symbols tab, or double-click a macro in the
+  Symbols tab to edit its drawing directly): all macros with where they come
+  from (built in, library folder, project). Change name, category and
+  description; **Edit drawing…** opens the macro on a page of its own – a
+  scratch project with the project's settings and library, so it never shows
+  up in the project's pages, reports or checks – with all drawing tools and a
+  bar on top: **Save macro** (Ctrl+S) writes everything on that page back as
+  the macro (to the project library, and to the library folder when it comes
+  from there or the box is ticked); **Discard** leaves it unchanged. Devices
+  keep their names while editing. A built-in macro is saved as a copy in the
+  project (and library folder), which replaces it; **Delete** removes a macro
+  from the project and the library folder (built-in macros stay). While a macro
+  is open, the MCP live mode waits; closing the window asks to save the macro
+  and the project.
 - **Text** (Symbols → Texts): click on the page and type; Enter starts a new
   line, Ctrl+Enter applies. Alignment (left, centered, right, to the clicked
   point), color (default black) and size; the text is multilingual (one field

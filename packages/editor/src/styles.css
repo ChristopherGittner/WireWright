@@ -2059,3 +2059,68 @@ ul.error {
   gap: 3px;
   font-size: 11px;
 }
+
+/* Macro editing: bar on top of the canvas */
+.macro-edit-bar {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 10px;
+  background: #fff8e1;
+  border: 1px solid #e0a800;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/* Macros dialog: list on the left, details on the right */
+.macro-manager {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) 2fr;
+  gap: 16px;
+  min-height: 360px;
+}
+.macro-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 0;
+}
+.macro-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  max-height: 420px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.macro-list li {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+.macro-list li.active {
+  background: rgba(30, 111, 255, 0.12);
+}
+.macro-list .description {
+  font-size: 11px;
+  opacity: 0.7;
+}
+.macro-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.macro-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}

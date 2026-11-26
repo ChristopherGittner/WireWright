@@ -70,6 +70,8 @@ export interface ProjectHost {
   chooseLibraryFolder?(): Promise<string | null>;
   /** Saves a device definition (`devices/<id>.json`) or a macro (`macros/<id>.json`) to the library folder. */
   saveToSharedLibrary?(entry: DeviceDefinition | MacroDefinition | PartDefinition | SymbolDefinition | FrameDefinition): Promise<void>;
+  /** Removes a device definition or macro from the library folder; false when it was not there. */
+  deleteFromSharedLibrary?(kind: 'devices' | 'macros', id: string): Promise<boolean>;
   /**
    * Desktop app: "Save" in the unsaved-changes question when closing. `save` returns whether
    * everything was saved; the window then closes.

@@ -76,13 +76,14 @@ import {
   type ProjectSettings,
   type SchematicPage,
   type SymbolDefinition,
+  type MacroDefinition,
 } from '@wirewright/core';
 import { PIPE_COLOR, renderContext, symbolFromDeviceBox, TYPE_COLORS } from '@wirewright/render';
 import { Fragment, useEffect, useRef, useState, type ReactNode } from 'react';
 import { exportPdf, exportSvg, fileBase, print, type ExportOptions } from '../exports.js';
 import { Icon } from '../icons.js';
 import { insertBreak, LineInput, readBreaks, showBreaks } from '../lineInput.js';
-import { useEditor, useStore, type Dialog } from '../store.js';
+import { useEditor, useStore, type Dialog, type MacroSource } from '../store.js';
 import { setUiLanguage, tr, trKeys, UI_LANGUAGES } from '../i18n.js';
 import { Field, LanguageFields, MIXED, Modal, texts, toggle, toLocalized } from './common.js';
 import { SymbolEditorDialog } from './SymbolEditor.js';
@@ -201,6 +202,8 @@ function DialogSwitch() {
       return <TerminalStripDialog />;
     case 'saveMacro':
       return <SaveMacroDialog />;
+    case 'macros':
+      return <MacrosDialog {...(dialog.select ? { select: dialog.select } : {})} />;
     case 'translations':
       return <TranslationsDialog />;
     case 'renumber':
@@ -3806,5 +3809,102 @@ function ShortcutsDialog() {
         </tbody>
       </table>
     </Modal>
+  );
+}
+
+const SOURCE_LABELS: Record<MacroSource, string> = { standard: 'Built in', shared: 'Library folder', project: 'Project' };
+
+/**
+ * Macros: the list of all macros (built in, library folder, project) with name, category and
+ * description to change, "Edit drawing" (opens the macro on a page of its own) and Delete.
+ */
+function MacrosDialog({ select }: { select?: string }) {
+  const store = useStore();
+  useEditor((s) => s.version);
+  const language = useEditor((s) => s.language);
+  const languages = useEditor((s) => s.doc?.state.project.settings.languages ?? [s.language]);
+  const macros = [...store.library.macros()].sort((a, b) => naturalCompare(`${a.category ?? ''} ${localize(a.name, language, ['en'])}`, `${b.category ?? ''} ${localize(b.name, language, ['en'])}`));
+  const [query, setQuery] = useState('');
+  const [selected, setSelected] = useState(select ?? macros[0]?.id);
+  const macro = macros.find((m) => m.id === selected);
+  const shown = macros.filter((m) => `${m.id} ${m.category ?? ''} ${localize(m.name, language, ['en'])}`.toLowerCase().includes(query.toLowerCase()));
+  return (
+    <Modal title={tr('Macros')} wide>
+      <div className="macro-manager">
+        <div className="macro-list">
+          <input className="search" placeholder={tr('Search macros…')} value={query} onChange={(e) => setQuery(e.target.value)} autoFocus />
+          <ul role="listbox" aria-label={tr('Macros')}>
+            {shown.map((m) => (
+              <li key={m.id} role="option" aria-selected={m.id === selected} className={m.id === selected ? 'active' : ''} onClick={() => setSelected(m.id)} onDoubleClick={() => store.editMacro(m.id)}>
+                <span className="name">{localize(m.name, language, ['en'])}</span>
+                <span className="description">
+                  {m.category ?? tr('No category')} · {store.macroSources(m.id).map((s) => tr(SOURCE_LABELS[s])).join(', ')}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        {macro ? <MacroDetails key={macro.id} macro={macro} languages={languages} /> : <p className="hint">{tr('No macros yet: select symbols on a page and use "Save selection as macro".')}</p>}
+      </div>
+    </Modal>
+  );
+}
+
+function MacroDetails({ macro, languages }: { macro: MacroDefinition; languages: string[] }) {
+  const store = useStore();
+  const sources = store.macroSources(macro.id);
+  const canShare = Boolean(store.host.saveToSharedLibrary);
+  const [name, setName] = useState(texts(macro.name, languages));
+  const [description, setDescription] = useState(texts(macro.description, languages));
+  const [category, setCategory] = useState(macro.category ?? '');
+  const [shared, setShared] = useState(sources.includes('shared'));
+  const [confirm, setConfirm] = useState(false);
+  const save = async () => {
+    const localizedName = toLocalized(name);
+    if (!localizedName) return store.notify('Give the macro a name', true);
+    const localizedDescription = toLocalized(description);
+    const updated: MacroDefinition = {
+      ...macro,
+      name: localizedName,
+      ...(localizedDescription ? { description: localizedDescription } : {}),
+      ...(category.trim() ? { category: category.trim() } : {}),
+    };
+    if (!localizedDescription) delete updated.description;
+    if (!category.trim()) delete updated.category;
+    if (await store.updateMacro(updated, shared && canShare)) store.notify(tr('Saved macro {name}', { name: localize(updated.name, store.state.language, ['en']) }));
+  };
+  const remove = async () => {
+    if (!confirm) return setConfirm(true);
+    if (await store.deleteMacro(macro.id)) store.set({ dialog: { kind: 'macros' } });
+  };
+  const deletable = sources.includes('project') || (sources.includes('shared') && Boolean(store.host.deleteFromSharedLibrary));
+  return (
+    <div className="macro-details">
+      <p className="hint">
+        <code>{macro.id}</code> · {macro.items.length} {tr('items')} · {sources.map((s) => tr(SOURCE_LABELS[s])).join(', ')}
+      </p>
+      <LanguageFields label={tr('Name')} values={name} onChange={setName} />
+      <Field label={tr('Category')}>
+        <input value={category} onChange={(e) => setCategory(e.target.value)} />
+      </Field>
+      <LanguageFields label={tr('Description')} values={description} onChange={setDescription} />
+      {canShare && (
+        <label>
+          <input type="checkbox" checked={shared} onChange={(e) => setShared(e.target.checked)} /> {tr('Also save to the shared library folder')}
+        </label>
+      )}
+      {sources.length === 1 && sources[0] === 'standard' && <p className="hint">{tr('A built-in macro: changes are saved as a copy in the project (and the library folder), which then replaces it.')}</p>}
+      <div className="macro-actions">
+        <button type="button" className="primary" onClick={() => store.editMacro(macro.id)}>
+          {tr('Edit drawing…')}
+        </button>
+        <button type="button" onClick={() => void save()}>
+          {tr('Save details')}
+        </button>
+        <button type="button" className="danger" disabled={!deletable} title={deletable ? '' : tr('Built-in macros cannot be deleted')} onClick={() => void remove()}>
+          {confirm ? tr('Really delete?') : tr('Delete')}
+        </button>
+      </div>
+    </div>
   );
 }

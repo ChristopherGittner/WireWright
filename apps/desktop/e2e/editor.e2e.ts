@@ -154,6 +154,45 @@ test('groups in groups: Alt+click steps inwards, Ctrl+Shift+G opens one level', 
   expect(await selection()).toEqual([a, b].sort());
 });
 
+test('macro editor: edit a macro on its own page, save it back; rename and delete it in Macros', async ({ win }) => {
+  await win.evaluate(() => window.wirewrightStore.navigate('p_control'));
+  const id = 'wirewright.macro.selfholding';
+  const builtIn = await win.evaluate((id) => window.wirewrightStore.library.macro(id).items.length, id);
+  // Double-click on the macro in the Symbols tab opens it for editing.
+  await win.locator('button.tab-name', { hasText: 'Symbols' }).click();
+  await win.locator('#symbol-search').fill('selbsthaltung');
+  await win.locator('.drag-tile', { hasText: 'Ein/Aus mit Selbsthaltung' }).dblclick();
+  await expect(win.locator('.macro-edit-bar')).toContainText('Ein/Aus mit Selbsthaltung');
+  const page = await win.evaluate(() => window.wirewrightStore.state.sheet.pageId);
+  expect(page).not.toBe('p_control');
+  // The project's pages are not there while editing; delete one item and save with Ctrl+S.
+  await win.evaluate((page) => {
+    const s = window.wirewrightStore;
+    const first = s.state.doc.state.pages[page].items.find((i: { symbol: string }) => i.symbol === 'iec60617.pushbutton.no');
+    s.apply({ type: 'deleteItems', pageId: page, itemIds: [first.id] }, 'delete');
+  }, page);
+  await win.keyboard.press('Control+s');
+  await expect(win.locator('.macro-edit-bar')).toHaveCount(0);
+  expect(await win.evaluate(() => window.wirewrightStore.state.sheet.pageId)).toBe('p_control');
+  // The project now has its own copy of the macro, which replaces the built-in one.
+  expect(await win.evaluate((id) => window.wirewrightStore.state.doc.state.library.macros.find((m: { id: string }) => m.id === id).items.length, id)).toBe(builtIn - 1);
+  expect(await win.evaluate((id) => window.wirewrightStore.library.macro(id).items.length, id)).toBe(builtIn - 1);
+  // Discard leaves everything as it was.
+  await win.evaluate((id) => window.wirewrightStore.editMacro(id), id);
+  await win.click('.macro-edit-bar button:has-text("Discard")');
+  await expect(win.locator('.macro-edit-bar')).toHaveCount(0);
+  // Macros dialog: rename, then delete the project copy (the built-in one comes back).
+  await win.click('.toolbar button[aria-label^="Macros: edit drawing"]');
+  await win.locator('.macro-list li', { hasText: 'Ein/Aus mit Selbsthaltung' }).click();
+  await win.locator('.macro-details input').first().fill('Self-holding (own)');
+  await win.click('.macro-details button:has-text("Save details")');
+  await expect(win.locator('.macro-list li', { hasText: 'Self-holding (own)' })).toHaveCount(1);
+  await win.click('.macro-details button:has-text("Delete")');
+  await win.click('.macro-details button:has-text("Really delete?")');
+  expect(await win.evaluate((id) => (window.wirewrightStore.state.doc.state.library?.macros ?? []).some((m: { id: string }) => m.id === id), id)).toBe(false);
+  expect(await win.evaluate((id) => window.wirewrightStore.library.macro(id).items.length, id)).toBe(builtIn);
+});
+
 test('band selection: left to right takes what is inside, right to left everything it touches', async ({ win }) => {
   await win.evaluate(() => window.wirewrightStore.navigate('p_control'));
   const [a, b] = await win.evaluate(() => {

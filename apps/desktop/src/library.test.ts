@@ -2,7 +2,7 @@ import { mkdtemp, mkdir, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
-import { loadLibraryFolder, saveLibraryEntry } from './library.js';
+import { deleteLibraryEntry, loadLibraryFolder, saveLibraryEntry } from './library.js';
 
 let folder: string;
 beforeEach(async () => {
@@ -24,6 +24,13 @@ describe('shared library folder', () => {
     expect(content.devices?.map((d) => d.id)).toEqual(['acme.relay']);
     expect(content.symbols?.map((s) => s.id)).toEqual(['own.lamp']);
     expect(content.macros?.map((m) => m.id)).toEqual(['own.lamp-test']);
+  });
+
+  it('deletes a macro from the library folder', async () => {
+    await saveLibraryEntry(folder, { id: 'own.lamp-test', name: 'Lamp test', items: [{ id: 'i_lamp', symbol: 'own.lamp', x: 0, y: 0, rotation: 0, mirror: false }] });
+    expect(await deleteLibraryEntry(folder, 'macros', 'own.lamp-test')).toBe(true);
+    expect((await loadLibraryFolder(folder)).macros ?? []).toEqual([]);
+    expect(await deleteLibraryEntry(folder, 'macros', 'own.lamp-test')).toBe(false);
   });
 
   it('saves symbols and frames as library content and loads them', async () => {

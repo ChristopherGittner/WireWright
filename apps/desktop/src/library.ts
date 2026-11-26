@@ -15,7 +15,7 @@ import {
   type PartDefinition,
   type SymbolDefinition,
 } from '@wirewright/core';
-import { mkdir, readdir, readFile, rename, writeFile } from 'node:fs/promises';
+import { mkdir, readdir, readFile, rename, unlink, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 /**
@@ -97,4 +97,16 @@ export async function saveLibraryEntry(folder: string, entry: LibraryEntry): Pro
   await writeFile(`${target}.tmp`, JSON.stringify(content, null, 2) + '\n', 'utf8');
   await rename(`${target}.tmp`, target);
   return target;
+}
+
+/** Removes a device definition or macro (`devices/<id>.json`, `macros/<id>.json`) from the library folder. */
+export async function deleteLibraryEntry(folder: string, kind: 'devices' | 'macros', id: string): Promise<boolean> {
+  const target = join(folder, kind, `${id.replace(/[^A-Za-z0-9._-]+/g, '_')}.json`);
+  try {
+    await unlink(target);
+    return true;
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === 'ENOENT') return false;
+    throw error;
+  }
 }

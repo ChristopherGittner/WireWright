@@ -786,6 +786,10 @@ self-holding contact, a motor feeder, a device box with its contents.
 - Like device definitions, macros come from the standard library, the shared
   library folder (`macros/<id>.json`) and the project's `library.json`; a
   placed macro is copied into `library.json`.
+- Editing a macro (editor: Macros dialog) saves it to `library.json` (a copy
+  of a built-in or shared macro replaces it in the project) and, when asked,
+  to the shared library folder. Deleting removes it from `library.json` and
+  the library folder; built-in macros cannot be deleted.
 
 ## Groups
 

@@ -30,6 +30,10 @@ import {
   type Tag,
   type Catalog,
   type ItemStyle,
+  type MacroDefinition,
+  createProjectState,
+  localize,
+  macroFromItems,
 } from '@wirewright/core';
 import { standardLibraryContent } from '@wirewright/library';
 import { createContext, useContext, useSyncExternalStore } from 'react';
@@ -99,7 +103,8 @@ export type Dialog =
   | { kind: 'parts'; select?: string }
   | { kind: 'revisions' }
   | { kind: 'symbolEditor'; mode: 'symbol' | 'frame'; id?: string; /** A prepared definition to start from (e.g. from a device box). */ initial?: SymbolDefinition }
-  | { kind: 'plcImport'; station: string; plan: PlcTagImport; comments: boolean };
+  | { kind: 'plcImport'; station: string; plan: PlcTagImport; comments: boolean }
+  | { kind: 'macros'; select?: string };
 
 export interface SheetKey {
   pageId: string;
@@ -136,6 +141,20 @@ export interface EditorState {
   focus: { itemId: string; nonce: number } | null;
   /** Cursor position on the page in mm (snapped), for the status bar and pasting. */
   cursor: { x: number; y: number } | null;
+  /**
+   * A macro opened for editing: `doc` is then a scratch project with one page holding the
+   * macro; the project itself waits in `back` until the macro is saved or discarded.
+   */
+  macroEdit: MacroEdit | null;
+}
+
+/** Where a macro comes from (several when it is in more than one library). */
+export type MacroSource = 'standard' | 'shared' | 'project';
+
+export interface MacroEdit {
+  macro: MacroDefinition;
+  sources: MacroSource[];
+  back: { doc: ProjectDocument; sheet: SheetKey | null; dirty: boolean; version: number };
 }
 
 /** Standard library, plus the shared company library when the host provides one. */
@@ -198,6 +217,7 @@ export class EditorStore {
     compare: null,
     dirty: false,
     dialog: null,
+    macroEdit: null,
     message: null,
     focus: null,
     cursor: null,
@@ -226,7 +246,149 @@ export class EditorStore {
     } catch (error) {
       this.notify(tr('Shared library: {error}', { error: (error as Error).message }), true);
     }
+    this.#shared = shared;
     baseLibrary = new MapLibrary(standardLibraryContent(), ...(shared ? [shared] : []));
+    // Open documents see the new library folder content; their history stays.
+    this.#state.doc?.setBaseLibrary(baseLibrary);
+    this.#state.macroEdit?.back.doc.setBaseLibrary(baseLibrary);
+  }
+
+  #shared: LibraryContent | null = null;
+
+  /** Unsaved changes in the project, or in a macro being edited. */
+  get hasUnsavedChanges(): boolean {
+    const { dirty, macroEdit } = this.#state;
+    return dirty || (macroEdit?.back.dirty ?? false);
+  }
+
+  /** Closing the window with "Save": a macro being edited is saved first, then the project. */
+  async saveAll(): Promise<boolean> {
+    const edit = this.#state.macroEdit;
+    if (edit && !(await this.finishMacroEdit(true, edit.sources.includes('shared')))) return false;
+    if (this.#state.dirty) await this.save();
+    return !this.hasUnsavedChanges;
+  }
+
+  /** Where a macro is defined: built in, the library folder, the project's library. */
+  macroSources(id: string): MacroSource[] {
+    const project = this.#state.macroEdit?.back.doc ?? this.#state.doc;
+    return [
+      ...(standardLibraryContent().macros?.some((m) => m.id === id) ? (['standard'] as const) : []),
+      ...(this.#shared?.macros?.some((m) => m.id === id) ? (['shared'] as const) : []),
+      ...(project?.state.library?.macros?.some((m) => m.id === id) ? (['project'] as const) : []),
+    ];
+  }
+
+  // -------------------------------------------------------------------------
+  // Macros
+
+  /**
+   * Opens a macro for editing on a page of its own: a scratch project with the project's
+   * settings and library, so the macro is drawn with all tools but never shows up in the
+   * project's pages, reports or checks. Devices keep their names.
+   */
+  editMacro(id: string): void {
+    const { doc, macroEdit } = this.#state;
+    if (!doc || macroEdit) return;
+    const macro = doc.library.macro(id);
+    if (!macro) return this.notify(tr('Unknown macro "{macro}"', { macro: id }), true);
+    const base = createProjectState({ name: tr('Macro {name}', { name: id }) });
+    const state = { ...base, project: { ...base.project, settings: structuredClone(doc.state.project.settings), potentials: structuredClone(doc.state.project.potentials) } };
+    const scratch = new ProjectDocument(state, doc.baseLibrary);
+    try {
+      const pageId = scratch.apply({ type: 'createPage', name: '1' }).created[0]!;
+      scratch.apply([
+        ...(doc.state.library ? [{ type: 'addToProjectLibrary' as const, content: doc.state.library }] : []),
+        { type: 'placeItems', pageId, items: macro.items, x: 40, y: 40, renameDevices: false },
+      ]);
+      // A fresh document: undo does not go back behind the opened macro.
+      const editDoc = new ProjectDocument(scratch.state, doc.baseLibrary);
+      this.set({
+        macroEdit: { macro, sources: this.macroSources(id), back: { doc, sheet: this.#state.sheet, dirty: this.#state.dirty, version: this.#state.version } },
+        doc: editDoc,
+        version: this.#state.version + 1,
+        sheet: { pageId, sheet: 0 },
+        selection: { items: [] },
+        pageSelection: [],
+        tool: { kind: 'select' },
+        compare: null,
+        dirty: false,
+        dialog: null,
+      });
+    } catch (error) {
+      this.notify(error instanceof CommandError ? issueText(error) : (error as Error).message, true);
+    }
+  }
+
+  /**
+   * Ends macro editing. `save`: everything on the macro page becomes the macro (positions from
+   * the top-left item) in the project library, and in the library folder when it comes from
+   * there (or `shared` asks for it). Returns false when saving failed (editing goes on).
+   */
+  async finishMacroEdit(save: boolean, shared = false): Promise<boolean> {
+    const { macroEdit, doc, sheet } = this.#state;
+    if (!macroEdit || !doc) return false;
+    let macro: MacroDefinition | undefined;
+    if (save) {
+      const page = sheet ? doc.state.pages[sheet.pageId] : undefined;
+      if (page?.type !== 'schematic' || page.items.length === 0) {
+        this.notify('The macro page is empty; delete the macro in Macros instead', true);
+        return false;
+      }
+      const { id, name, description, category } = macroEdit.macro;
+      macro = macroFromItems(page, page.items.map((i) => i.id), { id, name, ...(description ? { description } : {}), ...(category ? { category } : {}) });
+      if (shared && this.host.saveToSharedLibrary) {
+        try {
+          await this.host.saveToSharedLibrary(macro);
+          await this.loadSharedLibrary();
+        } catch (error) {
+          this.notify(tr('Could not save to the library folder: {error}', { error: (error as Error).message }), true);
+          return false;
+        }
+      }
+    }
+    const { back } = macroEdit;
+    this.set({ macroEdit: null, doc: back.doc, sheet: back.sheet, dirty: back.dirty, version: this.#state.version + 1, selection: { items: [] }, tool: { kind: 'select' }, dialog: null });
+    if (macro && this.apply({ type: 'addToProjectLibrary', content: { macros: [macro] } }, 'edit macro')) {
+      this.notify(tr('Saved macro {name}', { name: localize(macro.name, this.#state.language) }));
+    }
+    return true;
+  }
+
+  /** Name, description and category of a macro (the drawing stays), where the macro is kept. */
+  async updateMacro(macro: MacroDefinition, shared: boolean): Promise<boolean> {
+    if (shared && this.host.saveToSharedLibrary) {
+      try {
+        await this.host.saveToSharedLibrary(macro);
+        await this.loadSharedLibrary();
+      } catch (error) {
+        this.notify(tr('Could not save to the library folder: {error}', { error: (error as Error).message }), true);
+        return false;
+      }
+    }
+    // The project copy wins over the library folder: keep it up to date (and create it for built-in macros).
+    const sources = this.macroSources(macro.id);
+    if (sources.includes('project') || !shared) return this.apply({ type: 'addToProjectLibrary', content: { macros: [macro] } }, 'edit macro') !== null;
+    this.set({ version: this.#state.version + 1 });
+    return true;
+  }
+
+  /** Deletes a macro from the project library and, when it is there, from the library folder. Built-in macros stay. */
+  async deleteMacro(id: string): Promise<boolean> {
+    const sources = this.macroSources(id);
+    if (sources.includes('shared')) {
+      if (!this.host.deleteFromSharedLibrary) return false;
+      try {
+        await this.host.deleteFromSharedLibrary('macros', id);
+        await this.loadSharedLibrary();
+      } catch (error) {
+        this.notify(tr('Could not delete from the library folder: {error}', { error: (error as Error).message }), true);
+        return false;
+      }
+    }
+    if (sources.includes('project')) return this.apply({ type: 'removeFromProjectLibrary', kind: 'macros', ids: [id] }, 'delete macro') !== null;
+    this.set({ version: this.#state.version + 1 });
+    return true;
   }
 
   subscribe = (listener: () => void): (() => void) => {
@@ -335,6 +497,11 @@ export class EditorStore {
   }
 
   async save(): Promise<void> {
+    // Ctrl+S while editing a macro saves the macro.
+    if (this.#state.macroEdit) {
+      await this.finishMacroEdit(true, this.#state.macroEdit.sources.includes('shared'));
+      return;
+    }
     const { doc, project } = this.#state;
     if (!doc || !project) return;
     try {
@@ -356,6 +523,8 @@ export class EditorStore {
   }
 
   #onExternalChange(): void {
+    // While a macro is open the project waits; the change is picked up by the next reload.
+    if (this.#state.macroEdit) return;
     if (this.#state.dirty) this.set({ dialog: { kind: 'externalChange' } });
     else void this.reload();
   }
@@ -567,3 +736,4 @@ export function useEditor<T>(selector: (state: EditorState) => T): T {
   const store = useStore();
   return useSyncExternalStore(store.subscribe, () => selector(store.state));
 }
+

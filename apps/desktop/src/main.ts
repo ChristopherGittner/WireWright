@@ -8,7 +8,7 @@ import { NodeProjectStorage } from '@wirewright/core/node';
 import { ToolError } from '@wirewright/mcp-server';
 import { randomBytes } from 'node:crypto';
 import { DEFAULT_MCP_PORT, LiveMcpServer, LiveSession } from './live.js';
-import { loadLibraryFolder, saveLibraryEntry, type LibraryEntry } from './library.js';
+import { deleteLibraryEntry, loadLibraryFolder, saveLibraryEntry, type LibraryEntry } from './library.js';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { ensureFolder } from './folders.js';
@@ -366,6 +366,13 @@ ipcMain.handle('wirewright:saveToSharedLibrary', async (_event, entry: LibraryEn
   const folder = (await readSettings()).libraryFolder ?? process.env.WIREWRIGHT_LIBRARY;
   if (!folder) throw new Error(t('No library folder chosen (Library → Choose folder…)'));
   await saveLibraryEntry(folder, entry);
+});
+
+ipcMain.handle('wirewright:deleteFromSharedLibrary', async (_event, kind: unknown, id: unknown) => {
+  const folder = (await readSettings()).libraryFolder ?? process.env.WIREWRIGHT_LIBRARY;
+  if (!folder) throw new Error(t('No library folder chosen (Library → Choose folder…)'));
+  if ((kind !== 'devices' && kind !== 'macros') || typeof id !== 'string') throw new Error('Invalid library entry');
+  return deleteLibraryEntry(folder, kind, id);
 });
 
 app.whenReady().then(async () => {
