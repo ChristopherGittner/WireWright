@@ -208,7 +208,8 @@ device directory, and export it as a PDF. An AI can do the same through MCP.
 - [ ] ET 200SP modules whose manual is no longer downloadable: AI 4xI 2-/4-wire ST (6ES7134-6GD01-0BA1), AI 8xI 2-/4-wire BA (6ES7134-6GF00-0AA1) – terminals still to be checked
 - [ ] ET 200SP communication and technology modules (CM PtP, CM AS-i, CM DP, TM Count, TM PosInput, TM Timer DIDQ …), further BaseUnits (A0 with add-on terminals, B1 for AC, …), potential distributor modules, F-PM-E
 - [ ] ET 200MP / S7-1500: AQ 8xU/I HS terminals (manual no longer downloadable), CM/CP and TM modules (CM PtP, CP 1543-1, TM Count, TM PosInput), IM 155-5 PN BA/HF
-- [ ] ET 200eco PN: digital (8 DI, 16 DI, 8 DQ, 8 DIO) and analog modules with M12 sockets (pin 1 24 V, pin 2 / 4 signals, pin 3 M, pin 5 FE)
+- [x] ET 200eco PN from the operating instructions: DI 8 (4xM12, 8xM12), DI 16, DQ 8 (1.3 A 4xM12/8xM12, 0.5 A, 2 A), DQ 16, AQ 4, DI 8/16 M12-L; terminals named by socket and pin (X1.4)
+- [ ] ET 200eco PN: 8 DIO (inputs/outputs set by parameters), AI 4 U/I + 4 RTD/TC and AI 8 RTD/TC (per measurement type), IO-Link master, F-DI/F-DQ
 - [ ] ET 200AL: IM 157-1 PN, DI/DQ/DIQ with M8 and M12, AI/AQ
 
 ### Device library: GSDML / ESI

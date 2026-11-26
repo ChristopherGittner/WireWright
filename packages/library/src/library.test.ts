@@ -175,6 +175,10 @@ describe('standard library', () => {
     // S7-1200: terminals named as printed
     expect(pins('siemens.s71200.cpu1214c.dc-dc-dc')?.filter((p) => p.startsWith('DI')).slice(7, 9)).toEqual(['DIa.7', 'DIb.0']);
     expect(channels('siemens.s71200.sm1234.ai4aq2')?.at(-1)).toMatchObject({ kind: 'AO', pin: '1', extraPins: [{ pin: '1M' }] });
+    // ET 200eco PN: M12 sockets, pin 4 and pin 2 (table 3-6: DI0 on X1 pin 4, DI8 on X1 pin 2)
+    expect(pins('siemens.et200eco.di16.8m12')?.slice(0, 1)).toEqual(['X1.4']);
+    expect(pins('siemens.et200eco.di16.8m12')?.[8]).toBe('X1.2');
+    expect(channels('siemens.et200eco.di8.8m12')?.[2]).toMatchObject({ pin: 'X3.4', extraPins: [{ pin: 'X3.1', label: '1US' }, { pin: 'X3.3', label: 'M' }] });
     // a card terminal belongs to one channel only
     for (const d of library.devices().filter((d) => d.manufacturer === 'Siemens')) {
       const all = (d.plc?.channels ?? []).flatMap((c) => channelPins(c));

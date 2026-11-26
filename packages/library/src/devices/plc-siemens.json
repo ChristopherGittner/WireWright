@@ -12752,6 +12752,2154 @@
     }
   },
   {
+    "id": "siemens.et200eco.di8.4m12",
+    "name": {
+      "de": "ET 200eco PN DI 8x24VDC 4xM12",
+      "en": "ET 200eco PN DI 8x24VDC 4xM12"
+    },
+    "category": "plc.siemens.et200eco",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7141-6BF00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung aus dem Siemens-Gerätehandbuch ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf",
+      "en": "Pin assignment from the Siemens equipment manual ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf"
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 0,
+        "pins": {
+          "1": "X1.4"
+        },
+        "label": "DI 0 (pin X1.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "X2.4"
+        },
+        "label": "DI 1 (pin X2.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "X3.4"
+        },
+        "label": "DI 2 (pin X3.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "X4.4"
+        },
+        "label": "DI 3 (pin X4.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "X1.2"
+        },
+        "label": "DI 4 (pin X1.2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "X2.2"
+        },
+        "label": "DI 5 (pin X2.2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "X3.2"
+        },
+        "label": "DI 6 (pin X3.2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "X4.2"
+        },
+        "label": "DI 7 (pin X4.2)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "X1.4"
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "X2.4"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "X3.4"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "X4.4"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "X1.2"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "X2.2"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "X3.2"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "X4.2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200eco.di8.8m12",
+    "name": {
+      "de": "ET 200eco PN DI 8x24VDC 8xM12",
+      "en": "ET 200eco PN DI 8x24VDC 8xM12"
+    },
+    "category": "plc.siemens.et200eco",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7141-6BG00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung aus dem Siemens-Gerätehandbuch ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf",
+      "en": "Pin assignment from the Siemens equipment manual ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf"
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di.3",
+        "channel": 0,
+        "pins": {
+          "1": "X1.4",
+          "2": "X1.1",
+          "3": "X1.3"
+        },
+        "label": "DI 0 (pin X1.4, X1.1, X1.3)"
+      },
+      {
+        "symbol": "wirewright.plc.di.3",
+        "channel": 1,
+        "pins": {
+          "1": "X2.4",
+          "2": "X2.1",
+          "3": "X2.3"
+        },
+        "label": "DI 1 (pin X2.4, X2.1, X2.3)"
+      },
+      {
+        "symbol": "wirewright.plc.di.3",
+        "channel": 2,
+        "pins": {
+          "1": "X3.4",
+          "2": "X3.1",
+          "3": "X3.3"
+        },
+        "label": "DI 2 (pin X3.4, X3.1, X3.3)"
+      },
+      {
+        "symbol": "wirewright.plc.di.3",
+        "channel": 3,
+        "pins": {
+          "1": "X4.4",
+          "2": "X4.1",
+          "3": "X4.3"
+        },
+        "label": "DI 3 (pin X4.4, X4.1, X4.3)"
+      },
+      {
+        "symbol": "wirewright.plc.di.3",
+        "channel": 4,
+        "pins": {
+          "1": "X5.4",
+          "2": "X5.1",
+          "3": "X5.3"
+        },
+        "label": "DI 4 (pin X5.4, X5.1, X5.3)"
+      },
+      {
+        "symbol": "wirewright.plc.di.3",
+        "channel": 5,
+        "pins": {
+          "1": "X6.4",
+          "2": "X6.1",
+          "3": "X6.3"
+        },
+        "label": "DI 5 (pin X6.4, X6.1, X6.3)"
+      },
+      {
+        "symbol": "wirewright.plc.di.3",
+        "channel": 6,
+        "pins": {
+          "1": "X7.4",
+          "2": "X7.1",
+          "3": "X7.3"
+        },
+        "label": "DI 6 (pin X7.4, X7.1, X7.3)"
+      },
+      {
+        "symbol": "wirewright.plc.di.3",
+        "channel": 7,
+        "pins": {
+          "1": "X8.4",
+          "2": "X8.1",
+          "3": "X8.3"
+        },
+        "label": "DI 7 (pin X8.4, X8.1, X8.3)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "X1.4",
+          "extraPins": [
+            {
+              "pin": "X1.1",
+              "label": "1US",
+              "after": true
+            },
+            {
+              "pin": "X1.3",
+              "label": "M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "X2.4",
+          "extraPins": [
+            {
+              "pin": "X2.1",
+              "label": "1US",
+              "after": true
+            },
+            {
+              "pin": "X2.3",
+              "label": "M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "X3.4",
+          "extraPins": [
+            {
+              "pin": "X3.1",
+              "label": "1US",
+              "after": true
+            },
+            {
+              "pin": "X3.3",
+              "label": "M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "X4.4",
+          "extraPins": [
+            {
+              "pin": "X4.1",
+              "label": "1US",
+              "after": true
+            },
+            {
+              "pin": "X4.3",
+              "label": "M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "X5.4",
+          "extraPins": [
+            {
+              "pin": "X5.1",
+              "label": "1US",
+              "after": true
+            },
+            {
+              "pin": "X5.3",
+              "label": "M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "X6.4",
+          "extraPins": [
+            {
+              "pin": "X6.1",
+              "label": "1US",
+              "after": true
+            },
+            {
+              "pin": "X6.3",
+              "label": "M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "X7.4",
+          "extraPins": [
+            {
+              "pin": "X7.1",
+              "label": "1US",
+              "after": true
+            },
+            {
+              "pin": "X7.3",
+              "label": "M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "X8.4",
+          "extraPins": [
+            {
+              "pin": "X8.1",
+              "label": "1US",
+              "after": true
+            },
+            {
+              "pin": "X8.3",
+              "label": "M",
+              "after": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200eco.di16.8m12",
+    "name": {
+      "de": "ET 200eco PN DI 16x24VDC 8xM12",
+      "en": "ET 200eco PN DI 16x24VDC 8xM12"
+    },
+    "category": "plc.siemens.et200eco",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7141-6BH00-0BA0",
+    "description": {
+      "de": "Klemmenbelegung aus dem Siemens-Gerätehandbuch ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf",
+      "en": "Pin assignment from the Siemens equipment manual ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf"
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 0,
+        "pins": {
+          "1": "X1.4"
+        },
+        "label": "DI 0 (pin X1.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "X2.4"
+        },
+        "label": "DI 1 (pin X2.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "X3.4"
+        },
+        "label": "DI 2 (pin X3.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "X4.4"
+        },
+        "label": "DI 3 (pin X4.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "X5.4"
+        },
+        "label": "DI 4 (pin X5.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "X6.4"
+        },
+        "label": "DI 5 (pin X6.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "X7.4"
+        },
+        "label": "DI 6 (pin X7.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "X8.4"
+        },
+        "label": "DI 7 (pin X8.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 8,
+        "pins": {
+          "1": "X1.2"
+        },
+        "label": "DI 8 (pin X1.2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 9,
+        "pins": {
+          "1": "X2.2"
+        },
+        "label": "DI 9 (pin X2.2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 10,
+        "pins": {
+          "1": "X3.2"
+        },
+        "label": "DI 10 (pin X3.2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 11,
+        "pins": {
+          "1": "X4.2"
+        },
+        "label": "DI 11 (pin X4.2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 12,
+        "pins": {
+          "1": "X5.2"
+        },
+        "label": "DI 12 (pin X5.2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 13,
+        "pins": {
+          "1": "X6.2"
+        },
+        "label": "DI 13 (pin X6.2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 14,
+        "pins": {
+          "1": "X7.2"
+        },
+        "label": "DI 14 (pin X7.2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 15,
+        "pins": {
+          "1": "X8.2"
+        },
+        "label": "DI 15 (pin X8.2)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "X1.4"
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "X2.4"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "X3.4"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "X4.4"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "X5.4"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "X6.4"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "X7.4"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "X8.4"
+        },
+        {
+          "channel": 8,
+          "kind": "DI",
+          "pin": "X1.2"
+        },
+        {
+          "channel": 9,
+          "kind": "DI",
+          "pin": "X2.2"
+        },
+        {
+          "channel": 10,
+          "kind": "DI",
+          "pin": "X3.2"
+        },
+        {
+          "channel": 11,
+          "kind": "DI",
+          "pin": "X4.2"
+        },
+        {
+          "channel": 12,
+          "kind": "DI",
+          "pin": "X5.2"
+        },
+        {
+          "channel": 13,
+          "kind": "DI",
+          "pin": "X6.2"
+        },
+        {
+          "channel": 14,
+          "kind": "DI",
+          "pin": "X7.2"
+        },
+        {
+          "channel": 15,
+          "kind": "DI",
+          "pin": "X8.2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200eco.dq8.1a3.4m12",
+    "name": {
+      "de": "ET 200eco PN DQ 8x24VDC/1.3A 4xM12",
+      "en": "ET 200eco PN DQ 8x24VDC/1.3A 4xM12"
+    },
+    "category": "plc.siemens.et200eco",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7142-6BF00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung aus dem Siemens-Gerätehandbuch ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf",
+      "en": "Pin assignment from the Siemens equipment manual ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf"
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 0,
+        "pins": {
+          "1": "X1.4"
+        },
+        "label": "DO 0 (pin X1.4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "X2.4"
+        },
+        "label": "DO 1 (pin X2.4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "X3.4"
+        },
+        "label": "DO 2 (pin X3.4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "X4.4"
+        },
+        "label": "DO 3 (pin X4.4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "X1.2"
+        },
+        "label": "DO 4 (pin X1.2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "X2.2"
+        },
+        "label": "DO 5 (pin X2.2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "X3.2"
+        },
+        "label": "DO 6 (pin X3.2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "X4.2"
+        },
+        "label": "DO 7 (pin X4.2)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "X1.4"
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "X2.4"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "X3.4"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "X4.4"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "X1.2"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "X2.2"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "X3.2"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "X4.2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200eco.dq8.0a5.4m12",
+    "name": {
+      "de": "ET 200eco PN DQ 8x24VDC/0.5A 4xM12",
+      "en": "ET 200eco PN DQ 8x24VDC/0.5A 4xM12"
+    },
+    "category": "plc.siemens.et200eco",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7142-6BF50-0AB0",
+    "description": {
+      "de": "Klemmenbelegung aus dem Siemens-Gerätehandbuch ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf",
+      "en": "Pin assignment from the Siemens equipment manual ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf"
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 0,
+        "pins": {
+          "1": "X1.4"
+        },
+        "label": "DO 0 (pin X1.4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "X2.4"
+        },
+        "label": "DO 1 (pin X2.4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "X3.4"
+        },
+        "label": "DO 2 (pin X3.4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "X4.4"
+        },
+        "label": "DO 3 (pin X4.4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "X1.2"
+        },
+        "label": "DO 4 (pin X1.2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "X2.2"
+        },
+        "label": "DO 5 (pin X2.2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "X3.2"
+        },
+        "label": "DO 6 (pin X3.2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "X4.2"
+        },
+        "label": "DO 7 (pin X4.2)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "X1.4"
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "X2.4"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "X3.4"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "X4.4"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "X1.2"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "X2.2"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "X3.2"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "X4.2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200eco.dq8.1a3.8m12",
+    "name": {
+      "de": "ET 200eco PN DQ 8x24VDC/1.3A 8xM12",
+      "en": "ET 200eco PN DQ 8x24VDC/1.3A 8xM12"
+    },
+    "category": "plc.siemens.et200eco",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7142-6BG00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung aus dem Siemens-Gerätehandbuch ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf",
+      "en": "Pin assignment from the Siemens equipment manual ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf"
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 0,
+        "pins": {
+          "1": "X1.4",
+          "2": "X1.3"
+        },
+        "label": "DO 0 (pin X1.4, X1.3)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 1,
+        "pins": {
+          "1": "X2.4",
+          "2": "X2.3"
+        },
+        "label": "DO 1 (pin X2.4, X2.3)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 2,
+        "pins": {
+          "1": "X3.4",
+          "2": "X3.3"
+        },
+        "label": "DO 2 (pin X3.4, X3.3)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 3,
+        "pins": {
+          "1": "X4.4",
+          "2": "X4.3"
+        },
+        "label": "DO 3 (pin X4.4, X4.3)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 4,
+        "pins": {
+          "1": "X5.4",
+          "2": "X5.3"
+        },
+        "label": "DO 4 (pin X5.4, X5.3)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 5,
+        "pins": {
+          "1": "X6.4",
+          "2": "X6.3"
+        },
+        "label": "DO 5 (pin X6.4, X6.3)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 6,
+        "pins": {
+          "1": "X7.4",
+          "2": "X7.3"
+        },
+        "label": "DO 6 (pin X7.4, X7.3)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 7,
+        "pins": {
+          "1": "X8.4",
+          "2": "X8.3"
+        },
+        "label": "DO 7 (pin X8.4, X8.3)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "X1.4",
+          "extraPins": [
+            {
+              "pin": "X1.3",
+              "label": "1M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "X2.4",
+          "extraPins": [
+            {
+              "pin": "X2.3",
+              "label": "1M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "X3.4",
+          "extraPins": [
+            {
+              "pin": "X3.3",
+              "label": "1M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "X4.4",
+          "extraPins": [
+            {
+              "pin": "X4.3",
+              "label": "1M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "X5.4",
+          "extraPins": [
+            {
+              "pin": "X5.3",
+              "label": "2M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "X6.4",
+          "extraPins": [
+            {
+              "pin": "X6.3",
+              "label": "2M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "X7.4",
+          "extraPins": [
+            {
+              "pin": "X7.3",
+              "label": "2M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "X8.4",
+          "extraPins": [
+            {
+              "pin": "X8.3",
+              "label": "2M",
+              "after": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200eco.dq8.2a.8m12",
+    "name": {
+      "de": "ET 200eco PN DQ 8x24VDC/2.0A 8xM12",
+      "en": "ET 200eco PN DQ 8x24VDC/2.0A 8xM12"
+    },
+    "category": "plc.siemens.et200eco",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7142-6BR00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung aus dem Siemens-Gerätehandbuch ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf",
+      "en": "Pin assignment from the Siemens equipment manual ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf"
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 0,
+        "pins": {
+          "1": "X1.4",
+          "2": "X1.3"
+        },
+        "label": "DO 0 (pin X1.4, X1.3)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 1,
+        "pins": {
+          "1": "X2.4",
+          "2": "X2.3"
+        },
+        "label": "DO 1 (pin X2.4, X2.3)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 2,
+        "pins": {
+          "1": "X3.4",
+          "2": "X3.3"
+        },
+        "label": "DO 2 (pin X3.4, X3.3)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 3,
+        "pins": {
+          "1": "X4.4",
+          "2": "X4.3"
+        },
+        "label": "DO 3 (pin X4.4, X4.3)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 4,
+        "pins": {
+          "1": "X5.4",
+          "2": "X5.3"
+        },
+        "label": "DO 4 (pin X5.4, X5.3)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 5,
+        "pins": {
+          "1": "X6.4",
+          "2": "X6.3"
+        },
+        "label": "DO 5 (pin X6.4, X6.3)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 6,
+        "pins": {
+          "1": "X7.4",
+          "2": "X7.3"
+        },
+        "label": "DO 6 (pin X7.4, X7.3)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 7,
+        "pins": {
+          "1": "X8.4",
+          "2": "X8.3"
+        },
+        "label": "DO 7 (pin X8.4, X8.3)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "X1.4",
+          "extraPins": [
+            {
+              "pin": "X1.3",
+              "label": "1M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "X2.4",
+          "extraPins": [
+            {
+              "pin": "X2.3",
+              "label": "1M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "X3.4",
+          "extraPins": [
+            {
+              "pin": "X3.3",
+              "label": "1M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "X4.4",
+          "extraPins": [
+            {
+              "pin": "X4.3",
+              "label": "1M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "X5.4",
+          "extraPins": [
+            {
+              "pin": "X5.3",
+              "label": "2M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "X6.4",
+          "extraPins": [
+            {
+              "pin": "X6.3",
+              "label": "2M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "X7.4",
+          "extraPins": [
+            {
+              "pin": "X7.3",
+              "label": "2M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "X8.4",
+          "extraPins": [
+            {
+              "pin": "X8.3",
+              "label": "2M",
+              "after": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200eco.dq16.8m12",
+    "name": {
+      "de": "ET 200eco PN DQ 16x24VDC/1.3A 8xM12",
+      "en": "ET 200eco PN DQ 16x24VDC/1.3A 8xM12"
+    },
+    "category": "plc.siemens.et200eco",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7142-6BH00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung aus dem Siemens-Gerätehandbuch ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf",
+      "en": "Pin assignment from the Siemens equipment manual ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf"
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 0,
+        "pins": {
+          "1": "X1.4"
+        },
+        "label": "DO 0 (pin X1.4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "X2.4"
+        },
+        "label": "DO 1 (pin X2.4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 2,
+        "pins": {
+          "1": "X3.4"
+        },
+        "label": "DO 2 (pin X3.4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 3,
+        "pins": {
+          "1": "X4.4"
+        },
+        "label": "DO 3 (pin X4.4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 4,
+        "pins": {
+          "1": "X5.4"
+        },
+        "label": "DO 4 (pin X5.4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 5,
+        "pins": {
+          "1": "X6.4"
+        },
+        "label": "DO 5 (pin X6.4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 6,
+        "pins": {
+          "1": "X7.4"
+        },
+        "label": "DO 6 (pin X7.4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 7,
+        "pins": {
+          "1": "X8.4"
+        },
+        "label": "DO 7 (pin X8.4)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 8,
+        "pins": {
+          "1": "X1.2"
+        },
+        "label": "DO 8 (pin X1.2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 9,
+        "pins": {
+          "1": "X2.2"
+        },
+        "label": "DO 9 (pin X2.2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 10,
+        "pins": {
+          "1": "X3.2"
+        },
+        "label": "DO 10 (pin X3.2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 11,
+        "pins": {
+          "1": "X4.2"
+        },
+        "label": "DO 11 (pin X4.2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 12,
+        "pins": {
+          "1": "X5.2"
+        },
+        "label": "DO 12 (pin X5.2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 13,
+        "pins": {
+          "1": "X6.2"
+        },
+        "label": "DO 13 (pin X6.2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 14,
+        "pins": {
+          "1": "X7.2"
+        },
+        "label": "DO 14 (pin X7.2)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 15,
+        "pins": {
+          "1": "X8.2"
+        },
+        "label": "DO 15 (pin X8.2)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DO",
+          "pin": "X1.4"
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "X2.4"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "X3.4"
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "X4.4"
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "X5.4"
+        },
+        {
+          "channel": 5,
+          "kind": "DO",
+          "pin": "X6.4"
+        },
+        {
+          "channel": 6,
+          "kind": "DO",
+          "pin": "X7.4"
+        },
+        {
+          "channel": 7,
+          "kind": "DO",
+          "pin": "X8.4"
+        },
+        {
+          "channel": 8,
+          "kind": "DO",
+          "pin": "X1.2"
+        },
+        {
+          "channel": 9,
+          "kind": "DO",
+          "pin": "X2.2"
+        },
+        {
+          "channel": 10,
+          "kind": "DO",
+          "pin": "X3.2"
+        },
+        {
+          "channel": 11,
+          "kind": "DO",
+          "pin": "X4.2"
+        },
+        {
+          "channel": 12,
+          "kind": "DO",
+          "pin": "X5.2"
+        },
+        {
+          "channel": 13,
+          "kind": "DO",
+          "pin": "X6.2"
+        },
+        {
+          "channel": 14,
+          "kind": "DO",
+          "pin": "X7.2"
+        },
+        {
+          "channel": 15,
+          "kind": "DO",
+          "pin": "X8.2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200eco.aq4.4m12",
+    "name": {
+      "de": "ET 200eco PN AQ 4xU/I 4xM12",
+      "en": "ET 200eco PN AQ 4xU/I 4xM12"
+    },
+    "category": "plc.siemens.et200eco",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7145-6HD00-0AB0",
+    "description": {
+      "de": "Klemmenbelegung aus dem Siemens-Gerätehandbuch ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf",
+      "en": "Pin assignment from the Siemens equipment manual ET 200eco PN operating instructions (A5E01250250-AJ, 08/2016): https://cache.industry.siemens.com/dl/files/018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf"
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.ao.4",
+        "channel": 0,
+        "pins": {
+          "1": "X1.2",
+          "2": "X1.4",
+          "3": "X1.1",
+          "4": "X1.3"
+        },
+        "label": "AO 0 (pin X1.2, X1.4, X1.1, X1.3)"
+      },
+      {
+        "symbol": "wirewright.plc.ao.4",
+        "channel": 1,
+        "pins": {
+          "1": "X2.2",
+          "2": "X2.4",
+          "3": "X2.1",
+          "4": "X2.3"
+        },
+        "label": "AO 1 (pin X2.2, X2.4, X2.1, X2.3)"
+      },
+      {
+        "symbol": "wirewright.plc.ao.4",
+        "channel": 2,
+        "pins": {
+          "1": "X3.2",
+          "2": "X3.4",
+          "3": "X3.1",
+          "4": "X3.3"
+        },
+        "label": "AO 2 (pin X3.2, X3.4, X3.1, X3.3)"
+      },
+      {
+        "symbol": "wirewright.plc.ao.4",
+        "channel": 3,
+        "pins": {
+          "1": "X4.2",
+          "2": "X4.4",
+          "3": "X4.1",
+          "4": "X4.3"
+        },
+        "label": "AO 3 (pin X4.2, X4.4, X4.1, X4.3)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "AO",
+          "pin": "X1.2",
+          "pinLabel": "Q0+",
+          "extraPins": [
+            {
+              "pin": "X1.4",
+              "label": "Q0-",
+              "after": true
+            },
+            {
+              "pin": "X1.1",
+              "label": "1UA",
+              "after": true
+            },
+            {
+              "pin": "X1.3",
+              "label": "1M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 1,
+          "kind": "AO",
+          "pin": "X2.2",
+          "pinLabel": "Q1+",
+          "extraPins": [
+            {
+              "pin": "X2.4",
+              "label": "Q1-",
+              "after": true
+            },
+            {
+              "pin": "X2.1",
+              "label": "1UA",
+              "after": true
+            },
+            {
+              "pin": "X2.3",
+              "label": "1M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 2,
+          "kind": "AO",
+          "pin": "X3.2",
+          "pinLabel": "Q2+",
+          "extraPins": [
+            {
+              "pin": "X3.4",
+              "label": "Q2-",
+              "after": true
+            },
+            {
+              "pin": "X3.1",
+              "label": "1UA",
+              "after": true
+            },
+            {
+              "pin": "X3.3",
+              "label": "1M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 3,
+          "kind": "AO",
+          "pin": "X4.2",
+          "pinLabel": "Q3+",
+          "extraPins": [
+            {
+              "pin": "X4.4",
+              "label": "Q3-",
+              "after": true
+            },
+            {
+              "pin": "X4.1",
+              "label": "1UA",
+              "after": true
+            },
+            {
+              "pin": "X4.3",
+              "label": "1M",
+              "after": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200eco.di8.m12l",
+    "name": {
+      "de": "ET 200eco PN DI 8x24VDC M12-L 8xM12",
+      "en": "ET 200eco PN DI 8x24VDC M12-L 8xM12"
+    },
+    "category": "plc.siemens.et200eco",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7141-6BG00-0BB0",
+    "description": {
+      "de": "Klemmenbelegung aus dem Siemens-Gerätehandbuch DI 8x24VDC M12-L 8xM12 (A5E46570417-AE, 06/2024): https://cache.industry.siemens.com/dl/files/293/109778293/att_1027365/v3/et200ecopn_di_8x24vdc_m12l_8xm12_manual_en-US_en-US.pdf",
+      "en": "Pin assignment from the Siemens equipment manual DI 8x24VDC M12-L 8xM12 (A5E46570417-AE, 06/2024): https://cache.industry.siemens.com/dl/files/293/109778293/att_1027365/v3/et200ecopn_di_8x24vdc_m12l_8xm12_manual_en-US_en-US.pdf"
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di.3",
+        "channel": 0,
+        "pins": {
+          "1": "X10.4",
+          "2": "X10.1",
+          "3": "X10.3"
+        },
+        "label": "DI 0 (pin X10.4, X10.1, X10.3)"
+      },
+      {
+        "symbol": "wirewright.plc.di.3",
+        "channel": 1,
+        "pins": {
+          "1": "X11.4",
+          "2": "X11.1",
+          "3": "X11.3"
+        },
+        "label": "DI 1 (pin X11.4, X11.1, X11.3)"
+      },
+      {
+        "symbol": "wirewright.plc.di.3",
+        "channel": 2,
+        "pins": {
+          "1": "X12.4",
+          "2": "X12.1",
+          "3": "X12.3"
+        },
+        "label": "DI 2 (pin X12.4, X12.1, X12.3)"
+      },
+      {
+        "symbol": "wirewright.plc.di.3",
+        "channel": 3,
+        "pins": {
+          "1": "X13.4",
+          "2": "X13.1",
+          "3": "X13.3"
+        },
+        "label": "DI 3 (pin X13.4, X13.1, X13.3)"
+      },
+      {
+        "symbol": "wirewright.plc.di.3",
+        "channel": 4,
+        "pins": {
+          "1": "X14.4",
+          "2": "X14.1",
+          "3": "X14.3"
+        },
+        "label": "DI 4 (pin X14.4, X14.1, X14.3)"
+      },
+      {
+        "symbol": "wirewright.plc.di.3",
+        "channel": 5,
+        "pins": {
+          "1": "X15.4",
+          "2": "X15.1",
+          "3": "X15.3"
+        },
+        "label": "DI 5 (pin X15.4, X15.1, X15.3)"
+      },
+      {
+        "symbol": "wirewright.plc.di.3",
+        "channel": 6,
+        "pins": {
+          "1": "X16.4",
+          "2": "X16.1",
+          "3": "X16.3"
+        },
+        "label": "DI 6 (pin X16.4, X16.1, X16.3)"
+      },
+      {
+        "symbol": "wirewright.plc.di.3",
+        "channel": 7,
+        "pins": {
+          "1": "X17.4",
+          "2": "X17.1",
+          "3": "X17.3"
+        },
+        "label": "DI 7 (pin X17.4, X17.1, X17.3)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "X10.4",
+          "extraPins": [
+            {
+              "pin": "X10.1",
+              "label": "1US",
+              "after": true
+            },
+            {
+              "pin": "X10.3",
+              "label": "M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "X11.4",
+          "extraPins": [
+            {
+              "pin": "X11.1",
+              "label": "1US",
+              "after": true
+            },
+            {
+              "pin": "X11.3",
+              "label": "M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "X12.4",
+          "extraPins": [
+            {
+              "pin": "X12.1",
+              "label": "1US",
+              "after": true
+            },
+            {
+              "pin": "X12.3",
+              "label": "M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "X13.4",
+          "extraPins": [
+            {
+              "pin": "X13.1",
+              "label": "1US",
+              "after": true
+            },
+            {
+              "pin": "X13.3",
+              "label": "M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "X14.4",
+          "extraPins": [
+            {
+              "pin": "X14.1",
+              "label": "1US",
+              "after": true
+            },
+            {
+              "pin": "X14.3",
+              "label": "M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "X15.4",
+          "extraPins": [
+            {
+              "pin": "X15.1",
+              "label": "1US",
+              "after": true
+            },
+            {
+              "pin": "X15.3",
+              "label": "M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "X16.4",
+          "extraPins": [
+            {
+              "pin": "X16.1",
+              "label": "1US",
+              "after": true
+            },
+            {
+              "pin": "X16.3",
+              "label": "M",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "X17.4",
+          "extraPins": [
+            {
+              "pin": "X17.1",
+              "label": "1US",
+              "after": true
+            },
+            {
+              "pin": "X17.3",
+              "label": "M",
+              "after": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "siemens.et200eco.di16.m12l",
+    "name": {
+      "de": "ET 200eco PN DI 16x24VDC M12-L 8xM12",
+      "en": "ET 200eco PN DI 16x24VDC M12-L 8xM12"
+    },
+    "category": "plc.siemens.et200eco",
+    "manufacturer": "Siemens",
+    "partNumber": "6ES7141-6BH00-0BB0",
+    "description": {
+      "de": "Klemmenbelegung aus dem Siemens-Gerätehandbuch DI 16x24VDC M12-L 8xM12 (A5E46570510-AE, 06/2024): https://cache.industry.siemens.com/dl/files/294/109778294/att_1027382/v4/et200ecopn_di_16x24vdc_m12l_8xm12_manual_en-US_en-US.pdf",
+      "en": "Pin assignment from the Siemens equipment manual DI 16x24VDC M12-L 8xM12 (A5E46570510-AE, 06/2024): https://cache.industry.siemens.com/dl/files/294/109778294/att_1027382/v4/et200ecopn_di_16x24vdc_m12l_8xm12_manual_en-US_en-US.pdf"
+    },
+    "functions": [
+      {
+        "symbol": "wirewright.plc.card",
+        "main": true,
+        "label": {
+          "de": "Kartenübersicht",
+          "en": "Card overview"
+        }
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 0,
+        "pins": {
+          "1": "X10.4"
+        },
+        "label": "DI 0 (pin X10.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 1,
+        "pins": {
+          "1": "X11.4"
+        },
+        "label": "DI 1 (pin X11.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 2,
+        "pins": {
+          "1": "X12.4"
+        },
+        "label": "DI 2 (pin X12.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 3,
+        "pins": {
+          "1": "X13.4"
+        },
+        "label": "DI 3 (pin X13.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 4,
+        "pins": {
+          "1": "X14.4"
+        },
+        "label": "DI 4 (pin X14.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 5,
+        "pins": {
+          "1": "X15.4"
+        },
+        "label": "DI 5 (pin X15.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 6,
+        "pins": {
+          "1": "X16.4"
+        },
+        "label": "DI 6 (pin X16.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 7,
+        "pins": {
+          "1": "X17.4"
+        },
+        "label": "DI 7 (pin X17.4)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 8,
+        "pins": {
+          "1": "X10.2"
+        },
+        "label": "DI 8 (pin X10.2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 9,
+        "pins": {
+          "1": "X11.2"
+        },
+        "label": "DI 9 (pin X11.2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 10,
+        "pins": {
+          "1": "X12.2"
+        },
+        "label": "DI 10 (pin X12.2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 11,
+        "pins": {
+          "1": "X13.2"
+        },
+        "label": "DI 11 (pin X13.2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 12,
+        "pins": {
+          "1": "X14.2"
+        },
+        "label": "DI 12 (pin X14.2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 13,
+        "pins": {
+          "1": "X15.2"
+        },
+        "label": "DI 13 (pin X15.2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 14,
+        "pins": {
+          "1": "X16.2"
+        },
+        "label": "DI 14 (pin X16.2)"
+      },
+      {
+        "symbol": "wirewright.plc.di",
+        "channel": 15,
+        "pins": {
+          "1": "X17.2"
+        },
+        "label": "DI 15 (pin X17.2)"
+      }
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 0,
+          "kind": "DI",
+          "pin": "X10.4"
+        },
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "X11.4"
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "X12.4"
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "X13.4"
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "X14.4"
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "X15.4"
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "X16.4"
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "X17.4"
+        },
+        {
+          "channel": 8,
+          "kind": "DI",
+          "pin": "X10.2"
+        },
+        {
+          "channel": 9,
+          "kind": "DI",
+          "pin": "X11.2"
+        },
+        {
+          "channel": 10,
+          "kind": "DI",
+          "pin": "X12.2"
+        },
+        {
+          "channel": 11,
+          "kind": "DI",
+          "pin": "X13.2"
+        },
+        {
+          "channel": 12,
+          "kind": "DI",
+          "pin": "X14.2"
+        },
+        {
+          "channel": 13,
+          "kind": "DI",
+          "pin": "X15.2"
+        },
+        {
+          "channel": 14,
+          "kind": "DI",
+          "pin": "X16.2"
+        },
+        {
+          "channel": 15,
+          "kind": "DI",
+          "pin": "X17.2"
+        }
+      ]
+    }
+  },
+  {
     "id": "siemens.s71200.cpu1211c.dc-dc-dc",
     "name": {
       "de": "S7-1200 CPU 1211C DC/DC/DC",

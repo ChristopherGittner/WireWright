@@ -74,6 +74,9 @@ const M = {
   'mp.cpu1511c': ['CPU 1511C-1 PN', 'A5E40898565-AC, 05/2024', '074/109963074/att_1275085/v1/s71500_cpu1511c_1_pn_dtc_manual_en-US_en-US.pdf'],
   'mp.cpu1512c': ['CPU 1512C-1 PN', 'A5E40898741-AC, 05/2024', '073/109963073/att_1275073/v1/s71500_cpu1512c_1_pn_dtc_manual_en-US_en-US.pdf'],
   'mp.system': ['S7-1500/ET 200MP system manual', 'A5E03461182-AC, 12/2014', '792/59191792/att_856649/v1/s71500_et200mp_system_manual_en-US_en-US.pdf'],
+  'eco.oi': ['ET 200eco PN operating instructions', 'A5E01250250-AJ, 08/2016', '018/29999018/att_892032/v1/et200eco_pn_operating_instructions_en-US_en-US.pdf'],
+  'eco.di8l': ['DI 8x24VDC M12-L 8xM12', 'A5E46570417-AE, 06/2024', '293/109778293/att_1027365/v3/et200ecopn_di_8x24vdc_m12l_8xm12_manual_en-US_en-US.pdf'],
+  'eco.di16l': ['DI 16x24VDC M12-L 8xM12', 'A5E46570510-AE, 06/2024', '294/109778294/att_1027382/v4/et200ecopn_di_16x24vdc_m12l_8xm12_manual_en-US_en-US.pdf'],
   's12.easy': ['S7-1200 Easy Book', 'A5E02486774-AG, 01/2015', '145/39710145/att_5787/v1/s71200_easy_book_en-US_en-US.pdf'],
   's12.sys': ['S7-1200 system manual', 'A5E02669003-02, 11/2009 (ru)', '465/36932465/att_106131/v1/s71200_system_manual_ru-RU.pdf'],
 };
@@ -299,6 +302,34 @@ function compactIo(connectors) {
 }
 device({ id: 'siemens.s71500.cpu1511c-1pn', name: 'S7-1500 CPU 1511C-1 PN (compact, onboard I/O)', category: 'plc.cpu', partNumber: '6ES7511-1CL03-0AB0', description: source('mp.cpu1511c'), channels: compactIo(['X11']), cpu: true });
 device({ id: 'siemens.s71500.cpu1512c-1pn', name: 'S7-1500 CPU 1512C-1 PN (compact, onboard I/O)', category: 'plc.cpu', partNumber: '6ES7512-1CM03-0AB0', description: source('mp.cpu1512c'), channels: compactIo(['X11', 'X12']), cpu: true });
+
+// =============================================================================================
+// ET 200eco PN (IP67, M12 sockets; terminals named "X1.4" = socket X1, pin 4)
+// =============================================================================================
+const ECO = 'plc.siemens.et200eco';
+const eco = (id, name, partNumber, key, channels) =>
+  device({ id: `siemens.et200eco.${id}`, name: `ET 200eco PN ${name}`, category: ECO, partNumber, description: source(key), channels });
+/** One channel per socket on pin 4, with the socket's 24 V (pin 1) and ground (pin 3). */
+const ecoSingle = (kind, count, supply, first = 1) => range(count).map((n) => ch(kind, n, `X${first + n}.4`, [[`X${first + n}.1`, supply], [`X${first + n}.3`, 'M']]));
+/** Two channels per socket: pin 4 and pin 2 (24 V and ground of the socket are shared, so left out). */
+const ecoDouble = (kind, sockets, first = 1) => [
+  ...range(sockets).map((n) => ch(kind, n, `X${first + n}.4`)),
+  ...range(sockets).map((n) => ch(kind, n + sockets, `X${first + n}.2`)),
+];
+// 4xM12: DI0-DI3 on pin 4, DI4-DI7 on pin 2 of X1-X4 (table 3-4)
+eco('di8.4m12', 'DI 8x24VDC 4xM12', '6ES7141-6BF00-0AB0', 'eco.oi', ecoDouble('DI', 4));
+eco('di8.8m12', 'DI 8x24VDC 8xM12', '6ES7141-6BG00-0AB0', 'eco.oi', ecoSingle('DI', 8, '1US'));
+eco('di16.8m12', 'DI 16x24VDC 8xM12', '6ES7141-6BH00-0BA0', 'eco.oi', ecoDouble('DI', 8));
+eco('dq8.1a3.4m12', 'DQ 8x24VDC/1.3A 4xM12', '6ES7142-6BF00-0AB0', 'eco.oi', ecoDouble('DO', 4));
+eco('dq8.0a5.4m12', 'DQ 8x24VDC/0.5A 4xM12', '6ES7142-6BF50-0AB0', 'eco.oi', ecoDouble('DO', 4));
+eco('dq8.1a3.8m12', 'DQ 8x24VDC/1.3A 8xM12', '6ES7142-6BG00-0AB0', 'eco.oi', range(8).map((n) => ch('DO', n, `X${n + 1}.4`, [[`X${n + 1}.3`, n < 4 ? '1M' : '2M']])));
+eco('dq8.2a.8m12', 'DQ 8x24VDC/2.0A 8xM12', '6ES7142-6BR00-0AB0', 'eco.oi', range(8).map((n) => ch('DO', n, `X${n + 1}.4`, [[`X${n + 1}.3`, n < 4 ? '1M' : '2M']])));
+eco('dq16.8m12', 'DQ 16x24VDC/1.3A 8xM12', '6ES7142-6BH00-0AB0', 'eco.oi', ecoDouble('DO', 8));
+// AO: Q+ on pin 2, Q- on pin 4, actuator supply 1UA pin 1, ground pin 3 (table 3-22)
+eco('aq4.4m12', 'AQ 4xU/I 4xM12', '6ES7145-6HD00-0AB0', 'eco.oi', range(4).map((n) => ch('AO', n, `X${n + 1}.2`, [[`X${n + 1}.4`, `Q${n}-`], [`X${n + 1}.1`, '1UA'], [`X${n + 1}.3`, '1M']], `Q${n}+`)));
+// M12-L devices: I/O sockets X10-X17 (default assignment: one input per socket)
+eco('di8.m12l', 'DI 8x24VDC M12-L 8xM12', '6ES7141-6BG00-0BB0', 'eco.di8l', ecoSingle('DI', 8, '1US', 10));
+eco('di16.m12l', 'DI 16x24VDC M12-L 8xM12', '6ES7141-6BH00-0BB0', 'eco.di16l', ecoDouble('DI', 8, 10));
 
 // =============================================================================================
 // S7-1200 (terminals named as printed on the device: DIa.0, DQb.1, AI0, 0+ …)
