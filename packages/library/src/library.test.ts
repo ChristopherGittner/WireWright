@@ -138,7 +138,13 @@ describe('standard library', () => {
 
   it('has the Beckhoff terminal points of the Beckhoff documentation', () => {
     const channels = (id: string) => library.device(id)?.plc?.channels;
-    expect(library.devices().filter((d) => d.id.startsWith('beckhoff.')).length).toBeGreaterThan(190);
+    expect(library.devices().filter((d) => d.id.startsWith('beckhoff.')).length).toBeGreaterThan(600);
+    // abbreviated tables ("Input 1 … Input 32") are expanded: all 32 channels of the EL1417
+    expect(channels('beckhoff.el1417')?.length).toBe(32);
+    expect(channels('beckhoff.el1417')?.[31]?.pin).toBe('32');
+    // Bus Terminals (KL) and push-in terminals (ED) from the same documentation
+    expect(channels('beckhoff.kl3204')?.[0]).toMatchObject({ pin: '1', pinLabel: '+R1', extraPins: [{ pin: '2', label: '-R1' }] });
+    expect(channels('beckhoff.ed1809')?.length).toBe(16);
     // EL1002: input 1 on 1 with sensor supply +24 V on 2, 0 V on 3, PE on 4; input 2 on 5
     expect(channels('beckhoff.el1002')?.[0]).toEqual({
       channel: 1, kind: 'DI', pin: '1',
@@ -154,7 +160,7 @@ describe('standard library', () => {
     // EL1124/EL1144/EL1134 share one table "+5 / 12 / 48 V": each gets its own supply voltage
     expect(channels('beckhoff.el1144')?.[0]?.extraPins?.[0]?.label).toBe('+12 V');
     // every Beckhoff I/O card names the page its terminal points come from
-    for (const d of library.devices().filter((d) => /^beckhoff\.el[1-4]/.test(d.id) && !/el19[01]|el2904/.test(d.id))) {
+    for (const d of library.devices().filter((d) => /^beckhoff\.(el|ed|kl|ks)[1-4]/.test(d.id) && d.plc && !/el19[01]|el2904/.test(d.id))) {
       expect(localize(d.description, 'en'), d.id).toMatch(/^Pin assignment from the Beckhoff documentation, as of 2026-11: https:\/\/infosys\.beckhoff\.com\//);
     }
   });

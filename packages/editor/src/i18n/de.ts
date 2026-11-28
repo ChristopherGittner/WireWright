@@ -426,7 +426,7 @@ export const de: Record<string, string> = {
   "PLC I/O point": "SPS-E/A-Punkt",
   "PLC addresses and export": "SPS-Adressen und Export",
   "PLC card \"{item}\" not found": "SPS-Karte \"{item}\" nicht gefunden",
-  "PLC: Beckhoff EtherCAT terminals": "SPS: Beckhoff EtherCAT-Klemmen",
+  "PLC: Beckhoff EtherCAT and Bus Terminals": "SPS: Beckhoff EtherCAT- und Busklemmen",
   "PLC: CPUs, controllers, couplers": "SPS: CPUs, Steuerungen, Koppler",
   "PLC: Siemens ET 200SP": "SPS: Siemens ET 200SP",
   "PLC: Siemens S7-1200": "SPS: Siemens S7-1200",

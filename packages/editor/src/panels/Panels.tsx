@@ -454,7 +454,7 @@ const DEVICE_CATEGORIES: [string, string][] = [
   ['plc.siemens.s71200', 'PLC: Siemens S7-1200'],
   ['plc.siemens.et200eco', 'PLC: Siemens ET 200eco PN'],
   ['plc.wago', 'PLC: WAGO 750'],
-  ['plc.beckhoff', 'PLC: Beckhoff EtherCAT terminals'],
+  ['plc.beckhoff', 'PLC: Beckhoff EtherCAT and Bus Terminals'],
   ['plc', 'PLC I/O cards'],
   ['relays', 'Relays and contactors'],
   ['cables', 'Cables'],
