@@ -123,6 +123,19 @@ describe('standard library', () => {
     expect(library.device('wago.750-667-000-003')?.functions[1]).toMatchObject({ symbol: 'wirewright.plc.di.2', pins: { '1': '1', '2': '5' } }); // clock T1 on terminal 1, input I1 on 5 (manual)
   });
 
+  it('has the WAGO terminals of the product manuals', () => {
+    const channels = (id: string) => library.device(id)?.plc?.channels;
+    // 750-498: thermocouple +TCn on n, −TCn on n+8 (8 channels, 16 terminals)
+    expect(channels('wago.750-498')?.[7]).toMatchObject({ pin: '8', pinLabel: '+TC8', extraPins: [{ pin: '16' }] });
+    // 750-519: DO1/DO2 on 1/5, DO3/DO4 on 4/8 (figure "View")
+    expect(channels('wago.750-519')?.map((c) => c.pin)).toEqual(['1', '5', '4', '8']);
+    // 750-669/000-003: clock T and input I alternate on 1-8, relay contacts a/b on 9-16
+    expect(channels('wago.750-669-000-003')?.[1]).toMatchObject({ kind: 'DI', pin: '4', extraPins: [{ pin: '3', label: 'T2' }] });
+    expect(channels('wago.750-669-000-003')?.[7]).toMatchObject({ kind: 'DO', pin: '15', extraPins: [{ pin: '16', label: 'RO4b' }] });
+    // 753 modules without their own manual: the terminals of the 750 twin
+    expect(channels('wago.753-516')).toEqual(channels('wago.750-516'));
+  });
+
   it('has the Beckhoff terminal points of the Beckhoff documentation', () => {
     const channels = (id: string) => library.device(id)?.plc?.channels;
     expect(library.devices().filter((d) => d.id.startsWith('beckhoff.')).length).toBeGreaterThan(190);

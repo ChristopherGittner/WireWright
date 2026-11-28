@@ -10199,8 +10199,8 @@
     "manufacturer": "WAGO",
     "partNumber": "750-491",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung aus dem Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment from the product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -10212,12 +10212,15 @@
         }
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.4",
         "channel": 1,
         "pins": {
-          "1": "1"
+          "1": "1",
+          "2": "2",
+          "3": "7",
+          "4": "3"
         },
-        "label": "AI 1 (pin 1)"
+        "label": "AI 1 (pin 1, 2, 7, 3)"
       }
     ],
     "plc": {
@@ -10225,7 +10228,25 @@
         {
           "channel": 1,
           "kind": "AI",
-          "pin": "1"
+          "pin": "1",
+          "pinLabel": "+UD",
+          "extraPins": [
+            {
+              "pin": "2",
+              "label": "−UD",
+              "after": true
+            },
+            {
+              "pin": "7",
+              "label": "+UV",
+              "after": true
+            },
+            {
+              "pin": "3",
+              "label": "−UV",
+              "after": true
+            }
+          ]
         }
       ]
     }
@@ -10240,8 +10261,8 @@
     "manufacturer": "WAGO",
     "partNumber": "750-491/000-001",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung aus dem Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment from the product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -10253,12 +10274,15 @@
         }
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.4",
         "channel": 1,
         "pins": {
-          "1": "1"
+          "1": "1",
+          "2": "2",
+          "3": "7",
+          "4": "3"
         },
-        "label": "AI 1 (pin 1)"
+        "label": "AI 1 (pin 1, 2, 7, 3)"
       }
     ],
     "plc": {
@@ -10266,7 +10290,25 @@
         {
           "channel": 1,
           "kind": "AI",
-          "pin": "1"
+          "pin": "1",
+          "pinLabel": "+UD",
+          "extraPins": [
+            {
+              "pin": "2",
+              "label": "−UD",
+              "after": true
+            },
+            {
+              "pin": "7",
+              "label": "+UV",
+              "after": true
+            },
+            {
+              "pin": "3",
+              "label": "−UV",
+              "after": true
+            }
+          ]
         }
       ]
     }
@@ -10881,8 +10923,8 @@
     "manufacturer": "WAGO",
     "partNumber": "750-498",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung aus dem Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment from the product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -10894,68 +10936,76 @@
         }
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 1,
         "pins": {
-          "1": "1"
+          "1": "1",
+          "2": "9"
         },
-        "label": "AI 1 (pin 1)"
+        "label": "AI 1 (pin 1, 9)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 2,
         "pins": {
-          "1": "5"
+          "1": "2",
+          "2": "10"
         },
-        "label": "AI 2 (pin 5)"
+        "label": "AI 2 (pin 2, 10)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 3,
         "pins": {
-          "1": "2"
+          "1": "3",
+          "2": "11"
         },
-        "label": "AI 3 (pin 2)"
+        "label": "AI 3 (pin 3, 11)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 4,
         "pins": {
-          "1": "6"
+          "1": "4",
+          "2": "12"
         },
-        "label": "AI 4 (pin 6)"
+        "label": "AI 4 (pin 4, 12)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 5,
         "pins": {
-          "1": "3"
+          "1": "5",
+          "2": "13"
         },
-        "label": "AI 5 (pin 3)"
+        "label": "AI 5 (pin 5, 13)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 6,
         "pins": {
-          "1": "7"
+          "1": "6",
+          "2": "14"
         },
-        "label": "AI 6 (pin 7)"
+        "label": "AI 6 (pin 6, 14)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 7,
         "pins": {
-          "1": "4"
+          "1": "7",
+          "2": "15"
         },
-        "label": "AI 7 (pin 4)"
+        "label": "AI 7 (pin 7, 15)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 8,
         "pins": {
-          "1": "8"
+          "1": "8",
+          "2": "16"
         },
-        "label": "AI 8 (pin 8)"
+        "label": "AI 8 (pin 8, 16)"
       }
     ],
     "plc": {
@@ -10963,42 +11013,106 @@
         {
           "channel": 1,
           "kind": "AI",
-          "pin": "1"
+          "pin": "1",
+          "pinLabel": "+TC1",
+          "extraPins": [
+            {
+              "pin": "9",
+              "label": "−TC1",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 2,
           "kind": "AI",
-          "pin": "5"
+          "pin": "2",
+          "pinLabel": "+TC2",
+          "extraPins": [
+            {
+              "pin": "10",
+              "label": "−TC2",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 3,
           "kind": "AI",
-          "pin": "2"
+          "pin": "3",
+          "pinLabel": "+TC3",
+          "extraPins": [
+            {
+              "pin": "11",
+              "label": "−TC3",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 4,
           "kind": "AI",
-          "pin": "6"
+          "pin": "4",
+          "pinLabel": "+TC4",
+          "extraPins": [
+            {
+              "pin": "12",
+              "label": "−TC4",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 5,
           "kind": "AI",
-          "pin": "3"
+          "pin": "5",
+          "pinLabel": "+TC5",
+          "extraPins": [
+            {
+              "pin": "13",
+              "label": "−TC5",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 6,
           "kind": "AI",
-          "pin": "7"
+          "pin": "6",
+          "pinLabel": "+TC6",
+          "extraPins": [
+            {
+              "pin": "14",
+              "label": "−TC6",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 7,
           "kind": "AI",
-          "pin": "4"
+          "pin": "7",
+          "pinLabel": "+TC7",
+          "extraPins": [
+            {
+              "pin": "15",
+              "label": "−TC7",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 8,
           "kind": "AI",
-          "pin": "8"
+          "pin": "8",
+          "pinLabel": "+TC8",
+          "extraPins": [
+            {
+              "pin": "16",
+              "label": "−TC8",
+              "after": true
+            }
+          ]
         }
       ]
     }
@@ -12709,8 +12823,8 @@
     "manufacturer": "WAGO",
     "partNumber": "750-519",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung aus dem Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment from the product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -12741,17 +12855,17 @@
         "symbol": "wirewright.plc.do",
         "channel": 3,
         "pins": {
-          "1": "2"
+          "1": "4"
         },
-        "label": "DO 3 (pin 2)"
+        "label": "DO 3 (pin 4)"
       },
       {
         "symbol": "wirewright.plc.do",
         "channel": 4,
         "pins": {
-          "1": "6"
+          "1": "8"
         },
-        "label": "DO 4 (pin 6)"
+        "label": "DO 4 (pin 8)"
       }
     ],
     "plc": {
@@ -12769,12 +12883,12 @@
         {
           "channel": 3,
           "kind": "DO",
-          "pin": "2"
+          "pin": "4"
         },
         {
           "channel": 4,
           "kind": "DO",
-          "pin": "6"
+          "pin": "8"
         }
       ]
     }
@@ -15596,8 +15710,8 @@
     "manufacturer": "WAGO",
     "partNumber": "750-562",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung aus dem Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment from the product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -15609,20 +15723,26 @@
         }
       },
       {
-        "symbol": "wirewright.plc.ao",
+        "symbol": "wirewright.plc.ao.4",
         "channel": 1,
         "pins": {
-          "1": "1"
+          "1": "1",
+          "2": "2",
+          "3": "3",
+          "4": "4"
         },
-        "label": "AO 1 (pin 1)"
+        "label": "AO 1 (pin 1, 2, 3, 4)"
       },
       {
-        "symbol": "wirewright.plc.ao",
+        "symbol": "wirewright.plc.ao.4",
         "channel": 2,
         "pins": {
-          "1": "5"
+          "1": "5",
+          "2": "6",
+          "3": "7",
+          "4": "8"
         },
-        "label": "AO 2 (pin 5)"
+        "label": "AO 2 (pin 5, 6, 7, 8)"
       }
     ],
     "plc": {
@@ -15630,12 +15750,48 @@
         {
           "channel": 1,
           "kind": "AO",
-          "pin": "1"
+          "pin": "1",
+          "pinLabel": "A1+",
+          "extraPins": [
+            {
+              "pin": "2",
+              "label": "S1+",
+              "after": true
+            },
+            {
+              "pin": "3",
+              "label": "S1−",
+              "after": true
+            },
+            {
+              "pin": "4",
+              "label": "M",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 2,
           "kind": "AO",
-          "pin": "5"
+          "pin": "5",
+          "pinLabel": "A2+",
+          "extraPins": [
+            {
+              "pin": "6",
+              "label": "S2+",
+              "after": true
+            },
+            {
+              "pin": "7",
+              "label": "S2−",
+              "after": true
+            },
+            {
+              "pin": "8",
+              "label": "M",
+              "after": true
+            }
+          ]
         }
       ]
     }
@@ -18058,19 +18214,191 @@
     "manufacturer": "WAGO",
     "partNumber": "750-660/000-001",
     "description": {
-      "de": "Ohne Kanalliste (Koppler, Steuerung oder Sondermodul).",
-      "en": "Without a channel list (coupler, controller or special module)."
+      "de": "Klemmenbelegung aus dem Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment from the product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
         "symbol": "wirewright.plc.card",
         "main": true,
         "label": {
-          "de": "Übersicht",
-          "en": "Overview"
+          "de": "Kartenübersicht",
+          "en": "Card overview"
         }
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 1,
+        "pins": {
+          "1": "1",
+          "2": "5"
+        },
+        "label": "DI 1 (pin 1, 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 2,
+        "pins": {
+          "1": "2",
+          "2": "6"
+        },
+        "label": "DI 2 (pin 2, 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 3,
+        "pins": {
+          "1": "3",
+          "2": "7"
+        },
+        "label": "DI 3 (pin 3, 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 4,
+        "pins": {
+          "1": "4",
+          "2": "8"
+        },
+        "label": "DI 4 (pin 4, 8)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 5,
+        "pins": {
+          "1": "9",
+          "2": "13"
+        },
+        "label": "DI 5 (pin 9, 13)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 6,
+        "pins": {
+          "1": "10",
+          "2": "14"
+        },
+        "label": "DI 6 (pin 10, 14)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 7,
+        "pins": {
+          "1": "11",
+          "2": "15"
+        },
+        "label": "DI 7 (pin 11, 15)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 8,
+        "pins": {
+          "1": "12",
+          "2": "16"
+        },
+        "label": "DI 8 (pin 12, 16)"
       }
-    ]
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "5",
+          "pinLabel": "I1",
+          "extraPins": [
+            {
+              "pin": "1",
+              "label": "T1"
+            }
+          ]
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "6",
+          "pinLabel": "I2",
+          "extraPins": [
+            {
+              "pin": "2",
+              "label": "T2"
+            }
+          ]
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "7",
+          "pinLabel": "I3",
+          "extraPins": [
+            {
+              "pin": "3",
+              "label": "T3"
+            }
+          ]
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "8",
+          "pinLabel": "I4",
+          "extraPins": [
+            {
+              "pin": "4",
+              "label": "T4"
+            }
+          ]
+        },
+        {
+          "channel": 5,
+          "kind": "DI",
+          "pin": "13",
+          "pinLabel": "I5",
+          "extraPins": [
+            {
+              "pin": "9",
+              "label": "T5"
+            }
+          ]
+        },
+        {
+          "channel": 6,
+          "kind": "DI",
+          "pin": "14",
+          "pinLabel": "I6",
+          "extraPins": [
+            {
+              "pin": "10",
+              "label": "T6"
+            }
+          ]
+        },
+        {
+          "channel": 7,
+          "kind": "DI",
+          "pin": "15",
+          "pinLabel": "I7",
+          "extraPins": [
+            {
+              "pin": "11",
+              "label": "T7"
+            }
+          ]
+        },
+        {
+          "channel": 8,
+          "kind": "DI",
+          "pin": "16",
+          "pinLabel": "I8",
+          "extraPins": [
+            {
+              "pin": "12",
+              "label": "T8"
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "wago.750-661-000-003",
@@ -18758,19 +19086,195 @@
     "manufacturer": "WAGO",
     "partNumber": "750-665/000-001",
     "description": {
-      "de": "Ohne Kanalliste (Koppler, Steuerung oder Sondermodul).",
-      "en": "Without a channel list (coupler, controller or special module)."
+      "de": "Klemmenbelegung aus dem Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment from the product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
         "symbol": "wirewright.plc.card",
         "main": true,
         "label": {
-          "de": "Übersicht",
-          "en": "Overview"
+          "de": "Kartenübersicht",
+          "en": "Card overview"
         }
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 1,
+        "pins": {
+          "1": "1",
+          "2": "5"
+        },
+        "label": "DI 1 (pin 1, 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 2,
+        "pins": {
+          "1": "2",
+          "2": "6"
+        },
+        "label": "DI 2 (pin 2, 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 3,
+        "pins": {
+          "1": "3",
+          "2": "7"
+        },
+        "label": "DI 3 (pin 3, 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 4,
+        "pins": {
+          "1": "4",
+          "2": "8"
+        },
+        "label": "DI 4 (pin 4, 8)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 1,
+        "pins": {
+          "1": "9",
+          "2": "13"
+        },
+        "label": "DO 1 (pin 9, 13)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 2,
+        "pins": {
+          "1": "10",
+          "2": "14"
+        },
+        "label": "DO 2 (pin 10, 14)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 3,
+        "pins": {
+          "1": "11",
+          "2": "15"
+        },
+        "label": "DO 3 (pin 11, 15)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 4,
+        "pins": {
+          "1": "12",
+          "2": "16"
+        },
+        "label": "DO 4 (pin 12, 16)"
       }
-    ]
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "5",
+          "pinLabel": "I1",
+          "extraPins": [
+            {
+              "pin": "1",
+              "label": "T1"
+            }
+          ]
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "6",
+          "pinLabel": "I2",
+          "extraPins": [
+            {
+              "pin": "2",
+              "label": "T2"
+            }
+          ]
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "7",
+          "pinLabel": "I3",
+          "extraPins": [
+            {
+              "pin": "3",
+              "label": "T3"
+            }
+          ]
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "8",
+          "pinLabel": "I4",
+          "extraPins": [
+            {
+              "pin": "4",
+              "label": "T4"
+            }
+          ]
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "9",
+          "pinLabel": "O1+",
+          "extraPins": [
+            {
+              "pin": "13",
+              "label": "O1−",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "10",
+          "pinLabel": "O2+",
+          "extraPins": [
+            {
+              "pin": "14",
+              "label": "O2−",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "11",
+          "pinLabel": "O3+",
+          "extraPins": [
+            {
+              "pin": "15",
+              "label": "O3−",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "12",
+          "pinLabel": "O4+",
+          "extraPins": [
+            {
+              "pin": "16",
+              "label": "O4−",
+              "after": true
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "wago.750-666-000-003",
@@ -18930,19 +19434,143 @@
     "manufacturer": "WAGO",
     "partNumber": "750-666/000-004",
     "description": {
-      "de": "Ohne Kanalliste (Koppler, Steuerung oder Sondermodul).",
-      "en": "Without a channel list (coupler, controller or special module)."
+      "de": "Klemmenbelegung aus dem Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment from the product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
         "symbol": "wirewright.plc.card",
         "main": true,
         "label": {
-          "de": "Übersicht",
-          "en": "Overview"
+          "de": "Kartenübersicht",
+          "en": "Card overview"
         }
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 1,
+        "pins": {
+          "1": "1",
+          "2": "5"
+        },
+        "label": "DI 1 (pin 1, 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 2,
+        "pins": {
+          "1": "2",
+          "2": "6"
+        },
+        "label": "DI 2 (pin 2, 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 3,
+        "pins": {
+          "1": "3",
+          "2": "7"
+        },
+        "label": "DI 3 (pin 3, 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 4,
+        "pins": {
+          "1": "4",
+          "2": "8"
+        },
+        "label": "DI 4 (pin 4, 8)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "10"
+        },
+        "label": "DO 1 (pin 10)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 2,
+        "pins": {
+          "1": "11",
+          "2": "12"
+        },
+        "label": "DO 2 (pin 11, 12)"
       }
-    ]
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "5",
+          "pinLabel": "I1",
+          "extraPins": [
+            {
+              "pin": "1",
+              "label": "T1"
+            }
+          ]
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "6",
+          "pinLabel": "I2",
+          "extraPins": [
+            {
+              "pin": "2",
+              "label": "T2"
+            }
+          ]
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "7",
+          "pinLabel": "I3",
+          "extraPins": [
+            {
+              "pin": "3",
+              "label": "T1"
+            }
+          ]
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "8",
+          "pinLabel": "I4",
+          "extraPins": [
+            {
+              "pin": "4",
+              "label": "T2"
+            }
+          ]
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "10",
+          "pinLabel": "O1B"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "11",
+          "pinLabel": "O2A",
+          "extraPins": [
+            {
+              "pin": "12",
+              "label": "O2B",
+              "after": true
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "wago.750-666-000-104",
@@ -18954,19 +19582,143 @@
     "manufacturer": "WAGO",
     "partNumber": "750-666/000-104",
     "description": {
-      "de": "Ohne Kanalliste (Koppler, Steuerung oder Sondermodul).",
-      "en": "Without a channel list (coupler, controller or special module)."
+      "de": "Klemmenbelegung aus dem Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment from the product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
         "symbol": "wirewright.plc.card",
         "main": true,
         "label": {
-          "de": "Übersicht",
-          "en": "Overview"
+          "de": "Kartenübersicht",
+          "en": "Card overview"
         }
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 1,
+        "pins": {
+          "1": "1",
+          "2": "5"
+        },
+        "label": "DI 1 (pin 1, 5)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 2,
+        "pins": {
+          "1": "2",
+          "2": "6"
+        },
+        "label": "DI 2 (pin 2, 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 3,
+        "pins": {
+          "1": "3",
+          "2": "7"
+        },
+        "label": "DI 3 (pin 3, 7)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 4,
+        "pins": {
+          "1": "4",
+          "2": "8"
+        },
+        "label": "DI 4 (pin 4, 8)"
+      },
+      {
+        "symbol": "wirewright.plc.do",
+        "channel": 1,
+        "pins": {
+          "1": "10"
+        },
+        "label": "DO 1 (pin 10)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 2,
+        "pins": {
+          "1": "11",
+          "2": "12"
+        },
+        "label": "DO 2 (pin 11, 12)"
       }
-    ]
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "5",
+          "pinLabel": "I1",
+          "extraPins": [
+            {
+              "pin": "1",
+              "label": "T1"
+            }
+          ]
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "6",
+          "pinLabel": "I2",
+          "extraPins": [
+            {
+              "pin": "2",
+              "label": "T2"
+            }
+          ]
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "7",
+          "pinLabel": "I3",
+          "extraPins": [
+            {
+              "pin": "3",
+              "label": "T1"
+            }
+          ]
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "8",
+          "pinLabel": "I4",
+          "extraPins": [
+            {
+              "pin": "4",
+              "label": "T2"
+            }
+          ]
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "10",
+          "pinLabel": "O1B"
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "11",
+          "pinLabel": "O2A",
+          "extraPins": [
+            {
+              "pin": "12",
+              "label": "O2B",
+              "after": true
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "wago.750-667-000-003",
@@ -19654,19 +20406,195 @@
     "manufacturer": "WAGO",
     "partNumber": "750-669/000-003",
     "description": {
-      "de": "Ohne Kanalliste (Koppler, Steuerung oder Sondermodul).",
-      "en": "Without a channel list (coupler, controller or special module)."
+      "de": "Klemmenbelegung aus dem Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment from the product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
         "symbol": "wirewright.plc.card",
         "main": true,
         "label": {
-          "de": "Übersicht",
-          "en": "Overview"
+          "de": "Kartenübersicht",
+          "en": "Card overview"
         }
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 1,
+        "pins": {
+          "1": "1",
+          "2": "2"
+        },
+        "label": "DI 1 (pin 1, 2)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 2,
+        "pins": {
+          "1": "3",
+          "2": "4"
+        },
+        "label": "DI 2 (pin 3, 4)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 3,
+        "pins": {
+          "1": "5",
+          "2": "6"
+        },
+        "label": "DI 3 (pin 5, 6)"
+      },
+      {
+        "symbol": "wirewright.plc.di.2",
+        "channel": 4,
+        "pins": {
+          "1": "7",
+          "2": "8"
+        },
+        "label": "DI 4 (pin 7, 8)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 1,
+        "pins": {
+          "1": "9",
+          "2": "10"
+        },
+        "label": "DO 1 (pin 9, 10)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 2,
+        "pins": {
+          "1": "11",
+          "2": "12"
+        },
+        "label": "DO 2 (pin 11, 12)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 3,
+        "pins": {
+          "1": "13",
+          "2": "14"
+        },
+        "label": "DO 3 (pin 13, 14)"
+      },
+      {
+        "symbol": "wirewright.plc.do.2",
+        "channel": 4,
+        "pins": {
+          "1": "15",
+          "2": "16"
+        },
+        "label": "DO 4 (pin 15, 16)"
       }
-    ]
+    ],
+    "plc": {
+      "channels": [
+        {
+          "channel": 1,
+          "kind": "DI",
+          "pin": "2",
+          "pinLabel": "I1",
+          "extraPins": [
+            {
+              "pin": "1",
+              "label": "T1"
+            }
+          ]
+        },
+        {
+          "channel": 2,
+          "kind": "DI",
+          "pin": "4",
+          "pinLabel": "I2",
+          "extraPins": [
+            {
+              "pin": "3",
+              "label": "T2"
+            }
+          ]
+        },
+        {
+          "channel": 3,
+          "kind": "DI",
+          "pin": "6",
+          "pinLabel": "I3",
+          "extraPins": [
+            {
+              "pin": "5",
+              "label": "T1"
+            }
+          ]
+        },
+        {
+          "channel": 4,
+          "kind": "DI",
+          "pin": "8",
+          "pinLabel": "I4",
+          "extraPins": [
+            {
+              "pin": "7",
+              "label": "T2"
+            }
+          ]
+        },
+        {
+          "channel": 1,
+          "kind": "DO",
+          "pin": "9",
+          "pinLabel": "RO1a",
+          "extraPins": [
+            {
+              "pin": "10",
+              "label": "RO1b",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 2,
+          "kind": "DO",
+          "pin": "11",
+          "pinLabel": "RO2a",
+          "extraPins": [
+            {
+              "pin": "12",
+              "label": "RO2b",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 3,
+          "kind": "DO",
+          "pin": "13",
+          "pinLabel": "RO3a",
+          "extraPins": [
+            {
+              "pin": "14",
+              "label": "RO3b",
+              "after": true
+            }
+          ]
+        },
+        {
+          "channel": 4,
+          "kind": "DO",
+          "pin": "15",
+          "pinLabel": "RO4a",
+          "extraPins": [
+            {
+              "pin": "16",
+              "label": "RO4b",
+              "after": true
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "id": "wago.750-670",
@@ -22534,8 +23462,8 @@
     "manufacturer": "WAGO",
     "partNumber": "750-1491",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung aus dem Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment from the product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -22547,20 +23475,26 @@
         }
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.4",
         "channel": 1,
         "pins": {
-          "1": "1"
+          "1": "1",
+          "2": "2",
+          "3": "11",
+          "4": "3"
         },
-        "label": "AI 1 (pin 1)"
+        "label": "AI 1 (pin 1, 2, 11, 3)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.4",
         "channel": 2,
         "pins": {
-          "1": "5"
+          "1": "5",
+          "2": "6",
+          "3": "15",
+          "4": "7"
         },
-        "label": "AI 2 (pin 5)"
+        "label": "AI 2 (pin 5, 6, 15, 7)"
       }
     ],
     "plc": {
@@ -22568,12 +23502,48 @@
         {
           "channel": 1,
           "kind": "AI",
-          "pin": "1"
+          "pin": "1",
+          "pinLabel": "+Ud1",
+          "extraPins": [
+            {
+              "pin": "2",
+              "label": "−Ud1",
+              "after": true
+            },
+            {
+              "pin": "11",
+              "label": "+Uv1",
+              "after": true
+            },
+            {
+              "pin": "3",
+              "label": "−Uv1",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 2,
           "kind": "AI",
-          "pin": "5"
+          "pin": "5",
+          "pinLabel": "+Ud2",
+          "extraPins": [
+            {
+              "pin": "6",
+              "label": "−Ud2",
+              "after": true
+            },
+            {
+              "pin": "15",
+              "label": "+Uv2",
+              "after": true
+            },
+            {
+              "pin": "7",
+              "label": "−Uv2",
+              "after": true
+            }
+          ]
         }
       ]
     }
@@ -26426,8 +27396,8 @@
     "manufacturer": "WAGO",
     "partNumber": "753-427",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung wie 750-427 (dasselbe Modul, 753 mit steckbarem Anschluss), aus dessen Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment of the 750-427 (the same module, 753 with a pluggable connector), from its product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -26439,20 +27409,26 @@
         }
       },
       {
-        "symbol": "wirewright.plc.di",
+        "symbol": "wirewright.plc.di.4",
         "channel": 1,
         "pins": {
-          "1": "1"
+          "1": "1",
+          "2": "4",
+          "3": "2",
+          "4": "3"
         },
-        "label": "DI 1 (pin 1)"
+        "label": "DI 1 (pin 1, 4, 2, 3)"
       },
       {
-        "symbol": "wirewright.plc.di",
+        "symbol": "wirewright.plc.di.4",
         "channel": 2,
         "pins": {
-          "1": "5"
+          "1": "5",
+          "2": "8",
+          "3": "6",
+          "4": "7"
         },
-        "label": "DI 2 (pin 5)"
+        "label": "DI 2 (pin 5, 8, 6, 7)"
       }
     ],
     "plc": {
@@ -26460,12 +27436,46 @@
         {
           "channel": 1,
           "kind": "DI",
-          "pin": "1"
+          "pin": "1",
+          "pinLabel": "DI 1+",
+          "extraPins": [
+            {
+              "pin": "4",
+              "label": "DI 1-",
+              "after": true
+            },
+            {
+              "pin": "2",
+              "label": "110 V",
+              "after": true
+            },
+            {
+              "pin": "3",
+              "label": "0V",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 2,
           "kind": "DI",
-          "pin": "5"
+          "pin": "5",
+          "pinLabel": "DI 2+",
+          "extraPins": [
+            {
+              "pin": "8",
+              "label": "DI 2-",
+              "after": true
+            },
+            {
+              "pin": "6",
+              "after": true
+            },
+            {
+              "pin": "7",
+              "after": true
+            }
+          ]
         }
       ]
     }
@@ -26480,8 +27490,8 @@
     "manufacturer": "WAGO",
     "partNumber": "753-428",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung wie 750-428 (dasselbe Modul, 753 mit steckbarem Anschluss), aus dessen Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment of the 750-428 (the same module, 753 with a pluggable connector), from its product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -26493,36 +27503,40 @@
         }
       },
       {
-        "symbol": "wirewright.plc.di",
+        "symbol": "wirewright.plc.di.2",
         "channel": 1,
         "pins": {
-          "1": "1"
+          "1": "1",
+          "2": "2"
         },
-        "label": "DI 1 (pin 1)"
+        "label": "DI 1 (pin 1, 2)"
       },
       {
-        "symbol": "wirewright.plc.di",
+        "symbol": "wirewright.plc.di.2",
         "channel": 2,
         "pins": {
-          "1": "5"
+          "1": "5",
+          "2": "6"
         },
-        "label": "DI 2 (pin 5)"
+        "label": "DI 2 (pin 5, 6)"
       },
       {
-        "symbol": "wirewright.plc.di",
+        "symbol": "wirewright.plc.di.2",
         "channel": 3,
         "pins": {
-          "1": "2"
+          "1": "3",
+          "2": "4"
         },
-        "label": "DI 3 (pin 2)"
+        "label": "DI 3 (pin 3, 4)"
       },
       {
-        "symbol": "wirewright.plc.di",
+        "symbol": "wirewright.plc.di.2",
         "channel": 4,
         "pins": {
-          "1": "6"
+          "1": "7",
+          "2": "8"
         },
-        "label": "DI 4 (pin 6)"
+        "label": "DI 4 (pin 7, 8)"
       }
     ],
     "plc": {
@@ -26530,22 +27544,50 @@
         {
           "channel": 1,
           "kind": "DI",
-          "pin": "1"
+          "pin": "1",
+          "extraPins": [
+            {
+              "pin": "2",
+              "label": "DI 1",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 2,
           "kind": "DI",
-          "pin": "5"
+          "pin": "5",
+          "extraPins": [
+            {
+              "pin": "6",
+              "label": "DI 2",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 3,
           "kind": "DI",
-          "pin": "2"
+          "pin": "3",
+          "extraPins": [
+            {
+              "pin": "4",
+              "label": "DI 3",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 4,
           "kind": "DI",
-          "pin": "6"
+          "pin": "7",
+          "extraPins": [
+            {
+              "pin": "8",
+              "label": "DI 4",
+              "after": true
+            }
+          ]
         }
       ]
     }
@@ -27342,8 +28384,8 @@
     "manufacturer": "WAGO",
     "partNumber": "753-437",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung wie 750-437 (dasselbe Modul, 753 mit steckbarem Anschluss), aus dessen Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment of the 750-437 (the same module, 753 with a pluggable connector), from its product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -28090,8 +29132,8 @@
     "manufacturer": "WAGO",
     "partNumber": "753-460",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung wie 750-460 (dasselbe Modul, 753 mit steckbarem Anschluss), aus dessen Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment of the 750-460 (the same module, 753 with a pluggable connector), from its product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -28103,36 +29145,40 @@
         }
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 1,
         "pins": {
-          "1": "1"
+          "1": "1",
+          "2": "2"
         },
-        "label": "AI 1 (pin 1)"
+        "label": "AI 1 (pin 1, 2)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 2,
         "pins": {
-          "1": "5"
+          "1": "5",
+          "2": "6"
         },
-        "label": "AI 2 (pin 5)"
+        "label": "AI 2 (pin 5, 6)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 3,
         "pins": {
-          "1": "2"
+          "1": "3",
+          "2": "4"
         },
-        "label": "AI 3 (pin 2)"
+        "label": "AI 3 (pin 3, 4)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 4,
         "pins": {
-          "1": "6"
+          "1": "7",
+          "2": "8"
         },
-        "label": "AI 4 (pin 6)"
+        "label": "AI 4 (pin 7, 8)"
       }
     ],
     "plc": {
@@ -28140,22 +29186,54 @@
         {
           "channel": 1,
           "kind": "AI",
-          "pin": "1"
+          "pin": "1",
+          "pinLabel": "+R1",
+          "extraPins": [
+            {
+              "pin": "2",
+              "label": "−R1",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 2,
           "kind": "AI",
-          "pin": "5"
+          "pin": "5",
+          "pinLabel": "+R2",
+          "extraPins": [
+            {
+              "pin": "6",
+              "label": "−R2",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 3,
           "kind": "AI",
-          "pin": "2"
+          "pin": "3",
+          "pinLabel": "+R3",
+          "extraPins": [
+            {
+              "pin": "4",
+              "label": "−R3",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 4,
           "kind": "AI",
-          "pin": "6"
+          "pin": "7",
+          "pinLabel": "+R4",
+          "extraPins": [
+            {
+              "pin": "8",
+              "label": "−R4",
+              "after": true
+            }
+          ]
         }
       ]
     }
@@ -28254,8 +29332,8 @@
     "manufacturer": "WAGO",
     "partNumber": "753-461/003-000",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung wie 750-461/003-000 (dasselbe Modul, 753 mit steckbarem Anschluss), aus dessen Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment of the 750-461/003-000 (the same module, 753 with a pluggable connector), from its product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -28267,20 +29345,24 @@
         }
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.3",
         "channel": 1,
         "pins": {
-          "1": "1"
+          "1": "1",
+          "2": "2",
+          "3": "3"
         },
-        "label": "AI 1 (pin 1)"
+        "label": "AI 1 (pin 1, 2, 3)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.3",
         "channel": 2,
         "pins": {
-          "1": "5"
+          "1": "5",
+          "2": "6",
+          "3": "7"
         },
-        "label": "AI 2 (pin 5)"
+        "label": "AI 2 (pin 5, 6, 7)"
       }
     ],
     "plc": {
@@ -28288,12 +29370,38 @@
         {
           "channel": 1,
           "kind": "AI",
-          "pin": "1"
+          "pin": "1",
+          "pinLabel": "+R1",
+          "extraPins": [
+            {
+              "pin": "2",
+              "label": "RL1",
+              "after": true
+            },
+            {
+              "pin": "3",
+              "label": "−R1",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 2,
           "kind": "AI",
-          "pin": "5"
+          "pin": "5",
+          "pinLabel": "+R2",
+          "extraPins": [
+            {
+              "pin": "6",
+              "label": "RL2",
+              "after": true
+            },
+            {
+              "pin": "7",
+              "label": "−R2",
+              "after": true
+            }
+          ]
         }
       ]
     }
@@ -28644,8 +29752,8 @@
     "manufacturer": "WAGO",
     "partNumber": "753-469/003-000",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung wie 750-469/003-000 (dasselbe Modul, 753 mit steckbarem Anschluss), aus dessen Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment of the 750-469/003-000 (the same module, 753 with a pluggable connector), from its product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -28657,20 +29765,22 @@
         }
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 1,
         "pins": {
-          "1": "1"
+          "1": "1",
+          "2": "2"
         },
-        "label": "AI 1 (pin 1)"
+        "label": "AI 1 (pin 1, 2)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 2,
         "pins": {
-          "1": "5"
+          "1": "5",
+          "2": "6"
         },
-        "label": "AI 2 (pin 5)"
+        "label": "AI 2 (pin 5, 6)"
       }
     ],
     "plc": {
@@ -28678,12 +29788,28 @@
         {
           "channel": 1,
           "kind": "AI",
-          "pin": "1"
+          "pin": "1",
+          "pinLabel": "+TC 1",
+          "extraPins": [
+            {
+              "pin": "2",
+              "label": "−TC 1",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 2,
           "kind": "AI",
-          "pin": "5"
+          "pin": "5",
+          "pinLabel": "+TC 2",
+          "extraPins": [
+            {
+              "pin": "6",
+              "label": "−TC 2",
+              "after": true
+            }
+          ]
         }
       ]
     }
@@ -28698,8 +29824,8 @@
     "manufacturer": "WAGO",
     "partNumber": "753-472",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung wie 750-472 (dasselbe Modul, 753 mit steckbarem Anschluss), aus dessen Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment of the 750-472 (the same module, 753 with a pluggable connector), from its product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -28711,20 +29837,26 @@
         }
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.4",
         "channel": 1,
         "pins": {
-          "1": "1"
+          "1": "1",
+          "2": "2",
+          "3": "3",
+          "4": "4"
         },
-        "label": "AI 1 (pin 1)"
+        "label": "AI 1 (pin 1, 2, 3, 4)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.4",
         "channel": 2,
         "pins": {
-          "1": "5"
+          "1": "5",
+          "2": "6",
+          "3": "7",
+          "4": "8"
         },
-        "label": "AI 2 (pin 5)"
+        "label": "AI 2 (pin 5, 6, 7, 8)"
       }
     ],
     "plc": {
@@ -28732,12 +29864,46 @@
         {
           "channel": 1,
           "kind": "AI",
-          "pin": "1"
+          "pin": "1",
+          "extraPins": [
+            {
+              "pin": "2",
+              "label": "24 V",
+              "after": true
+            },
+            {
+              "pin": "3",
+              "label": "0V",
+              "after": true
+            },
+            {
+              "pin": "4",
+              "label": "S",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 2,
           "kind": "AI",
-          "pin": "5"
+          "pin": "5",
+          "extraPins": [
+            {
+              "pin": "6",
+              "label": "24 V",
+              "after": true
+            },
+            {
+              "pin": "7",
+              "label": "0V",
+              "after": true
+            },
+            {
+              "pin": "8",
+              "label": "S",
+              "after": true
+            }
+          ]
         }
       ]
     }
@@ -28752,8 +29918,8 @@
     "manufacturer": "WAGO",
     "partNumber": "753-474",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung wie 750-474 (dasselbe Modul, 753 mit steckbarem Anschluss), aus dessen Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment of the 750-474 (the same module, 753 with a pluggable connector), from its product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -28765,20 +29931,26 @@
         }
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.4",
         "channel": 1,
         "pins": {
-          "1": "1"
+          "1": "1",
+          "2": "2",
+          "3": "3",
+          "4": "4"
         },
-        "label": "AI 1 (pin 1)"
+        "label": "AI 1 (pin 1, 2, 3, 4)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.4",
         "channel": 2,
         "pins": {
-          "1": "5"
+          "1": "5",
+          "2": "6",
+          "3": "7",
+          "4": "8"
         },
-        "label": "AI 2 (pin 5)"
+        "label": "AI 2 (pin 5, 6, 7, 8)"
       }
     ],
     "plc": {
@@ -28786,12 +29958,46 @@
         {
           "channel": 1,
           "kind": "AI",
-          "pin": "1"
+          "pin": "1",
+          "extraPins": [
+            {
+              "pin": "2",
+              "label": "24 V",
+              "after": true
+            },
+            {
+              "pin": "3",
+              "label": "0V",
+              "after": true
+            },
+            {
+              "pin": "4",
+              "label": "S",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 2,
           "kind": "AI",
-          "pin": "5"
+          "pin": "5",
+          "extraPins": [
+            {
+              "pin": "6",
+              "label": "24 V",
+              "after": true
+            },
+            {
+              "pin": "7",
+              "label": "0V",
+              "after": true
+            },
+            {
+              "pin": "8",
+              "label": "S",
+              "after": true
+            }
+          ]
         }
       ]
     }
@@ -28878,8 +30084,8 @@
     "manufacturer": "WAGO",
     "partNumber": "753-476",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung wie 750-476 (dasselbe Modul, 753 mit steckbarem Anschluss), aus dessen Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment of the 750-476 (the same module, 753 with a pluggable connector), from its product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -28891,20 +30097,26 @@
         }
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.4",
         "channel": 1,
         "pins": {
-          "1": "1"
+          "1": "1",
+          "2": "2",
+          "3": "3",
+          "4": "4"
         },
-        "label": "AI 1 (pin 1)"
+        "label": "AI 1 (pin 1, 2, 3, 4)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.4",
         "channel": 2,
         "pins": {
-          "1": "5"
+          "1": "5",
+          "2": "6",
+          "3": "7",
+          "4": "8"
         },
-        "label": "AI 2 (pin 5)"
+        "label": "AI 2 (pin 5, 6, 7, 8)"
       }
     ],
     "plc": {
@@ -28912,12 +30124,46 @@
         {
           "channel": 1,
           "kind": "AI",
-          "pin": "1"
+          "pin": "1",
+          "extraPins": [
+            {
+              "pin": "2",
+              "label": "24 V",
+              "after": true
+            },
+            {
+              "pin": "3",
+              "label": "0V",
+              "after": true
+            },
+            {
+              "pin": "4",
+              "label": "S",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 2,
           "kind": "AI",
-          "pin": "5"
+          "pin": "5",
+          "extraPins": [
+            {
+              "pin": "6",
+              "label": "24 V",
+              "after": true
+            },
+            {
+              "pin": "7",
+              "label": "0V",
+              "after": true
+            },
+            {
+              "pin": "8",
+              "label": "S",
+              "after": true
+            }
+          ]
         }
       ]
     }
@@ -29170,8 +30416,8 @@
     "manufacturer": "WAGO",
     "partNumber": "753-480",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung wie 750-480 (dasselbe Modul, 753 mit steckbarem Anschluss), aus dessen Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment of the 750-480 (the same module, 753 with a pluggable connector), from its product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -29183,20 +30429,22 @@
         }
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 1,
         "pins": {
-          "1": "1"
+          "1": "1",
+          "2": "2"
         },
-        "label": "AI 1 (pin 1)"
+        "label": "AI 1 (pin 1, 2)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 2,
         "pins": {
-          "1": "5"
+          "1": "5",
+          "2": "6"
         },
-        "label": "AI 2 (pin 5)"
+        "label": "AI 2 (pin 5, 6)"
       }
     ],
     "plc": {
@@ -29204,12 +30452,28 @@
         {
           "channel": 1,
           "kind": "AI",
-          "pin": "1"
+          "pin": "1",
+          "pinLabel": "+AI 1",
+          "extraPins": [
+            {
+              "pin": "2",
+              "label": "−AI 1",
+              "after": true
+            }
+          ]
         },
         {
           "channel": 2,
           "kind": "AI",
-          "pin": "5"
+          "pin": "5",
+          "pinLabel": "+AI 2",
+          "extraPins": [
+            {
+              "pin": "6",
+              "label": "−AI 2",
+              "after": true
+            }
+          ]
         }
       ]
     }
@@ -29224,8 +30488,8 @@
     "manufacturer": "WAGO",
     "partNumber": "753-482",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung wie 750-482 (dasselbe Modul, 753 mit steckbarem Anschluss), aus dessen Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment of the 750-482 (the same module, 753 with a pluggable connector), from its product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -29237,20 +30501,22 @@
         }
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 1,
         "pins": {
-          "1": "1"
+          "1": "1",
+          "2": "2"
         },
-        "label": "AI 1 (pin 1)"
+        "label": "AI 1 (pin 1, 2)"
       },
       {
-        "symbol": "wirewright.plc.ai",
+        "symbol": "wirewright.plc.ai.2",
         "channel": 2,
         "pins": {
-          "1": "5"
+          "1": "5",
+          "2": "6"
         },
-        "label": "AI 2 (pin 5)"
+        "label": "AI 2 (pin 5, 6)"
       }
     ],
     "plc": {
@@ -29258,12 +30524,26 @@
         {
           "channel": 1,
           "kind": "AI",
-          "pin": "1"
+          "pin": "2",
+          "pinLabel": "HART 1+",
+          "extraPins": [
+            {
+              "pin": "1",
+              "label": "HART 1−"
+            }
+          ]
         },
         {
           "channel": 2,
           "kind": "AI",
-          "pin": "5"
+          "pin": "6",
+          "pinLabel": "HART 2+",
+          "extraPins": [
+            {
+              "pin": "5",
+              "label": "HART 2−"
+            }
+          ]
         }
       ]
     }
@@ -30374,8 +31654,8 @@
     "manufacturer": "WAGO",
     "partNumber": "753-516",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung wie 750-516 (dasselbe Modul, 753 mit steckbarem Anschluss), aus dessen Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment of the 750-516 (the same module, 753 with a pluggable connector), from its product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -30406,17 +31686,17 @@
         "symbol": "wirewright.plc.do",
         "channel": 3,
         "pins": {
-          "1": "2"
+          "1": "4"
         },
-        "label": "DO 3 (pin 2)"
+        "label": "DO 3 (pin 4)"
       },
       {
         "symbol": "wirewright.plc.do",
         "channel": 4,
         "pins": {
-          "1": "6"
+          "1": "8"
         },
-        "label": "DO 4 (pin 6)"
+        "label": "DO 4 (pin 8)"
       }
     ],
     "plc": {
@@ -30434,12 +31714,12 @@
         {
           "channel": 3,
           "kind": "DO",
-          "pin": "2"
+          "pin": "4"
         },
         {
           "channel": 4,
           "kind": "DO",
-          "pin": "6"
+          "pin": "8"
         }
       ]
     }
@@ -30992,8 +32272,8 @@
     "manufacturer": "WAGO",
     "partNumber": "753-536",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung wie 750-536 (dasselbe Modul, 753 mit steckbarem Anschluss), aus dessen Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment of the 750-536 (the same module, 753 with a pluggable connector), from its product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -31484,8 +32764,8 @@
     "manufacturer": "WAGO",
     "partNumber": "753-550",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung wie 750-550 (dasselbe Modul, 753 mit steckbarem Anschluss), aus dessen Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment of the 750-550 (the same module, 753 with a pluggable connector), from its product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
@@ -31944,8 +33224,8 @@
     "manufacturer": "WAGO",
     "partNumber": "753-556",
     "description": {
-      "de": "Klemmenbelegung und Bestellnummer nach Herstellerunterlagen prüfen.",
-      "en": "Check the pin assignment and order number against the manufacturer's documentation."
+      "de": "Klemmenbelegung wie 750-556 (dasselbe Modul, 753 mit steckbarem Anschluss), aus dessen Produkthandbuch (wago.com, 2026-11).",
+      "en": "Pin assignment of the 750-556 (the same module, 753 with a pluggable connector), from its product manual (wago.com, 2026-11)."
     },
     "functions": [
       {
